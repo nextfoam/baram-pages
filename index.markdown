@@ -7,7 +7,7 @@ layout: home
 ---
 Baram is a Free Open Source CFD(Computational Fluid Dynamics) software package. Baram is developed to mitigate the steep learning curve of Text-based Solvers. Baram helps you focus on a problem itself with intuitive graphical user interface. For now, OpenFOAM® solvers modified by NEXTfoam are integrated into Baram. NEXTfoam develops and releases it under GPL(GNU Public License).
 
-"Baram"(pronounced like 'baaraam') is a Korean word that means "wind".
+"Baram"(pronounced like 'baa-laam') is a Korean word that means "wind".
 
 Source code of Baram is published on [GitHub](https://github.com/nextfoam/baram), and Baram supports following platforms.
 
