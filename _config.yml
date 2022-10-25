@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Baram
+title: BARAM
 description: BARAM is a Free Open Source CFD(Computational Fluid Dynamics)
   software package. BARAM is developed to mitigate the steep learning curve
   of Text-based Solvers. BARAM helps you focus on problem itself with
@@ -90,7 +90,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Baram on GitHub":
+  "BARAM on GitHub":
     - "//github.com/nextfoam/baram"
 
 # Makes Aux links open in a new tab. Default is false
@@ -102,7 +102,7 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-  - title: Baram on GitHub
+  - title: BARAM on GitHub
     url: https://github.com/nextfoam/baram
 
 # Footer content
