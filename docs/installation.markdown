@@ -66,7 +66,7 @@ Download and uncompress solver executables into the top directory of downloaded 
 
 
 ### Linux
-[solvers_linux_20220908.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20220908.tar.xz)
+[solvers_linux_20221025-1.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20221025-1.tar.xz)
 
 ### macOS
 [solvers_mac_20220908.tar.gz](http://d3c6e16xufx1gb.cloudfront.net/solvers_mac_20220908.tar.gz)
