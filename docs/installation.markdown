@@ -80,7 +80,7 @@ gcc -o solvers/openfoam/bin/baramd misc/baramd.c
 
 ## Compile Resource Files
 ```commandline
-python convertUI.py
+python convertUi.py
 ```
 
 ## Run BARAM
