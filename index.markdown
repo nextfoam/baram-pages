@@ -16,7 +16,7 @@ Source code of BARAM is published on [GitHub](https://github.com/nextfoam/baram)
     * Windows 10 or later
     * macOS 10.14 or later
 
-For installation from the source code, please refer to [Installation] page.
+For installation from the source code, please refer to [Installation]({{ site.baseurl }}{% link docs/installation.markdown %}) page.
 
 
 Binary installation package for 64bit windows is prepared for convenience.
