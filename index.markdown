@@ -19,6 +19,6 @@ Source code of BARAM is published on [GitHub](https://github.com/nextfoam/baram)
 For installation from the source code, please refer to [Installation]({{ site.baseurl }}{% link docs/installation.markdown %}) page.
 
 
-Binary installation package for 64bit windows is prepared for convenience.
+Binary installation package for 64bit windows is here for convenience.
 
 [Download BARAM v22.0.4 Installer for 64 bit Windows ›](http://d3c6e16xufx1gb.cloudfront.net/Baram-22.0.4-win64.msi){: .btn .btn-purple .text-center .fs-5}
