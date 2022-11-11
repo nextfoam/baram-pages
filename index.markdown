@@ -13,8 +13,10 @@ Source code of BARAM is published on [GitHub](https://github.com/nextfoam/baram)
 
     * Ubuntu 20.04 or later
     * CentOS 8.2 or later
+    * OpenSUSE Leap 15.4
+    * Linux Mint 21 "Vanessa"
     * Windows 10 or later
-    * macOS 10.14 or later
+    * macOS 10.15 or later
 
 For installation from the source code, please refer to [Installation]({{ site.baseurl }}{% link docs/installation.markdown %}) page.
 
