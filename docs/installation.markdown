@@ -37,7 +37,7 @@ Please don't forget that Python **3.9.x** is required.
 You can check it with the command of `python3 -V`.
 
 ```commandline
-python3 -m venv venv
+python3.9 -m venv venv
 ```
 
 ## Enter into virtual environment
