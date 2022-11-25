@@ -23,4 +23,4 @@ For installation from the source code, please refer to [Installation]({{ site.ba
 
 Binary installation package for 64bit windows is here for convenience.
 
-[Download BARAM v22.0.4 Installer for 64 bit Windows ›](http://d3c6e16xufx1gb.cloudfront.net/Baram-22.0.4-win64.msi){: .btn .btn-purple .text-center .fs-5}
+[Download BARAM v22.0.5 Installer for 64 bit Windows ›](http://d3c6e16xufx1gb.cloudfront.net/BARAM-22.0.5-setup.exe){: .btn .btn-purple .text-center .fs-5}

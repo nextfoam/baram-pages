@@ -8,7 +8,7 @@ title: Installation
 Binary installation package for 64bit windows is prepared for convenience.  
 Install [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) first, and download BARAM install from following link.
 
-[Download BARAM v22.0.4 Installer for 64 bit Windows ›](http://d3c6e16xufx1gb.cloudfront.net/Baram-22.0.4-win64.msi){: .btn .btn-purple .text-center .fs-5}
+[Download BARAM v22.0.5 Installer for 64 bit Windows ›](http://d3c6e16xufx1gb.cloudfront.net/BARAM-22.0.5-setup.exe){: .btn .btn-purple .text-center .fs-5}
 
 # Installing BARAM from Source Code
 
@@ -62,11 +62,11 @@ pip install -r requirements.txt
 ## Copy Solver Executables
 Download and uncompress solver executables into the top directory of downloaded source code
 ### Windows
-[solvers_windows_20221006.7z](http://d3c6e16xufx1gb.cloudfront.net/solvers_windows_20221006.7z)
+[solvers_windows_20221124.zip](http://d3c6e16xufx1gb.cloudfront.net/solvers_windows_20221124.zip)
 
 
 ### Linux
-[solvers_linux_20221025-1.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20221025-1.tar.xz)
+[solvers_linux_20221117.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20221117.tar.xz)
 
 ### macOS
 [solvers_mac_20220908.tar.gz](http://d3c6e16xufx1gb.cloudfront.net/solvers_mac_20220908.tar.gz)
