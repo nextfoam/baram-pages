@@ -6,7 +6,7 @@ title: Installation
 
 # Installing BARAM for Windows
 Binary installation package for 64bit windows is prepared for convenience.  
-Install [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) first, and download BARAM install from following link.
+Download it from following link.
 
 [Download BARAM v22.0.5 Installer for 64 bit Windows ›](http://d3c6e16xufx1gb.cloudfront.net/BARAM-22.0.5-setup.exe){: .btn .btn-purple .text-center .fs-5}
 
