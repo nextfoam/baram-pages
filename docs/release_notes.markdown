@@ -17,6 +17,7 @@ title: Release Notes
 
 ## Bug Fixes
 * Turbulent intensity was set in percentage in the dictionaries
+* Velocity Inlet Boundary Condition Dialog was not opened
 
 ## Know Issues
 * Monitoring for a point that is not snapped on a surface is not working 
