@@ -21,7 +21,7 @@ Download it from following link.
 
 ## BARAM requires following installed software:
 
-- Python **3.9.x**
+- Python 3.9 or newer
 - [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) 10.0 or newer ( Windows Only )
 - OpenMPI 4.0 or newer ( Linux, macOS )
 - GNU C Compiler or any other C Compiler ( Linux, macOS )
