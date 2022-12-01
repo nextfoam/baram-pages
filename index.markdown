@@ -12,7 +12,7 @@ BARAM is a Free Open Source CFD(Computational Fluid Dynamics) software package. 
 Source code of BARAM is published on [GitHub](https://github.com/nextfoam/baram), and BARAM supports following platforms.
 
     * Ubuntu 20.04 or later
-    * CentOS 8.2 or later
+    * CentOS 8.2 or later ( Rocky Linux, AlmaLinux, ... )
     * OpenSUSE Leap 15.4
     * Linux Mint 21 "Vanessa"
     * Windows 10 or later

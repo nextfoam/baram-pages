@@ -13,18 +13,19 @@ Download it from following link.
 # Installing BARAM from Source Code
 
 ## Supported Platforms
-- Windows 10 or newer
-- macOS 10.14 or newer
-- Ubuntu 20.04 or newer
-- CentOS 8.2 or newer ( Rocky Linux, AlmaLinux, ... )
-- Linux Mint 21 Vanessa
+* Windows 10 or newer
+* macOS 10.14 or newer
+* Ubuntu 20.04 or newer
+* CentOS 8.2 or newer ( Rocky Linux, AlmaLinux, ... )
+* OpenSUSE Leap 15.4
+* Linux Mint 21 "Vanessa"
 
 ## BARAM requires following installed software:
 
-- Python 3.9 or newer
-- [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) 10.0 or newer ( Windows Only )
-- OpenMPI 4.0 or newer ( Linux, macOS )
-- GNU C Compiler or any other C Compiler ( Linux, macOS )
+* Python 3.9 or newer
+* [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) 10.0 or newer ( Windows Only )
+* OpenMPI 4.0 or newer ( Linux, macOS )
+* GNU C Compiler or any other C Compiler ( Linux, macOS )
 
 ## Clone the source code
 ```commandline
