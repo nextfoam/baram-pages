@@ -13,10 +13,11 @@ Download it from following link.
 # Installing BARAM from Source Code
 
 ## Supported Platforms
-- Ubuntu 20.04 or newer
-- CentOS 8.2 or newer
 - Windows 10 or newer
 - macOS 10.14 or newer
+- Ubuntu 20.04 or newer
+- CentOS 8.2 or newer ( Rocky Linux, AlmaLinux, ... )
+- Linux Mint 21 Vanessa
 
 ## BARAM requires following installed software:
 
@@ -60,7 +61,25 @@ pip install -r requirements.txt
 ```
 
 ## Copy Solver Executables
-Download and uncompress solver executables into the top directory of downloaded source code
+Download and uncompress solver executables into the top directory of downloaded source code.
+The compressed files have _**solvers**_ folder in it.
+Put _**solvers**_ folder into the top directory.
+The final directory structure may look like following.
+```
+($BARAM)
+|
++-- requirements.txt
++-- ...
++-- solvers/
+|   |
+|   +-- openfoam/
+|       |
+|       +-- bin/
+|       +-- etc/
+|       +-- ...
++-- ...
+```
+
 ### Windows
 [solvers_windows_20221124.zip](http://d3c6e16xufx1gb.cloudfront.net/solvers_windows_20221124.zip)
 
