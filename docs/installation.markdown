@@ -88,6 +88,16 @@ The final directory structure may look like following.
 ### Linux
 [solvers_linux_20221117.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20221117.tar.xz)
 
+You can download the file on command line with cURL or wget command like following.
+
+```commandline
+wget http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20221117.tar.xz
+```
+
+```commandline
+curl -L http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20221117.tar.xz -o solvers_linux_20221117.tar.xz
+```
+
 ### macOS
 [solvers_mac_20220908.tar.gz](http://d3c6e16xufx1gb.cloudfront.net/solvers_mac_20220908.tar.gz)
 
