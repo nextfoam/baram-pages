@@ -4,6 +4,26 @@ layout: page
 title: Release Notes
 ---
 
+# 22.0.6
+
+## New Features
+* show/hide check box for each boundary
+
+## Improvements
+* [Internationalization support](https://nextfoam.github.io/baram-pages/docs/internationalization/)
+
+## Bug Fixes
+* Project name was not updated when the folder name was changed and reopened
+* Dialog window to ask to save was popped up even when configuration was not changed
+* `.gz` compressed polyMesh was not handled
+
+## Know Issues
+* Monitoring for a point that is not snapped on a surface is not working 
+* Batch Processing is not implemented yet
+* Rolling menus from Toolbar can be shown on the other display in multiple monitor configuration
+
+
+
 # 22.0.5
 
 ## New Features
