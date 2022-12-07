@@ -4,6 +4,19 @@ layout: page
 title: Release Notes
 ---
 
+# 22.0.7
+
+## Bug Fixes
+* Case loading failed when sliding mesh(MRF) does not have static boundaries
+* "decompose" showed errors on some meshes
+
+## Know Issues
+* Monitoring for a point that is not snapped on a surface is not working 
+* Batch Processing is not implemented yet
+* Rolling menus from Toolbar can be shown on the other display in multiple monitor configuration
+
+
+
 # 22.0.6
 
 ## New Features
