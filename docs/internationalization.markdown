@@ -27,7 +27,7 @@ In the top directory of BARAM, type following command.
 
 Then run QT Linguist.
 ```commandline
-(venv) [(...)]$ pyside6-linguist resource/locale/baram_<lang>.ts
+(venv) [(...)]$ pyside6-linguist resources/locale/baram_<lang>.ts
 
 ```
 
