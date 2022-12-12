@@ -55,3 +55,7 @@ Finally, if your language is not in the menu list, you can add it to the file, `
 
 ![Language List in Code]({{ site.baseurl }}/images/lang_list_code.png)
 
+Once the translation file(.ts) or menu file(settings\_language.py) is completed, the change can be sent to me to merge it into main branch.
+Please refer to the [Doc from GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests).
+However, if you feel uncomfortable in creating _pull request_, you can just post them on GitHub Issues.
+I will check and do the rest of the job.
