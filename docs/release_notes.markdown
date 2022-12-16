@@ -7,7 +7,7 @@ title: Release Notes
 # 22.0.7
 
 ## Bug Fixes
-* Case loading failed when sliding mesh(MRF) does not have static boundaries
+* Case loading failed when sliding mesh (MRF) does not have static boundaries
 * "decompose" showed errors on some meshes
 
 ## Know Issues

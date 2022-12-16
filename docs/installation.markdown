@@ -5,10 +5,10 @@ title: Installation
 ---
 
 # Installing BARAM for Windows
-Binary installation package for 64bit windows is prepared for convenience.  
+Binary installation package for 64-bit windows is prepared for convenience.  
 Download it from following link.
 
-[Download BARAM v22.0.7 Installer for 64 bit Windows ›](http://d3c6e16xufx1gb.cloudfront.net/BARAM-22.0.7-setup.exe){: .btn .btn-purple .text-center .fs-5}
+[Download BARAM v22.0.7 Installer for 64-bit Windows ›](http://d3c6e16xufx1gb.cloudfront.net/BARAM-22.0.7-setup.exe){: .btn .btn-purple .text-center .fs-5}
 
 # Installing BARAM from Source Code
 
@@ -16,7 +16,7 @@ Download it from following link.
 * Windows 10 or newer
 * macOS 10.14 or newer
 * Ubuntu 20.04 or newer
-* CentOS 8.2 or newer ( Rocky Linux, AlmaLinux, ... )
+* CentOS 8.2 or alternatives ( Rocky Linux, AlmaLinux, ... )
 * OpenSUSE Leap 15.4
 * Linux Mint 21 "Vanessa"
 
