@@ -4,6 +4,25 @@ layout: page
 title: Release Notes
 ---
 
+# 22.1.0
+
+## New Features
+* Finnish(Suomi) translation has been added thanks to [Ricky Tigg](https://github.com/Ricky-Tigg)
+* boundary selection/highlighting
+
+## Improvements
+* Transition between sequential and parallel calculation gets fluent
+
+## Bug Fixes
+* Residual chart was not displayed when a project is opened
+
+## Know Issues
+* Monitoring for a point that is not snapped on a surface is not working 
+* Batch Processing is not implemented yet
+* Rolling menus from Toolbar can be shown on the other display in multiple monitor configuration
+
+
+
 # 22.0.7
 
 ## Bug Fixes
