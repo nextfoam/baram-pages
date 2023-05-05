@@ -4,6 +4,31 @@ layout: page
 title: Release Notes
 ---
 
+# 23.1.0
+
+## New Features
+* Multi-Phase(VoF) problems can be simulated
+* Feature Edge view mode added
+* section initialization function (setFields) added
+* About page added
+
+## Improvements
+* Previous console log and residuals are now shown when a project is opened
+* Progress is displayed on reconstruction
+* Locale change goes effective as soon as configured
+* Finnish Translation updated thanks to Ricky-Tigg
+* M1 macOS supported
+
+## Bug Fixes
+* Global fvSolution was not created in multi-region case
+
+## Know Issues
+* Monitoring for a point that is not snapped on a surface is not working 
+* Batch Processing is not implemented yet
+* Rolling menus from Toolbar can be shown on the other display in multiple monitor configuration
+
+
+
 # 22.1.0
 
 ## New Features
