@@ -82,24 +82,24 @@ The final directory structure may look like following.
 ```
 
 ### Windows
-[solvers_windows_v1.5_20230723.zip](http://d3c6e16xufx1gb.cloudfront.net/solvers_windows_v1.5_20230723.zip)
+[solvers_windows_v1.5_20230723.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_v1.5_20230723.zip)
 
 
 ### Linux
-[solvers_linux_v1.5_20230723.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz)
+[solvers_linux_v1.5_20230723.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz)
 
 You can download the file on command line with cURL or wget command like following.
 
 ```commandline
-wget http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20230404.tar.xz
+wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20230404.tar.xz
 ```
 
 ```commandline
-curl -L http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20230404.tar.xz -o solvers_linux_20230404.tar.xz
+curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20230404.tar.xz -o solvers_linux_20230404.tar.xz
 ```
 
 ### macOS with Apple Silicon
-[solvers_macos_arm64_v1.5_20230724.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_macos_arm64_v1.5_20230724.tar.xz)
+[solvers_macos_arm64_v1.5_20230724.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_macos_arm64_v1.5_20230724.tar.xz)
 
 
 ## Compile Daemonizer ( only for Linux and macOS )
