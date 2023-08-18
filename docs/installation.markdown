@@ -8,7 +8,7 @@ title: Installation
 Binary installation package for 64-bit windows is prepared for convenience.  
 Download it from following link.
 
-[Download BARAM v23.1.0 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.1.0-setup.exe){: .btn .btn-purple .text-center .fs-5}
+[Download BARAM v23.2.0 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.2.0-setup.exe){: .btn .btn-purple .text-center .fs-5}
 
 # Installing BARAM from Source Code
 
@@ -22,7 +22,7 @@ Download it from following link.
 
 ## BARAM requires following installed software:
 
-* Python 3.9 or newer
+* Python 3.9.x
 * [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) 10.0 or newer ( Windows Only )
 * OpenMPI 4.0 or newer ( Linux, macOS )
 * GNU C Compiler or any other C Compiler ( Linux, macOS )
@@ -82,11 +82,11 @@ The final directory structure may look like following.
 ```
 
 ### Windows
-[solvers_windows_20230418.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_windows_20230418.tar.xz)
+[solvers_windows_v1.5_20230723.zip](http://d3c6e16xufx1gb.cloudfront.net/solvers_windows_v1.5_20230723.zip)
 
 
 ### Linux
-[solvers_linux_20230404.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20230404.tar.xz)
+[solvers_linux_v1.5_20230723.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz)
 
 You can download the file on command line with cURL or wget command like following.
 
@@ -98,8 +98,8 @@ wget http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20230404.tar.xz
 curl -L http://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20230404.tar.xz -o solvers_linux_20230404.tar.xz
 ```
 
-### macOS
-[solvers_mac_m1_20230404.zip](http://d3c6e16xufx1gb.cloudfront.net/solvers_mac_m1_20230404.zip)
+### macOS with Apple Silicon
+[solvers_macos_arm64_v1.5_20230724.tar.xz](http://d3c6e16xufx1gb.cloudfront.net/solvers_macos_arm64_v1.5_20230724.tar.xz)
 
 
 ## Compile Daemonizer ( only for Linux and macOS )

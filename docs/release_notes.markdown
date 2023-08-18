@@ -4,6 +4,26 @@ layout: page
 title: Release Notes
 ---
 
+# 23.2.0
+
+## New Features
+* "hostfile" setting is possible for the calculation on a cluster
+
+## Improvements
+* Last position and size of Window are saved for next launch
+
+## Bug Fixes
+* Parallel calculations for more than 20 boundaries are working 
+* mesh transformation is working for decomposed mesh
+* Fixed: Rolling menus from Toolbar displayed on the other display in multiple monitor configuration
+
+## Know Issues
+* Monitoring for a point that is not snapped on a surface is not working 
+* Batch Processing is not implemented yet
+* "save as" menu is not stable yet. Copy the project project manually
+
+
+
 # 23.1.0
 
 ## New Features
