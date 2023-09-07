@@ -76,4 +76,3 @@ C:\Program Files\ParaView X.XX.X\bin\paraview.exe
 </p>
 
 * Surface & Edge : 해석 모델의 Surface, Edge를 어떤 모드로 볼 것인지 설정한다.<br>
-각 모드에 대한 설명은 아래와 같다.<br>
