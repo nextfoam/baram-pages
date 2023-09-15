@@ -12,6 +12,7 @@ category: userguidelist
 </p>
 
 * Boundary Conditions에서 경계면에 해당하는 face의 조건을 바꿀 수 있다.<br>
+
 * BARAM v23에서 제공하는 Boundary Condition의 종류는 총 21가지이다. <br>
 
 <ul>

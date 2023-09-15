@@ -34,4 +34,4 @@ Materials에서 수정할 수 있는 물성치는 아래 그림과 같다.<br>
 <p align='Center'>
     <img src="https:nextfoam.co.kr/baramManual/userguide/9.1.png"><br>
     그림 9.1
-</p>    
+</p>
