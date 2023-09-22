@@ -5,15 +5,17 @@ category: tutorials
 ---
 
 # 09. Porous Jump 
- 
+
+* [격자 파일](https://drive.google.com/file/d/1c7RgueGF8kfG_pqA0tGbU_TbPpZ99tNG/view?usp=sharing)
+
 ## 1) 개요 
--본 예제는 계산영역 내부에 porous media 혹은 fan을 두꼐가 없는 경계면으로 모사할 수 있는 Porous Jump 경계조건 예제이다.<br>
+* 본 예제는 계산영역 내부에 porous media 혹은 fan을 두꼐가 없는 경계면으로 모사할 수 있는 Porous Jump 경계조건 예제이다.<br>
 
--육면체 덕트 내부에 사각형의 면을 만들고 Porous Jump 경계조건을 사용하여 압력이 증가되고 속도가 높아지는 문제이다. <br>
+* 육면체 덕트 내부에 사각형의 면을 만들고 Porous Jump 경계조건을 사용하여 압력이 증가되고 속도가 높아지는 문제이다. <br>
 
--격자는 주어진 OpenFoam 격자를 사용한다<br>
+* 격자는 주어진 OpenFOAM 격자를 사용한다.<br>
 
--그림 9.1에서 형상과 격자를 나타내었다.<br>
+* 그림 9.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
     <img src="https:nextfoam.co.kr/baramManual/porousJump/9.1.png"><br>
@@ -55,8 +57,8 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ● Species Model : Not Include<br>
 
 ## 2) 격자
-격자는 주어진 OpenFoam의 polyMesh 폴더를 활용한다. <br>
-상단 탭에서 File - Load Mesh - OpenFoam 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
+격자는 주어진 OpenFOAM의 polyMesh 폴더를 활용한다. <br>
+상단 탭에서 File - Load Mesh - OpenFOAM 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
 ## 3) 계산 조건
 ### (1) General

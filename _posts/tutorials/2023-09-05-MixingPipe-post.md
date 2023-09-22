@@ -5,13 +5,15 @@ category: tutorials
 ---
 
 # 01. Mixing Pipe 
- 
+
+* [격자 파일](https://drive.google.com/file/d/12CyYZO_FSl7Baz-MmbtXnBst02EGg5Tg/view?usp=sharing)
+
 ## 1) 개요 
--본 예제는 정상상태 비압축성 유동해석 예제이다.<br>
+* 본 예제는 정상상태 비압축성 유동해석 예제이다.<br>
 
--입구 2개, 출구 1개로 이루어진 원형 파이프 내부 유동의 혼합을 예측한다.<br>
+* 입구 2개, 출구 1개로 이루어진 원형 파이프 내부 유동의 혼합을 예측한다.<br>
 
--그림 1.1에서 형상과 격자를 나타내었다.<br>
+* 그림 1.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
     <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.1.png"><br>
@@ -44,7 +46,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 ## 2) 격자
  격자는 주어진 polyMesh 폴더를 활용한다. <br>
-상단 탭에서 File - Load Mesh - OpenFoam을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
+상단 탭에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
 <p align='center'>
     <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.2.png"><br>
@@ -52,7 +54,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 </p>
 
 **※ 주의 사항 : 여기서 polyMesh폴더를 선택한다.** <br>
-**BARAM은 OpenFoam 솔버를 기반으로 한다. 그리고 OpenFoam의 격자는 항상 polyMesh 폴더로 되어 있다.** <br>
+**BARAM은 OpenFOAM 솔버를 기반으로 한다. 그리고 OpenFOAM의 격자는 항상 polyMesh 폴더로 되어 있다.** <br>
 
 ## 3) 계산 조건
 ### (1) General
@@ -203,7 +205,7 @@ paraview를 초기 실행 시, 필요한 기능에 대한 설명은 다음과 �
 ●  Skip Zero Time : 초기값을 제외한 결과를 보여준다.<br>
 
 ●  Case Type : cpu 개수에 따른 설정이다.<br>
-```Reconstructed Case : 1core 계산 혹은 Parallel로 계산을 진행했지만 reconstructPar를 진행한 OpenFoam case``` <br>
+```Reconstructed Case : 1core 계산 혹은 Parallel로 계산을 진행했지만 reconstructPar를 진행한 OpenFOAM case``` <br>
 ```Decomposed Case : Parallel 계산을 진행한 case``` <br>
 
 ●  Mesh Regions : 보고 싶은 Internal mesh, 경계면 등을 설정할 수 있다.<br>

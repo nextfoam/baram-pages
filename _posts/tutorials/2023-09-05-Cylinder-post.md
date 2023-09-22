@@ -5,17 +5,19 @@ category: tutorials
 ---
 
 # 05. Cylinder 
- 
+
+* [격자 파일](https://drive.google.com/file/d/1KwU6-RFIv__nr8ovKGfNDX7g9ewrBJTy/view?usp=sharing)
+
 ## 1) 개요 
--본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>
+* 본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>
 
--직경이 1m인 2차원 실린더 주변의 박리 유동을 예측하는 문제이다. <br>
+* 직경이 1m인 2차원 실린더 주변의 박리 유동을 예측하는 문제이다. <br>
 
--유동은 층류이며 레이놀즈 수는 100이다.<br>
+* 유동은 층류이며 레이놀즈 수는 100이다.<br>
 
--격자는 Ansys Fluent .msh 형식의 파일을 사용한다.<br>
+* 격자는 Ansys Fluent .msh 형식의 파일을 사용한다.<br>
 
--OpenFoam에서 2차원 격자는 자동적으로 3차원 격자로 변환된다.<br>
+* OpenFOAM에서 2차원 격자는 자동적으로 3차원 격자로 변환된다.<br>
 이 때, z축으로 새로 생긴 앞뒤 단면은 frontAndBackPlanes이란 이름으로 정의되고, Empty 경계 조건으로 정의한다.<br>
 
 -그림 5.1에서 형상과 격자를 나타내었다.<br>

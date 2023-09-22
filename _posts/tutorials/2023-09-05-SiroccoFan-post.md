@@ -5,15 +5,17 @@ category: tutorials
 ---
 
 # 04. Sirocco Fan 
- 
+
+* [격자 파일](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
+
 ## 1) 개요 
--본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>
+* 본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>
 
--sirocco fan 내부에서 fan이 회전할 때 내부의 유동을 예측하는 문제이다. <br>
+* sirocco fan 내부에서 fan이 회전할 때 내부의 유동을 예측하는 문제이다. <br>
 
--격자는 Ansys Fluent의 .cas 형식의 파일을 변환하여 사용하였다.<br>
+* 격자는 Ansys Fluent의 .cas 형식의 파일을 변환하여 사용하였다.<br>
 
--그림 4.1에서 형상과 격자를 나타내었다.<br>
+* 그림 4.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
     <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.1.png"><br>

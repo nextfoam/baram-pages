@@ -6,13 +6,15 @@ category: tutorials
 
 
 # 02. Ahmed Body 
- 
+
+* [격자 파일](https://drive.google.com/file/d/1qVQqF6oavui3NCoAQ2QCpSmo824CVbx_/view?usp=sharing)
+
 ## 1) 개요 
--본 예제는 정상상태 비압축성 유동해석 예제이다.<br>
+* 본 예제는 정상상태 비압축성 유동해석 예제이다.<br>
 
--자동차 외부 유동을 해석하여 자동차의 공력 특성을 파악하는 예제이다. <br>
+* 자동차 외부 유동을 해석하여 자동차의 공력 특성을 파악하는 예제이다. <br>
 
--그림 2.1에서 형상과 격자를 나타내었다.<br>
+* 그림 2.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
     <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.1.1.png"><br>
@@ -50,7 +52,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 ## 2) 격자
  격자는 주어진 polyMesh 폴더를 활용한다. <br>
-상단 탭에서 File - Load Mesh - OpenFoam을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
+상단 탭에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
 ## 3) 계산 조건
 ### (1) General
