@@ -17,12 +17,12 @@ category: tutorials
 * 그림 2.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.1.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.1.1.png"><br>
     그림 2.1.1
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.1.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.1.2.png"><br>
     그림 2.1.2
 </p>
 
@@ -62,7 +62,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 난류 모델은 Realizable 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.2.png"><br>
     그림 2.2
 </p>
 
@@ -74,7 +74,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ```Viscosity : 1.8e-5𝑘𝑔/𝑚s```  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.3.png"><br>
     그림 2.3
 </p>
 
@@ -89,7 +89,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ```Turbulent Viscosity Ratio : 10```  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.4.png"><br>
     그림 2.4
 </p>
 
@@ -97,7 +97,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ```Total Pressure : 0 (Pa)```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.5.png"><br>
     그림 2.5
 </p>
 
@@ -105,7 +105,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ```Velocity : (40, 0, 0)```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.6.png"><br>
     그림 2.6
 </p>
 
@@ -113,7 +113,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ```Velocity Condition : No Slip```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.7.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.7.png"><br>
     그림 2.7
 </p>
 
@@ -135,14 +135,14 @@ Reference Values에 아래와 같이 입력한다.<br>
 ●  Velocity : 40 <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.8.png"><br>
     그림 2.8
 </p>
 
 이후 Monitors - Add - Forces를 선택하여 아래 그림과 같이 설정한다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.9.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.9.png"><br>
     그림 2.9
 </p>
 
@@ -167,12 +167,12 @@ Reference Values에 아래와 같이 입력한다.<br>
 ```Turbulence : 0.001``` <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.10.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.10.1.png"><br>
     그림 2.10.1
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.10.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.10.2.png"><br>
     그림 2.10.2
 </p>
 
@@ -193,7 +193,7 @@ Reference Values에 아래와 같이 입력한다.<br>
 ```Turbulent Viscosity Ratio : 10``` <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.11.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.11.png"><br>
     그림 2.11
 </p>
 
@@ -211,19 +211,19 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 ●  Number of Cores : 4  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.12.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.12.png"><br>
     그림 2.12
 </p>
 
 계산이 완료되면 아래와 같이 Residuals과 Force monitor의 그래프가 나오게 된다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.13.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.13.png"><br>
     그림 2.13
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.14.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.14.png"><br>
     그림 2.14
 </p>
 
@@ -235,7 +235,7 @@ paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
 solid color를 p_rgh로 변경하고 단면에서 압력 분포를 확인한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.15.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.15.png"><br>
     그림 2.15
 </p>
 
@@ -245,7 +245,7 @@ solid color를 p_rgh로 변경하고 단면에서 압력 분포를 확인한다.
 Stream Tracer 버튼을 클릭한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.16.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.16.png"><br>
     그림 2.16
 </p>
 
@@ -260,13 +260,13 @@ Stream Tracer 버튼을 클릭한다.<br>
 ●  Number of Points : 100 <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.17.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.17.png"><br>
     그림 2.17
 </p>
 
 아래 그림과 같은 streamline 분포가 나온다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/ahmedBody/2.18.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.18.png"><br>
     그림 2.18
 </p>

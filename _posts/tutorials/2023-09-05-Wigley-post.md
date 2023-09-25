@@ -16,7 +16,7 @@ category: tutorials
 -그림 22.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.1.png"><br>
     그림 22.1
 </p>
 
@@ -49,7 +49,7 @@ Time은 Steady, Gravity는 (0 0 -9.81)로 설정한다.<br>
 나머지는 Default로 설정한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.2.png"><br>
     그림 22.2
 </p>
 
@@ -58,7 +58,7 @@ Time은 Steady, Gravity는 (0 0 -9.81)로 설정한다.<br>
 난류 모델은 SST k-ω 모델을 사용한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.3.png"><br>
     그림 22.3
 </p>
 
@@ -76,7 +76,7 @@ Time은 Steady, Gravity는 (0 0 -9.81)로 설정한다.<br>
 ```Viscosity : 1.79e-5```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.4.png"><br>
     그림 22.4
 </p>
 
@@ -85,7 +85,7 @@ Cellzome에 2가지의 유체가 포함되어 있으므로 아래와 같이 Prim
 Surface Tension은 0으로 입력한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.5.png"><br>
     그림 22.5
 </p>
 
@@ -93,7 +93,7 @@ Surface Tension은 0으로 입력한다.<br>
 아래와 같이 경계면 타입과 경계값을 설정한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.6.png"><br>
     그림 22.6
 </p>
 
@@ -104,7 +104,7 @@ Surface Tension은 0으로 입력한다.<br>
 ```Volume Fraction (water) : 1```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.7.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.7.png"><br>
     그림 22.7
 </p>
 
@@ -114,7 +114,7 @@ Surface Tension은 0으로 입력한다.<br>
 ```Turbulent Viscosity Ratio : 10```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.8.png"><br>
     그림 22.8
 </p>
 
@@ -125,7 +125,7 @@ Surface Tension은 0으로 입력한다.<br>
 ```Total Pressure : 0```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.9.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.9.png"><br>
     그림 22.9
 </p>
 
@@ -136,7 +136,7 @@ Number of MULES iterations over the limiter를 제외한 모든 값은 전부 De
 ```Number of MULES iterations over the limiter : 10```
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.10.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.10.png"><br>
     그림 22.10
 </p>
 
@@ -148,7 +148,7 @@ Add-Force 선택후, 관찰하고자 하는 영역은 hull으로 선택하여준
 ```Boundaries : hull```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.11.png><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.11.png><br>
     그림 22.11
 </p>
 
@@ -164,7 +164,7 @@ Add-Force 선택후, 관찰하고자 하는 영역은 hull으로 선택하여준
 ```Volume Fraction - Liquid : 0```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.12.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.12.png"><br>
     그림 22.12
 </p>
 
@@ -177,7 +177,7 @@ Add-Force 선택후, 관찰하고자 하는 영역은 hull으로 선택하여준
 ```Volume Fraction - Liquid : 1```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/wigley/22.13.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.13.png"><br>
     그림 22.13
 </p>
 

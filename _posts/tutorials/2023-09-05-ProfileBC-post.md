@@ -14,7 +14,7 @@ category: tutorials
 -openfoam 튜토리얼에 있는 pitzDaily 격자를 사용한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.1.png"><br>
     그림 11.1
 </p>
 
@@ -60,7 +60,7 @@ Time advance는 Transient로 바꿔준다. <br>
 ```Thermal Conductivity : 0.0245W/mK```  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.2.png"><br>
     그림 11.2
 </p>
 
@@ -73,7 +73,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ***●  inlet : Velocity Inlet***<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.3.png"><br>
     그림 11.3
 </p>
 
@@ -84,7 +84,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```		    2 : 0.2 1.5```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.4.png"><br>
     그림 11.4
 </p>
 
@@ -94,7 +94,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```Piecewise Linear : file - temperatureHistory.csv 파일 선택```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.5.png"><br>
     그림 11.5
 </p>
 
@@ -122,7 +122,7 @@ Monitors를 클릭하면 세부설정상자가 나온다.<br>
 ```Surface : inlet```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.6.png"><br>
     그림 11.6
 </p>
 
@@ -133,7 +133,7 @@ Monitors를 클릭하면 세부설정상자가 나온다.<br>
 ```Surface : inlet```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.7.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.7.png"><br>
     그림 11.7
 </p>
 
@@ -160,7 +160,7 @@ Initial Contion은 초기값으로 x, y, z의 속도와 압력을 입력할 수 
 ```Turbulent Viscosity Ratio : 10``` <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.8.png"><br>
     그림 11.8
 </p>
 
@@ -175,7 +175,7 @@ Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설
 ```Set Interval (Every) : 0.1``` <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.9.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.9.png"><br>
     그림 11.9
 </p>
 
@@ -184,12 +184,12 @@ Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설
 Monitor 탭을 클릭하면 입구의 온도와 유량의 변화를 확인할 수 있다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.10.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.10.png"><br>
     그림 11.10
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/profileBC/10.11.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.11.png"><br>
     그림 11.11
 </p>
 

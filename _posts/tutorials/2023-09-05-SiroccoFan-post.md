@@ -18,7 +18,7 @@ category: tutorials
 * 그림 4.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png"><br>
     그림 4.1
 </p>
 
@@ -56,7 +56,7 @@ Time을 Transient로 변경한다.<br>
 나머지는 Default로 설정한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.2.png"><br>
     그림 4.2
 </p>
 
@@ -64,7 +64,7 @@ Time을 Transient로 변경한다.<br>
 난류 모델은 Realizable 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.3.png"><br>
     그림 4.3
 </p>
 
@@ -84,7 +84,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ```Rotation-Axis Direction : (0, 0, 1)```  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.4.png"><br>
     그림 4.4
 </p>
 
@@ -97,7 +97,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ```interface-stat : Internal Interface로 변경 후, Coupled Boundary는 interface-rotating 선택```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.5.png"><br>
     그림 4.5
 </p>
 
@@ -108,7 +108,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ```Rotation-Axis Direction : 0 0 1```  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.6.png"><br>
     그림 4.6
 </p>
 
@@ -116,7 +116,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ```Velocity Condition : Moving Wall```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.7.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.7.png"><br>
     그림 4.7
 </p>
 
@@ -124,7 +124,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ```Velocity Condition : No Slip```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.8.png"><br>
     그림 4.8
 </p>
 
@@ -136,7 +136,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ```Turbulent Viscosity Ratio : 10```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.9.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.9.png"><br>
     그림 4.9
 </p>
 
@@ -144,7 +144,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ```Total Pressure : 0 (Pa)```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.10.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.10.png"><br>
     그림 4.10
 </p>
 
@@ -156,7 +156,7 @@ Turbluent Intensity을 0.1 (%)로 변경하고 나머지는 Defalut 값을 사�
 하단에 Initializer 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.11.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.11.png"><br>
     그림 4.11
 </p>
 
@@ -174,13 +174,13 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 ●  Number of Cores : 4  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.12.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.12.png"><br>
     그림 4.12
 </p>
 
 아래 그림은 계산중인 Residuals 그래프이다.
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.13.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.13.png"><br>
     그림 4.13
 </p>
 
@@ -193,7 +193,7 @@ paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
 Case Type을 Decomposed Case로 변경한다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.14.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.14.png"><br>
     그림 4.14
 </p>
 
@@ -203,13 +203,13 @@ X-normal 버튼을 클릭 후, Origin을 다음과 같이 변경한다.<br>
 ●  Origin : 0 -0.0176187 0.084  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.15.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.15.png"><br>
     그림 4.15
 </p>
 
 아래 그림과 같이 fan 내부 압력 분포가 나오게 된다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/slidingMesh/4.16.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.16.png"><br>
     그림 4.16
 </p>

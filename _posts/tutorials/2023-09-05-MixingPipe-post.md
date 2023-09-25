@@ -16,7 +16,7 @@ category: tutorials
 * 그림 1.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.1.png"><br>
     그림 1.1
 </p>
 
@@ -49,7 +49,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 상단 탭에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.2.png"><br>
     그림 1.2
 </p>
 
@@ -61,7 +61,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 General에서는 Time, Gravity, Operating Pressure등을 설정할 수 있다. 본 예제에서는 Default로 설정한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.3.png"><br>
     그림 1.3
 </p>
 
@@ -70,7 +70,7 @@ Models에서는 turbulence, Energy, Incompressible/Compressible, Multiphase 등�
 본 예제에서는 Realizable 𝑘 − ε 모델을 사용한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.4.png"><br>
     그림 1.4
 </p>
 
@@ -78,7 +78,7 @@ Models에서는 turbulence, Energy, Incompressible/Compressible, Multiphase 등�
 Materials에서는 작동 유체의 물성치 등을 설정할 수 있다. 지금 예제에서는 공기의 물성치를 그대로 사용한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.5.png"><br>
     그림 1.5
 </p>
 
@@ -86,7 +86,7 @@ Materials에서는 작동 유체의 물성치 등을 설정할 수 있다. 지�
 Cell Zone Conditions에서는 Source, MRF, Sliding Mesh등을 설정할 수 있다. 본 예제에서는 Default로 설정한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.6.png"><br>
     그림 1.6
 </p>
 
@@ -137,12 +137,12 @@ Discretization, Relaxation factors, Convergence criteria, Pressure-Velocity coup
 ```Turbulence : 0.001``` <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.7.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.7.1.png"><br>
     그림 1.7.1
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.7.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.7.2.png"><br>
     그림 1.7.2
 </p>
 
@@ -158,7 +158,7 @@ Monitors 창에서 하단에 Add - Points를 클릭한다. <br>
 ```Coordinate : (0, 0, 1)``` <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.8.png"><br>
     그림 1.8
 </p>
 
@@ -180,7 +180,7 @@ Initial Contion은 초기값으로 x, y, z의 속도와 압력을 입력할 수 
 ```Turbulent Viscosity Ratio : 10``` <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.9.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.9.png"><br>
     그림 1.9
 </p>
 
@@ -196,7 +196,7 @@ BARAM에서는 paraview를 이용하여 후처리를 진행한다.<br>
 후처리 진행 시, paraivew 아이콘을 클릭하면 된다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.10.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.10.png"><br>
     그림 1.10
 </p>
 
@@ -213,7 +213,7 @@ paraview를 초기 실행 시, 필요한 기능에 대한 설명은 다음과 �
 ●  Cell Arrays : 보고 싶은 물리량을 설정할 수 있다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.11.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.11.png"><br>
     그림 1.11
 </p>
 
@@ -231,12 +231,12 @@ p_rgh는 상대 압력, p는 절대 압력을 나타낸다.<br>
 p_rgh를 선택하면 벽면에 걸리는 압력의 크기를 확인할 수 있다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.12.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.12.png"><br>
     그림 1.12
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.13.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.13.png"><br>
     그림 1.13
 </p>
 
@@ -248,11 +248,11 @@ slice 버튼을 클릭한다.
 그 후, 방향을 Z-normal로 바꾸고 pipe 내부 압력을 확인한다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.14.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.14.png"><br>
     그림 1.14
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixingPipe/1.15.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.15.png"><br>
     그림 1.15
 </p>

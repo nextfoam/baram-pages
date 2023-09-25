@@ -20,7 +20,7 @@ category: tutorials
 * 그림 3.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.1.png"><br>
     그림 3.1
 </p>
 
@@ -53,7 +53,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 상단 탭에서 File - Load Mesh - OpenFOAM 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.2.png"><br>
     그림 3.2
 </p>
 
@@ -65,7 +65,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 난류 모델은 Realizable 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.3.png"><br>
     그림 3.3
 </p>
 
@@ -78,7 +78,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ```Viscosity : 0.001𝑘𝑔/𝑚s```  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.4.png"><br>
     그림 3.4
 </p>
 
@@ -96,7 +96,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.5.png"><br>
     그림 3.5
 </p>
 
@@ -117,7 +117,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ```Velocity Condition : No Slip```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.6.png"><br>
     그림 3.6
 </p>
 
@@ -142,12 +142,12 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ```Turbulence : 0.001``` <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.7.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.7.1.png"><br>
     그림 3.7.1
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.7.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.7.2.png"><br>
     그림 3.7.2
 </p>
 
@@ -167,13 +167,13 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 ●  Number of Cores : 4  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.8.png"><br>
     그림 3.8
 </p>
 
 아래 그림은 Residuals 그래프이다.
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.9.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.9.png"><br>
     그림 3.9
 </p>
 
@@ -186,7 +186,7 @@ paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
 Case Type을 Decomposed Case로 변경한다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.10.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.10.png"><br>
     그림 3.10
 </p>
 
@@ -196,25 +196,25 @@ Z-normal 버튼을 클릭 후, Origin을 다음과 같이 변경한다.<br>
 ●  Origin : 0.5 0.5 0.9  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.11.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.11.png"><br>
     그림 3.11
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.12.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.12.png"><br>
     그림 3.12
 </p>
 
 이후, Glyph 버튼을 선택하고 아래와 같이 설정을 변경한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.13.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.13.png"><br>
     그림 3.13
 </p>
 
 아래 그림과 같이 용기 내부 벡터가 나오게 된다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/mixer/3.14.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.14.png"><br>
     그림 3.14
 </p>

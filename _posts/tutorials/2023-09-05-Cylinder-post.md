@@ -23,7 +23,7 @@ category: tutorials
 -그림 5.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.1.png"><br>
     그림 5.1
 </p>
 
@@ -61,7 +61,7 @@ Time을 Transient로 변경한다.<br>
 나머지는 Default로 설정한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.2.png"><br>
     그림 5.2
 </p>
 
@@ -69,7 +69,7 @@ Time을 Transient로 변경한다.<br>
 난류 모델은 Laminar 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.3.png"><br>
     그림 5.3
 </p>
 
@@ -82,7 +82,7 @@ Time을 Transient로 변경한다.<br>
 ●  점성 계수 : 0.01𝑘𝑔/𝑚s <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.4.png"><br>
     그림 5.4
 </p>
 
@@ -96,7 +96,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```Velocity Condition : No Slip```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.5.png"><br>
     그림 5.5
 </p>
 
@@ -106,7 +106,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```Total Pressure : 0 (Pa)```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.6.png"><br>
     그림 5.6
 </p>
 
@@ -116,7 +116,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```Velocity Magnitude : 1 (m/s)```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.7.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.7.png"><br>
     그림 5.7
 </p>
 
@@ -139,7 +139,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ●  Reference Pressure Location : (-9, 0, 0)  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.8.png"><br>
     그림 5.8
 </p>
 
@@ -157,7 +157,7 @@ Numerical Conditions은 다음과 같이 설정한다.<br>
 ●  나머지는 Default 조건을 사용한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.9.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.9.png"><br>
     그림 5.9
 </p>
 
@@ -179,7 +179,7 @@ Force Monitoring은 아래와 같이 설정한다.<br>
 ●  Boundaries : cylinder<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.10.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.1.png"><br>
     그림 5.10.1
 </p>
 
@@ -194,14 +194,14 @@ Point Monitoring은 아래와 같이 설정한다.<br>
 ●  Coordinate : 1 0 0<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.10.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.2.png"><br>
     그림 5.10.2
 </p>
 
 같은 방식으로 동일한 지점의 Velocity 모니터링도 설정한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.10.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.3.png"><br>
     그림 5.10.3
 </p>
 
@@ -210,7 +210,7 @@ Point Monitoring은 아래와 같이 설정한다.<br>
 이외 값들은 Default값을 사용한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.11.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.11.png"><br>
     그림 5.11
 </p>
 
@@ -228,21 +228,21 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 ●  Number of Cores : 4  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.12.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.12.png"><br>
     그림 5.12
 </p>
 
 계산 중 모습
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.13.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.13.1.png"><br>
     그림 5.13.1
 </p>
 
 모니터링되는 값들의 모습
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.13.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.13.2.png"><br>
     그림 5.13.2
 </p>
 
@@ -255,19 +255,19 @@ paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
 Case Type을 Decomposed Case로 변경한다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.14.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.14.png"><br>
     그림 5.14
 </p>
 
 상단 툴바의 Solid Color를 U 혹은 p_rgh로 변경하고 play 버튼을 클릭한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.15.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.15.png"><br>
     그림 5.15
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.16.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.16.png"><br>
     그림 5.16
 </p>
 
@@ -276,6 +276,6 @@ BARAM의 하단 탭에서 Monitor를 클릭한다.<br>
 Drag, Lift Coefficient를 확인한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/cylinder/5.17.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.17.png"><br>
     그림 5.17
 </p>

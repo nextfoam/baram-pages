@@ -18,7 +18,7 @@ category: tutorials
 * 그림 9.1에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.1.png"><br>
     그림 9.1
 </p>
 
@@ -40,7 +40,7 @@ category: tutorials
 Porous Jump를 계산하는 porousBafflePressure 경계조건은 아래 식을 사용한다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.2.png"><br>
     그림 9.2
 </p>
 
@@ -90,7 +90,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```Turbulent Viscosity Ratio : 10 (m)```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.3.png"><br>
     그림 9.3
 </p>
 
@@ -98,7 +98,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```Total Pressure : 0 (Pa)```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.4.png"><br>
     그림 9.4
 </p>
 
@@ -109,7 +109,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```Porous Media Thickness : 0.05```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.5.png"><br>
     그림 9.5
 </p>
 
@@ -128,12 +128,12 @@ Numerical Conditions은 다음과 같이 설정한다.<br>
 ```Turbulence : 0.001```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.6.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.6.1.png"><br>
     그림 9.6.1
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.6.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.6.2.png"><br>
     그림 9.6.2
 </p>
 
@@ -148,7 +148,7 @@ Numerical Conditions은 다음과 같이 설정한다.<br>
 ```Turbulent Viscosity Ratio : 10```<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.7.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.7.png"><br>
     그림 9.7
 </p>
 
@@ -164,14 +164,14 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 ●  Number of Cores : 1  <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.8.png"><br>
     그림 9.8
 </p>
 
 계산이 완료된 모습
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.9.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.9.png"><br>
     그림 9.9
 </p>
 
@@ -184,19 +184,19 @@ paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
 Case Type을 Reconstructed Case로 변경한다.
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.10.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.10.png"><br>
     그림 9.10
 </p>
 
 상단 툴바의 Slice 아이콘을 선택하고 Z Normal 버튼을 클릭한다.<br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.11.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.11.png"><br>
     그림 9.11
 </p>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/porousJump/9.12.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.12.png"><br>
     그림 9.12
 </p>
 
