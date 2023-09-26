@@ -24,7 +24,7 @@ category: tutorials
 
 ●  난류 모델 : 𝑘 − ε <br>
 
-●  밀도 : 1.225𝑘𝑔/𝑚^3 <br>
+●  밀도 : 1.225𝑘𝑔/㎥ <br>
 
 ●  점성 계수 : 1.79e-5𝑘𝑔/𝑚s <br>
 
@@ -38,7 +38,7 @@ category: tutorials
 
 ## 2) 격자
 격자는 주어진 OpenFoam의 polyMesh 폴더를 활용한다. <br>
-상단 탭에서 File - Load Mesh - OpenFoam 순서대로 클릭한다. <br>
+상단 탭에서 File - Load Mesh - OpenFOAM 순서대로 클릭한다. <br>
 msh_stl/profileBC 폴더의 polyMesh 폴더를 선택한다. <br>
 
 ## 3) 계산 조건
@@ -80,8 +80,8 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```Velocity Specification Method : Magnitude, Normal to Boundary```<br>
 ```Velocity Profile Type : Temporal Distribution```<br>
 ```Piecewise Linear : 0 : 0   1```<br>
-```		    1 : 0.1 2```<br>
-```		    2 : 0.2 1.5```<br>
+```		              1 : 0.1 2```<br>
+```		              2 : 0.2 1.5```<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.4.png"><br>
@@ -205,3 +205,21 @@ x1, y1, z1, T1 <br>
 x2, y2, z2, T2 <br>
 ... <br>
 x1, y1, z1, Tn <br>
+
+
+## 4) 후처리
+Paraview 아이콘을 눌러 Paraview를 실행한다.
+상단의 Solid Color를 T로 변경한다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.12.png"><br>
+    그림 11.12
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.13.png"><br>
+    그림 11.13
+</p>
+
+이후, Set Range를 눌러 온도 범위를 340 - 350K으로 조정한다.
+그리고 상단의 Play 버튼을 눌러 시간에 따른 온도 변화를 확인한다.

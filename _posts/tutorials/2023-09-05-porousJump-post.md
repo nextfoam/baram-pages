@@ -201,3 +201,8 @@ Case Type을 Reconstructed Case로 변경한다.
 </p>
 
 이후, 상단의 Solid Color를 p_rgh로 변경하여 덕트 내부 압력 분포를 확인한다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.13.png"><br>
+    그림 9.13
+</p>
