@@ -7,7 +7,7 @@ category: userguidelist
 # 6. Tool bar
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/6.1.1.png"><br>
+    <img src="https://nextfoam.co.kr/baramManual/userguide/6.1.1.png"><br>
     그림 6.1.1
 </p>
 
