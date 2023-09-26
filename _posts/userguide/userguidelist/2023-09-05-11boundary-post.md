@@ -7,7 +7,7 @@ category: userguidelist
 # 11. Boundary Condtions
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/11.1.png"> <img src="https:nextfoam.co.kr/baramManual/userguide/11.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.1.png"> <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.png"><br>
     그림 11.1
 </p>
 

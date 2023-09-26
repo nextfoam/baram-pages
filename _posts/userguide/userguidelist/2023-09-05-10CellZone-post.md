@@ -7,7 +7,7 @@ category: userguidelist
 # 10. Cell Zone Condtions
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/10.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/10.1.png"><br>
     그림 10.1
 </p>
 

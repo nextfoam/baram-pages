@@ -8,7 +8,7 @@ category: Inlet
 # 06. FarField Riemann
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/11.7.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.7.png"><br>
     그림 11.7
 </p>
 

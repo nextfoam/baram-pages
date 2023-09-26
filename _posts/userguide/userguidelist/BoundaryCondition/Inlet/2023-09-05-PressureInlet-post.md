@@ -7,7 +7,7 @@ category: Inlet
 # 03. Pressure Inlet
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/11.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.4.png"><br>
     그림 11.4
 </p>
 

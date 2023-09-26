@@ -7,7 +7,7 @@ category: userguidelist
 # 14. Monitors
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/14.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/14.1.png"><br>
     그림 14.1
 </p>
 
@@ -20,6 +20,6 @@ category: userguidelist
 * 계산이 시작되면 추가된 항목은 Monitor 항목에 그려진다.<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/14.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/14.2.png"><br>
     그림 14.2
 </p>

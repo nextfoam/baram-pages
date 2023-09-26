@@ -7,7 +7,7 @@ category: userguidelist
 # 15. Initialization
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/15.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/15.1.png"><br>
     그림 15.1
 </p>
 
@@ -18,7 +18,7 @@ category: userguidelist
 * Advanced 탭에서 원하는 영역의 Initial 값을 따로 설정할 수 있다.<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/15.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/15.2.png"><br>
     그림 15.2
 </p>
 

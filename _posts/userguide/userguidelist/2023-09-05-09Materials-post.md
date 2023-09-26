@@ -32,6 +32,6 @@ BARAM v23에서 기본적으로 제공하는 Materials는 다음과 같다.<br><
 Materials에서 수정할 수 있는 물성치는 아래 그림과 같다.<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/9.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/9.1.png"><br>
     그림 9.1
 </p>

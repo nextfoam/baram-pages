@@ -7,7 +7,7 @@ category: Inlet
 # 04. ABL Inlet
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/11.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.5.png"><br>
     그림 11.5
 </p>
 
@@ -20,27 +20,27 @@ category: Inlet
 * D.M. Hargreaves and N.G. Wright, On the use of the k-epsilon model in commercial CFD software to model the neutral atmospheric boundary layer<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 11.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 11.1.png"><br>
     식 11.1
 </p>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 11.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 11.6.png"><br>
     식 11.2
 </p>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 11.7.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 11.7.png"><br>
     식 11.3
 </p>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 11.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 11.4.png"><br>
     식 11.4
 </p>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 11.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 11.5.png"><br>
     식 11.5
 </p>
 

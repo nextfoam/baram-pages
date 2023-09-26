@@ -7,7 +7,7 @@ category: Misc
 # 02. Interface
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/11.16.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.16.png"><br>
     그림 11.16
 </p>
 

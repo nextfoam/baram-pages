@@ -7,7 +7,7 @@ category: CellZoneConditions
 # 06. Fixed Values
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/10.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/10.8.png"><br>
     그림 10.8
 </p>
 

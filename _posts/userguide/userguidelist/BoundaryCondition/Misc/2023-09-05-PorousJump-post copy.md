@@ -7,7 +7,7 @@ category: Misc
 # 06. Fan
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/11.18.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.18.png"><br>
     그림 11.18
 </p>
 

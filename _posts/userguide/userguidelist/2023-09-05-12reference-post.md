@@ -7,7 +7,7 @@ category: userguidelist
 ## 12. Reference Values
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/12.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/12.1.png"><br>
     그림 12.1
 </p>
 

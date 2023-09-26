@@ -7,21 +7,21 @@ category: userguidelistMenu
 # 5-5 Settings
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/5.5.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/5.5.1.png"><br>
     그림 5.5.1
 </p>
 
 Settings의 각 기능에 대한 설명은 다음과 같다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/5.5.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/5.5.2.png"><br>
     그림 5.5.2
 </p>
 
 * Scale : UI 해상도를 조절할 수 있다. <br>
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/5.5.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/5.5.3.png"><br>
     그림 5.5.3
 </p>
 

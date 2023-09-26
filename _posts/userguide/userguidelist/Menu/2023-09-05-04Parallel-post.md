@@ -7,7 +7,7 @@ category: userguidelistMenu
 # 5-4 Parallel
 
 <p align='center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/5.4.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/5.4.1.png"><br>
     그림 5.4.1
 </p>
 

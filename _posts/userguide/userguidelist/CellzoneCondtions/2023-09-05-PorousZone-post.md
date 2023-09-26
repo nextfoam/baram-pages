@@ -7,7 +7,7 @@ category: CellZoneConditions
 # 02. Porous Zone
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/10.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/10.3.png"><br>
     그림 10.3
 </p>
 
@@ -15,7 +15,7 @@ category: CellZoneConditions
 * Porous Model로는 Darcy-Forchheimer와 Power Law 두 가지가 있다.<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 10.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 10.1.png"><br>
     식 10.1
 </p>
 
@@ -27,12 +27,12 @@ category: CellZoneConditions
 &ensp; - U : 유체의 속도<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/10.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/10.4.png"><br>
     그림 10.4
 </p>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 10.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 10.2.png"><br>
     식 10.2
 </p>
 

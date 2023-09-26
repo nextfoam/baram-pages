@@ -7,7 +7,7 @@ category: Wall
 # 02. Thermo-Coupled Wall
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/11.15.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.15.png"><br>
     그림 11.15
 </p>
 

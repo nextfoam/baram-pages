@@ -8,7 +8,7 @@ category: Inlet
 # 07. Subsonic Inflow
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/11.8.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.8.png"><br>
     그림 11.8
 </p>
 

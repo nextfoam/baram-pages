@@ -10,7 +10,7 @@ category: userguidelist
 
 * BARAM v23은 비압축성, 압축성 유동과 열전달 해석을 위한 전산유체역학 (CFD) 프로그램으로 Open Source인 OpenFOAM v2212 기반으로 개발되었다. (2023년 9월 06일 기준)<br>
 
-* 비압축성 유동과 열전달은 정확성, 안정성 향상을 위해 (주)넥스트폼이 개발한 솔버, 유틸리티, 라이브러리, API등의 패키지인 nextFoam을 사용한다.<br>
+* 비압축성 유동과 열전달은 정확성, 안정성 향상을 위해 (주)넥스트폼이 개발한 솔버, 유틸리티, 라이브러리등을 사용한다.<br>
 
 * 압축성 유동은 (주)넥스트폼이 개발한 밀도 기반 솔버인 (Density Based Solver) TSLAeroFoam을 사용한다.<br>
 
@@ -21,7 +21,7 @@ category: userguidelist
  &ensp; - 해석 모듈 : BARAM<br>
  &ensp; - 격자 생성 모듈 : BARAM-snappy<br>
 
-* 사용자 환경은 다음 프로그램을 이용하여 개발되었다 : Python, gtk, vtk<br>
+* 사용자 환경은 다음 프로그램을 이용하여 개발되었다 : Python, vtk<br>
 
 * (주)넥스트폼이 개발하여 GNU GPL 라이센스로 공개한다.<br>
 

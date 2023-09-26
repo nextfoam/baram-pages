@@ -7,7 +7,7 @@ category: Misc
 # 05. Porous Jump
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/11.17.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/11.17.png"><br>
     그림 11.17
 </p>
 
@@ -20,7 +20,7 @@ category: Misc
 * 압력 변화는 식 11.6과 같이 계산된다.<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 11.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 11.6.png"><br>
     식 11.6
 </p>
 

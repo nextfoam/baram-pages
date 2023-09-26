@@ -10,19 +10,19 @@ category: CellZoneConditions
 * BARAM v23에서는 Froude's Method와 Variable-Scaling Method을 사용할 수 있다.<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/10.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/10.6.png"><br>
     그림 10.6
 </p>
 
 * 아래는 Froude's Method의 수식이다.<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 10.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 10.3.png"><br>
     식 10.3
 </p>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 10.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 10.5.png"><br>
 </p>
 
 &ensp; - ρ : 유체의 밀도<br>
@@ -35,12 +35,12 @@ category: CellZoneConditions
 * 아래는 Variable-Scaling Method의 수식이다.<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 10.7.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 10.7.png"><br>
     식 10.4
 </p>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/식 10.6.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/식 10.6.png"><br>
 </p>
 
 &ensp; - ρ : 유체의 밀도<br>

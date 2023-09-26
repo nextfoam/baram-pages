@@ -7,7 +7,7 @@ category: CellZoneConditions
 # 03. Sliding Mesh
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/10.5.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/10.5.png"><br>
     그림 10.5
 </p>
 

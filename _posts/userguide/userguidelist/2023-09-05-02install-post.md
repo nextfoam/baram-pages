@@ -19,7 +19,3 @@ category: userguidelist
     python main.py
 ```
 위 명령어를 입력하여 실행하면 된다. <br>
-
-* 터미널에서 실행 시, 명령어는 다음과 같다. <br>
-    &ensp; - baram : 해석 모듈<br>
-    &ensp; - baram-snappy : 격자 생성 모듈<br>
