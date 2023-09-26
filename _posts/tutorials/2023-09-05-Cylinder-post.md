@@ -29,7 +29,7 @@ category: tutorials
 
 계산 조건은 다음과 같다. <br>
 
-●  solver : pimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버) <br>
+●  solver : buoyantpimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버) <br>
 
 ●  난류 모델 : laminar<br>
 

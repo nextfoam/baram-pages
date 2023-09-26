@@ -22,7 +22,7 @@ category: tutorials
 
 계산 조건은 다음과 같다. <br>
 
-●  solver : InterNFoam <br>
+●  solver : interFoam <br>
 
 ●  난류모델 : SST k-ω <br>
 

@@ -20,7 +20,7 @@ category: tutorials
 
 계산 조건은 다음과 같다. <br>
 
-●  solver : buoyantSimpleNFoam, buoyantPimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석자) <br>
+●  solver : buoyantPimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석자) <br>
 
 ●  난류 모델 : 𝑘 − ε <br>
 
