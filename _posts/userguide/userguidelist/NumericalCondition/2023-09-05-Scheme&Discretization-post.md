@@ -9,7 +9,7 @@ category: NumericalCondition
 * 해석에 사용되는 Scheme과 Discretization은 다음과 같다. <br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/13.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/13.1.png"><br>
     그림 13.1
 </p>
 

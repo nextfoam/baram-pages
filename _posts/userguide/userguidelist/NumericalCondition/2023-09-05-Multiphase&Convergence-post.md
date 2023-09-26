@@ -9,7 +9,7 @@ category: NumericalCondition
 * Multiphase의 수치 정보와 Convergence Criteria에 대한 정보는 다음과 같다. <br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/13.3.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/13.3.png"><br>
     그림 13.3
 </p>
 
@@ -30,7 +30,7 @@ https://www.youtube.com/watch?v=-fU7kTIoIb4<br>
 &ensp; - Convergence Criteria : 각 필드의 수렴 조건을 나타낸다.<br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/13.4.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/13.4.png"><br>
     그림 13.4
 </p>
 

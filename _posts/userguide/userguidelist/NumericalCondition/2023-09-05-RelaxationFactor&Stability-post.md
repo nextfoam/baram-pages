@@ -9,7 +9,7 @@ category: NumericalCondition
 * Under-Relxation Factors, Improve Stability와 Max Iterations pre Time Step에 대한 설명은 다음과 같다. <br>
 
 <p align='Center'>
-    <img src="https:nextfoam.co.kr/baramManual/userguide/13.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/userguide/13.2.png"><br>
     그림 13.2
 </p>
 
