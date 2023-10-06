@@ -25,3 +25,12 @@ Soon We will update as English version.<br>
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+<h1>BARAM-Snappy Guides</h1>
+
+<ul>
+  {% assign sorted_posts = site.categories.meshguide | sort: 'title' %}
+  {% for post in sorted_posts %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
