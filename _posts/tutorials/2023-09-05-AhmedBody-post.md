@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 02. Ahmed Body
+title: Ahmed Body
 category: tutorials
 ---
 

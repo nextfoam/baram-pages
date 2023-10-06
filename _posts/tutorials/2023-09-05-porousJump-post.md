@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 07. Porous Jump
+title: Porous Jump
 category: tutorials
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 01. Mixing Pipe
+title: Mixing Pipe
 category: tutorials
 ---
 

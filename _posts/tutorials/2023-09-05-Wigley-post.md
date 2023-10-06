@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 11. Wigley Hull
+title: Wigley Hull
 category: tutorials
 ---
 

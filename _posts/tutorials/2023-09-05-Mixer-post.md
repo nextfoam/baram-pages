@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 03. Mixer
+title: Mixer
 category: tutorials
 ---
 

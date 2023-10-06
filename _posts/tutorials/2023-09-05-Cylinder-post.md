@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 05. Cylinder
+title: Cylinder
 category: tutorials
 ---
 
