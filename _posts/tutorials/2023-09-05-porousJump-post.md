@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 09. Porous Jump
+title: 07. Porous Jump
 category: tutorials
 ---
 
-# 09. Porous Jump 
+# Porous Jump 
 
 * [격자 파일](https://drive.google.com/file/d/1c7RgueGF8kfG_pqA0tGbU_TbPpZ99tNG/view?usp=sharing)
 
@@ -15,11 +15,10 @@ category: tutorials
 
 * 격자는 주어진 OpenFOAM 격자를 사용한다.<br>
 
-* 그림 9.1에서 형상과 격자를 나타내었다.<br>
+* 아래 그림에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.1.png"><br>
-    그림 9.1
 </p>
 
 계산 조건은 다음과 같다. <br>
@@ -41,7 +40,6 @@ Porous Jump를 계산하는 porousBafflePressure 경계조건은 아래 식을 �
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.2.png"><br>
-    그림 9.2
 </p>
 
 BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
@@ -91,7 +89,6 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.3.png"><br>
-    그림 9.3
 </p>
 
 ***●  outlet : Pressure Outlet***<br>
@@ -99,7 +96,6 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.4.png"><br>
-    그림 9.4
 </p>
 
 ***●  plane_master : Porous Jump***<br>
@@ -110,7 +106,6 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.5.png"><br>
-    그림 9.5
 </p>
 
 ### (6) Numerical Conditions
@@ -129,12 +124,10 @@ Numerical Conditions은 다음과 같이 설정한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.6.1.png"><br>
-    그림 9.6.1
 </p>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.6.2.png"><br>
-    그림 9.6.2
 </p>
 
 ### (7) Initialization
@@ -149,7 +142,6 @@ Numerical Conditions은 다음과 같이 설정한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.7.png"><br>
-    그림 9.7
 </p>
 
 ### (8) Run
@@ -165,14 +157,12 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.8.png"><br>
-    그림 9.8
 </p>
 
 계산이 완료된 모습
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.9.png"><br>
-    그림 9.9
 </p>
 
 ## 4) 후처리
@@ -185,24 +175,20 @@ Case Type을 Reconstructed Case로 변경한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.10.png"><br>
-    그림 9.10
 </p>
 
 상단 툴바의 Slice 아이콘을 선택하고 Z Normal 버튼을 클릭한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.11.png"><br>
-    그림 9.11
 </p>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.12.png"><br>
-    그림 9.12
 </p>
 
 이후, 상단의 Solid Color를 p_rgh로 변경하여 덕트 내부 압력 분포를 확인한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousJump/9.13.png"><br>
-    그림 9.13
 </p>

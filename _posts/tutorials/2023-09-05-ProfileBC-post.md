@@ -1,21 +1,20 @@
 ---
 layout: post
-title: 11. Profile Boundary Condition
+title: 09. Profile Boundary Condition
 category: tutorials
 ---
 
-# 11. Profile Boundary Condition
+# Profile Boundary Condition
 
 * [격자 파일](https://drive.google.com/file/d/1pzp6DXomC0cyaxn0xzlpcneShrEkRW68/view?usp=sharing)
 
 ## 1) 개요
--본 예제는 시간에 따라 입구의 속도와 온도가 변하는 경계조건과, 주어진 데이터를 사용하여 경계면에서 속도와 온도의 분포를 설정하는 예제이다.<br>
+* 본 예제는 시간에 따라 입구의 속도와 온도가 변하는 경계조건과, 주어진 데이터를 사용하여 경계면에서 속도와 온도의 분포를 설정하는 예제이다.<br>
 
--openfoam 튜토리얼에 있는 pitzDaily 격자를 사용한다.<br>
+* OpenFOAM 튜토리얼에 있는 pitzDaily 격자를 사용한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.1.png"><br>
-    그림 11.1
 </p>
 
 계산 조건은 다음과 같다. <br>
@@ -37,9 +36,8 @@ category: tutorials
 ●  Species Model : Not include <br>
 
 ## 2) 격자
-격자는 주어진 OpenFoam의 polyMesh 폴더를 활용한다. <br>
+격자는 주어진 OpenFOAM의 polyMesh 폴더를 활용한다. <br>
 상단 탭에서 File - Load Mesh - OpenFOAM 순서대로 클릭한다. <br>
-msh_stl/profileBC 폴더의 polyMesh 폴더를 선택한다. <br>
 
 ## 3) 계산 조건
 ### (1) General
@@ -61,7 +59,6 @@ Time advance는 Transient로 바꿔준다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.2.png"><br>
-    그림 11.2
 </p>
 
 ### (4) Cell Zone Conditions
@@ -74,7 +71,6 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.3.png"><br>
-    그림 11.3
 </p>
 
 ```Velocity Specification Method : Magnitude, Normal to Boundary```<br>
@@ -85,7 +81,6 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.4.png"><br>
-    그림 11.4
 </p>
 
 ```Turbulent Intensity : 1 (%)```<br>
@@ -95,7 +90,6 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.5.png"><br>
-    그림 11.5
 </p>
 
 ***●  outlet : Pressure Outlet***<br>
@@ -123,7 +117,6 @@ Monitors를 클릭하면 세부설정상자가 나온다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.6.png"><br>
-    그림 11.6
 </p>
 
 
@@ -134,7 +127,6 @@ Monitors를 클릭하면 세부설정상자가 나온다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.7.png"><br>
-    그림 11.7
 </p>
 
 ### (8) Initialization
@@ -161,7 +153,6 @@ Initial Contion은 초기값으로 x, y, z의 속도와 압력을 입력할 수 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.8.png"><br>
-    그림 11.8
 </p>
 
 값을 입력하고 하단에 Initializer 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
@@ -185,12 +176,10 @@ Monitor 탭을 클릭하면 입구의 온도와 유량의 변화를 확인할 �
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.10.png"><br>
-    그림 11.10
 </p>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.11.png"><br>
-    그림 11.11
 </p>
 
 ### (10) 속도와 온도의 공간 분포 경계조건 적용
@@ -213,12 +202,10 @@ Paraview 아이콘을 눌러 Paraview를 실행한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.12.png"><br>
-    그림 11.12
 </p>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.13.png"><br>
-    그림 11.13
 </p>
 
 이후, Set Range를 눌러 온도 범위를 340 - 350K으로 조정한다.

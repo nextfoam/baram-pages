@@ -4,7 +4,7 @@ title: 04. Sirocco Fan
 category: tutorials
 ---
 
-# 04. Sirocco Fan 
+# Sirocco Fan 
 
 * [격자 파일](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
 

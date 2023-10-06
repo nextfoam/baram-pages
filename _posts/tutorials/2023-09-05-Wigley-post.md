@@ -1,23 +1,22 @@
 ---
 layout: post
-title: 22. Wigley Hull
+title: 11. Wigley Hull
 category: tutorials
 ---
 
-# 22. Wigley Hull
+# Wigley Hull
 
 * [격자 파일](https://drive.google.com/file/d/1kXbwOAFXs4Dn-U9USRq2yWB_7Ofk-hcf/view?usp=sharing)
 
 ## 1) 개요 
--본 예제는 VOF(Volume of Fluid) 기법을 사용하여 선박 주위의 자유수면을 해석하는 예제이다.<br>
+* 본 예제는 VOF(Volume of Fluid) 기법을 사용하여 선박 주위의 자유수면을 해석하는 예제이다.<br>
 
--자유수면 계산을 위해 interNFoam 솔버를 사용하고, LTS(Local Time Step)기법을 사용하는 정상상태 계산이다.<br>
+* 자유수면 계산을 위해 interNFoam 솔버를 사용하고, LTS(Local Time Step)기법을 사용하는 정상상태 계산이다.<br>
 
--그림 22.1에서 형상과 격자를 나타내었다.<br>
+* 아래 그림에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.1.png"><br>
-    그림 22.1
 </p>
 
 계산 조건은 다음과 같다. <br>
@@ -50,7 +49,6 @@ Time은 Steady, Gravity는 (0 0 -9.81)로 설정한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.2.png"><br>
-    그림 22.2
 </p>
 
 ### (2) Models
@@ -59,7 +57,6 @@ Time은 Steady, Gravity는 (0 0 -9.81)로 설정한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.3.png"><br>
-    그림 22.3
 </p>
 
 ### (3) Materials
@@ -77,7 +74,6 @@ Time은 Steady, Gravity는 (0 0 -9.81)로 설정한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.4.png"><br>
-    그림 22.4
 </p>
 
 ### (4) Cell Zone Conditions
@@ -86,7 +82,6 @@ Surface Tension은 0으로 입력한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.5.png"><br>
-    그림 22.5
 </p>
 
 ### (5) Boundary Conditions
@@ -94,7 +89,6 @@ Surface Tension은 0으로 입력한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.6.png"><br>
-    그림 22.6
 </p>
 
 ***●  inlet : Velocity inlet***<br>
@@ -105,7 +99,6 @@ Surface Tension은 0으로 입력한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.7.png"><br>
-    그림 22.7
 </p>
 
 ***●  outlet : Open Channel Outlet***<br>
@@ -115,7 +108,6 @@ Surface Tension은 0으로 입력한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.8.png"><br>
-    그림 22.8
 </p>
 
 ***●  atmosphere : pressure Outlet***<br>
@@ -126,7 +118,6 @@ Surface Tension은 0으로 입력한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.9.png"><br>
-    그림 22.9
 </p>
 
 ***●  hull : adiabaticWall***<br>
@@ -137,7 +128,6 @@ Number of MULES iterations over the limiter를 제외한 모든 값은 전부 De
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.10.png"><br>
-    그림 22.10
 </p>
 
 ### (7) Monitoring
@@ -148,8 +138,7 @@ Add-Force 선택후, 관찰하고자 하는 영역은 hull으로 선택하여준
 ```Boundaries : hull```<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.11.png><br>
-    그림 22.11
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.11.png"><br>
 </p>
 
 ### (8) Initialization
@@ -165,7 +154,6 @@ Add-Force 선택후, 관찰하고자 하는 영역은 hull으로 선택하여준
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.12.png"><br>
-    그림 22.12
 </p>
 
 지정 영역(Water)의 초기조건을 주기위해 Initialization-Advanced-Section-Create 를 클릭한 후 Section Type : Hex 를 선택한다.<br>
@@ -178,7 +166,6 @@ Add-Force 선택후, 관찰하고자 하는 영역은 hull으로 선택하여준
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/wigley/22.13.png"><br>
-    그림 22.13
 </p>
 
 하단의 Initialize 버튼을 클릭한 후, File - Save 버튼을 클릭하여 Case파일을 저장한다.<br>

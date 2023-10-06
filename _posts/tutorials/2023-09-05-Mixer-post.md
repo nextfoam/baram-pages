@@ -4,7 +4,7 @@ title: 03. Mixer
 category: tutorials
 ---
 
-# 03. Mixer 
+# Mixer 
 
 * [격자 파일](https://drive.google.com/file/d/1Bop5tSUOdzj3twkmJtvLKBqwX8sAW2Dk/view?usp=sharing)
 
@@ -17,11 +17,10 @@ category: tutorials
 
 * 임펠러 개수는 4개인데 회전주기조건을 사용해서 4분의 1만 모델링하였다.<br>
 
-* 그림 3.1에서 형상과 격자를 나타내었다.<br>
+* 아래 그림에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.1.png"><br>
-    그림 3.1
 </p>
 
 계산 조건은 다음과 같다. <br>
@@ -54,7 +53,6 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.2.png"><br>
-    그림 3.2
 </p>
 
 ## 3) 계산 조건
@@ -66,7 +64,6 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.3.png"><br>
-    그림 3.3
 </p>
 
 ### (3) Materials
@@ -79,7 +76,6 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.4.png"><br>
-    그림 3.4
 </p>
 
 ### (4) Cell Zone Conditions
@@ -97,7 +93,6 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.5.png"><br>
-    그림 3.5
 </p>
 
 ### (5) Boundary Conditions
@@ -118,7 +113,6 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.6.png"><br>
-    그림 3.6
 </p>
 
 ### (6) Numerical Conditions
@@ -143,12 +137,10 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.7.1.png"><br>
-    그림 3.7.1
 </p>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.7.2.png"><br>
-    그림 3.7.2
 </p>
 
 ### (7) Initialization
@@ -168,13 +160,11 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.8.png"><br>
-    그림 3.8
 </p>
 
 아래 그림은 Residuals 그래프이다.
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.9.png"><br>
-    그림 3.9
 </p>
 
 ## 4) 후처리
@@ -187,7 +177,6 @@ Case Type을 Decomposed Case로 변경한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.10.png"><br>
-    그림 3.10
 </p>
 
 Slice 기능을 활용하여 용기 내부의 단면을 자른다.<br>
@@ -197,24 +186,20 @@ Z-normal 버튼을 클릭 후, Origin을 다음과 같이 변경한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.11.png"><br>
-    그림 3.11
 </p>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.12.png"><br>
-    그림 3.12
 </p>
 
 이후, Glyph 버튼을 선택하고 아래와 같이 설정을 변경한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.13.png"><br>
-    그림 3.13
 </p>
 
 아래 그림과 같이 용기 내부 벡터가 나오게 된다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.14.png"><br>
-    그림 3.14
 </p>

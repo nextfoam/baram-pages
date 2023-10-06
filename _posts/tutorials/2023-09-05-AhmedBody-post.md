@@ -5,7 +5,7 @@ category: tutorials
 ---
 
 
-# 02. Ahmed Body 
+# Ahmed Body 
 
 * [격자 파일](https://drive.google.com/file/d/1qVQqF6oavui3NCoAQ2QCpSmo824CVbx_/view?usp=sharing)
 
@@ -14,16 +14,14 @@ category: tutorials
 
 * 자동차 외부 유동을 해석하여 자동차의 공력 특성을 파악하는 예제이다. <br>
 
-* 그림 2.1에서 형상과 격자를 나타내었다.<br>
+* 아래 그림에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.1.1.png"><br>
-    그림 2.1.1
 </p>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.1.2.png"><br>
-    그림 2.1.2
 </p>
 
 계산 조건은 다음과 같다. <br>
@@ -63,7 +61,6 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.2.png"><br>
-    그림 2.2
 </p>
 
 ### (3) Materials
@@ -75,7 +72,6 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.3.png"><br>
-    그림 2.3
 </p>
 
 ### (4) Boundary Conditions
@@ -89,8 +85,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ```Turbulent Viscosity Ratio : 10```  <br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.4.png"><br>
-    그림 2.4
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.4.png"><br>    
 </p>
 
 ***●  maxx : Pressure Outlet***<br>
@@ -98,7 +93,6 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.5.png"><br>
-    그림 2.5
 </p>
 
 ***●  miny : Wall (Velocity Condition : Translation Moving Wall)***<br>
@@ -106,7 +100,6 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.6.png"><br>
-    그림 2.6
 </p>
 
 ***●  bottom, leg, nose1, nose2, nose3, nose4, nose5, rear, side, slant, top : Wall***<br>
@@ -114,7 +107,6 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.7.png"><br>
-    그림 2.7
 </p>
 
 ***●  minz, maxz, maxy : symmetry***<br>
@@ -136,14 +128,12 @@ Reference Values에 아래와 같이 입력한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.8.png"><br>
-    그림 2.8
 </p>
 
 이후 Monitors - Add - Forces를 선택하여 아래 그림과 같이 설정한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.9.png"><br>
-    그림 2.9
 </p>
 
 ### (6) Numerical Conditions
@@ -168,12 +158,10 @@ Reference Values에 아래와 같이 입력한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.10.1.png"><br>
-    그림 2.10.1
 </p>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.10.2.png"><br>
-    그림 2.10.2
 </p>
 
 ### (8) Initialization
@@ -194,7 +182,6 @@ Reference Values에 아래와 같이 입력한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.11.png"><br>
-    그림 2.11
 </p>
 
 값을 입력하고 하단에 Initializer 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
@@ -212,19 +199,16 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.12.png"><br>
-    그림 2.12
 </p>
 
 계산이 완료되면 아래와 같이 Residuals과 Force monitor의 그래프가 나오게 된다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.13.png"><br>
-    그림 2.13
 </p>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.14.png"><br>
-    그림 2.14
 </p>
 
 ## 4) 후처리
@@ -236,7 +220,6 @@ solid color를 p_rgh로 변경하고 단면에서 압력 분포를 확인한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.15.png"><br>
-    그림 2.15
 </p>
 
 ### (2) Streamline
@@ -246,7 +229,6 @@ Stream Tracer 버튼을 클릭한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.16.png"><br>
-    그림 2.16
 </p>
 
 그 후, 설정을 아래와 같이 변경한다. <br>
@@ -261,12 +243,10 @@ Stream Tracer 버튼을 클릭한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.17.png"><br>
-    그림 2.17
 </p>
 
 아래 그림과 같은 streamline 분포가 나온다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.18.png"><br>
-    그림 2.18
 </p>
