@@ -5,7 +5,7 @@ category: tutorialguide
 ---
 
 
-# User Guide 
+# Tutorial Guides
 
 ## 차례
 <br>
