@@ -5,7 +5,8 @@ category: mesh
 ---
 
 # Mixing Pipe 
- 
+
+* [형상 파일](https://drive.google.com/file/d/1AmqT8iVNacvKUmp-CsSFFNSV6WoxQE7B/view?usp=sharing) 
 
 ## 1) 개요 
 * 본 예제는 Mixing Pipe의 stl파일을 이용해 pipe 내부 격자를 생성하는 예제이다.<br>
