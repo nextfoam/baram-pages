@@ -19,7 +19,7 @@ description: BARAM is a Free Open Source CFD(Computational Fluid Dynamics)
   software package. BARAM is developed to mitigate the steep learning curve
   of Text-based Solvers. BARAM helps you focus on problem itself with
   intuitive graphical user interface.
-baseurl: "/" # the subpath of your site, e.g. /blog
+#baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://baramcfd.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: baramcfd
@@ -46,7 +46,7 @@ exclude:
    - vendor/ruby/
 
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/images/baram_logo.png"
+logo: "/images/baram_logo.svg"
 
 # Enable or disable the site search
 # Supports true (default) or false

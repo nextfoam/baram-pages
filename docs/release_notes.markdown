@@ -4,6 +4,32 @@ layout: page
 title: Release Notes
 ---
 
+# 23.3.0
+
+## New Features
+* "BaramMesh" application for meshing job is added, and the name of "Baram" is changed to "BaramFlow" accordingly
+
+## Improvements
+* Time foler name in scientific notation like "1e-5" is properly handled now
+* Monitoring for a point that is not snapped on a surface is now woring in single region case
+* Parallel processing configuration is clear now. It's now not a configuration but an action to decompose/reconstruct
+* Chart shows all the data when a project opened
+* View alignment buttons on each Axis is simplified to one alignment button
+* "Paraview" path configuration menu has been added
+
+## Bug Fixes
+* Chart could not be shown with an exception of "ValueError: Axis limits cannot be NaN or Inf"
+* Residual chart was not shown for a copied project
+* Gravity could be configured only for Multi-phase(VoF) case
+* Initialization Parameters were not applied even though Initialization button was clicked if user stayed in the page
+* Atmospheric Wall was not shown in wall boundary condition
+
+## Know Issues
+* Monitoring for a point that is not snapped on a surface is not working in multi-region case
+* "save as" menu is not stable yet. Copy the project project manually
+
+
+
 # 23.2.0
 
 ## New Features

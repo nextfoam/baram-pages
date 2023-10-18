@@ -4,7 +4,12 @@ layout: page
 title: Features
 ---
 
-# Overview of Features
+# Applications
+
+* [BaramFlow](#baramflow)
+* [BaramMesh](#barammesh)
+
+# BaramFlow
 
 ## Supported Mesh Types
 * OpenFOAM PolyMesh
@@ -51,4 +56,22 @@ title: Features
 
 ## Parallel Processing
 * MPI Parallel Processing
+
+
+
+# BaramMesh
+
+* No limit on the number of input surfaces
+* Automatic detection of closed surface composing a volume
+* Automatic surface split based on face angle
+* Support native simple geometry ( Hex, Sphere, Cylinder )
+* Build prismatic boundary layers
+* scales well when meshing in **parallel**
+* can work with dirty surfaces, i.e. non-watertight surfaces
+* Support **Multi-Region** Mesh for OpenFOAM Multi-Region cases
+* Support both **conformal** and **non-conformal** interfaces
+* Support Cell Zones
+* Generate meshes for external flow and internal flow
+* Mesh refinement based on surfaces, feature edges and volumes
+
 
