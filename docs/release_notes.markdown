@@ -4,6 +4,27 @@ layout: page
 title: Release Notes
 ---
 
+# 23.3.2
+
+## New Features
+* None
+
+## Improvements
+* [Flow] "Reference Pressure Location" has been moved to "General" page
+* [Flow] Boundary type is configured automatically according to the name of boundary
+* [Mesh] Geometry import dialog now goes to the latest used folder
+* [Mesh] "slipFeatureAngle" is configured as the half of featureAngle internally
+
+## Bug Fixes
+* [Flow] Chart Y range was not configured properly when the range value is big
+* [Flow] "saveAs" menu is now stable.
+* [Flow] "divSchemes" dictionary for Multi-phase(VoF) was not configured properly
+* [Mesh] Default values of a few parameters have been changed
+
+## Know Issues
+* Monitoring for a point that is not snapped on a surface is not working in multi-region case
+
+
 # 23.3.0
 
 ## New Features
