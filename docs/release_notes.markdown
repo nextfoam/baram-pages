@@ -22,7 +22,8 @@ title: Release Notes
 * [Mesh] Default values of a few parameters have been changed
 
 ## Know Issues
-* Monitoring for a point that is not snapped on a surface is not working in multi-region case
+* [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
+* [Flow] Parallel calculation is not workring for a case with cyclic boundaries
 
 
 # 23.3.0
