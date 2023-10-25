@@ -71,8 +71,7 @@ Time을 Transient로 변경한다.<br>
 </p>
 
 ### (3) Materials
-본 예제에서는 임의의 유체를 사용한다.<br>
-유체의 물성치는 아래와 같이 입력한다.<br>
+본 예제에서는 레이놀즈 수가 100이 되는 조건으로 물성치를 설정한다.<br>
 
 ●  밀도 : 1𝑘𝑔/㎥ <br>
 
@@ -129,8 +128,6 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
 ●  Velocity : 1  <br>
 
-●  Reference Pressure Location : (-9, 0, 0)  <br>
-
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.8.png"><br>
 </p>
@@ -138,7 +135,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ### (7) Numerical Conditions
 Numerical Conditions은 다음과 같이 설정한다.<br>
 
-●  Use Momentum Predictor : 비활성화<br>
+●  Use Momentum Predictor : 활성화<br>
 
 ●  Discretization Schemes<br>
 ```Time : Second Order Implicit```<br>

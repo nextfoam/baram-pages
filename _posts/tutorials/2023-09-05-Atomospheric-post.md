@@ -1,10 +1,10 @@
 ---
 layout: post
-title: ABL
+title: Atmosphere Boundary Conditions
 category: tutorials
 ---
 
-# ABL 
+# Atmosphere Boundary Conditions 
  
 * [격자 파일](https://drive.google.com/file/d/19kMYRiWaB84kaUzCoobMRZBKCc_uKxVU/view?usp=drive_link)
 
@@ -97,7 +97,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 </p>
 
 ***●  Sea : Wall***<br>
-```Velocity Condition : No Slip```<br>
+```Velocity Condition : Atmospheric Wall```<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.6.png"><br>
@@ -186,15 +186,29 @@ Case Type을 Reconstructed Case로 변경한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.13.png"><br>
 </p>
 
-상단 툴바의 Plot Over Line 아이콘을 클릭하고 아래와 같이 설정한다.
+상단 툴바에서 Slice 아이콘을 클릭하고 아래와 같이 설정한다.<br>
+상단 툴바의 Plot Over Line 아이콘을 클릭하고 아래와 같이 입구와 출구에 각각 Line을 1개 생성한다.<br>
+입구, 출구의 라인을 이용하여 속도 프로파일이 그대로 유지되는지 정량적으로 확인한다.<br>
 
-●  Point1 : 300 25 0<br>
+1번 라인 (입구)<br>
 
-●  Point2 : 300 25 600<br>
+●  Point1 : 0 25 0<br>
 
-●  X Array Name : Points_Z<br>
+●  Point2 : 0 25 600<br>
 
-●  Series Parameters : U_Magnitude<br>
+●  X Array Name : U_X<br>
+
+●  Series Parameters : Points_Z<br>
+
+2번 라인 (출구)<br>
+
+●  Point1 : 0 25 0<br>
+
+●  Point2 : 0 25 600<br>
+
+●  X Array Name : U_X<br>
+
+●  Series Parameters : Points_Z<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.14.1.png"><br>
@@ -213,3 +227,5 @@ Case Type을 Reconstructed Case로 변경한다.
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.15.png"><br>
 </p>
+
+위 그림에서 빨간 선이 입구영역, 초록 선이 출구영역에서 속도 프로파일이다.

@@ -23,7 +23,7 @@ category: tutorials
 
 ●  solver : buoyantSimpleNFoam (넥스트폼이 개발한 정상상태 비압축성 해석 솔버) <br>
 
-●  난류 모델 : Realizable 𝑘 − ε<br>
+●  난류 모델 : Standard 𝑘 − ε<br>
 
 ●  밀도 : 1.225𝑘𝑔/㎥ <br>
 
@@ -98,12 +98,12 @@ Cell Zone Conditions에서는 Source, MRF, Sliding Mesh등을 설정할 수 있�
 
 ***●  in-1***<br>
 ```Velocity Magnitude : 5 (m/s)```  <br>
-```Turbulent Intensity : 0.1 (%)```  <br>
+```Turbulent Intensity : 1 (%)```  <br>
 ```Turbulent Viscosity Ratio : 10```  <br>
 
 ***●  in-2***<br>
 ```Velocity Magnitude : 10 (m/s)```  <br>
-```Turbulent Intensity : 0.1 (%)```  <br>
+```Turbulent Intensity : 1 (%)```  <br>
 ```Turbulent Viscosity Ratio : 10```  <br>
 
 ***●  out***<br>
@@ -139,7 +139,7 @@ Discretization, Relaxation factors, Convergence criteria, Pressure-Velocity coup
 </p>
 
 ### (7) Monitoring
-본 예제에서는 (0, 0, 1) 즉, 출구 중심부에서 압력을 모니터링 한다.<br>
+본 예제에서는 (0, 0, 1) 위치에서 압력을 모니터링 한다.<br>
 Solution - Monitors를 선택한다. <br>
 Monitors 창에서 하단에 Add - Points를 클릭한다. <br>
 아래 그림과 같이 설정을 변경하면 된다. <br>
@@ -167,7 +167,7 @@ Initial Contion은 초기값으로 x, y, z의 속도와 압력을 입력할 수 
 
 ●  Turbulence <br>
 ```Scale of Velocity : 5 (m/s)``` <br>
-```Turbulent Intensity : 0.1 (%)``` <br>
+```Turbulent Intensity : 1 (%)``` <br>
 ```Turbulent Viscosity Ratio : 10``` <br>
 
 <p align='center'>
