@@ -56,6 +56,11 @@ Run following command in the top directory of downloaded source code
 source ./venv/bin/activate
 ```
 
+### Upgrade pip version
+```commandline
+pip install --upgrade pip
+```
+
 ## Install Python packages
 Run following command in the top directory of downloaded source code
 ```commandline
