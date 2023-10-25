@@ -19,7 +19,7 @@ Contribution for the translations is welcomed.
 In the top directory of BARAM, type following command.
 
 ```commandline
-(venv) [(...)]$ pyside6-lupdate -extensions py,ui view -ts resources/locale/baram_<lang>.ts
+(venv) [(...)]$ pyside6-lupdate -extensions py,ui baramFlow/view baramMesh/view -ts resources/locale/baram_<lang>.ts
 ```
 
 *lang* is a two-letter language code from ISO 639-1, and the list of codes can be found on [Wikipedia](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)

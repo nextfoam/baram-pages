@@ -8,7 +8,7 @@ title: Installation
 Binary installation package for 64-bit windows is prepared for convenience.  
 Download it from following link.
 
-[Download BARAM v23.2.0 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.2.0-setup.exe){: .btn .btn-purple .text-center .fs-5}
+[Download BARAM v23.3.2 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.2-setup.exe){: .btn .btn-purple .text-center .fs-5}
 
 # Installing BARAM from Source Code
 
@@ -22,14 +22,15 @@ Download it from following link.
 
 ## BARAM requires following installed software:
 
-* Python 3.9.x
+* Python *3.9.x*
 * [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) 10.0 or newer ( Windows Only )
-* OpenMPI 4.0 or newer ( Linux, macOS )
+* OpenMPI 4.2 or newer ( Linux, macOS )
 * GNU C Compiler or any other C Compiler ( Linux, macOS )
 
 ## Clone the source code
 ```commandline
 git clone https://github.com/nextfoam/baram.git
+cd baram
 ```
 
 ## Setup Python virtual environment
@@ -91,11 +92,11 @@ The final directory structure may look like following.
 You can download the file on command line with cURL or wget command like following.
 
 ```commandline
-wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20230404.tar.xz
+wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz
 ```
 
 ```commandline
-curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_20230404.tar.xz -o solvers_linux_20230404.tar.xz
+curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz -o solvers_linux_v1.5_20230723.tar.xz
 ```
 
 ### macOS with Apple Silicon
@@ -113,8 +114,21 @@ gcc -o solvers/openfoam/bin/baramd misc/baramd.c
 python convertUi.py
 ```
 
-## Run BARAM
+## Run BaramFlow
 ```commandline
-python main.py
+python -m baramFlow.main
 ```
 
+## Run BaramMesh
+```commandline
+python -m baramMesh.main
+```
+
+## Convenient Scripts that do not require manual *venv* activation
+
+```commandline
+baramFlow.sh
+```
+```commandline
+baramMesh.sh
+```
