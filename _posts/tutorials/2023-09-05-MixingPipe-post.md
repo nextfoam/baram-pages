@@ -64,7 +64,7 @@ General에서는 Time, Gravity, Operating Pressure등을 설정할 수 있다. �
 
 ### (2) Models
 Models에서는 turbulence, Energy, Incompressible/Compressible, Multiphase 등을 설정할 수 있다.<br>
-본 예제에서는 Realizable 𝑘 − ε 모델을 사용한다. <br>
+본 예제에서는 Standard 𝑘 − ε 모델을 사용한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.4.png"><br>
@@ -231,7 +231,7 @@ p_rgh를 선택하면 벽면에 걸리는 압력의 크기를 확인할 수 있�
 Pipe 내부 높이에 따른 압력 분포를 확인해본다.
 
 slice 버튼을 클릭한다.
-그 후, 방향을 Z-normal로 바꾸고 pipe 내부 압력을 확인한다.
+그 후, 방향을 Y-normal로 바꾸고 pipe 내부 압력을 확인한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.14.png"><br>

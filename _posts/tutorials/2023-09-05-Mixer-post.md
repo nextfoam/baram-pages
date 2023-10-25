@@ -173,10 +173,20 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 용기 내부의 속도 벡터를 보는 과정을 진행한다.<br>
 paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
 
-Case Type을 Decomposed Case로 변경한다.
+Case Type을 Reconstruced Case로 변경한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.10.png"><br>
+</p>
+
+또한, baram.foam을 활성화한 상태에서 상단의 탭에서 Surface를 Feature Edge로 변경한다.<br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.10.1.png"><br>
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.12.1.png"><br>
 </p>
 
 Slice 기능을 활용하여 용기 내부의 단면을 자른다.<br>
@@ -192,13 +202,19 @@ Z-normal 버튼을 클릭 후, Origin을 다음과 같이 변경한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.12.png"><br>
 </p>
 
+상단의 탭에서 Surface를 Feature Edge로 변경한다.<br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.12.1.png"><br>
+</p>
+
 이후, Glyph 버튼을 선택하고 아래와 같이 설정을 변경한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.13.png"><br>
 </p>
 
-아래 그림과 같이 용기 내부 벡터가 나오게 된다.
+아래 그림과 같이 용기 내부의 축단면에서 벡터가 나오게 된다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.14.png"><br>

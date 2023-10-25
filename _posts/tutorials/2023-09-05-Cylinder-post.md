@@ -215,13 +215,13 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.12.png"><br>
 </p>
 
-계산 중 모습
+계산이 완료된 Residuals<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.13.1.png"><br>
 </p>
 
-모니터링되는 값들의 모습
+모니터링되는 항력계수, 양력계수, 속도, 압력 그래프<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.13.2.png"><br>
@@ -233,7 +233,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 Cylinder 주변의 속도, 압력 분포를 확인한다.<br>
 paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
 
-Case Type을 Decomposed Case로 변경한다.
+Case Type을 Decomposed Case로 변경한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.14.png"><br>
@@ -247,12 +247,4 @@ Case Type을 Decomposed Case로 변경한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.16.png"><br>
-</p>
-
-### (2) Drag Coefficient, Lift Coefficient
-BARAM의 하단 탭에서 Monitor를 클릭한다.<br>
-Drag, Lift Coefficient를 확인한다.<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.17.png"><br>
 </p>

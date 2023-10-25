@@ -210,6 +210,8 @@ Case Type을 Reconstructed Case로 변경한다.
 
 ●  Series Parameters : Points_Z<br>
 
+Series Parameters에서 해당 Parameter의 색을 변경할 수 있다.<br>
+
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.14.1.png"><br>
 </p>
@@ -220,6 +222,10 @@ Case Type을 Reconstructed Case로 변경한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.14.3.png"><br>
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.14.4.png"><br>
 </p>
 
 아래 그림과 같이 높이에 따른 속도 크기 분포를 확인할 수 있다.
