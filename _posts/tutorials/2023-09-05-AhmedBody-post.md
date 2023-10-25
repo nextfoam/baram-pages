@@ -189,7 +189,7 @@ Reference Values에 아래와 같이 입력한다.<br>
 ### (9) Run
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
-●  Number of Iterations : 3,000  <br>
+●  Number of Iterations : 2,000  <br>
 
 ●  Save Interval : 300  <br>
 
@@ -201,7 +201,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.12.png"><br>
 </p>
 
-계산이 완료되면 아래와 같이 Residuals과 Force monitor의 그래프가 나오게 된다.
+계산이 완료되면 아래와 같이 Residuals과 Force monitor의 그래프가 나오게 된다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.13.png"><br>
@@ -225,7 +225,33 @@ solid color를 p_rgh로 변경하고 단면에서 압력 분포를 확인한다.
 ### (2) Streamline
 차량 주변 유동의 steamline을 확인한다.<br>
 
-Stream Tracer 버튼을 클릭한다.<br>
+아래 그림과 같이 extract block 기능을 활용하여 차량 벽면과 바닥면의 형상을 추출한다.<br>
+
+● Mesh Regions에서 아래 경계면들을 선택한다.<br>
+```Bottom, internalMes, leg, miny, nose1, nose2, nose3, nose5, rear, side, slant, top```<br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.20.png"><br>
+</p>
+
+U를 Solid Color로 변경한다.,br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.21.png"><br>
+</p>
+
+변경 후 모습<br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.22.png"><br>
+</p>
+
+왼쪽 Pipeline Browser에서 baram.foam을 한번 클릭하여 활성화 한다.<br>
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.23.png"><br>
+</p>
+
+이후, Stream Tracer 버튼을 클릭한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.16.png"><br>
@@ -240,6 +266,8 @@ Stream Tracer 버튼을 클릭한다.<br>
 ●  Radius :  0.2 <br>
 
 ●  Number of Points : 100 <br>
+
+●  Coloring : Vorticity <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.17.png"><br>
