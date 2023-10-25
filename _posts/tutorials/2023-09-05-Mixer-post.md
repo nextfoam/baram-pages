@@ -27,7 +27,7 @@ category: tutorials
 
 ●  solver : buoyantSimpleNFoam (넥스트폼이 개발한 정상상태 비압축성 해석 솔버) <br>
 
-●  난류 모델 : Realizable 𝑘 − ε<br>
+●  난류 모델 : Standard 𝑘 − ε<br>
 
 ●  밀도 : 1,000𝑘𝑔/㎥ <br>
 
@@ -60,7 +60,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 본 예제에서는 Default로 설정한다.<br>
 
 ### (2) Models
-난류 모델은 Realizable 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
+난류 모델은 Standard 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.3.png"><br>
@@ -118,7 +118,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ### (6) Numerical Conditions
 본 예제에서는 아래와 같이 설정을 변경한다. <br>
 
-●  Pressure-Velocity Coupling Scheme : SIMPLEC <br>
+●  Pressure-Velocity Coupling Scheme : SIMPLE <br>
 
 ●  Discretization Scheme  <br>
 ```Momentum : Second Order Upwind``` <br>
@@ -156,7 +156,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 ●  Data Write Format : Binary  <br>
 
-●  Number of Cores : 4  <br>
+●  Number of Cores : 1  <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.8.png"><br>

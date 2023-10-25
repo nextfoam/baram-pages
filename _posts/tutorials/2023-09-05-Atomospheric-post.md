@@ -68,7 +68,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 본 예제에서는 Default로 설정한다.<br>
 
 ### (2) Models
-난류 모델은 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
+난류 모델은 Standard 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.4.png"><br>
