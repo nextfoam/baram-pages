@@ -9,7 +9,7 @@ category: tutorials
 * [격자 파일](https://drive.google.com/file/d/1c7RgueGF8kfG_pqA0tGbU_TbPpZ99tNG/view?usp=sharing)
 
 ## 1) 개요 
-* 본 예제는 계산영역 내부에 porous media 혹은 fan을 두꼐가 없는 경계면으로 모사할 수 있는 Porous Jump 경계조건 예제이다.<br>
+* 본 예제는 계산영역 내부에 porous media 혹은 fan을 두께가 없는 경계면으로 모사할 수 있는 Porous Jump 경계조건 예제이다.<br>
 
 * 육면체 덕트 내부에 사각형의 면을 만들고 Porous Jump 경계조건을 사용하여 압력이 증가되고 속도가 높아지는 문제이다. <br>
 
@@ -99,7 +99,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 </p>
 
 ***●  plane_master : Porous Jump***<br>
-```Coupled Boundary : plane_slave (Pa)```<br>
+```Coupled Boundary : plane_slave```<br>
 ```Darcy Coefficient : -100```<br>
 ```Inertial Coefficient : -5```<br>
 ```Porous Media Thickness : 0.05```<br>

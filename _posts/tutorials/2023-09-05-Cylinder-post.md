@@ -28,7 +28,7 @@ category: tutorials
 
 계산 조건은 다음과 같다. <br>
 
-●  solver : buoyantpimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버) <br>
+●  solver : buoyantPimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버) <br>
 
 ●  난류 모델 : laminar<br>
 
@@ -184,7 +184,7 @@ Point Monitoring은 아래와 같이 설정한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.2.png"><br>
 </p>
 
-같은 방식으로 동일한 지점의 Velocity 모니터링도 설정한다.<br>
+같은 방식으로 동일한 지점의 Velocity Magnitude 모니터링도 설정한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.3.png"><br>

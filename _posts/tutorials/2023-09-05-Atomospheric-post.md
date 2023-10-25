@@ -25,7 +25,7 @@ category: tutorials
 
 계산 조건은 다음과 같다. <br>
 
-●  solver : buoyantsimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버) <br>
+●  solver : buoyantSimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버) <br>
 
 ●  난류 모델 : 𝑘 − ε <br>
 
@@ -146,6 +146,8 @@ Numerical Conditions은 다음과 같이 설정한다.<br>
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.9.png"><br>
 </p>
+
+위 과정을 따라 초기화 후, File - save를 눌러 저장한다.<br>
 
 ### (8) Run
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>

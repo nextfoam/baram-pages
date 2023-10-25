@@ -82,7 +82,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 Cell Zone Conditions에서는 MRF, Sliding Mesh, Source 등을 설정할 수 있다.<br>
 본 예제에서는 'rot' Cell Zone에 MRF 조건을 설정한다.<br>
 
-rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입력한다.<br>
+rot 선택 - Multiple Reference Frame, MRF를 선택하고 아래 값들을 입력한다.<br>
 
 ***●  Multiple Reference Frame***<br>
 ```Rotating Speed : 100(RPM)```<br>
@@ -98,22 +98,28 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 ### (5) Boundary Conditions
 아래와 같이 경계면 타입과 경계값을 설정한다.<br>
 
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.6.png"><br>
+</p>
+
 **※per1, per2는 각각 회전 주기의 경계면이다.<br>**
 
 ***●  per1, per2 : Interface - Rotational Periodic***<br>
 ```per1 : Rotational Periodic으로 변경 후, Coupled Boundary는 per2 선택```<br>
+```Rotation-Axis Origin : (0, 0, 0)```
+```Rotation-Axis Direction : (0, 0, 1)```
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.6.1.png"><br>
+</p>
 
 ***●  top : Symmetry***<br>
 
 ***●  imp_master, imp_slave : Thermo-Coupled Wall***<br>
-```imp_master : Thermo-Coulped Wall로 변경 후, Coupled Boundary는 per2 선택```<br>
+```imp_master : Thermo-Coulped Wall로 변경 후, Coupled Boundary는 imp_slave 선택```<br>
 
 ***●  나머지 : Wall***<br>
 ```Velocity Condition : No Slip```<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.6.png"><br>
-</p>
 
 ### (6) Numerical Conditions
 본 예제에서는 아래와 같이 설정을 변경한다. <br>
@@ -145,7 +151,7 @@ rot 선택 - Multiple Reference Fram, MRF를 선택하고 아래 값들을 입�
 
 ### (7) Initialization
 본 예제에서는 Default값으로 초기화를 한다.<br>
-하단에 Initializer 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
+하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
 
 ### (8) Run
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>

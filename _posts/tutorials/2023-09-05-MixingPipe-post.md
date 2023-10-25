@@ -146,7 +146,7 @@ Monitors 창에서 하단에 Add - Points를 클릭한다. <br>
 
 ●  Point Monitor  <br>
 ```Write Interval : 1``` <br>
-```Field : p``` <br>
+```Field : Pressure``` <br>
 ```Coordinate : (0, 0, 1)``` <br>
 
 <p align='center'>
@@ -154,7 +154,7 @@ Monitors 창에서 하단에 Add - Points를 클릭한다. <br>
 </p>
 
 ### (8) Initialization
-Initial Contion은 초기값으로 x, y, z의 속도와 압력을 입력할 수 있다.<br>
+Initial Condition은 초기값으로 x, y, z의 속도와 압력을 입력할 수 있다.<br>
 난류 모델을 사용할 경우 Velocity Scale, Turbulent Intensity, Viscosity Ratio 값을 입력하면 k와 ε 값이 계산되어 사용된다. <br>
 
 ●  Velocity  <br>
@@ -183,7 +183,7 @@ Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설
 
 ## 4) 후처리
 BARAM에서는 paraview를 이용하여 후처리를 진행한다.<br>
-후처리 진행 시, paraivew 아이콘을 클릭하면 된다.<br>
+후처리 진행 시, Mesh탭의 paraivew 아이콘을 클릭하면 된다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.10.png"><br>
