@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Profile Boundary Condition
+title: 08. Profile Boundary Condition
 category: tutorials
 ---
 
 # Profile Boundary Condition
 
-* [격자 파일](https://drive.google.com/file/d/1pzp6DXomC0cyaxn0xzlpcneShrEkRW68/view?usp=sharing)
+## * [격자 파일 다운로드](https://drive.google.com/file/d/1pzp6DXomC0cyaxn0xzlpcneShrEkRW68/view?usp=sharing)
 
 ## 1) 개요
 * 본 예제는 시간에 따라 입구의 속도와 온도가 변하는 경계조건과, 주어진 데이터를 사용하여 경계면에서 속도와 온도의 분포를 설정하는 예제이다.<br>
@@ -197,8 +197,8 @@ x1, y1, z1, Tn <br>
 
 
 ## 4) 후처리
-Paraview 아이콘을 눌러 Paraview를 실행한다.
-상단의 Solid Color를 T로 변경한다.
+Paraview 아이콘을 눌러 Paraview를 실행한다.<br>
+상단의 Solid Color를 T로 변경한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.12.png"><br>
@@ -208,5 +208,11 @@ Paraview 아이콘을 눌러 Paraview를 실행한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.13.png"><br>
 </p>
 
-이후, Set Range를 눌러 온도 범위를 340 - 350K으로 조정한다.
-그리고 상단의 Play 버튼을 눌러 시간에 따른 온도 변화를 확인한다.
+이후, Set Range를 눌러 온도 범위를 340 - 350K으로 조정한다.<br>
+그리고 상단의 Play 버튼을 눌러 시간에 따른 온도 변화를 확인한다.<br>
+
+아래 그림은 최종 순간에서 온도분포를 나타내는 그림이다.<br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.14.png"><br>
+</p>
