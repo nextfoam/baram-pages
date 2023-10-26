@@ -6,7 +6,7 @@ category: tutorials
 
 # Porous Jump 
 
-## * [격자 파일](https://drive.google.com/file/d/1c7RgueGF8kfG_pqA0tGbU_TbPpZ99tNG/view?usp=sharing)
+## * [격자 파일 다운로드](https://drive.google.com/file/d/1c7RgueGF8kfG_pqA0tGbU_TbPpZ99tNG/view?usp=sharing)
 
 ## 1) 개요 
 * 본 예제는 계산영역 내부에 porous media 혹은 fan을 두께가 없는 경계면으로 모사할 수 있는 Porous Jump 경계조건 예제이다.<br>

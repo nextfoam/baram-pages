@@ -6,7 +6,7 @@ category: tutorials
 
 # Sirocco Fan 
 
-## * [격자 파일](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
+## * [격자 파일 다운로드](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
 
 ## 1) 개요 
 * 본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>

@@ -6,7 +6,7 @@ category: tutorials
 
 # Mixer 
 
-## * [격자 파일](https://drive.google.com/file/d/1Bop5tSUOdzj3twkmJtvLKBqwX8sAW2Dk/view?usp=sharing)
+## * [격자 파일 다운로드](https://drive.google.com/file/d/1Bop5tSUOdzj3twkmJtvLKBqwX8sAW2Dk/view?usp=sharing)
 
 ## 1) 개요 
 * 본 예제는 정상상태 비압축성 유동해석 예제이다.<br>

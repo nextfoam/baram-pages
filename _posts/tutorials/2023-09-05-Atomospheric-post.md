@@ -6,7 +6,7 @@ category: tutorials
 
 # Atmosphere Boundary Conditions 
  
-## * [격자 파일](https://drive.google.com/file/d/19kMYRiWaB84kaUzCoobMRZBKCc_uKxVU/view?usp=drive_link)
+## * [격자 파일 다운로드](https://drive.google.com/file/d/19kMYRiWaB84kaUzCoobMRZBKCc_uKxVU/view?usp=drive_link)
 
 ## 1) 개요 
 * 본 예제는 대기 경계층 유동해석 예제이다.<br>

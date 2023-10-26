@@ -6,7 +6,7 @@ category: tutorials
 
 # Profile Boundary Condition
 
-## * [격자 파일](https://drive.google.com/file/d/1pzp6DXomC0cyaxn0xzlpcneShrEkRW68/view?usp=sharing)
+## * [격자 파일 다운로드](https://drive.google.com/file/d/1pzp6DXomC0cyaxn0xzlpcneShrEkRW68/view?usp=sharing)
 
 ## 1) 개요
 * 본 예제는 시간에 따라 입구의 속도와 온도가 변하는 경계조건과, 주어진 데이터를 사용하여 경계면에서 속도와 온도의 분포를 설정하는 예제이다.<br>
