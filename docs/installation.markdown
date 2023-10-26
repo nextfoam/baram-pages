@@ -8,7 +8,7 @@ title: Installation
 Binary installation package for 64-bit windows is prepared for convenience.  
 Download it from following link.
 
-[Download BARAM v23.3.2 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.2-setup.exe){: .btn .btn-purple .text-center .fs-5}
+[Download BARAM v23.3.3 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.3-setup.exe){: .btn .btn-purple .text-center .fs-5}
 
 # Installing BARAM from Source Code
 

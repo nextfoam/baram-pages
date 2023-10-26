@@ -4,6 +4,26 @@ layout: page
 title: Release Notes
 ---
 
+# 23.3.3
+
+## New Features
+* None
+
+## Improvements
+* [Mesh] Castellation/Snap/BoundaryLayer operation can be cancelled during operation
+* [Mesh] Default name is applied for Geometry, Region, etc
+
+## Bug Fixes
+* [Flow] Mesh could not be loaded since v23.3.2
+* [Flow] Module path error in baramFlow.sh has been fixed
+* [Flow] MRFProperties file was not removed even when the property is turned off
+* [Flow][Mesh] Window could be out of sight when display configuration is changed in multiple screen environment
+
+
+## Know Issues
+* [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
+
+
 # 23.3.2
 
 ## New Features
@@ -23,7 +43,6 @@ title: Release Notes
 
 ## Know Issues
 * [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
-* [Flow] Parallel calculation is not workring for a case with cyclic boundaries
 
 
 # 23.3.0
