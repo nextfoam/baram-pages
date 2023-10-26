@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Profile Boundary Condition
+title: 08. Profile Boundary Condition
 category: tutorials
 ---
 
