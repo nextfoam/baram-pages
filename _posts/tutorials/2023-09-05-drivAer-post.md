@@ -309,5 +309,5 @@ p를 Solid Color로 변경한다.<br>
 아래 그림과 같은 streamline 분포가 나온다.<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/26.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/27.png"><br>
 </p>
