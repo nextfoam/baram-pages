@@ -197,8 +197,8 @@ x1, y1, z1, Tn <br>
 
 
 ## 4) 후처리
-Paraview 아이콘을 눌러 Paraview를 실행한다.
-상단의 Solid Color를 T로 변경한다.
+Paraview 아이콘을 눌러 Paraview를 실행한다.<br>
+상단의 Solid Color를 T로 변경한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.12.png"><br>
@@ -208,5 +208,11 @@ Paraview 아이콘을 눌러 Paraview를 실행한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.13.png"><br>
 </p>
 
-이후, Set Range를 눌러 온도 범위를 340 - 350K으로 조정한다.
-그리고 상단의 Play 버튼을 눌러 시간에 따른 온도 변화를 확인한다.
+이후, Set Range를 눌러 온도 범위를 340 - 350K으로 조정한다.<br>
+그리고 상단의 Play 버튼을 눌러 시간에 따른 온도 변화를 확인한다.<br>
+
+아래 그림은 최종 순간에서 온도분포를 나타내는 그림이다.<br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.14.png"><br>
+</p>
