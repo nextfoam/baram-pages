@@ -217,10 +217,23 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
 차량 몸체에 걸리는 압력 분포를 보는 과정을 진행한다.<br>
 
-Case Type을 Decomposed Case로 변경한다.
+Case Type을 Decomposed Case로 변경한다.<br>
+
+● Mesh Regions에서 아래 경계면들을 선택한다.<br>
+```Bottom, internalMesh, leg, miny, nose1, nose2, nose3, nose5, rear, side, slant, top```<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.14.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.20.png"><br>
+</p>
+
+아래 그림과 같이 extract block 기능을 활용하여 차량 벽면과 바닥면의 형상을 추출한다.<br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/21.png"><br>
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.24.png"><br>
 </p>
 
 solid color를 p_rgh로 변경하고 단면에서 압력 분포를 확인한다.<br>
@@ -234,14 +247,7 @@ solid color를 p_rgh로 변경하고 단면에서 압력 분포를 확인한다.
 
 아래 그림과 같이 extract block 기능을 활용하여 차량 벽면과 바닥면의 형상을 추출한다.<br>
 
-● Mesh Regions에서 아래 경계면들을 선택한다.<br>
-```Bottom, internalMes, leg, miny, nose1, nose2, nose3, nose5, rear, side, slant, top```<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.20.png"><br>
-</p>
-
-U를 Solid Color로 변경한다.,br>
+p를 Solid Color로 변경한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.21.png"><br>
