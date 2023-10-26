@@ -6,7 +6,7 @@ category: tutorials
 
 # Sirocco Fan 
 
-* [격자 파일](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
+## * [격자 파일](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
 
 ## 1) 개요 
 * 본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>
@@ -197,17 +197,18 @@ Case Type을 Decomposed Case로 변경한다.
     그림 4.14
 </p>
 
-Clip 기능을 활용하여 용기 내부의 단면을 자른다.<br>
+Slice 기능을 활용하여 용기 내부의 단면을 자른다.<br>
 
-X-normal 버튼을 클릭 후, Origin을 다음과 같이 변경한다.<br>
-●  Origin : 0 -0.0176187 0.084  <br>
+Z-normal 버튼을 클릭 후, Origin을 다음과 같이 변경한다.<br>
+●  Origin : 0.06 -0.017 0.05  <br>
+●  Normal : 0 0 1  <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.15.png"><br>
     그림 4.15
 </p>
 
-아래 그림과 같이 fan 내부 압력 분포가 나오게 된다.
+아래 그림과 같이 fan 내부 속도 분포가 나오게 된다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.16.png"><br>
