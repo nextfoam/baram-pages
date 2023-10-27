@@ -22,6 +22,7 @@ title: Release Notes
 
 ## Know Issues
 * [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
+* [Flow] Text filter in boundary condition list is not working
 
 
 # 23.3.2
