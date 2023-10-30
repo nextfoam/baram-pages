@@ -13,4 +13,4 @@ Please download the below pdf file.
 
 Thank you.
 
-* [User Guide](https://drive.google.com/file/d/1jgVhEpXOJSFTtP2Fyv0hTs5z--6_XJiN/view?usp=sharing)
+* [User Guide](https://drive.google.com/file/d/12E3csWS67avwZUs02cnxSAP1lavZHNhL/view?usp=sharing)

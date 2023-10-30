@@ -1,22 +1,20 @@
 ---
 layout: post
-title: BARAM-Snappy Guide
+title: baramMesh Guide
 category: meshguide
 ---
 
-# BARAM-Snappy Guide 
+# baramMesh Guide 
 
-BARAM-Snappy is pre-processing (meshing) module. BARAM-Snappy means BARAM + snappyHexMesh.
+baramMesh is pre-processing (meshing) module. baramMesh means BARAM + snappyHexMesh.
 
-And as you can guess it is based on snappyHexMesh.
+It is for the BARAM users who want to make mesh of the BARAM or OpenFOAM.
 
-So, it is for the BARAM users who want to make mesh of the BARAM or OpenFOAM.
-
-And we provide the guide of BARAM-Snappy.
+And we provide the guide of baramMesh.
 
 The first one if for internal flow. (Mixing Pipe)
 
-And the second one is for outernal flow. (Drone)
+And the second one is for outernal flow. (drivAer)
 
 <ul>
   {% assign sorted_posts = site.categories.mesh | sort: 'title' %}
