@@ -226,16 +226,6 @@ Case Type을 Decomposed Case로 변경한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.20.png"><br>
 </p>
 
-아래 그림과 같이 extract block 기능을 활용하여 차량 벽면과 바닥면의 형상을 추출한다.<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/21.png"><br>
-</p>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.24.png"><br>
-</p>
-
 solid color를 p_rgh로 변경하고 단면에서 압력 분포를 확인한다.<br>
 
 <p align='center'>
@@ -246,6 +236,14 @@ solid color를 p_rgh로 변경하고 단면에서 압력 분포를 확인한다.
 차량 주변 유동의 steamline을 확인한다.<br>
 
 아래 그림과 같이 extract block 기능을 활용하여 차량 벽면과 바닥면의 형상을 추출한다.<br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/21.png"><br>
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.24.png"><br>
+</p>
 
 p를 Solid Color로 변경한다.<br>
 
