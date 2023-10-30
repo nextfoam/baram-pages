@@ -108,12 +108,13 @@ Geometry tab에서는 면 혹은 공간의 Type을 변경하거나 삭제할 수
 
 ### 2-2) Display Control
 Display Control에서는 다음의 기능을 설정할 수 있다.<br>
+```Cut : 격자를 사용자가 원하는 축 방향으로 잘라주는 기능이다.```<br>
 ```Hide & Show : 해당 면을 숨기거나 보여준다.```<br>
 ```Opacity : 해당 면을 숨기거나 보여준다.```<br>
 ```Color : 해당 면을 숨기거나 보여준다.```<br>
 ```Display Mode : 면을 보여주는 방식을 변경한다.```<br>
 ```Wireframe, Surface, Surface with WireFrame 총 세 가지 방식으로 변경가능하다.```<br>
-```No Cut : 면을 보여주는 방식을 변경한다.```<br>
+```No Cut : 격자 중에서 사용자 선택에 따라 해당 면에 Cut 기능을 끌 수 있다.```<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/mixingpipe/1.21.png"><br>
