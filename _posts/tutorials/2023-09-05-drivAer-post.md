@@ -236,8 +236,8 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 ## 4) 후처리
 
 ### (1) 경계면 스칼라 분포
-paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
-차량 몸체에 걸리는 압력 분포를 보는 과정을 진행한다.<br>
+External tools의 paraivew 버튼을 클릭하여 실행한다.<br>
+본 예제에서는 차량 주변 압력 분포와 유선을 그려본다.<br>
 
 Case Type을 Decomposed Case로 변경한다.<br>
 

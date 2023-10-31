@@ -174,9 +174,9 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 ### (1) 속도 분포
 대기경계층 속도 분포와 Profile을 확인한다.<br>
-paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
+External tools의 paraview 버튼을 눌러 paraview를 실행한다.<br>
 
-Case Type을 Reconstructed Case로 변경한다.
+Case Type을 Reconstructed Case로 변경한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.12.png"><br>

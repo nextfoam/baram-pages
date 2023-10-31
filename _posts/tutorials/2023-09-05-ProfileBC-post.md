@@ -197,7 +197,8 @@ x1, y1, z1, Tn <br>
 
 
 ## 4) 후처리
-Paraview 아이콘을 눌러 Paraview를 실행한다.<br>
+시간에 따른 온도 및 속도의 분포를 확인한다.<br>
+External tools의 paraview 버튼을 눌러 paraview를 실행한다.<br>
 상단의 Solid Color를 T로 변경한다.<br>
 
 <p align='center'>

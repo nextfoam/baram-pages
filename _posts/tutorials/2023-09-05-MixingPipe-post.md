@@ -174,7 +174,7 @@ Initial Condition은 초기값으로 x, y, z의 속도와 압력을 입력할 �
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.9.png"><br>
 </p>
 
-값을 입력하고 하단에 Initializer 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
+값을 입력하고 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
 
 ### (9) Run
 Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설정한다. <br>
@@ -183,7 +183,7 @@ Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설
 
 ## 4) 후처리
 BARAM에서는 paraview를 이용하여 후처리를 진행한다.<br>
-후처리 진행 시, Mesh탭의 paraivew 아이콘을 클릭하면 된다.<br>
+후처리 진행 시, External tools의 paraivew 버튼을 클릭하면 된다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.10.png"><br>
@@ -206,7 +206,7 @@ paraview를 초기 실행 시, 필요한 기능에 대한 설명은 다음과 �
 </p>
 
 ### (1) 경계면 스칼라 분포
-벽면에 걸리는 압력을 확인해보는 과정을 진행한다.<br>
+벽면에 걸리는 압력 분포를 그려본다.<br>
 초기 설정을 아래와 같이 해준다.<br>
 
 ●  Skip Zero Time : 비활성화<br>
@@ -228,7 +228,7 @@ p_rgh를 선택하면 벽면에 걸리는 압력의 크기를 확인할 수 있�
 
 
 ### (2) 축단면 스칼라 분포
-Pipe 내부 높이에 따른 압력 분포를 확인해본다.
+Pipe 내부의 압력 분포를 확인해본다.
 
 slice 버튼을 클릭한다.
 그 후, 방향을 Y-normal로 바꾸고 pipe 내부 압력을 확인한다.

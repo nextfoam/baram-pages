@@ -174,8 +174,8 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 ## 4) 후처리
 
 ### (1) 축 단면 스칼라 분포
-Fan 내부의 압력 contours를 확인하는 과정을 진행한다.<br>
-paraview 아이콘을 클릭하여 paraview를 실행한다.<br>
+Fan 내부의 압력 분포를 확인해본다.<br>
+External tools의 paraivew 버튼을 클릭하여 paraview를 실행한다.<br>
 
 Case Type을 Decomposed Case로 변경한다.
 
