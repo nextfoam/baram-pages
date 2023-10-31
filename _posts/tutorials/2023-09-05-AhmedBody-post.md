@@ -184,7 +184,7 @@ Reference Values에 아래와 같이 입력한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.11.png"><br>
 </p>
 
-값을 입력하고 하단에 Initializer 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
+값을 입력하고 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
 
 ### (9) Run
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>

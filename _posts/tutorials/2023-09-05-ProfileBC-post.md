@@ -155,7 +155,7 @@ Initial Contion은 초기값으로 x, y, z의 속도와 압력을 입력할 수 
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.8.png"><br>
 </p>
 
-값을 입력하고 하단에 Initializer 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
+값을 입력하고 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
 
 ### (9) Run Conditions
 Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설정한다. <br>

@@ -143,7 +143,7 @@ rot 선택 - Multiple Reference Fram, Sliding Mesh를 선택하고 아래 값들
 
 ### (7) Initialization
 Turbluent Intensity을 0.1 (%)로 변경하고 나머지는 Defalut 값을 사용한다.<br>
-하단에 Initializer 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
+하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.11.png"><br>
