@@ -8,7 +8,7 @@ category: meshguide
 
 baramMesh is pre-processing (meshing) module. baramMesh means BARAM + snappyHexMesh.
 
-It is for the BARAM users who want to make mesh of the BARAM or OpenFOAM.
+It is for the users who want to make mesh of the BARAM or OpenFOAM.
 
 And we provide the guide of baramMesh.
 
