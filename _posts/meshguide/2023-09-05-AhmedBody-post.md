@@ -1,3 +1,9 @@
+---
+layout: post
+title: 02. Ahmed Body
+category: mesh
+---
+
 # AhmedBody
 
 ## * [형상 파일](https://drive.google.com/file/d/1gxuKBcN6puyEF6Yv6VEYSNUz-tlHyAuD/view) 
