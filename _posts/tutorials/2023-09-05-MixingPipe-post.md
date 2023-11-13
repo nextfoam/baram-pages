@@ -116,7 +116,7 @@ Cell Zone Conditions에서는 Source, MRF, Sliding Mesh등을 설정할 수 있�
 Discretization, Relaxation factors, Convergence criteria, Pressure-Velocity coupling등 항목을 설정할 수 있다. <br>
 본 예제에서는 아래와 같이 설정을 변경한다. <br>
 
-●  Pressure-Velocity Coupling Scheme : SIMPLE <br>
+●  Pressure-Velocity Coupling Scheme : SIMPLEC <br>
 
 ●  Discretization Scheme  <br>
 ```Momentum : Second Order Upwind``` <br>
