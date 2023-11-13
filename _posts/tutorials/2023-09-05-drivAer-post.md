@@ -215,7 +215,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 ●  Save Interval : 100  <br>
 
-●  Data Write Format : ASCII  <br>
+●  Data Write Format : Binary  <br>
 
 ●  Number of Cores : 4  <br>
 
