@@ -7,9 +7,7 @@ category: userguide
 
 # User Guide 
 
-We are providing guide as pdf file.
-
-Please download the below pdf file.
+Here is the User guide for BARAM Users.<br>
 
 Thank you.
 
@@ -19,5 +17,3 @@ Thank you.
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-* [User Guide](https://drive.google.com/file/d/12E3csWS67avwZUs02cnxSAP1lavZHNhL/view?usp=sharing)

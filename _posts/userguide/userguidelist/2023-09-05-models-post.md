@@ -1,0 +1,61 @@
+---
+layout: post
+title: Models
+category: userguidelist
+---
+
+# Models
+
+난류모델과 온도 해석 여부를 설정한다. Flow Type(압축성/비압축성), Multiphase(Off/VOF/Cavitation), Solver Type(Pressure-based/Density-based), Species 등은 프로그램 시작할 때 launcher에서 설정되며 바꿀 수 없다.(압축성, Cavitation, Species는 아직 지원되지 않는다)
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/models.png"><br> Models 설정
+</p>
+<br>
+
+## Turbulence
+
+Turbulence를 더블 클릭하면 아래 그림의 설정창이 나타난다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/turbulence.png"><br> Turbulence Models 설정
+</p>
+
+Model을 선택하면 그에 따라 필요한 추가 설정 부분이 표시된다.
+
+* Inviscid : 점성을 고려하지 않는 것으로 별도의 설정은 없다. 이 옵션을 선택하면 내부적으로 laminar가 선택되고 점성계수는 0이 된다.
+
+* Laminar : 층류유동이며 별도의 설정은 없다.
+
+* Spalart-Allmaras : 1 equation 난류모델이며 turbulent Prandtl Number를 설정할 수 있다.
+
+* k-epsilon : standard, RNG, Realizable 3가지 k-epsilon 모델을 선택할 수 있으며 turbulent Prandtl Number를 설정할 수 있다. Realizable 모델을 선택하면 Near-Wall Treatment 옵션으로 Standard Wall Function과 Enhanced Wall Treatment(two layer)를 선택할 수 있다.
+
+* k-omega : k-omega 모델은 현재 Menter의 SST(Shear Stress Transport) 모델만 지원한다. turbulent Prandtl Number를 설정할 수 있다.
+<br>
+
+### Enhanced Wall Treatment(two layer)
+
+Enhanced Wall Treatment(two layer)는 넥스트폼이 개발한 것으로 blending 함수를 사용한다. Standard wall function은 y+가 buffer layer에 있는 경우 결과의 정확도가 문제될 수 있어 y+에 상관없이 사용할 수 있는 벽함수이다. blending 함수는 다음의 식이 사용된다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_twoLayer.png"><br>
+</p>
+
+Ref) Shih, T. H., Liou, W. W., Shabbir, A., Yang, Z., \& Zhu, J. (1995). A New k-epsilon eddy Viscosity Model for High Reynolds Number Turbulent Flows. Computers and Fluids, 24(3), 227-238.
+
+
+### turbulent Prandtl Number
+
+turbulent Prandtl Number는 Internal Field와 Wall Function 두 가지를 설정할 수 있다. Internal Field의 값은 난류모델에 사용되고, Wall Function의 값은 alphat wall function에 사용된다. 
+<br>
+
+## Energy
+
+Energy를 더블 클릭하면 아래 그림의 설정창이 나타난다. 포함할 것인지 아닌지를 선택한다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/energy.png"> <br> Energy 설정 
+</p>
+
+
