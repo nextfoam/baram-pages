@@ -22,7 +22,7 @@ category: userguidelist
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/force.png"><br> Force 설정
 </p>
 
-설정 항목은 Write Interval, Lift Direction, Drag Direction, Center of Rotation, Boundaries이다. Write Interval은 몇 번 iteration 마다 데이터를 저장할 것인가이다. Pitch axis는 drag, lift 방향과 수직하게 결정된다. Force와 force coefficient 데이터가 저장되며 그래프는 $C_d$, $C_l$, $C_m$이 그려진다. <span style="color:blue">C<sub>d</sub>, C<sub>l</sub>, C<sub>m</sub>을 계산할 때 필요한 reference 값은 [Setup-Reference Values]의 값을 사용한다</span>.
+설정 항목은 Write Interval, Lift Direction, Drag Direction, Center of Rotation, Boundaries이다. Write Interval은 몇 번 iteration 마다 데이터를 저장할 것인가이다. Pitch axis는 drag, lift 방향과 수직하게 결정된다. Force와 force coefficient 데이터가 저장되며 그래프는 C<sub>d</sub>, C<sub>l</sub>, C<sub>m</sub>이 그려진다. <span style="color:blue">C<sub>d</sub>, C<sub>l</sub>, C<sub>m</sub>을 계산할 때 필요한 reference 값은 [Setup-Reference Values]의 값을 사용한다</span>.
 
 ## Point
 

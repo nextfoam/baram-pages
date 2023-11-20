@@ -64,7 +64,7 @@ Sliding Mesh는 운동하는(baram 현재 버전에서는 회전 운동만 지�
 
 Porous Zone은 다공성 매질이나 작은 영역에 매우 복잡한 형상이 있을 때 형상을 직접 구현하지 않고 유속에 따른 압력 손실로 모델링하는 방법이다. 압력 손실의 모델링 방법은 Darcy-Forchheimer 모델과 Power law 모델을 사용할 수 있다.
 
-Darcy-Forchheimer 모델은 다음의 식을 사용한다. \\
+Darcy-Forchheimer 모델은 다음의 식을 사용한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_darcy.png"><br>
@@ -118,13 +118,13 @@ Actuator disk 모델은 프로펠러와 같은 회전체를 디스크로 모델�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_actuatorDisk1.png"><br>
 </p>
 
-<$>\alpha</$> 
+_α_<br>
 
 * 변수 정의
 
   + _T_ : Thrust magnitude
 
-  + _\rho_ : Monitored incoming fluid density
+  + _ρ_ : Monitored incoming fluid density
 
   + _A_ : Actuator disk planar surface area
 

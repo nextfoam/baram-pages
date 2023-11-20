@@ -42,7 +42,7 @@ Enhanced Wall Treatment(two layer)는 넥스트폼이 개발한 것으로 blendi
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_twoLayer.png"><br>
 </p>
 
-Ref) Shih, T. H., Liou, W. W., Shabbir, A., Yang, Z., \& Zhu, J. (1995). A New k-epsilon eddy Viscosity Model for High Reynolds Number Turbulent Flows. Computers and Fluids, 24(3), 227-238.
+Ref) Shih, T. H., Liou, W. W., Shabbir, A., Yang, Z., & Zhu, J. (1995). A New k-epsilon eddy Viscosity Model for High Reynolds Number Turbulent Flows. Computers and Fluids, 24(3), 227-238.
 
 
 ### turbulent Prandtl Number

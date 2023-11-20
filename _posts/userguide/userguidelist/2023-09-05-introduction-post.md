@@ -48,7 +48,7 @@ BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2
   
   + RNG k-epsilon
   
-  + Realizable k-epsilon with standard \& 2-layer wall function
+  + Realizable k-epsilon with standard & 2-layer wall function
   
   + SST k-omega
   
@@ -64,7 +64,7 @@ BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2
   
   + conjugate heat transfer
   
-  + <span style="color:gray">Radiation : P1, fvDOM(곧 지원 예정)}</span>
+  + <span style="color:gray">Radiation : P1, fvDOM(곧 지원 예정)</span>
   
 * Cell zone 모델
 

@@ -177,11 +177,11 @@ ABL(Atmospheric Boundary Layer) Inlet 조건은 유동의 입구에 대기경계
 
 * Ground-Normal Direction : 지표면에 수직한 벡터
 
-* Reference Height, $z_{ref}$
+* Reference Height, z<sub>ref</sub>
 
-* Reference Flow Speed, $U_{ref}$ : Reference Height에서의 속도
+* Reference Flow Speed, U<sub>ref</sub> : Reference Height에서의 속도
 
-* Surface Roughness Length, $z_{0}$
+* Surface Roughness Length, z<sub>0</sub>
 
 * Minimum z-coordinate, d : 지표면의 높이 방향 좌표(지표면에서 높이가 z-d 로 계산됨)
 
@@ -200,9 +200,9 @@ ABL(Atmospheric Boundary Layer) Inlet 조건은 유동의 입구에 대기경계
 
 * _z_ : 수직 방향 좌표
 
-* _\kappa_ : Von Karman's constant, 0.41
+* _κ_ : Von Karman's constant, 0.41
 
-* _C<sub>\mu</sub>_ : constant, 0.09
+* _C<sub>μ</sub>_ : constant, 0.09
 
 * _C<sub>1</sub>_ : constant, 0
 
@@ -472,7 +472,7 @@ Porous Jump 조건은 계산영역 내부에 있는 cyclic 면에서 압력 변�
 
 * Coupled boundary
 
-압력 변화는 다음 식으로 계산된다. $\mu$는 점성계수, $\rho$는 밀도, $U$는 속도이다.
+압력 변화는 다음 식으로 계산된다. _μ_는 점성계수, _ρ_는 밀도, _U_는 속도이다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_porousJump.png"><br>
