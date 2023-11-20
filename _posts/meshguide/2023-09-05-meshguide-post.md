@@ -18,5 +18,3 @@ And we provide the guide of baramMesh.
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-* [2D Multi Region Mesh](https://drive.google.com/file/d/1e1G92wd9SFeuzXfLqCYTL9HUCeqw5Tp3/view?usp=sharing)
