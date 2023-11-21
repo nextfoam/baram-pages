@@ -105,18 +105,6 @@ nav_external_links:
   - title: BARAM on GitHub
     url: https://github.com/nextfoam/baram
 
-# Nav settings
-docs :
-  - Screenshots
-  - Features
-  - Installation
-  - Internationalization
-  - Release Notes
-  - Guides
-    - User Guide
-    - Tutorial Guides
-    - baramMesh Guide
-
 # Footer content
 # appears at the bottom of every page's main content
 
