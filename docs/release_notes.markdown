@@ -4,6 +4,31 @@ layout: page
 title: Release Notes
 ---
 
+# 23.3.5
+
+## New Features
+* None
+
+## Improvements
+* [Mesh] Crossing lines between Hex6 far-end boundary and other geometries are classified as feature edges
+* [Mesh] Relative pressure is shown in case of multi-phase case rather than absolute pressure
+* [Mesh] Surface for cell zones are configured as internal type to make mesh conform the surface
+* [Flow] Warning message is displayed if a user leaves initialization page without clicking *initialize* button after changing setup
+* [Flow] If section initializer is configured, Fixed Value type boundary value configured on boundary condition will not change the initialized values until re-initialization
+
+## Bug Fixes
+* [Flow] Base grid for Hex6 far-end boundary was slightly bigger than the Hex6
+* [Flow] Text filter in boundary condition list is now working
+* [Flow] *Select Color* and *Opacity* windows in *display control* were not modal windows
+* [Mesh] No-boundary geometries were shown in the list of boundaries in the boundary layer step
+* [Flow] Mesh could not be loaded after project creation
+* [Flow] Exception occurred when text is typed in the filter input in boundary conditions
+
+
+## Know Issues
+* [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
+
+
 # 23.3.3
 
 ## New Features

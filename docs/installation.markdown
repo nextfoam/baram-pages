@@ -5,16 +5,18 @@ title: Installation
 ---
 
 # Installing BARAM for Windows
-Binary installation package for 64-bit windows is prepared for convenience.  
-Download it from following link.
+Binary installation package for 64-bit windows and disk image for macOS with Apple Silicon are here for convenience.
+Download them from following links.
 
-[Download BARAM v23.3.3 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.3-setup.exe){: .btn .btn-purple .text-center .fs-5}
+[Download BARAM v23.3.5 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5-setup.exe){: .btn .btn-purple .text-center .fs-5}
+
+[Download BARAM v23.3.5 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5.dmg){: .btn .btn-blue .text-center .fs-5}
 
 # Installing BARAM from Source Code
 
 ## Supported Platforms
 * Windows 10 or newer
-* macOS 10.14 or newer
+* macOS 10.14 or newer (Apple Silicon only)
 * Ubuntu 20.04 or newer
 * CentOS 8.2 or alternatives ( Rocky Linux, AlmaLinux, ... )
 * OpenSUSE Leap 15.4
@@ -88,7 +90,7 @@ The final directory structure may look like following.
 ```
 
 ### Windows
-[solvers_windows_v1.5_20230723.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_v1.5_20230723.zip)
+[solvers_windows_v23.5.1_20231117.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_v23.5.1_20231117.zip)
 
 
 ### Linux
@@ -104,8 +106,8 @@ wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz
 curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz -o solvers_linux_v1.5_20230723.tar.xz
 ```
 
-### macOS with Apple Silicon
-[solvers_macos_arm64_v1.5_20230724.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_macos_arm64_v1.5_20230724.tar.xz)
+### macOS (Apple Silicon only)
+Not yet prepared due to the strict code signing policy from Apple
 
 
 ## Compile Daemonizer ( only for Linux and macOS )

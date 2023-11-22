@@ -20,11 +20,15 @@ Source code of *BARAM* is published on [GitHub](https://github.com/nextfoam/bara
     * OpenSUSE Leap 15.4
     * Linux Mint 21 "Vanessa"
     * Windows 10 or later
-    * macOS 10.14 or later
+    * macOS 10.14 or later (Apple Silicon only)
 
 For installation from the source code, please refer to [Installation]({{ site.baseurl }}{% link docs/installation.markdown %}) page.
 
 
-Binary installation package for 64-bit windows is here for convenience.
+Binary installation package for 64-bit windows and disk image for macOS with Apple Silicon are here for convenience.
 
-[Download BARAM v23.3.3 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.3-setup.exe){: .btn .btn-purple .text-center .fs-5}
+[Download BARAM v23.3.5 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5-setup.exe){: .btn .btn-purple .text-center .fs-5}
+
+
+
+[Download BARAM v23.3.5 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5.dmg){: .btn .btn-blue .text-center .fs-5}
