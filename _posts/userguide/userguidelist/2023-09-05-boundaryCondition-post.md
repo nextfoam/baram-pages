@@ -14,61 +14,59 @@ Navigation의 Boundary Conditions를 선택하면 Configuration에 아래 그림
 
 경계조건은 Inlet, Outlet, Wall, Misc의 4개 범주로 구분되어 있으며, 각 범주에는 다음과 같은 종류의 경계조건이 있다. 다상유동, 압축성유동 등의 조건에 따라 표시되는 것이 다르다. 경계면을 선택하고 더블 클릭을 하거나 Edit 버튼을 누르면 경계조건의 세부 설정창이 나타난다.
 
-
-
 * Inlet
 
-   + [Velocity Inlet](#velocity-inlet)
+   + Velocity Inlet
    
-   + [Flow Rate Inlet](#flow-rate-inlet)
+   + Flow Rate Inlet
    
-   + [Pressure Inlet](#pressure-inlet)
+   + Pressure Inlet
    
-   + [ABL Inlet : 대기경계층 조건(Atmospheric Boundary Layer)](#abl-inlet)
+   + ABL Inlet : 대기경계층 조건(Atmospheric Boundary Layer)
    
-   + [Free Stream](#free-stream)
+   + Free Stream
    
-   + [Open Channel Inlet : 다상유동 해석에만 사용](#open-channel-inlet)
+   + Open Channel Inlet : 다상유동 해석에만 사용
    
-   + [Far-field Riemann : 압축성유동 해석에만 사용](#far-field-riemann)
+   + Far-field Riemann : 압축성유동 해석에만 사용
    
-   + [Subsonic Inflow : 압축성유동 해석에만 사용](#subsonic-inflow)
+   + Subsonic Inflow : 압축성유동 해석에만 사용
    
-   + [Supersonic Inflow : 압축성유동 해석에만 사용](#supersonic-inflow)
+   + Supersonic Inflow : 압축성유동 해석에만 사용
    
 * Outlet
 
-   + [Pressure Outlet](#pressure-outlet)
+   + Pressure Outlet
    
-   + [Outflow](#outflow)
+   + Outflow
    
-   + [Open Channel Outlet : 다상유동 해석에만 사용](#open-channel-outlet)
+   + Open Channel Outlet : 다상유동 해석에만 사용
    
-   + [Subsonic Outflow : 압축성유동 해석에만 사용](#subsonic-outflow)
+   + Subsonic Outflow : 압축성유동 해석에만 사용
    
-   + [Supersonic Outflow : 압축성유동 해석에만 사용](#supersonic-outflow)
+   + Supersonic Outflow : 압축성유동 해석에만 사용
    
 * Wall
 
-   + [Wall](#wall)
+   + Wall
    
-   + [Thermo-Coupled Wall](#thermo-coupled-wall)
+   + Thermo-Coupled Wall
    
 * Misc.
 
-   + [Symmetry](#symmetry)
+   + Symmetry
    
-   + [Interface](#interface)
+   + Interface
    
-   + [Empty](#empty-wedge)
+   + Empty
    
-   + [Cyclic](#cyclic)
+   + Cyclic
    
-   + [Wedge](#empty-wedge)
+   + Wedge
    
-   + [Porous Jump](#porous-jump)
+   + Porous Jump
    
-   + [Fan](#fan)
+   + Fan 
 <br>
 
 ## Velocity Inlet
