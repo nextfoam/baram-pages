@@ -4,7 +4,7 @@ layout: page
 title: Installation
 ---
 
-# Installing BARAM for Windows
+# Installing BARAM for Windows and macOS
 Binary installation package for 64-bit windows and disk image for macOS with Apple Silicon are here for convenience.
 Download them from following links.
 
