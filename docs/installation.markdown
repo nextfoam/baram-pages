@@ -10,6 +10,8 @@ Download them from following links.
 
 [Download BARAM v23.3.5 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5-setup.exe){: .btn .btn-purple .text-center .fs-5}
 
+**NOTE: For macOS, [*open-mpi*](https://formulae.brew.sh/formula/open-mpi) Homebrew Formulae should be installed in advance.**
+
 [Download BARAM v23.3.5 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5.dmg){: .btn .btn-blue .text-center .fs-5}
 
 # Installing BARAM from Source Code
