@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 12. Atmosphere Boundary Conditions
+title: 12. Cantilever Beam
 category: tutorials
 ---
 # Cantilever Beam 
@@ -197,7 +197,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/14.png"><br>
 </p>
 
-계산이 완료되면 아래와 같이 Residuals과 Force monitor의 그래프가 나오게 된다.<br>
+계산이 완료되면 아래와 같이 Residuals과 Forcegit monitor의 그래프가 나오게 된다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/15.png"><br>
