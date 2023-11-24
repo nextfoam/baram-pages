@@ -192,7 +192,7 @@ Point Monitoring은 아래와 같이 설정한다.<br>
 
 ### (10) Initialization
 ●  X-Velocity : 1<br>
-이외 값들은 Default값을 사용한다.<br>
+이외 값들은 Default값을 사용한다. 하단에 Initialize 버튼을 클릭한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.11.png"><br>
@@ -207,12 +207,22 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 ●  End Time : 150  <br>
 
+●  Save Interval : 0.5  <br>
+
 ●  Data Write Format : Binary  <br>
 
 ●  Number of Cores : 4  <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.12.png"><br>
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.18.png"><br>
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.19.png"><br>
 </p>
 
 계산이 완료된 Residuals<br>

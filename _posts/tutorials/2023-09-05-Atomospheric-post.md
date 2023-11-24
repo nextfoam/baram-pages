@@ -189,6 +189,12 @@ Case Type을 Reconstructed Case로 변경한다.<br>
 </p>
 
 상단 툴바에서 Slice 아이콘을 클릭하고 아래와 같이 설정한다.<br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.16.png"><br>
+</p>
+
+
 상단 툴바의 Plot Over Line 아이콘을 클릭하고 아래와 같이 입구와 출구에 각각 Line을 1개 생성한다.<br>
 입구, 출구의 라인을 이용하여 속도 프로파일이 그대로 유지되는지 정량적으로 확인한다.<br>
 
@@ -204,9 +210,9 @@ Case Type을 Reconstructed Case로 변경한다.<br>
 
 2번 라인 (출구)<br>
 
-●  Point1 : 0 25 0<br>
+●  Point1 : 600 25 0<br>
 
-●  Point2 : 0 25 600<br>
+●  Point2 : 600 25 600<br>
 
 ●  X Array Name : U_X<br>
 

@@ -86,7 +86,6 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 ```Turbulent Intensity : 1 (%)```<br>
 ```Turbulent Viscosity Ratio : 10```<br>
 ```Temperature Profile Type : Temporal Distribution```<br>
-```Piecewise Linear : file - temperatureHistory.csv 파일 선택```<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.5.png"><br>
@@ -181,20 +180,6 @@ Monitor 탭을 클릭하면 입구의 온도와 유량의 변화를 확인할 �
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.11.png"><br>
 </p>
-
-### (10) 속도와 온도의 공간 분포 경계조건 적용
-속도와 온도의 공간분포는 csv 파일을 사용한다. csv 파일은 좌표와 속도 혹은 온도가 다음과 같은 형식으로 쓰여 있어야 한다.<br>
-
-x1, y1, z1, u1, v1, w1 <br>
-x2, y2, z2, u2, v2, w2 <br>
-... <br>
-x1, y1, z1, un, vn, wn <br>
-혹은 <br>
-x1, y1, z1, T1 <br>
-x2, y2, z2, T2 <br>
-... <br>
-x1, y1, z1, Tn <br>
-
 
 ## 4) 후처리
 시간에 따른 온도 및 속도의 분포를 확인한다.<br>
