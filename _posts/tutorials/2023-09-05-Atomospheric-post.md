@@ -236,4 +236,4 @@ Series Parameters에서 해당 Parameter의 색을 변경할 수 있다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.15.png"><br>
 </p>
 
-위 그림에서 빨간 선이 입구영역, 초록 선이 출구영역에서 속도 프로파일이다.
+위 그림에서 빨간선이 입구영역, 초록선이 출구영역에서 속도 프로파일이다.
