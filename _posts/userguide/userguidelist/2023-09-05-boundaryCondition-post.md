@@ -458,9 +458,13 @@ interface와 같은 기능을 하지만 2개의 쌍을 이루는 격자가 완�
 
 Porous Jump 조건은 계산영역 내부에 있는 cyclic 면에서 압력 변화를 주는 조건이다. 
 
+<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/porousJump.png"><br> Porous Jump 설정
 </p>
+-->
+
+$\Delta p = -\left(D \mu U + \frac{1}{2} I \rho |U|^2 \right)L$
 
 입력항목은 다음과 같다.
 
