@@ -458,13 +458,9 @@ interface와 같은 기능을 하지만 2개의 쌍을 이루는 격자가 완�
 
 Porous Jump 조건은 계산영역 내부에 있는 cyclic 면에서 압력 변화를 주는 조건이다. 
 
-<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/porousJump.png"><br> Porous Jump 설정
 </p>
--->
-
-$\Delta p = -\left(D \mu U + \frac{1}{2} I \rho |U|^2 \right)L$
 
 입력항목은 다음과 같다.
 
@@ -478,9 +474,13 @@ $\Delta p = -\left(D \mu U + \frac{1}{2} I \rho |U|^2 \right)L$
 
 압력 변화는 다음 식으로 계산된다. _μ_는 점성계수, _ρ_는 밀도, _U_는 속도이다.
 
+<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_porousJump.png"><br>
 </p>
+-->
+
+$\Delta p = -\left(D \mu U + \frac{1}{2} I \rho |U|^2 \right)L$
 
 openfoam에서 사용하는 경계조건은 압력은 porousBafflePressure이고, 나머지는 모두 cyclic이다.
 
