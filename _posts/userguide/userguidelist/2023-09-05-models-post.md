@@ -38,6 +38,10 @@ Model을 선택하면 그에 따라 필요한 추가 설정 부분이 표시된�
 
 Enhanced Wall Treatment(two layer)는 넥스트폼이 개발한 것으로 blending 함수를 사용한다. Standard wall function은 y+가 buffer layer에 있는 경우 결과의 정확도가 문제될 수 있어 y+에 상관없이 사용할 수 있는 벽함수이다. blending 함수는 다음의 식이 사용된다.
 
+$\lambda = {\frac 1 2} \left[1 + tanh \left( \frac{Re_y - {Re_y}^* } {A} \right) \right ]$
+
+$A = \frac {\Delta Re_y } {tanh(0.98)}$
+
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_twoLayer.png"><br>
 </p>
