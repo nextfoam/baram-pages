@@ -480,7 +480,7 @@ Porous Jump 조건은 계산영역 내부에 있는 cyclic 면에서 압력 변�
 </p>
 -->
 
-$$\Delta p = -\left(D \mu U + \frac{1}{2} I \rho |U|^2 \right)L$$
+$$\Delta p = -\left(D \mu U + \frac{1}{2} I \rho U^2 \right)L$$
 
 openfoam에서 사용하는 경계조건은 압력은 porousBafflePressure이고, 나머지는 모두 cyclic이다.
 
