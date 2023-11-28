@@ -119,7 +119,7 @@ Velocity Inlet 조건에서 온도의 Profile Type을 Temporal Distribution으�
 </p>
 -->
 
-####<center>$S = a_0 \cdot t^0 + a_1 \cdot t^1 + a_2 \cdot t^2 + ... + a_n \cdot t^n$</center>
+#### <center>$S = a_0 \cdot t^0 + a_1 \cdot t^1 + a_2 \cdot t^2 + ... + a_n \cdot t^n$</center>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/polynomial.png"><br> Temporal Distribution 조건 설정 - polynomial
