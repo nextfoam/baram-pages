@@ -26,188 +26,172 @@ https://www.epc.ed.tum.de/en/aer/research-groups/automotive/drivaer/geometry/
 형상은 차량, 앞바퀴, 뒤바퀴의 3개 stl 파일을 사용한다. 전체 영역 설정을 위한 Hex6와 차량 주위에 격자를 조밀하게 만들기 위해 3개의 Hex를 사용하여 다음 그림과 같이 구성한다. 
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/geom.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/geom.png"><br> Geomerty 설정
 </p>
 
 Import 버튼을 클릭해서 body_no_wheel.stl, Wheels_Front_Smooth.stl, Wheels_Rear_Smooth.stl 파일을 선택한다.
 
 Add 버튼을 클릭해서 전체 영역과 격자 조밀화를 위한 3개의 박스를 만들어준다. 
 
+* far(전체영역) : 입구, 출구, 바닥 등의 경계를 구분하기 위해 Hex6로 생성
 
-형상은 주어진 ahmed.stl 파일을 사용한다. <br>
-하단 탭에서 Import - Select - ahmed.stl을 선택한다. <br>
-Feature Angle을 비활성화하고 ahmed.stl을 연다.<br>
+  + Type : None
+  
+  + Min./Max. : (-14 0 -0.3) / (30 4 6) 
+  
+  + 좌우 대칭이기 때문에 y 축으로 절반만 생성한다. z축의 최소값은 stl 파일의 최소값을 사용하면 바퀴의 원형과 바닥의 평면이 접하는 부분의 격자가 너무 나빠지기 때문에 조금 높게 잡아준다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/1.png"><br>
-</p>
+* refineBox1 : Hex로 생성
 
-Geometry tab에서 surface들의 이름을 다음과 같이 변경한다.<br>
+  + Type : None
+  
+  + Min./Max. : (-2 0 -0.3) / (15 2 2.5)
+  
+  + 생성하면 refineBox1_surface라는 면이 생성된다. 이것을 마우스 오른쪽 버튼으로 선택하고 Edit를 눌러 Type을 None으로 설정한다.
+  
+* refineBox2 : Hex로 생성
 
-●  ahmed → bottom <br>
-●  ahmed1 → leg<br>
-●  ahmed2 → nose1<br>
-●  ahmed3 → nose2<br>
-●  ahmed4 → nose3<br>
-●  ahmed5 → nose4<br>
-●  ahmed6 → nose5<br>
-●  ahmed7 → rear<br>
-●  ahmed8 → side<br>
-●  ahmed9 → slant<br>
-●  ahmed10 → top<br>
+  + Type : None
+  
+  + Min./Max. : (-1 0 -0.3) / (7 1.2 1.5)
 
-이후, 자동차의 외부유동 해석을 위해 원방 경계를 생성한다.<br>
-하단의 Add - Hex6를 선택하고 이름은 Farfield로 한다.<br>
-여기서 Hex6는 외부 유동 해석에서 원방 경계를 생성할 경우 사용하는 형상이다.<br>
+  + 생성하면 refineBox2_surface라는 면이 생성된다. 이것을 마우스 오른쪽 버튼으로 선택하고 Edit를 눌러 Type을 None으로 설정한다.
+    
+* refineBox3 : Hex로 생성
 
-***●  Shape : Hex6***<br>
-●  Name : Farfield<br>
-●  Type : CellZone<br>
-```X : -4.5 ~ 10```<br>
-```Y : -0.05 ~ 5```<br>
-```Z : 0 ~ 3```<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/3.png"><br>
-</p>
-
-이후 생성된 Surface들의 이름을 다음과 같이 변경한다.<br>
-
-●  Hex6_1_xMin → inlet <br>
-●  Hex6_1_xMax → outlet <br>
-●  Hex6_1_yMin → wall <br>
-●  Hex6_1_yMax → sky <br>
-●  Hex6_1_zMin → left_side <br>
-●  Hex6_1_zMax → right_side <br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/4.png"><br>
-</p>
-
-좌우 대칭 형상이기 때문에 +z 방향으로 격자 절반만 생성한다.<br>
-
-이후, 격자 크기를 조밀하게 적용할 영역을 지정한다.<br>
-Add - Hex를 눌러 영역 하나를 생성하고 이름은 Refinement1로 지정한다.<br>
-
-***●  Shape : Hex***<br>
-●  Name : Refinement1<br>
-●  Type : None<br>
-```X : -0.6 ~ 1```<br>
-```Y : -0.05 ~ 0.4```<br>
-```Z : 0 ~ 0.27```<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/5.png"><br>
-</p>
-
-Refinement1_surface의 타입은 None으로 변경한다.<br>
-
-이후, 다시 한 번 Add - Hex를 눌러 영역 하나를 생성하고 이름은 Refinement2로 지정한다.<br>
-
-***●  Shape : Hex***<br>
-●  Name : Refinement2<br>
-●  Type : None<br>
-```X : -0.9 ~ 1.7```<br>
-```Y : -0.05 ~ 0.6```<br>
-```Z : 0 ~ 0.5```<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/6.png"><br>
-</p>
-
-Refinement2_surface의 타입은 None으로 변경한다.<br>
-
-이후 상단의 Parallel - Environment를 클릭하고, Number of Cores는 4를 입력한다.<br>
-이렇게 하면 4개 코어를 이용하여 격자를 생성하게 된다.<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/parallel.png"><br>
-</p>
-
-여기까지 진행하고 Next 버튼을 클릭한다.<br>
+  + Type : None
+  
+  + Min./Max. : (3 0 -0.3) / (5 1 1)
+  
+  + 생성하면 refineBox3_surface라는 면이 생성된다. 이것을 마우스 오른쪽 버튼으로 선택하고 Edit를 눌러 Type을 None으로 설정한다.
+  
+Next 버튼을 눌러 다음 단계로 넘어간다.
 
 ## 3) 영역 (Region)
-Region에서는 Fluid의 영역을 지정한다. <br>
 
-상단 +버튼을 클릭하고 다음과 같이 Fluid 영역을 지정한다.<br>
+상단 (+) 버튼을 눌러 영역을 생성하고 그래픽 창에 연두색으로 나타나는 선의 교차점을 마우스로 이동하여 유체 영역에 위치시킨 후 Add 버튼을 클릭하면 설정이 완료된다.
 
-Point의 위치는 차량 외부 지점으로 다음과 같이 좌표를 입력하여 지정하면 된다.<br>
-
-Point : (2.75, 2.475, 1.40275) <br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/7.png"><br>
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/region.png"><br> Region 설정
 </p>
 
-이후 Add 버튼을 누르면 아래 사진과 같이 Fluid 영역이 생성됨을 볼 수 있다.<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/8.png"><br>
-</p>
+Next 버튼을 눌러 다음 단계로 넘어간다.
 
 ## 4) 배경 격자 (Base Grid)
-이후, 배경 격자를 생성한다.<br>
-여기서는 Use Hex6를 활성화 한 후, Number of Cells per Direction은 아래와 같이 입력한다.<br>
 
-***●  Number of Cells per Direction***<br>
-```X : 100```<br>
-```Y : 35```<br>
-```Z : 20```<br>
+Use Hex6를 선택하고 격자수를 220, 20, 32로 설정한다. Generate 버튼을 누르면 배경 격자가 생성된다.
 
-이후 Generate와 Next 버튼을 누른다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/9.png"><br>
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/baseGrid.png"><br> Base Grid 설정
 </p>
+
+Next 버튼을 눌러 다음 단계로 넘어간다.
 
 ## 5) Castellation
-이후, Castellation 단계를 진행한다.<br>
 
-Volume Refinement의 +버튼을 누르고 아래와 같이 차량 주변에 생성하였던 Refinement1에 대해 Volume Refinement를 정의한다.<br>
+Configuration과 Advanced는 디폴트 설정을 사용한다.
 
-Group Name은 Refinement1로 변경한다.<br>
+Surface/Feature Refinement에서 바퀴와 차체에 격자 레벨을 각각 설정한다.
 
-그리고 Volume Refinement Level은 5로 입력한다.<br>
+* wheel
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/10.png"><br>
+  + Surface Refinement Level : 5
+  
+  + Feature Edge refinement Level : 1
+  
+  + Surfaces : Wheels_Front_Smooth_surface_0, Wheels_Rear_Smooth_surface_0
+
+<p style="text-align: center">
+     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/refineWheel.png"><br> wheel surface/feature level 설정
+</p>
+  
+* body
+
+  + Surface Refinement Level : 4
+  
+  + Feature Edge refinement Level : 5
+  
+  + Surfaces : body_no_wheel_surface_0
+
+<p style="text-align: center">
+     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/refineBody.png"><br> body surface/feature level 설정
 </p>
 
-이후 다시 한번 +버튼을 누르고 Refinement2에 대해 Volume Refinement를 정의한다.<br>
+Volume Refinement에서 refine box에 대한 격자 레벨을 각각 설정한다.
 
-Group Name은 Refinement2로 변경하고 Volume Refinement Level은 3으로 입력한다.<br>
+* refine1
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/11.png"><br>
+  + Volume Refinement Level : 1
+  
+  + Volume : refineBox1
+  
+* refine2
+
+  + Volume Refinement Level : 2
+  
+  + Volume : refineBox2
+  
+* refine3
+
+  + Volume Refinement Level : 3
+  
+  + Volume : refineBox3
+
+설정을 끝내면 화면은 다음과 같이 된다.
+
+<p style="text-align: center">
+     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/castell.png"><br> 격자 레벨 설정
 </p>
 
-Refine 버튼을 눌러 Refine을 진행한다.<br>
+Refine 버튼을 누르면 castellation이 진행된다. 메뉴의 Parallel 설정을 사용해서 병렬로 진행할 수 있다.
+
+작업이 끝나면 Next 버튼을 눌러 다음 단계로 넘어간다.
 
 ## 6) Snap
-Snap 단계에서는 기본 설정으로 snap을 진행한다.<br>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/12.png"><br>
-</p>
+디폴트 설정을 그대로 사용하고 Snap 버튼을 누른다.
+
+작업이 끝나면 Next 버튼을 눌러 다음 단계로 넘어간다.
 
 ## 7) Boundary Layer
-마지막으로 벽 주변에 Boundary Layer를 생성한다.<br>
 
-Configuration의 + 버튼을 눌러 다음과 같이 경계층을 생성한다.<br>
+차량과 바퀴에 첫번째 경계층 높이는 0.001, expansion ratio는 1.2로 5개의 경계층 격자를 생성한다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/13.png"><br>
+Configuration에서 (+)를 눌러 다음과 같이 설정한다.
+
+<p style="text-align: center">
+     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/blayer.png"><br> Boundary Layer Configuration
 </p>
 
-최종적으로 생성된 격자 형태는 다음과 같다.<br>
+* Number of Layers : 4
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/14.png"><br>
+* Thickness Model Specification : First and Expansion
+
+* Size Specification : Absolute
+
+* First Layer Thickness : 0.001
+
+* Expansion Ratio : 1.2
+
+* Min. thickness : 0.0001
+
+* Boundary : body_no_wheel_surface_0, Wheels_Front_Smooth_surface_0, Wheels_Rear_Smooth_surface_0
+
+Starting Analysis에서 Feature Angle Threshold를 60으로 설정한다. 
+
+<p style="text-align: center">
+     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/boundary.png"><br> Boundary Layer 설정
 </p>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/15.png"><br>
-</p>
+나머지는 디폴트 설정을 그대로 사용하고 Apply 버튼을 누른다.
+
+작업이 끝나면 Next 버튼을 눌러 다음 단계로 넘어간다.
 
 ## 8) Export
-마지막으로 ahmedBody이라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.<br>
+
+마지막으로 drivAer라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더가 생성된다.
+
+<p style="text-align: center">
+     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/finalMesh.png"><br> 최종 격자
+</p>
+
