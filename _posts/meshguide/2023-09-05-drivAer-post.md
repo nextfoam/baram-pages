@@ -1,21 +1,39 @@
 ---
 layout: post
-title: 02. Ahmed Body
+title: 06. DrivAer
 category: mesh
 ---
 
 # DrivAer
 
-## * [형상 파일](https://drive.google.com/file/d/1gxuKBcN6puyEF6Yv6VEYSNUz-tlHyAuD/view) 
-
 ## 1) 개요 
-* 본 예제는 Ahmed Body의 stl파일을 이용해 자동차의 외부 유동장 격자를 생성하는 예제이다.<br>
 
-* 자동차 주위에 경계층 생성과 Refinement 조절을 하면서 격자를 생성한다. <br>
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/main.png"><br>
+</p>
 
-* baramMesh를 실행하면 ahmedBody라는 이름으로 project를 생성한다.<br>
+DrivAer는 자동차 공학 분야에서 사용되는 차량 외부 디자인 및 공기역학 테스트를 위한 실제 차량 모델로 차량의 외부 형태와 공기역학적 특성을 시뮬레이션하고 평가하기 위해 사용된다. 단순화된 모델과 매우 복잡한 양산차 사이의 격차를 줄이기 위해 도입된 모델이다. 
+
+공개되어 있는 CAD 파일을 이용하여 BARAM에서 격자를 만들고 계산하여 풍동시험 결과와 비교하는 예제이다.
+
+형상 파일은 아래의 링크된 페이지에서 Fastback, Smooth Underbody, with Mirrors, with Wheels에 해당하는 모델을 다운 받을 수 있다.(body_no_wheel.stl, Wheels_Front_Smooth.stl, Wheels_Rear_Smooth.stl)
+
+https://www.epc.ed.tum.de/en/aer/research-groups/automotive/drivaer/geometry/
+
 
 ## 2) 형상 (Geometry)
+
+형상은 차량, 앞바퀴, 뒤바퀴의 3개 stl 파일을 사용한다. 전체 영역 설정을 위한 Hex6와 차량 주위에 격자를 조밀하게 만들기 위해 3개의 Hex를 사용하여 다음 그림과 같이 구성한다. 
+
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/drivAer/geom.png"><br>
+</p>
+
+Import 버튼을 클릭해서 body_no_wheel.stl, Wheels_Front_Smooth.stl, Wheels_Rear_Smooth.stl 파일을 선택한다.
+
+Add 버튼을 클릭해서 전체 영역과 격자 조밀화를 위한 3개의 박스를 만들어준다. 
+
+
 형상은 주어진 ahmed.stl 파일을 사용한다. <br>
 하단 탭에서 Import - Select - ahmed.stl을 선택한다. <br>
 Feature Angle을 비활성화하고 ahmed.stl을 연다.<br>
