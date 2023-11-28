@@ -1,301 +1,152 @@
 ---
 layout: post
-title: 10. Weir
-category: tutorials
+title: 13. Weir
+category: Porous Media
 ---
 
-## * [격자 파일 다운로드](https://drive.google.com/file/d/1f5GOixMllPA3UXtCD2sPAV8vxpfWI6rI/view?usp=sharing)
+# 1) Porous Media 개요 
 
-# 1) Weir 개요 
-<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/main.png"><br> wave height
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/intro.png"><br> 형상 및 유동장
 </p>
 
-위어(Weir)는 수공학에서 수로에 설지하는 구조물로 물이 넘치게 만들어 특정 수위를 유지하거나 유량을 측정하는데 사용한다. CFD에서는 이론식으로 구할 수 있는 유량과 해석 결과를 비교하여 코드 검증용으로 사용하기도 한다.
+본 에제는 porous media 조건을 사용한 유동해석 예제이다. 상부 왼쪽에서 유동이 유입되고 porous 영역을 지나 아래로 유동이 흐르는 문제이다.(위 그림 왼쪽에서 파란색 부분이 porous 영역)
 
-본 예제는 사각 위어에서 수위가 일정한 경우에 유량 해석을 위한 예제이다.
+OpenFOAM의 porous media 모델은 porous 영역에서 불연속적인 속도 분포가 나타나고 압력손실도 입력 조건과 조금 다른 결과를 보이는 문제가 있다. 아래 그림의 왼쪽이 Baram-v23의 결과이며, 오른쪽이 OpenFOAM 2306의 standard 솔버를 사용한 결과이다. 
 
-계산 조건은 다음과 같다.
+Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolation 방법을 개선하여 이 문제를 해결하였다(이에 대한 자세한 내용은 아래 링크의 문서를 참고). 결과의 정확성과 함께 수렴성도 많이 좋아진 것을 확인할 수 있다.
 
-* 물의 입구 수위 : 1.6 m, 15696 Pa
+https://nextfoam.co.kr/proc/DownloadProc.php?fName=231101140051_yvpJhMF0nY.pdf&realfName=10thOKUCC_OpenFOAM%EC%82%AC%EC%86%8C%ED%95%9C%EB%AC%B8%EC%A0%9C%EB%93%A4.pdf
 
-* solver : interFoam
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/res.png"><br> 결과 (좌)Baram v23, (우) openfoam 2306 standard solver
+</p>
 
-* 난류모델 : standard 𝑘 − ε 
-<br>
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/residual-1.png"><br> Residual (좌)Baram v23, (우) openfoam 2306 standard solver
+</p>
+<br/>
 
 # 2) 프로그램의 구동
 
-프로그램 실행 후 launcher에서 'Open'을 선택하고 격자 생성 튜토리얼에서 만든 weir 폴더를 선택한다(혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 weir/case/constant 폴더를 선택한다).
+프로그램 실행 후 launcher에서 'Open'을 선택하고 격자 생성 튜토리얼에서 만든 porous 폴더를 선택한다(혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 porous/case/constant 폴더를 선택한다).
 
-'Flow Type'은 Incompressible, 'Multiphase Model'은 Volume of Fluid', Gravity는 (0 0 -9.81), 'Species'는 Not Include를 선택한다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/launcher.png"><br> launcher 설정
-</p>
-<br>
+Launcher에서 'Flow Type'은 Incompressible, 'Multiphase Model'은 None, Gravity는 (0 0 0), 'Species'는 Not Include를 선택한다.
+<br/>
 
 # 3) 계산 조건
-<br>
+
 ## (1) General
 
-Time 을 Transient로 변경하고 나머지는 디폴트를 사용한다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/general.png"><br> General 설정
-</p>
-<br>
+정상상태 계산이기 때문에 모든 설정은 디폴트 조건을 사용한다. 
 
 ## (2) Models
 
-난류 모델은 standard 𝑘 − ε  모델을 사용하고 나머지는 디폴트를 사용한다.
+난류 모델은 standard _k - \epsilon_ 모델을 사용하고 나머지는 Default를 사용한다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/turbulence.png"><br> Turbulence Model 설정
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/turbulence.png"><br> Turbulence Model 설정
 </p>
-<br>
+<br/>
 
 ## (3) Materials
 
-본 예제는 이상유동이므로 두 개의 유체가 필요하다. Material Configuration 부분의 상단 오른쪽의 (+)를 누르면 유체를 추가할 수 있다. water-liquid를 추가하고 이름을 water로 바꾸어 준다.
-
-* water
-
-  + density : 1000
-  
-  + viscosity : 0.001
-  
-* air
-
-  + density : 1.225
-  
-  + viscosity : 1.79e-5
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/material.png"><br> Materials 설정
-</p>
-<br>
+디폴트 조건인 air를 사용한다.
+<br/>
 
 ## (4) Cell Zone Conditions
 
-Cell Zone Conditions에는 region0가 있다.(multi-region일 때는 여러개의 region이 표시된다.) region의 유체를 설정한다. region0를 더블 클릭하면 설정창이 열린다. Primary Material은 air, Secondary material은 water로 지정한다.
-Surface Tension은 0을 사용한다.
+Cell Zone Conditions에는 region0에 porousZone이 있다. 이것을 더블 클릭하면 설정창이 열린다. Zone Type을 'Porous Zone'으로 선택하면 아래쪽에 세부 설정 부분이 나타나는데 다음과 같이 설정한다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/region.png"><br> Cell Zone Conditions 설정
+* Model : Power Law
+
+* C0 : 5000
+
+* C1 : 1.9
+
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/cellZone.png"><br> Cell Zone Conditions 설정
 </p>
-<br>
+<br/>
 
 ## (5) Boundary Conditions
 
 경계조건은 다음과 같이 설정한다.
 
-* water-in
+* inlet
 
-  + type : Pressure Inlet
+  + type : Velocity Inlet
   
-  + Total Pressure : 15696
+  + Velocity magnitude : 1
   
   + Turbulent Intensity : 1
   
-  + Turbulent Viscosity Ratio : 10
-  
-  + Volume Fraction(water) : 1
-  
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/inlet.png"><br> water-in 경계조건
-</p>
+  + Turbulent Viscosity Ratio : 10 
+ 
+ <p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/inlet.png"><br> inlet 경계조건
+ </p>
 
-* air-in
-
-  + type : Pressure Inlet
-  
-  + Total Pressure : 0
-  
-  + Turbulent Intensity : 1
-  
-  + Turbulent Viscosity Ratio : 10
-  
-  + Volume Fraction water : 0
-  
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/inlet-air.png"><br> air-in 경계조건
-</p>
-
-* top
+* outlet
 
   + type : Pressure Outlet
   
   + Total Pressure : 0
   
-  + Backflow Turbulent Intensity : 1
+  + Turbulent Intensity : 1
   
-  + Backflow Turbulent Viscosity Ratio : 10
+  + Turbulent Viscosity Ratio : 10
   
-  + Backflow Volume Fraction(water) : 0
+   <p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/outlet.png"><br> outlet 경계조건
+   </p>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/top.png"><br> far_top 경계조건
-</p>
-
-* out, out-1
-
-  + type : Outflow
-  
-* weir, bottom
-
-  + type : wall
-  
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/wall.png"><br> wall 경계조건
-</p>
-
-* front, front-1, back, back-1
-
-  + type : symmetry
-<br>
+* 나머지는 모두 디폴트 조건인 wall을 사용한다.
+<br/>
 
 ## (6) Numerical Conditions
 
-수치해석 조건은 다음과 같이 설정한다.
+수치해석 조건은 디폴트 조건을 사용한다.
+<br/>
 
-* Pressure-Velocity Coupling Scheme : SIMPLE(디폴트)
+## (7) Initialization
 
-* Use Momentum Predictor : On(디폴트)
+초기조건은 Convergence Criteria의 Pressure를 0.0001로 준다.
 
-* Discretization Schemes
+나머지는 모두 디폴트 조건을 사용한다.
+<br/>
 
-  + Time : First Order Implicit
-  
-  + Momentum : Second Order Upwind
-  
-  + Turbulence : First Order Upwind
-  
-  + Volume Fraction : Second Order Upwind
+## (8) Run Conditions & Run
 
-* Under-Relaxation Factors : 모두 1로 설정
-
-* Improve Stability : Off(디폴트)
-
-* Max Iteration per Time Step : 1
-
-* Number of Correctors : 2
-
-* Multiphase와 Convergence Criteria : 디폴트 사용
-  
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/numerical.png"><br> Numerical Conditions
-</p>
-<br>
-
-## (7) Monitoring
-
-Add-Surface 선택후 Report Type은 Volume Flow Rate, 관찰하고자 하는 영역은 waterin으로 선택한다.>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/monitor.png"><br> 유량 모니터링 설정
-</p>
-<br>
-
-## (8) Initialization
-
-초기조건은 다음과 같이 입력한다.
-
-* velocity : (0 0 0)
-
-* Pressure : 0
-
-* Scale of Velocity : 1
-
-* Turbulent Intensity : 1
-
-* Turbulent Viscosity Ratio : 10
-
-* Volume Fraction(water) : 0
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/initial.png"><br> 초기조건 설정
-</p>
-
-water 영역의 초기조건을 주기 위해 두 개의 섹션을 만든다.
-
-Initialization-Advanced-Section-Create 를 클릭한 후 다음과 같이 설정한다.
-
-* region1
-
-  + Min.point : (0.05 -1 0)
-  
-  + Max.point : (2 1 0.2)
-
-  * Volume Fraction(water) : 1
-
-* region2
-
-  + Min.point : (-2 -1 0)
-  
-  + Max.point : (-0.05 1 1.6)
-
-  * Volume Fraction(water) : 1
-  
-Override Boundary Value 옵션은 사용하지 않는다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/setFields.png"><br> Section 초기화
-</p>
-
-Advanced - Sections에 두 개의 섹션이 만들어졌고 각 항목의 눈 모양 표시를 클릭하면 영역을 디스플레이 할 수 있다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/setFieldsDisplay.png"><br> 초기화 영역 디스플레이
-</p>
-
-하단의 Initialize 버튼을 클릭한 후, File - Save 버튼을 클릭하여 설정을 저장한다.
-<br>
-
-## (9) Run Conditions & Run
-
-Run Conditions 에서 다음과 같이 설정 후 계산을 진행한다.
-
-* Time Stepping Method : Adaptive
-
-* Max Courant Number : 1
-
-* Max Courant Number for VoF : 1
-
-* End time : 20
-
-* Save Interval : 0.1
+'Run Conditions'는 디폴트를 사용한다. 
 
 병렬연산을 위해서는 메뉴의 Parallel을 실행하고 원하는 CPU 코어 개수를 입력한다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/run.png"><br> 유량 모니터링 화면
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/parallel.png"><br> 병렬연산 설정
 </p>
-<br>
+
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/residual.png"><br> 계산중인 화면
+</p>
+<br/>
 
 # 4) 후처리
 
-물의 흐름을 그려본다.
+External tools의 paraview 버튼을 클릭하여 paraview를 실행한다.
 
-External tools의 paraview 버튼을 클릭하여 paraview를 실행하고 baram.foam 파일을 읽는다.
+병렬연산인 경우 Case Type을 Decomposed Case로 변경한다.
 
-병렬로 계산했다면 Case Type을 Decomposed Case로 변경한다.
-
-<p align='left'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/clip.png"> Clip 필터를 이용해서 Volume fraction이 0.5 이상인 영역을 잘라준다.
+<p style="text-align: left">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/slice.png"> Slice를 선택한다.
 </p>
 
-Field를 U로 변경한다. Pipeline Browser의 baram.foam을 Outline으로 표시하고, weir.stl 파일을 읽어 Solid Color로 표시하면 아래 그림과 같이 된다.
+Pipeline Browser에서 Y Normal을 선택하고, Coloring을 U로 선택하면 다음과 같은 그림을 확인할 수 있다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/pvClip.png"><br> Clip water 
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/post.png"> <br> 중앙 단면의 속도 분포
 </p>
-
-<p align='left'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/weir/play.png"> Play 버튼을 누르면 동영상을 볼 수 있다.
-</p>
+<br/>
 
 
 
