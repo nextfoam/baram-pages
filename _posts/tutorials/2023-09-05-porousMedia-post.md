@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 13. Weir
-category: Porous Media
+category: tutorials
 ---
 
 # 1) Porous Media 개요 
