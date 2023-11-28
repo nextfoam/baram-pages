@@ -10,19 +10,14 @@ category: tutorials
 ## * [격자 파일 다운로드](https://drive.google.com/file/d/1qVQqF6oavui3NCoAQ2QCpSmo824CVbx_/view?usp=sharing)
 
 ## 1) 개요 
-* 본 예제는 정상상태 비압축성 유동해석 예제이다.<br>
-
-* 자동차 외부 유동을 해석하여 자동차의 공력 특성을 파악하는 예제이다. <br>
-
-* 아래 그림에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.1.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/intro.png"><br>
 </p>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.1.2.png"><br>
-</p>
+S.R. Ahmed는 단순화된 자동차 모형을 이용해 후방 경사각에 따른 유동 구조의 변화를 실험을 통해 관찰하였다. 이후 이 문제는 자동차 외부 공력해석의 검증용으로 많이 사용되고 있다. 이 에제는 후방 경사각도가 25인 경우에 속도 40m/s 조건에 대한 예제로 정상상태 비압축성 유동 조건을 사용한다. 
+
+ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Vehicle Wake, SAE-Paper 840300, 1984_
 
 계산 조건은 다음과 같다. <br>
 
@@ -51,6 +46,14 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ## 2) 격자
  격자는 주어진 polyMesh 폴더를 활용한다. <br>
 상단 탭에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.1.1.png"><br>
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.1.2.png"><br>
+</p>
 
 ## 3) 계산 조건
 ### (1) General
