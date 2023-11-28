@@ -10,7 +10,7 @@ Initialization은 계산에 사용하는 초기값을 설정하는 것과 계산
 
 x, y, z 방향의 속도 성분과 압력, 온도, volume fraction 등의 초기값을 설정한다.
 
-난류는 Spalart-Allmaras 모델을 사용할 때는 nuTilda를 사용하고, k-epsilon, k-omega 계열의 난류모델을 사용할 때는 velocity scale, turbulence intensity, viscosity ratio를 사용한다. 이 3가지 값을 이용해서 nut, k, epsilon, omega 등의 값을 계산해서 초기조건으로 사용하는데, 계산 방법은 다음과 같다.
+난류는 Spalart-Allmaras 모델을 사용할 때는 $\tilde{\nu}$를 사용하고, $k-\epsilon$, $k-\omega$ 계열의 난류모델을 사용할 때는 velocity scale, turbulence intensity, viscosity ratio를 사용한다. 이 3가지 값을 이용해서 $\nu_t$, $k$, $\epsilon$, $\omega$ 등의 값을 계산해서 초기조건으로 사용하는데, 계산 방법은 다음과 같다.
 
 <!--
 <p align='center'>
@@ -35,7 +35,7 @@ x, y, z 방향의 속도 성분과 압력, 온도, volume fraction 등의 초기
 -->
 
 <h2 style="text-align: center">
-$nut = viscosityRatio * nu$
+$\nu_t = viscosityRatio * \nu$
 </h2>
 
 <h2 style="text-align: center">
@@ -43,11 +43,11 @@ $k = 1.5 \cdot (velocityScale \cdot turbulentIntensity)^2$
 </h2>
 
 <h2 style="text-align: center">
-$epsilon = 0.09 \cdot k^2 / nut$
+$\epsilon = 0.09 \cdot k^2 / \nu_t$
 </h2>
 
 <h2 style="text-align: center">
-$omega = k / nut$
+$\omega = k / \nu_t$
 </h2>
 <br/>
 
