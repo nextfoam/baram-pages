@@ -115,7 +115,7 @@ Velocity Inlet 조건에서 온도의 Profile Type을 Temporal Distribution으�
 
 <!--
 <p align='center'>
-    <!-- <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_polynomial.png"><br>  -->
+    <!-- <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_polynomial.png"><br>
 </p>
 -->
 
