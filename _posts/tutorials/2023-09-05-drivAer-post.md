@@ -10,19 +10,16 @@ category: tutorials
 ## * [격자 파일 다운로드](https://drive.google.com/file/d/1uL_roJ1xnBsmG87HTwQ4fie4txDhjCjW/view?usp=sharing)
 
 ## 1) 개요 
-* 본 예제는 정상상태 비압축성 유동해석 예제이다.<br>
-
-* 자동차 외부 유동을 해석하여 자동차의 공력 특성을 파악하는 예제이다. <br>
-
-* 아래 그림에서 형상과 격자를 나타내었다.<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/intro.png"><br>
 </p>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/2.png"><br>
-</p>
+__DrivAer__ 는 자동차 공학 분야에서 사용되는 차량 외부 디자인 및 공기역학 테스트를 위한 실제 차량 모델로 차량의 외부 형태와 공기역학적 특성을 시뮬레이션하고 평가하기 위해 많이 사용된다. 단순화된 모델과 매우 복잡한 양산차 사이의 격차를 줄이기 위해 도입된 모델로 여러 종류의 형상에 대한 CAD 파일과 실험결과들이 공개되어 있다.
+
+이 예제는 사이드 미러와 바퀴가 포함된 fastback 모델을 사용한다.
+
+https://www.epc.ed.tum.de/en/aer/research-groups/automotive/drivaer/
 
 계산 조건은 다음과 같다. <br>
 
@@ -51,6 +48,14 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ## 2) 격자
  격자는 주어진 polyMesh 폴더를 활용한다. <br>
 상단 탭에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/1.png"><br>
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/2.png"><br>
+</p>
 
 ## 3) 계산 조건
 ### (1) General
