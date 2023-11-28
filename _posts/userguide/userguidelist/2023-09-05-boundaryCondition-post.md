@@ -190,15 +190,6 @@ ABL(Atmospheric Boundary Layer) Inlet 조건은 유동의 입구에 대기경계
 
 
 속도와 난류 분포는 다음의 식을 사용한다.
-<!--
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_abl1.png"><br>
-</p>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_abl2.png"><br>
-</p>
--->
 
 <h2 style="text-align: center">
 $u = \frac{u^*}{\kappa} ln\left(\frac{z - d + z_0}{z_0}\right)$
