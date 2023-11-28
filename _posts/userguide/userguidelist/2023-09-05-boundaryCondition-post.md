@@ -113,13 +113,15 @@ Velocity Inlet 조건에서 속도의 Profile Type을 Temporal Distribution으�
 
 Velocity Inlet 조건에서 온도의 Profile Type을 Temporal Distribution으로 선택하면 Piecewise linear와 Polynomial로 지정할 수 있다. Polynomial은 아래 그림의 창에서 식의 계수 _a<sub>n</sub>_들을 지정한다.
 
-<!--
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_polynomial.png"><br>
-</p>
--->
 
-## <center>$S = a_0 \cdot t^0 + a_1 \cdot t^1 + a_2 \cdot t^2 + ... + a_n \cdot t^n$</center>  
+<p align='center'>
+    <!-- <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_polynomial.png"><br>  -->
+    ## $S = a_0 \cdot t^0 + a_1 \cdot t^1 + a_2 \cdot t^2 + ... + a_n \cdot t^n$
+
+</p>
+
+
+<!--## <center>$S = a_0 \cdot t^0 + a_1 \cdot t^1 + a_2 \cdot t^2 + ... + a_n \cdot t^n$</center>  -->
 
 
 <p align='center'>
