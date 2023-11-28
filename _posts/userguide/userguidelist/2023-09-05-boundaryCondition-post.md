@@ -193,6 +193,7 @@ ABL(Atmospheric Boundary Layer) Inlet 조건은 유동의 입구에 대기경계
 
 속도와 난류 분포는 다음의 식을 사용한다.
 
+<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_abl1.png"><br>
 </p>
@@ -200,6 +201,19 @@ ABL(Atmospheric Boundary Layer) Inlet 조건은 유동의 입구에 대기경계
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_abl2.png"><br>
 </p>
+-->
+
+## $u = \frac{u^*}{\kappa} ln\left(\frac{z - d + z_0}{z_0}\right)$  
+
+## $k = \frac{(u^* )^2}{\sqrt{C_\mu}} \sqrt{C_1 ln \left( \frac{z - d + z_0}{z_0} \right) + C_2}$  
+
+## $\epsilon = \frac{(u^* )^3}{\kappa (z - d + z_0)} \sqrt{C_1 ln \left( \frac{z - d + z_0}{z_0} \right) + C_2}$  
+
+## $\omega = \frac{u^*}{\kappa \sqrt{C_\mu}} \frac{1}{z - d + z_0}$  
+
+## $u^* = \frac{u_{ref} \kappa} {ln \left( \frac{z_{ref} + z_0}{z_0} \right)}$
+
+
 
 변수정의
 
@@ -485,7 +499,7 @@ Porous Jump 조건은 계산영역 내부에 있는 cyclic 면에서 압력 변�
 </p>
 -->
 
-$\Delta p = -\left(D \mu U + \frac{1}{2} I \rho U^2 \right)L$
+## $\Delta p = -\left(D \mu U + \frac{1}{2} I \rho U^2 \right)L$
 
 openfoam에서 사용하는 경계조건은 압력은 porousBafflePressure이고, 나머지는 모두 cyclic이다.
 
