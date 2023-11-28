@@ -12,7 +12,6 @@ x, y, z 방향의 속도 성분과 압력, 온도, volume fraction 등의 초기
 
 난류는 Spalart-Allmaras 모델을 사용할 때는 nuTilda를 사용하고, k-epsilon, k-omega 계열의 난류모델을 사용할 때는 velocity scale, turbulence intensity, viscosity ratio를 사용한다. 이 3가지 값을 이용해서 nut, k, epsilon, omega 등의 값을 계산해서 초기조건으로 사용하는데, 계산 방법은 다음과 같다.
 
-<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_nut.png"><br>
 </p>
@@ -28,12 +27,12 @@ x, y, z 방향의 속도 성분과 압력, 온도, volume fraction 등의 초기
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_omega.png"><br>
 </p>
--->
+
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/initial.png"><br> Initialization 설정
 </p>
 
-
+<!--
 ## $nut = viscosityRatio * nu$  
 
 ## $k = 1.5 \cdot (velocityScale \cdot turbulentIntensity)^2$  
@@ -41,7 +40,7 @@ x, y, z 방향의 속도 성분과 압력, 온도, volume fraction 등의 초기
 ## $epsilon = 0.09 \cdot k^2 / nut$  
 
 ## $omega = k / nut$  
-
+-->
 
 Advanced 탭에서 원하는 영역의 초기값을 따로 설정할 수 있다. OpenFOAM의 setFields 유틸리티를 사용한다.
 
