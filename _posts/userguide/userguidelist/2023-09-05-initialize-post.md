@@ -28,11 +28,11 @@ x, y, z 방향의 속도 성분과 압력, 온도, volume fraction 등의 초기
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_omega.png"><br>
 </p>
-
+-->
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/initial.png"><br> Initialization 설정
 </p>
--->
+
 
 ## $nut = viscosityRatio * nu$  
 
