@@ -21,6 +21,8 @@ __DrivAer__ 는 자동차 공학 분야에서 사용되는 차량 외부 디자�
 
 https://www.epc.ed.tum.de/en/aer/research-groups/automotive/drivaer/
 
+정상상태 비압축성 유동에서 moving ground, rotating wheel 조건을 사용한다.
+
 계산 조건은 다음과 같다. <br>
 
 ●  solver : buoyantSimpleNFoam (넥스트폼이 개발한 정상상태 비압축성 해석 솔버) <br>
