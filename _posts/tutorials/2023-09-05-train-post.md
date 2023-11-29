@@ -33,7 +33,7 @@ category: tutorials
 
 ## 2) 프로그램의 구동 및 격자
 
-프로그램 실행 후 launcher에서 ‘Open’을 선택하고 격자 생성 튜토리얼에서 만든 train 폴더를 선택한다. launcher에서 Incompressible, Multiphase off, Species off를 선택한다. 혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 train/case/constant 폴더를 선택한다).
+프로그램 실행 후 launcher에서 ‘Open’을 선택하고 격자 생성 튜토리얼에서 만든 train 폴더를 선택한다. launcher에서 Incompressible, Multiphase off, Species off를 선택한다. 혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 train/case/constant 폴더를 선택한다.
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/mesh.png"><br>
@@ -170,6 +170,8 @@ Reference Value은 공력계수를 계산할 때 사용된다. 이 문제는 실
 값을 입력하고 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다.
 
 ### (9) Run Conditions & RUN
+
+병렬연산을 위해서는 메뉴의 Parallel을 실행하고 원하는 CPU 코어 개수를 입력한다.
 
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
