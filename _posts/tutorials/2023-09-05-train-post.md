@@ -31,18 +31,6 @@ category: tutorials
 
 ●  유동 조건 : 400 km/h(111.11 m/s)
 
-BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
-
-●  New Case버튼 클릭<br>
-
-●  Project Name : drivAer<br>
-
-●  Flow Type : incompressible<br>
-
-●  Multiphase Model : Off<br>
-
-● Species Model : Not Include<br>
-
 ## 2) 프로그램의 구동 및 격자
 
 프로그램 실행 후 launcher에서 ‘Open’을 선택하고 격자 생성 튜토리얼에서 만든 train 폴더를 선택한다. launcher에서 Incompressible, Multiphase off, Species off를 선택한다. 혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 train/case/constant 폴더를 선택한다).
