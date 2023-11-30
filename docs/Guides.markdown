@@ -8,8 +8,6 @@ Here are Guides for BARAM Users.<br>
 We are providing now Korean version guides.<br>
 Soon We will update as English version.<br>
 
-test<br>
-
 <h1>baramFlow user guide</h1>
 
 <ul>
