@@ -24,5 +24,7 @@ baramMesh를 실행하면 새로운 격자를 만들 것인지 기존의 격자 
 새로운 격자를 만들 New Case 버튼을 누르고 원하는 위치에 이름을 입력하면 baramMesh가 실행된다.
 
 
-
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/meshUserGuide/launcher1.png"><br> 시작화면
+</p>
 
