@@ -25,6 +25,6 @@ baramMesh를 실행하면 새로운 격자를 만들 것인지 기존의 격자 
 
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/meshUserGuide/launcher1.png"><br> 시작화면
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/launcher1.png"><br> 시작화면
 </p>
 
