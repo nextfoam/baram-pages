@@ -26,10 +26,19 @@ Soon We will update as English version.<br>
   {% endfor %}
 </ul>
 
-<h1>baramMesh tutorials guides</h1>
+<h1>baramMesh user guide</h1>
 
 <ul>
   {% assign sorted_posts = site.categories.meshguide | sort: 'title' %}
+  {% for post in sorted_posts %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h1>baramMesh tutorials guides</h1>
+
+<ul>
+  {% assign sorted_posts = site.categories.meshtuorialguide | sort: 'title' %}
   {% for post in sorted_posts %}
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}

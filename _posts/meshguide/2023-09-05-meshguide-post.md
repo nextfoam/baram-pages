@@ -1,19 +1,18 @@
 ---
 layout: post
-title: baramMesh Guide
+title: Mesh Guide
 category: meshguide
 ---
 
-# baramMesh Guide 
 
-baramMesh is pre-processing (meshing) module. baramMesh means BARAM + snappyHexMesh.
+# Mesh Guide 
 
-It is for the users who want to make mesh of the BARAM or OpenFOAM.
+Here is the baramMesh User guide for BARAM Users.<br>
 
-And we provide the guide of baramMesh.
+Thank you.
 
 <ul>
-  {% assign sorted_posts = site.categories.mesh | sort: 'title' %}
+  {% assign sorted_posts = site.categories.meshuserguidelist | sort: 'title' %}
   {% for post in sorted_posts %}
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
