@@ -38,7 +38,7 @@ Soon We will update as English version.<br>
 <h1>baramMesh tutorials guides</h1>
 
 <ul>
-  {% assign sorted_posts = site.categories.meshtuorialguide | sort: 'title' %}
+  {% assign sorted_posts = site.categories.meshtutorialguide | sort: 'title' %}
   {% for post in sorted_posts %}
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
