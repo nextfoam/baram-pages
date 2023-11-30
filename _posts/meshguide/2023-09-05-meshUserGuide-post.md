@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Mesh Guide
+title: Mesh User Guide
 category: meshguide
 ---
 
 
-# Mesh Guide 
+# Mesh User Guide 
 
 Here is the baramMesh User guide for BARAM Users.<br>
 
