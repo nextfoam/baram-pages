@@ -1,6 +1,6 @@
 ---
 layout: post
-title: baramMesh Tutorial Guide
+title: baramMesh Tutorial Guides
 category: meshguide
 ---
 
