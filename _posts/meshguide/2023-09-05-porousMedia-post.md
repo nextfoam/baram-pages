@@ -18,7 +18,7 @@ OpenFOAM의 porous media 모델은 porous 영역에서 불연속적인 속도 �
 
 Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolation 방법을 개선하여 이 문제를 해결하였다(이에 대한 자세한 내용은 아래 링크의 문서를 참고). 결과의 정확성과 함께 수렴성도 많이 좋아진 것을 확인할 수 있다.
 
-https://nextfoam.co.kr/proc/DownloadProc.php?fName=231101140051_yvpJhMF0nY.pdf&realfName=10thOKUCC_OpenFOAM%EC%82%AC%EC%86%8C%ED%95%9C%EB%AC%B8%EC%A0%9C%EB%93%A4.pdf
+### *[Porous Media 참고 문헌](https://nextfoam.co.kr/proc/DownloadProc.php?fName=231101140051_yvpJhMF0nY.pdf&realfName=10thOKUCC_OpenFOAM%EC%82%AC%EC%86%8C%ED%95%9C%EB%AC%B8%EC%A0%9C%EB%93%A4.pdf)
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/res.png"><br> 결과 (좌)Baram v23, (우) openfoam 2306 standard solver
@@ -98,10 +98,21 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 
 # 6) Snap
 
-디폴트 설정을 그대로 사용하고 Snap 버튼을 누른다.
+설정은 다음과 같이 변경한다.<br>
 
-작업이 끝나면 Next 버튼을 눌러 다음 단계로 넘어간다.
-<br/>
+* Smoothing for Surface : 1
+
+* Smoothing for Internal : 3
+
+* Mesh Displacement Relaxation : 30
+
+* Snapping Relaxation : 15
+
+* Tolerance : 1
+
+* Concave Angle (degree) : 45
+
+* Min.Area Ratio : 0.3
 
 # 7) Boundary Layer
 
