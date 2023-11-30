@@ -28,8 +28,6 @@ test<br>
   {% endfor %}
 </ul>
 
-test<br>
-
 <h1>baramMesh user guide</h1>
 
 <ul>
