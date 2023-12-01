@@ -130,11 +130,11 @@ Configuration에서 (+)를 눌러 다음과 같이 설정한다.
 
 * Number of Layers : 3
 
-* Thickness Model Specification : First and Expansion
+* Thickness Model Specification : Final and Expansion
 
 * Size Specification : Relative
 
-* First Layer Thickness : 0.2
+* First Layer Thickness : 0.3
 
 * Expansion Ratio : 1.2
 
@@ -142,11 +142,7 @@ Configuration에서 (+)를 눌러 다음과 같이 설정한다.
 
 * Boundary : 모든 덕트 벽면 선택
 
-나머지는 설정은 아래 그림과 같이 변경한다.
-
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/layerAnalysis.png"><br> Layer Analysis
-</p> 
+나머지는 Dafault 설정 그대로 적용하고 apply 버튼을 누른다.
 
 작업이 끝나면 Next 버튼을 눌러 다음 단계로 넘어간다.
 <br/>
@@ -156,8 +152,13 @@ Configuration에서 (+)를 눌러 다음과 같이 설정한다.
 마지막으로 porous라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더가 생성된다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/finalMesh.png"><br> 최종 격자
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/finalMesh1.png"><br> inlet 근처 격자
 </p> 
 
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/finalMesh3.png"><br> outlet 근처 격자
+</p> 
 
-
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/finalMesh2.png"><br> 전체 격자
+</p> 
