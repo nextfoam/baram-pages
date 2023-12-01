@@ -8,13 +8,14 @@ category: meshuserguidelist
 
 BARAM v23의 설치 방법은 https://baramcfd.org/docs/installation/ 참고.
 
-윈도우즈에서는 프로그램 설치가 완료되면 바탕화면에 BaramFlow, BaramMesh 아이콘이 만들어진다.
-
-리눅스 터미널에서 실행할 때의 명령어는 다음과 같다.
+*윈도우즈에서는 프로그램 설치가 완료되면 바탕화면에 BaramFlow, BaramMesh 아이콘이 만들어진다. 아이콘을 더블 클릭해서 실행하면 된다.
 
 
-* BaramFlow : baramFlow.sh 혹은 python -m baramFlow.main
-* BaramMesh : baramMesh.sh 혹은 python -m baramMesh.main
+*리눅스는 터미널을 이용해서 실행 파일을 실행한다. 터미널에서 BARAM이 설치된 폴더로 이동을 하고 실행 파일을 실행하여 프로그램을 시작한다. 실행파일은 bash 스크립트이며 실행 명령어는 다음과 같다. 
+
+
+* BaramFlow : bash baramFlow.sh
+* BaramMesh : bash baramMesh.sh
 
 
 baramMesh를 실행하면 새로운 격자를 만들 것인지 기존의 격자 작업을 열 것인지를 선택하는 창이 나타난다.
