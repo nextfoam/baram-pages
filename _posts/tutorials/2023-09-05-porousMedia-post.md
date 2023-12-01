@@ -105,15 +105,12 @@ Cell Zone Conditions에는 region0에 porousZone이 있다. 이것을 더블 클
 <br/>
 
 ## (6) Numerical Conditions
-
-수치해석 조건은 디폴트 조건을 사용한다.
+Convergence Criteria의 Pressure를 0.0001로 설정하고 나머지는 Default 조건을 사용한다.
 <br/>
 
 ## (7) Initialization
 
-초기조건은 Convergence Criteria의 Pressure를 0.0001로 준다.
-
-나머지는 모두 디폴트 조건을 사용한다.
+초기조건은 모두 디폴트 조건을 사용한다.
 <br/>
 
 ## (8) Run Conditions & Run
