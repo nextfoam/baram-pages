@@ -114,6 +114,10 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 
 * Min.Area Ratio : 0.3
 
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/snap.png"><br> snap 설정
+</p> 
+
 # 7) Boundary Layer
 
 덕트 벽면에 경계층 격자를 생성한다.
@@ -138,7 +142,11 @@ Configuration에서 (+)를 눌러 다음과 같이 설정한다.
 
 * Boundary : 모든 덕트 벽면 선택
 
-나머지는 디폴트 설정을 그대로 사용하고 Apply 버튼을 누른다.
+나머지는 설정은 아래 그림과 같이 변경한다.
+
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/layerAnalysis.png"><br> Layer Analysis
+</p> 
 
 작업이 끝나면 Next 버튼을 눌러 다음 단계로 넘어간다.
 <br/>
