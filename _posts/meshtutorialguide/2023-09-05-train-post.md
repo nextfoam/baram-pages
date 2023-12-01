@@ -49,10 +49,6 @@ Add 버튼을 클릭해서 전체 영역과 격자 조밀화를 위한 박스를
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/far.png"><br> far 설정
 </p>
 
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/geometry name.png"><br> Geomerty 이름 변경
-</p>
-
 * refine box : Hex로 생성
 
   + Type : None
