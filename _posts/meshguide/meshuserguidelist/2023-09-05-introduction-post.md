@@ -65,7 +65,7 @@ __하나의 단계가 완료되면 그 단계는 잠금 상태가 되고 다음 
 
 # 설치 및 실행
 
-BARAM v23의 설치 방법은 https://baramcfd.org/docs/installation/ 참고.
+BARAM v23의 설치 방법은 [Installation page](https://baramcfd.org/docs/installation/) 참고.
 
 윈도우즈에서는 프로그램 설치가 완료되면 바탕화면에 BaramFlow, BaramMesh 아이콘이 만들어진다.
 
