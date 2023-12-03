@@ -18,29 +18,25 @@ OpenFOAM의 snappyHexMesh 유틸리티는 다음과 같은 단계를 통해 격�
 1) 전체 영역을 포함하는 정렬격자 형식의 배경 격자(background mesh)를 blockMesh 유틸리티를 사용하여 만든다. 
 
 <p style="text-align: center">
-    <!--<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_blockMesh.png"><br> 배경 격자 -->
-    <img src="pic/mesh_blockMesh.png"><br> 배경 격자
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_blockMesh.png"><br> 배경 격자
 </p>
 
 2) 필요한 부분에 격자를 조밀하게 만들고, 격자를 만들지 않을 부분의 격자를 삭제한다. 이 과정을 castellation이라고 한다.
 
 <p style="text-align: center">
-    <!--<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_castellate.png"><br> castellate -->
-    <img src="pic/mesh_castellate.png"><br> castellate
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_castellate.png"><br> castellate
 </p>
 
 3) Surface 부근의 격자점을 surface 표면으로 이동하여 정확한 형상을 구현한다. 이 과정을 snap이라고 한다.
 
 <p style="text-align: center">
-    <!--<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_snap.png"><br> snap -->
-    <img src="pic/mesh_snap.png"><br> snap
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_snap.png"><br> snap
 </p>
 
 4) 경계층 격자를 만든다. 이 과정을 add layer라고 한다.
 
 <p style="text-align: center">
-    <!--<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_layer.png"><br> 경계층 격자 -->
-    <img src="pic/mesh_layer.png"><br> 경계층 격자
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_layer.png"><br> 경계층 격자
 </p>
 
 첫번째 단계를 지나면 constant.polyMesh 폴더에 격자가 만들어지고, 2, 3, 4 단게를 지날 때 마다 1, 2, 3 폴더가 만들어 진다. 
@@ -81,8 +77,7 @@ BARAM v23의 설치 방법은 https://baramcfd.org/docs/installation/ 참고.
 baramMesh를 실행하면 새로운 격자를 만들 것인지 기존의 격자 작업을 열 것인지를 선택하는 창이 나타난다.
 
 <p style="text-align: center">
-    <!--<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_start.png"><br> 시작 화면 -->
-    <img src="pic/mesh_start.png"><br> 시작 화면
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_start.png"><br> 시작 화면
 </p>
 
 창에는 최근에 작업한 폴더들이 표시되는데 선택하면 baramMesh가 시작되고 해당 격자 작업이 열린다. 기존의 격자 작업을 열고 싶은데 창에 표시되지 않는 경우는 Open 버튼을 눌러 해당 폴더를 선택하면 된다. 
