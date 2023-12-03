@@ -54,7 +54,7 @@ Mesh Quality의 Parameters를 클릭하면 아래 그림과 같은 창이 나타
 
 ...
 
-Settings엔느 Scale, Language 2가지가 있다.
+Settings에는 Scale, Language 2가지가 있다.
 
 Scale은 프로그램의 해상도를 조절하는 것으로 기본값인 1.0 보다 커지면 창이 커지고 글자도 커진다. 새로운 설정을 적용하려면 프로그램을 닫고 다시 시작해야 한다.
 
