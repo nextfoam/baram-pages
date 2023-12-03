@@ -6,6 +6,7 @@ category: meshuserguidelist
 
 # Castellation
 
+<!--
 Castellation에서는 지정한 영역의 격자를 분할하여 조밀하게 만들어 주고 계산 영역 바깥의 격자를 삭제한다.
 
 격자의 조밀도는 size level로 조절하는데 base grid 격자의 크기를 기준 0으로 사용하고, 1만큼 커질 때 마다 육면제를 4개로 분할한다.
@@ -25,8 +26,8 @@ Configuration 설정괴 Advance 설정이 있다. 격자를 나눌 부분은 Sur
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_nCellsBetweenLevels.png"><br> Number of Cells between Levels (좌) 1, (중) 2, (우) 3
 </p>
 
-<!--
-+ Feature Angle Threshold : snappyHexMeshDict의 castellatedMeshControls.resolveFeatureAngle에 해당한다...... [ESI guide 링크](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh-castellation.html#sec-castellation-resolveFeatureAngle) .... 레벨을 정할 때 숫자 2개를 사용하는데 이 값보다 크면 뒤의 값을 사용한다는 것 같은데, 그렇다면 지금 같은 숫자 2개를 사용하는 baramMesh에서는 필요없는 값이 아닐까?????? -->
+
++ Feature Angle Threshold : snappyHexMeshDict의 castellatedMeshControls.resolveFeatureAngle에 해당한다...... [ESI guide 링크](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh-castellation.html#sec-castellation-resolveFeatureAngle) .... 레벨을 정할 때 숫자 2개를 사용하는데 이 값보다 크면 뒤의 값을 사용한다는 것 같은데, 그렇다면 지금 같은 숫자 2개를 사용하는 baramMesh에서는 필요없는 값이 아닐까?????? 
 
 + Keep Non-Manifold Edges : surface의 feature를 extract할 때 사용하는 옵션으로 3개 이상의 연결된 면을 갖는 edge를 포함할 것인지에 대한 옵션이다.
 
@@ -64,7 +65,7 @@ Volume의 레벨을 지정하고 적용할 volume을 선택한다. Volume은 geo
 </p>
 
 
-
+-->
 
 
 
