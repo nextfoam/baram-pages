@@ -1,11 +1,13 @@
 ---
 layout: post
-title: 06. Castellation
+title: 07. Castellation
 category: meshuserguidelist
 ---
 
 # Castellation
 
+
+<!--
 
 Castellation에서는 지정한 영역의 격자를 분할하여 조밀하게 만들어 주고 계산 영역 바깥의 격자를 삭제한다.
 
@@ -15,7 +17,6 @@ Castellation에서는 지정한 영역의 격자를 분할하여 조밀하게 �
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_castell.png"><br> Base Grid to Castellation
 </p>
 
-<!--
 
 Configuration 설정괴 Advance 설정이 있다. 격자를 나눌 부분은 Surface/Feature 혹은 volume에 대해 설정할 수 있다.
 
