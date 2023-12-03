@@ -1,13 +1,10 @@
 ---
 layout: post
-title: 05. Base Gridfff
+title: 06. Castellation
 category: meshuserguidelist
 ---
 
 # Castellation
-
-
-<!--
 
 Castellation에서는 지정한 영역의 격자를 분할하여 조밀하게 만들어 주고 계산 영역 바깥의 격자를 삭제한다.
 
@@ -67,8 +64,6 @@ Volume의 레벨을 지정하고 적용할 volume을 선택한다. Volume은 geo
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_volumeRefinement.png"><br> Volume Refinement 설정
 </p>
 
-
--->
 
 
 
