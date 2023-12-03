@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 05. Castellation
+title: 06. Castellation
 category: meshuserguidelist
 ---
 
 # Castellation
 
-<!--
+
 Castellation에서는 지정한 영역의 격자를 분할하여 조밀하게 만들어 주고 계산 영역 바깥의 격자를 삭제한다.
 
 격자의 조밀도는 size level로 조절하는데 base grid 격자의 크기를 기준 0으로 사용하고, 1만큼 커질 때 마다 육면제를 4개로 분할한다.
@@ -65,7 +65,6 @@ Volume의 레벨을 지정하고 적용할 volume을 선택한다. Volume은 geo
 </p>
 
 
--->
 
 
 
