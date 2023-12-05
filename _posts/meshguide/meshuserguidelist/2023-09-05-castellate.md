@@ -27,7 +27,7 @@ Configuration 설정괴 Advance 설정이 있다. 격자를 나눌 부분은 Sur
 </p>
 
 
-<!-- + Feature Angle Threshold : snappyHexMeshDict의 castellatedMeshControls.resolveFeatureAngle에 해당한다...... [ESI guide 링크](https://www.openfoam.com/documentation/guides/latest/doc/guide-meshing-snappyhexmesh-castellation.html#sec-castellation-resolveFeatureAngle) .... 레벨을 정할 때 숫자 2개를 사용하는데 이 값보다 크면 뒤의 값을 사용한다는 것 같은데, 그렇다면 지금 같은 숫자 2개를 사용하는 baramMesh에서는 필요없는 값이 아닐까?????? -->
+Feature Angle Threshold : 두 변의 법선이 이루는 각이 이 값보다 클 때 주어진 size level 보다 1더 큰 값을 사용한다. snappyHexMeshDict의 castellatedMeshControls.resolveFeatureAngle에 해당한다.
 
 + Keep Non-Manifold Edges : surface의 feature를 extract할 때 사용하는 옵션으로 3개 이상의 연결된 면을 갖는 edge를 포함할 것인지에 대한 옵션이다.
 
