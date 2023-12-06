@@ -20,7 +20,7 @@ category: mesh
 
 격자 생성을 위한 형상 파일은 아래의 링크에서 다운 받을 수 있다.
 
-https://drive.google.com/file/d/1r9S6y9TAx7m2eyg59KGejgYFvIazv1Px/view?usp=sharing
+### * [형상 파일 링크](https://drive.google.com/file/d/1r9S6y9TAx7m2eyg59KGejgYFvIazv1Px/view?usp=sharing) 
 
 
 ## 2) 형상 (Geometry)
@@ -45,6 +45,10 @@ Add 버튼을 클릭해서 전체 영역과 격자 조밀화를 위한 박스를
 
   + 각 면의 이름을 inlet(xMin), outlet(xMax), side(yMin), symmetry(yMax), ground(zMin), top(zMax)으로 바꿔준다.
 
+  <p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/far.png"><br> far 설정
+</p>
+
 * refine box : Hex로 생성
 
   + Type : None
@@ -52,7 +56,11 @@ Add 버튼을 클릭해서 전체 영역과 격자 조밀화를 위한 박스를
   + Min./Max. : (-18 -5 0) / (100 5 7)
   
   + 생성하면 Hex_1_surface라는 면이 생성된다. 이것을 마우스 오른쪽 버튼으로 선택하고 Edit를 눌러 Type을 None으로 설정한다.
-  
+
+  <p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/hex.png"><br> Refinement Box 설정
+</p>
+   
 Next 버튼을 눌러 다음 단계로 넘어간다.
 
 ## 3) 영역 (Region)

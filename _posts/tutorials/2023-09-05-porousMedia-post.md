@@ -16,7 +16,7 @@ OpenFOAM의 porous media 모델은 porous 영역에서 불연속적인 속도 �
 
 Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolation 방법을 개선하여 이 문제를 해결하였다(이에 대한 자세한 내용은 아래 링크의 문서를 참고). 결과의 정확성과 함께 수렴성도 많이 좋아진 것을 확인할 수 있다.
 
-https://nextfoam.co.kr/proc/DownloadProc.php?fName=231101140051_yvpJhMF0nY.pdf&realfName=10thOKUCC_OpenFOAM%EC%82%AC%EC%86%8C%ED%95%9C%EB%AC%B8%EC%A0%9C%EB%93%A4.pdf
+### *[Porous Media 참고 문헌](https://nextfoam.co.kr/proc/DownloadProc.php?fName=231101140051_yvpJhMF0nY.pdf&realfName=10thOKUCC_OpenFOAM%EC%82%AC%EC%86%8C%ED%95%9C%EB%AC%B8%EC%A0%9C%EB%93%A4.pdf)
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/res.png"><br> 결과 (좌)Baram v23, (우) openfoam 2306 standard solver
@@ -42,7 +42,7 @@ Launcher에서 'Flow Type'은 Incompressible, 'Multiphase Model'은 None, Gravit
 
 ## (2) Models
 
-난류 모델은 standard _k - \epsilon_ 모델을 사용하고 나머지는 Default를 사용한다.
+난류 모델은 standard $k-\epsilon$ 모델을 사용하고 나머지는 Default를 사용한다.
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/turbulence.png"><br> Turbulence Model 설정
@@ -105,15 +105,12 @@ Cell Zone Conditions에는 region0에 porousZone이 있다. 이것을 더블 클
 <br/>
 
 ## (6) Numerical Conditions
-
-수치해석 조건은 디폴트 조건을 사용한다.
+Convergence Criteria의 Pressure를 0.0001로 설정하고 나머지는 Default 조건을 사용한다.
 <br/>
 
 ## (7) Initialization
 
-초기조건은 Convergence Criteria의 Pressure를 0.0001로 준다.
-
-나머지는 모두 디폴트 조건을 사용한다.
+초기조건은 모두 디폴트 조건을 사용한다.
 <br/>
 
 ## (8) Run Conditions & Run

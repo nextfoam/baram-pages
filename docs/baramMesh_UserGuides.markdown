@@ -1,13 +1,11 @@
 ---
-layout: post
-title: Mesh Guide
-category: meshguide
+nav_order: 8
+layout: page
+title: baramMesh User Guides
 ---
+# baramMesh User Guide 
 
-
-# Mesh Guide 
-
-Here is the baramMesh User guide for BARAM Users.<br>
+This page is the baramMesh User Guide.<br>
 
 Thank you.
 
