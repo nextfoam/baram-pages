@@ -39,7 +39,7 @@ OpenFOAM의 snappyHexMesh 유틸리티는 다음과 같은 단계를 통해 격�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_layer.png"><br> 경계층 격자
 </p>
 
-첫번째 단계를 지나면 constant.polyMesh 폴더에 격자가 만들어지고, 2, 3, 4 단게를 지날 때 마다 1, 2, 3 폴더가 만들어 진다. 
+첫번째 단계를 지나면 constant/polyMesh 폴더에 격자가 만들어지고, 2, 3, 4 단게를 지날 때 마다 1, 2, 3 폴더가 만들어 진다. 
 
 BaramMesh에서는 위의 과정을 좀 더 세분화 해서 다음의 일곱개의 단계로 나누어 진행한다.
 
