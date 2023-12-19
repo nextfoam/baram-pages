@@ -141,3 +141,8 @@ baramFlow.sh
 ```commandline
 baramMesh.sh
 ```
+
+## Paraview [Optional]
+
+*BaramFlow* has a menu that can launch [*ParaView*](https://www.paraview.org/) for convenience.
+If *ParaView* is installed in the system, this menu launches *ParaView* in the case foler.

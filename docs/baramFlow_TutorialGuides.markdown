@@ -1,16 +1,14 @@
 ---
-layout: post
-title: Tutorial Guides
-category: tutorialguide
+nav_order: 7
+layout: page
+title: baramFlow Tutorial Guides
 ---
 
+# baramFlow Tutorial Guides
 
-# Tutorial Guides
+This page is the baramFlow tutorial guide for baramFlow users.<br>
 
-## 차례
-<br>
-This page is the Tutorial Guides of BARAM v23.<br>
-You can search everything what you want to know about BARAM<br>
+Thank you.<br>
 
 <ul>
   {% assign sorted_posts = site.categories.tutorials | sort: 'title' %}

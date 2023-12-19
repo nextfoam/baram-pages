@@ -1,13 +1,12 @@
 ---
-layout: post
-title: User Guide
-category: userguide
+nav_order: 6
+layout: page
+title: baramFlow User Guides
 ---
 
+# baramFlow User Guide 
 
-# User Guide 
-
-Here is the User guide for BARAM Users.<br>
+This page is the User guide for baramFlow Users.<br>
 
 Thank you.
 

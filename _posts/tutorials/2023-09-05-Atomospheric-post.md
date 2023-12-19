@@ -29,9 +29,9 @@ category: tutorials
 
 ●  난류 모델 : 𝑘 − ε <br>
 
-●  밀도 : 1.225𝑘𝑔/㎥ <br>
+●  밀도 : 1.225 𝑘𝑔/㎥ <br>
 
-●  점성 계수 : 1.79e-5𝑘𝑔/𝑚s <br>
+●  점성 계수 : 1.79e-5 𝑘𝑔/𝑚s <br>
 
 ●  유동 조건 : 대기경계층 속도 및 난류 조건<br>
 
@@ -174,7 +174,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 ### (1) 속도 분포
 대기경계층 속도 분포와 Profile을 확인한다.<br>
-External tools의 paraview 버튼을 눌러 paraview를 실행한다.<br>
+External tools의 paraview 버튼을 눌러 Paraview를 실행한다.<br>
 
 Case Type을 Reconstructed Case로 변경한다.<br>
 
@@ -242,4 +242,4 @@ Series Parameters에서 해당 Parameter의 색을 변경할 수 있다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.15.png"><br>
 </p>
 
-위 그림에서 빨간 선이 입구영역, 초록 선이 출구영역에서 속도 프로파일이다.
+위 그림에서 빨간선이 입구영역, 초록선이 출구영역에서 속도 프로파일이다.

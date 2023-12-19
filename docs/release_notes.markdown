@@ -11,7 +11,7 @@ title: Release Notes
 
 ## Improvements
 * [Mesh] Crossing lines between Hex6 far-end boundary and other geometries are classified as feature edges
-* [Mesh] Relative pressure is shown in case of multi-phase case rather than absolute pressure
+* [Flow] Relative pressure is shown in monitoring chart rather than absolute pressure
 * [Mesh] Surface for cell zones are configured as internal type to make mesh conform the surface
 * [Flow] Warning message is displayed if a user leaves initialization page without clicking *initialize* button after changing setup
 * [Flow] If section initializer is configured, Fixed Value type boundary value configured on boundary condition will not change the initialized values until re-initialization

@@ -111,16 +111,19 @@ Velocity Inlet 조건에서 속도의 Profile Type을 Temporal Distribution으�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/profile.png"><br> Temporal Distribution 조건 설정
 </p>
 
-Velocity Inlet 조건에서 온도의 Profile Type을 Temporal Distribution으로 선택하면 Piecewise linear와 Polynomial로 지정할 수 있다. Polynomial은 아래 그림의 창에서 식의 계수 _a<sub>n</sub>_들을 지정한다.
+Velocity Inlet 조건에서 온도의 Profile Type을 Temporal Distribution으로 선택하면 Piecewise linear와 Polynomial로 지정할 수 있다. Polynomial은 아래 그림의 창에서 식의 계수 *a<sub>n</sub>*들을 지정한다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_polynomial.png"><br>
-</p>
+<h2 style="text-align: center">
+$S = a_0 \cdot t^0 + a_1 \cdot t^1 + a_2 \cdot t^2 + ... + a_n \cdot t^n$
+</h2>
+<br/>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/polynomial.png"><br> Temporal Distribution 조건 설정 - polynomial
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/polynomial.png">
+    <br/>
+    Temporal Distribution 조건 설정 - polynomial
 </p>
-<br>
+<br/>
 
 #### Spatial Distribution
 
@@ -188,13 +191,27 @@ ABL(Atmospheric Boundary Layer) Inlet 조건은 유동의 입구에 대기경계
 
 속도와 난류 분포는 다음의 식을 사용한다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_abl1.png"><br>
-</p>
+<h2 style="text-align: center">
+$u = \frac{u^*}{\kappa} ln\left(\frac{z - d + z_0}{z_0}\right)$
+</h2>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_abl2.png"><br>
-</p>
+<h2 style="text-align: center">
+$k = \frac{(u^* )^2}{\sqrt{C_\mu}} \sqrt{C_1 ln \left( \frac{z - d + z_0}{z_0} \right) + C_2}$
+</h2>
+
+<h2 style="text-align: center">
+$\epsilon = \frac{(u^* )^3}{\kappa (z - d + z_0)} \sqrt{C_1 ln \left( \frac{z - d + z_0}{z_0} \right) + C_2}$
+</h2>
+
+<h2 style="text-align: center">
+$\omega = \frac{u^*}{\kappa \sqrt{C_\mu}} \frac{1}{z - d + z_0}$
+</h2>
+
+<h2 style="text-align: center">
+$u^* = \frac{u_{ref} \kappa} {ln \left( \frac{z_{ref} + z_0}{z_0} \right)}$
+</h2>
+<br/>
+
 
 변수정의
 
@@ -474,9 +491,15 @@ Porous Jump 조건은 계산영역 내부에 있는 cyclic 면에서 압력 변�
 
 압력 변화는 다음 식으로 계산된다. _μ_는 점성계수, _ρ_는 밀도, _U_는 속도이다.
 
+<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_porousJump.png"><br>
 </p>
+-->
+<h2 style="text-align: center">
+$\Delta p = -\left(D \mu U + \frac{1}{2} I \rho U^2 \right)L$
+</h2>
+<br/>
 
 openfoam에서 사용하는 경계조건은 압력은 porousBafflePressure이고, 나머지는 모두 cyclic이다.
 

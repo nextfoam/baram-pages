@@ -66,9 +66,16 @@ Porous Zone은 다공성 매질이나 작은 영역에 매우 복잡한 형상�
 
 Darcy-Forchheimer 모델은 다음의 식을 사용한다. <br>
 
+<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_darcy.png"><br>
 </p>
+-->
+
+<h2 style="text-align: center">
+$S_i = \left( \mu d + \rho |U| \frac{f}{2} \right)$
+</h2>
+<br/>
 
 압력손실 방향은 두 개의 벡터에 의해 결정된다. 두 벡터는 Direction-1, Direction-2에 의해 결정되고 세번째 방향은 두 벡터에 수직한 방향벡터이다.
 
@@ -76,9 +83,16 @@ Inertial Resistance Coefficient(f, Forchheimer coefficient)와 Viscous Resistanc
 
 Power law 모델은 다음의 식을 사용한다.
 
+<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_powerLaw.png"><br>
 </p>
+-->
+
+<h2 style="text-align: center">
+$S_i = - \rho C_0 |U|^{C_1 -1} U$
+</h2>
+<br/>
 
 C<sub>0</sub>와 C<sub>1</sub>은 상수로 입력한다.
 <br>
@@ -108,17 +122,38 @@ Actuator disk 모델은 프로펠러와 같은 회전체를 디스크로 모델�
 
 추력을 계산하는 방법 중 Froud's method는 다음 식을 사용한다.
 
+<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_actuatorDisk.png"><br>
 </p>
+-->
+
+<h2 style="text-align: center">
+$T = 2 \rho A |u_m \cdot n|^2 a(1-a)$
+</h2>
+
+<h2 style="text-align: center">
+$a = 1 - \frac{C_p}{C_t}$
+</h2>
+<br/>
+
 
 추력을 계산하는 방법 중 Variable-Scaling method는 다음 식을 사용한다.
 
+<!--
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/eqn_actuatorDisk1.png"><br>
 </p>
+-->
 
-_α_<br>
+<h2 style="text-align: center">
+$T = 0.5 \rho A |u_0 \cdot n|^2 C_T ^*$
+</h2>
+
+<h2 style="text-align: center">
+${C_T}^* = C_T \left( \frac{|u_m|}{|u_0|}\right)^2$
+</h2>
+<br>
 
 * 변수 정의
 
