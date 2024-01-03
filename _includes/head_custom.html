@@ -9,3 +9,15 @@
   };
 </script>
 
+<script>
+  function trackDownload(fileName) {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'download', {
+        'event_category': 'File Download',
+        'event_label': fileName,
+        'transport_type': 'beacon'
+      });
+    }
+  }
+  </script>
+  
