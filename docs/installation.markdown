@@ -14,7 +14,9 @@ Download them from following links.
 
 **NOTE: For macOS, [*open-mpi*](https://formulae.brew.sh/formula/open-mpi) Homebrew Formula should be installed in advance.**
 
-[Download BARAM v23.3.5 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5.dmg){: .btn .btn-blue .text-center .fs-5}
+[Download BARAM v23.3.5 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5.dmg){: .btn .btn-blue .text-center .fs-5onclick="trackDownload('BARAM-23.3.5.dmg')"}
+
+<!--[Download BARAM v23.3.5 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5.dmg){: .btn .btn-blue .text-center .fs-5}-->
 
 # Installing BARAM from Source Code
 
