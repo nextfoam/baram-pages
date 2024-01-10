@@ -17,6 +17,8 @@ To install [**BARAM-23**](https://baramcfd.org) apptainer container, install [Ap
     $ sudo apt install -y apptainer
     ```
 
+(Note) in the Ubuntu 18.04 or below, you need to compile apptainer manually by yourself according to the instruction in the https://github.com/apptainer/apptainer/blob/main/INSTALL.md
+
 - Install Apptainer in CentOS Linux
     ```
     $ sudo yum install -y epel-release
