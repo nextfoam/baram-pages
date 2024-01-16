@@ -31,7 +31,7 @@ Download `install.sh` and `BARAM23.3.5.tar.gz` in the same directory and assign 
 
 [install.sh](https://drive.google.com/file/d/1dDSZKQLygAm4XWs6TuUY-WIGvhdzUen2/view?usp=sharing)
 
-[BARAM23.3.5.tar.gz](https://drive.google.com/file/d/1cSyANncOP5JzXxCdce2e7L-qEK8JKmGF/view?usp=sharing)
+[BARAM23.3.5.tar.gz](https://drive.google.com/file/d/1QaXVImbbEja4brcxuKYPS2nMURcxDO0F/view?usp=sharing)
 
 ```
 $ chmod +x install.sh
