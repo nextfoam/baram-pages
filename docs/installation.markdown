@@ -8,15 +8,11 @@ title: Installation
 Binary installation package for 64-bit windows and disk image for macOS with Apple Silicon are here for convenience.
 Download them from following links.
 
-[Download BARAM v23.3.5 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5-setup.exe){: .btn .btn-purple .text-center .fs-5 onclick="trackDownload('BARAM-23.3.5-setup.exe')"}
-
-<!--[Download BARAM v23.3.5 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5-setup.exe){: .btn .btn-purple .text-center .fs-5}-->
+[Download BARAM v24.0.1 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.0.1-setup.exe){: .btn .btn-purple .text-center .fs-5 onclick="trackDownload('BARAM-24.0.1-setup.exe')"}
 
 **NOTE: For macOS, [*open-mpi*](https://formulae.brew.sh/formula/open-mpi) Homebrew Formula should be installed in advance.**
 
 [Download BARAM v23.3.5 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5.dmg){: .btn .btn-blue .text-center .fs-5onclick="trackDownload('BARAM-23.3.5.dmg')"}
-
-<!--[Download BARAM v23.3.5 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-23.3.5.dmg){: .btn .btn-blue .text-center .fs-5}-->
 
 # Installing BARAM from Source Code
 
@@ -96,20 +92,20 @@ The final directory structure may look like following.
 ```
 
 ### Windows
-[solvers_windows_v23.5.1_20231117.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_v23.5.1_20231117.zip)
+[solvers_windows_NF24.0.1.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_NF24.0.1.zip)
 
 
 ### Linux
-[solvers_linux_v1.5_20230723.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz)
+[solvers_linux_NF24.0.1.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.0.1.tar.xz)
 
 You can download the file on command line with cURL or wget command like following.
 
 ```commandline
-wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz
+wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.0.1.tar.xz
 ```
 
 ```commandline
-curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_v1.5_20230723.tar.xz -o solvers_linux_v1.5_20230723.tar.xz
+curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.0.1.tar.xz -o solvers_linux_NF24.0.1.tar.xz
 ```
 
 ### macOS (Apple Silicon only)

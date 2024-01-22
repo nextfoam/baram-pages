@@ -4,6 +4,25 @@ layout: page
 title: Release Notes
 ---
 
+# 24.0.1
+
+## New Features
+* [Flow] Point location preview has been added in point monitoring setup
+* [Mesh] Object preview has been added in Geometry step
+
+## Improvements
+* [Flow] `pRefCell` is used instead of `pRefPoint`. Users don't need to configure *Reference Pressure Location* any longer.
+* [Mesh] surface refinement level(castellatedMeshControls.refinementSurfaces.level[0]) plus one is used for castellatedMeshControls.refinementSurfaces.level[1]
+
+## Bug Fixes
+* [Flow] Numerical Conditions page was not correctly shown if energy model was not turned on after reading multi-region mesh
+* [Mesh] Export failed if HEX6 was used as cell zone boundary
+* [Mesh] Castellation failed if imported volume was configured as cell zone while its surface was configured as None.
+
+## Know Issues
+* [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
+
+
 # 23.3.5
 
 ## New Features
