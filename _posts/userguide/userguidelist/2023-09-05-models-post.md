@@ -6,7 +6,8 @@ category: userguidelist
 
 # Models
 
-난류모델과 온도 해석 여부를 설정한다. Flow Type(압축성/비압축성), Multiphase(Off/VOF/Cavitation), Solver Type(Pressure-based/Density-based), Species 등은 프로그램 시작할 때 launcher에서 설정되며 바꿀 수 없다.(압축성, Cavitation, Species는 아직 지원되지 않는다)
+난류모델과 온도 해석 여부를 설정한다. 격자를 읽었을 때 multi-region 격자이면 온도는 자동으로 해석하는 것으로 설정되고 바꿀 수 없다.
+Flow Type(압축성/비압축성), Multiphase(Off/VOF/Cavitation), Solver Type(Pressure-based/Density-based), Species 등은 프로그램 시작할 때 launcher에서 설정되며 바꿀 수 없다.(압축성, Cavitation, Species는 아직 지원되지 않는다)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/models.png"><br> Models 설정
