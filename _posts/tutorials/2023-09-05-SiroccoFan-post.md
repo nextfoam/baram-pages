@@ -73,7 +73,7 @@ Time을 Transient로 변경한다.<br>
 Cell Zone Conditions에서는 MRF, Sliding Mesh, Source 등을 설정할 수 있다.<br>
 본 예제에서는 'rotating' Cell Zone에 Sliding Mesh 조건을 설정한다.<br>
 
-rot 선택 - Multiple Reference Frame, Sliding Mesh를 선택하고 아래 값들을 입력한다.<br>
+rotating 선택 - Sliding Mesh를 선택하고 아래 값들을 입력한다.<br>
 
 ***●  Sliding Mesh***<br>
 ```Rotating Speed : 2,000(RPM)```<br>
