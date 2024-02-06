@@ -215,8 +215,7 @@ paraview를 초기 실행 시, 필요한 기능에 대한 설명은 다음과 �
 
 ●  나머지 : Default<br>
 
-p_rgh는 압력(p)에서 중력에 의한 항($\rho gh$)을 뺀 값으로 이 문제와 같이 중력을 고려하지 않은 경우는 p와 같은 값이다.<br>
-p_rgh 혹은 p를 선택하면 벽면에 걸리는 압력의 크기를 확인할 수 있다.<br>
+p_rgh는 압력에서 중력에 의한 항($\rho gh$)을 뺀 값으로 이 문제와 같이 중력을 고려하지 않은 경우는 압력과 같은 값이다.p_rgh는 operating pressure 기준의 상대압이고 p는 절대압력이다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.12.png"><br>
