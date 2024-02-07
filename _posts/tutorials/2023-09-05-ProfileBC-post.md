@@ -23,7 +23,7 @@ category: tutorials
 
 ●  난류 모델 : 𝑘 − ε <br>
 
-●  밀도 : 1.225𝑘𝑔/㎥ <br>
+●  밀도 : Perfect Gas (Ideal Gas) <br>
 
 ●  점성 계수 : 1.79e-5𝑘𝑔/𝑚s <br>
 
@@ -51,14 +51,14 @@ Time advance는 Transient로 바꿔준다. <br>
 본 예제에서는 공기를 작동 유체로 사용한다.<br>
 유체의 이름과 물성치를 아래와 같이 변경한다. <br>
 
-***●  perfect gas***<br>
-```Density : 1.225𝑘𝑔/𝑚^3 (m/s)```  <br>
+***●  air***<br>
+```Density : Perfect Gas (m/s)```  <br>
 ```Specific Heat (Cp) : 1004J/kgK (m/s)```  <br>
 ```Viscosity : 1.79e-05𝑘𝑔/𝑚s```  <br>
 ```Thermal Conductivity : 0.0245W/mK```  <br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/Perfect Gas.png"><br>
 </p>
 
 ### (4) Cell Zone Conditions
