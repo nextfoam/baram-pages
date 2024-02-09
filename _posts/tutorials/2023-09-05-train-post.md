@@ -49,6 +49,8 @@ category: tutorials
 
 난류 모델은 SST $k - \omega$ 모델을 사용하고 나머지는 Default를 사용한다.
 
+Energy를 include한다.
+
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/tur.png"><br>
 </p>
