@@ -91,11 +91,7 @@ Cell Zone Conditions에는 region0에 porousZone이 있다. 이것을 더블 클
 
   + type : Pressure Outlet
   
-  + Total Pressure : 0
-  
-  + Turbulent Intensity : 1
-  
-  + Turbulent Viscosity Ratio : 10
+  + Total Pressure : 0 
   
    <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/outlet.png"><br> outlet 경계조건
