@@ -163,6 +163,8 @@ Reference Value은 공력계수를 계산할 때 사용된다. 이 문제는 실
 
 + Pressure : 0
 
++ Scale of velocity : 111.11
+  
 + Turbulent Intensity : 1
 
 + Turbulent Viscosity Ratio : 10
