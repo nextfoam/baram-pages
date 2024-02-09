@@ -88,7 +88,7 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 ```Velocity Specfication Method : Magnitude, Normal to Boundary```<br>
 ```Profile Type : Constant```<br>
 ```Velocity Magnitude : 30 (m/s)```  <br>
-```Turbulent Intensity : 0.01 (%)```  <br>
+```Turbulent Intensity : 1 (%)```  <br>
 ```Turbulent Viscosity Ratio : 10```  <br>
 
 <p align='center'>
@@ -153,7 +153,7 @@ Reference Values에 아래와 같이 입력한다.<br>
 
 ●  Pressure : 0 <br>
 
-●  Velocity : 40 <br>
+●  Velocity : 30 <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/11.png"><br>
