@@ -28,7 +28,7 @@ Time은 first order일 때 Euler를 사용하고 second order일 때 backward를
 
 Momentum은 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Venkatakrishnan’s limiter(넥스트폼이 개발)를 사용한다.</span>
 
-Turbulence와 Energy는 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Barth-Jespersen’s limiter(넥스트폼이 개발)를 사용한다.</span>
+Turbulence와 Energy는 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Barth-Jespersen’s limiter를 사용한다.</span>
 
 ## Under-Relaxation Factors
 
