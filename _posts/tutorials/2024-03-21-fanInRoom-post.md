@@ -78,31 +78,31 @@ cellZone의 AMI를 더블 클릭하면 설정 창이 열린다. Zone Type을 Sli
 + desk_surface_0, door, room : Wall - No Slip
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-noSlip.png" width= 40%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-noSlip.png" >
 </p> 
 
 + fan_surface_0 : Wall - Moving Wall
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-movingWall.png" width= 40%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-movingWall.png" >
 </p>
 
 + outlet : Pressure Outlet - Total Pressure = 0
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-outlet.png" width= 40%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-outlet.png" >
 </p>
 
 + AMI_surface_0, AMI_surface_0_slave : interface - Internal Interface
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-interface.png" width= 40%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-interface.png" >
 </p>
 
 전체 설정을 완료하면 아래 그림과 같이 된다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-bc.png" width= 40%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-bc.png" >
     <br> 경계조건 설정
 </p>  
 
@@ -135,7 +135,7 @@ cellZone의 AMI를 더블 클릭하면 설정 창이 열린다. Zone Type을 Sli
 * Number of Correctors : 1
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-nume.png" width= 40%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-nume.png" >
     <br> 수치해석 조건 설정
 </p>  
 
@@ -158,7 +158,7 @@ Run Conditions은 다음과 같이 설정한다.
 Run에서 Start Calculation 버튼을 누르면 계산이 시작된다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-residual.png" width= 90%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-residual.png">
     <br> Residual plot
 </p>  
 
