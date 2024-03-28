@@ -6,38 +6,31 @@ category: tutorials
 
 # Atmosphere Boundary Conditions 
  
-## * [격자 파일 다운로드](https://drive.google.com/file/d/19kMYRiWaB84kaUzCoobMRZBKCc_uKxVU/view?usp=drive_link)
+### * [격자 파일 다운로드](https://drive.google.com/file/d/19kMYRiWaB84kaUzCoobMRZBKCc_uKxVU/view?usp=drive_link)
 
-## 1) 개요 
-* 본 예제는 대기 경계층 유동해석 예제이다.<br>
+## 1. 개요 
 
-* 해석 영역은 600m X 50m X 600m이다. <br>
-
-* 대기경계층 조건으로 주어진 입구의 속도 분포가 출구까지 유지되는지를 확인한다.<br>
-
-* 격자는 주어진 OpenFOAM 격자를 사용한다<br>
-
-* 아래 그림에서 형상과 격자를 나타내었다.<br>
++  본 예제는 대기 경계층 유동해석 예제이다.
++  해석 영역은 600m X 50m X 600m이다.
++  대기경계층 조건으로 주어진 입구의 속도 분포가 출구까지 유지되는지를 확인한다.
++  격자는 주어진 OpenFOAM 격자를 사용한다
++  아래 그림에서 형상과 격자를 나타내었다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.1.png"><br>
 </p>
 
-계산 조건은 다음과 같다. <br>
+계산 조건은 다음과 같다. 
 
-●  solver : buoyantSimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버) <br>
++ solver : buoyantSimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버)
++ 난류 모델 : standard 𝑘 − ε model
++ 밀도 : 1.225 𝑘𝑔/㎥
++ 점성 계수 : 1.79e-5 𝑘𝑔/𝑚s
++ 유동 조건 : 대기경계층 속도 및 난류 조건
 
-●  난류 모델 : 𝑘 − ε <br>
+대기 경계층 조건은 OpenFOAM이 제공하는 조건으로 D.M. Hargreaves and N.G. Wright의 다음 논문의 식을 이용한다.
 
-●  밀도 : 1.225 𝑘𝑔/㎥ <br>
-
-●  점성 계수 : 1.79e-5 𝑘𝑔/𝑚s <br>
-
-●  유동 조건 : 대기경계층 속도 및 난류 조건<br>
-
-대기 경계층 조건은 OpenFOAM이 제공하는 조건으로 D.M. Hargreaves and N.G. Wright의 논문<br>
-(On the use of the k-epsilon model in commercial CFD software to model the neutral atmospheric boundary layer)<br>
-식을 이용한다.
+*"On the use of the k-epsilon model in commercial CFD software to model the neutral atmospheric boundary layer"*
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.2.png"><br>
@@ -47,41 +40,42 @@ category: tutorials
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.3.png"><br>
 </p>
 
-BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
+BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.
 
-●  New Case버튼 클릭<br>
++ New Case버튼 클릭
++ Project Name : ABL
++ Flow Type : incompressible
++ Multiphase Model : Off
++ Species Model : Not Include
 
-●  Project Name : ABL<br>
+## 2. 격자
 
-●  Flow Type : incompressible<br>
-
-●  Multiphase Model : Off<br>
-
-● Species Model : Not Include<br>
-
-## 2) 격자
 격자는 주어진 OpenFOAM의 polyMesh 폴더를 활용한다. <br>
 상단 탭에서 File - Load Mesh - OpenFOAM 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
-## 3) 계산 조건
-### (1) General
+## 3. General
+
 본 예제에서는 Default로 설정한다.<br>
 
-### (2) Models
+## 4. Models
+
 난류 모델은 Standard 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.4.png"><br>
 </p>
 
-### (3) Materials
+## 5. Materials
+
 본 예제에서는 공기를 작동 유체로 사용한다.<br>
 물성치는 Default값을 사용한다.<br>
 
-### (4) Cell Zone Conditions
+## 6. Cell Zone Conditions
+
 Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
-### (5) Boundary Conditions
+## 7. Boundary Conditions
+
 아래와 같이 경계면 타입과 경계값을 설정한다.<br>
 
 ***●  inlet : ABL Inlet***<br>
@@ -112,18 +106,16 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
 ***●  minY, maxY, sky : Symmetry***<br>
 
-### (6) Numerical Conditions
-Numerical Conditions은 다음과 같이 설정한다.<br>
+## 8. Numerical Conditions
 
-●  Pressure-Velocity Coupling Scheme : SIMPLE<br>
+Numerical Conditions은 다음과 같이 설정한다.
 
-●  Discretization Schemes<br>
-```Momentum : Second Order Upwind```<br>
-```Turbulence : First Order Upwind```<br>
-
-●  Convergence Criteria : 1e-6 (모든 값)<br>
-
-●  나머지는 Default 조건을 사용한다.<br>
++ Pressure-Velocity Coupling Scheme : SIMPLE
++ Discretization Schemes
+  + Momentum : Second Order Upwind
+  + Turbulence : First Order Upwind
++ Convergence Criteria : 1e-6 (모든 값)
++ 나머지는 Default 조건을 사용한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.8.1.png"><br>
@@ -133,15 +125,14 @@ Numerical Conditions은 다음과 같이 설정한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.8.2.png"><br>
 </p>
 
-### (7) Initialization
-●  X-Velocity : 7 (m/s)<br>
+## 9. Initialization
 
-●  Pressure : 0 (Pa)<br>
-
-●  Turbulence
-```Scale of Velocity : 7 (m/s)```<br>
-```Turbulent Intensity : 1 (%)```<br>
-```Turbulent Viscosity Ratio : 10```<br>
++ X-Velocity : 7 (m/s)
++ Pressure : 0 (Pa)
++ Turbulence
+  + Scale of Velocity : 7 (m/s)
+  + Turbulent Intensity : 1 (%)
+  + Turbulent Viscosity Ratio : 10
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.9.png"><br>
@@ -149,16 +140,14 @@ Numerical Conditions은 다음과 같이 설정한다.<br>
 
 위 과정을 따라 초기화 후, File - save를 눌러 저장한다.<br>
 
-### (8) Run
-Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
+## 10. Run
 
-●  Number of Iterations : 1000  <br>
+Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
-●  Save Interval : 100  <br>
-
-●  Data Write Format : Binary  <br>
-
-●  Number of Cores : 1  <br>
++ Number of Iterations : 1000
++ Save Interval : 100
++ Data Write Format : Binary
++ Number of Cores : 1  
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.10.png"><br>
@@ -170,9 +159,8 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.11.png"><br>
 </p>
 
-## 4) 후처리
+## 11. 후처리
 
-### (1) 속도 분포
 대기경계층 속도 분포와 Profile을 확인한다.<br>
 External tools의 paraview 버튼을 눌러 Paraview를 실행한다.<br>
 
