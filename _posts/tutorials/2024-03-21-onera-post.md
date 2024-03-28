@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 16. ONERA M6 wing - transonic flow
+title: 16. ONERA M6 Transonic Wing - density based solver
 category: tutorials
 ---
+# ONERA M6 Wing Transonic Wing - density based solver
 
 ## * [격자 파일 다운로드](https://drive.google.com/file/d/1JxCKWMaAFoi--1_VFXkVVIhtus1N0ntG/view?usp=sharing)
 
