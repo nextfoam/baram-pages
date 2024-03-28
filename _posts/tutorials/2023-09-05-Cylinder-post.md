@@ -6,9 +6,10 @@ category: tutorials
 
 # Cylinder 
 
-## * [격자 파일 다운로드](https://drive.google.com/file/d/1KwU6-RFIv__nr8ovKGfNDX7g9ewrBJTy/view?usp=sharing)
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1KwU6-RFIv__nr8ovKGfNDX7g9ewrBJTy/view?usp=sharing)
 
-## 1) 개요 
+## 1. 개요 
+
 * 본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>
 
 * 직경이 1m인 2차원 실린더 주변의 박리 유동을 예측하는 문제이다. <br>
@@ -50,12 +51,13 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 ● Species Model : Not Include<br>
 
-## 2) 격자
+## 2. 격자
+
 격자는 주어진 Ansys의 .msh 파일을 활용한다. <br>
 상단 탭에서 File - Load Mesh - Fluent Mesh (ASCII) 순서대로 클릭하고 cylinder.msh 파일을 선택한다. <br>
 
-## 3) 계산 조건
-### (1) General
+## 3. General
+
 Time을 Transient로 변경한다.<br>
 나머지는 Default로 설정한다.<br>
 
@@ -63,14 +65,16 @@ Time을 Transient로 변경한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.2.png"><br>
 </p>
 
-### (2) Models
+## 4. Models
+
 난류 모델은 Laminar 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.3.png"><br>
 </p>
 
-### (3) Materials
+## 5. Materials
+
 본 예제에서는 레이놀즈 수가 100이 되는 조건으로 물성치를 설정한다.<br>
 
 ●  밀도 : 1𝑘𝑔/㎥ <br>
@@ -81,10 +85,12 @@ Time을 Transient로 변경한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.4.png"><br>
 </p>
 
-### (4) Cell Zone Conditions
+## 6. Cell Zone Conditions
+
 Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
-### (5) Boundary Conditions
+## 7. Boundary Conditions
+
 아래와 같이 경계면 타입과 경계값을 설정한다.<br>
 
 ***●  cylinder : Wall***<br>
@@ -114,7 +120,8 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
 
 ***●  frontAndBackPlanes : Empty***<br>
 
-### (6) Reference Values
+## 8. Reference Values
+
 본 예제에서는 cylinder의 Drag Coefficient와 Lift Coefficient를 확인한다.<br>
 그러기 위해 Reference Values를 아래와 같이 설정한다.<br>
 
@@ -132,7 +139,8 @@ Cell Zone Conditions은 Default 조건을 사용한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.8.png"><br>
 </p>
 
-### (7) Numerical Conditions
+## 9. Numerical Conditions
+
 Numerical Conditions은 다음과 같이 설정한다.<br>
 
 ●  Use Momentum Predictor : 활성화<br>
@@ -149,36 +157,31 @@ Numerical Conditions은 다음과 같이 설정한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.9.png"><br>
 </p>
 
-### (9) Monitoring
-본 예제에서는 다음 2가지를 모니터링한다.<br>
+## 10. Monitoring
 
-1. cylinder에 작용하는 Drag Coefficient와 Lift Coefficient<br>
-Add - Forces 버튼을 선택한다.<br>
-Force Monitoring은 아래와 같이 설정한다.<br>
+본 예제에서는 cylinder에 작용하는 Drag/Lift Coefficient와 cylinder중심에서 1m 떨어진 지점의 속도/압력을 모니터링 한다.
 
-●  Write Interval : 1<br>
+__cylinder에 작용하는 Drag/Lift Coefficient__
 
-●  Lift Direction : 0 1 0<br>
-
-●  Drag Direction : 1 0 0<br>
-
-●  Center of Rotation : 0 0 1<br>
-
-●  Boundaries : cylinder<br>
++ Add - Forces 버튼을 선택한다.
++ Force Monitoring은 아래와 같이 설정한다.
+    + Write Interval : 1
+    + Lift Direction : 0 1 0
+    + Drag Direction : 1 0 0
+    + Center of Rotation : 0 0 1
+    + Boundaries : cylinder
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.1.png"><br>
 </p>
 
-2. cylinder중심에서 1m 떨어진 지점의 속도, 압력<br>
-Add - Points 버튼을 선택한다.<br>
-Point Monitoring은 아래와 같이 설정한다.<br>
+__cylinder중심에서 1m 떨어진 지점의 속도, 압력__
 
-●  Write Interval : 1<br>
-
-●  Field : Pressure<br>
-
-●  Coordinate : 1 0 0<br>
++ Add - Points 버튼을 선택한다.
++ Point Monitoring은 아래와 같이 설정한다.
+    + Write Interval : 1
+    + Field : Pressure
+    + Coordinate : 1 0 0
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.2.png"><br>
@@ -190,28 +193,26 @@ Point Monitoring은 아래와 같이 설정한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.3.png"><br>
 </p>
 
-### (10) Initialization
-●  X-Velocity : 1<br>
-이외 값들은 Default값을 사용한다. 하단에 Initialize 버튼을 클릭한다.<br>
+## 11. Initialization
+
+X-Velocity에 1을 입력하고 나머지 값들은 Default값을 사용한다. 
+
+하단에 Initialize 버튼을 클릭한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.11.png"><br>
 </p>
 
-### (11) Run
-Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
+## 12. Run
 
-●  Time Stepping Method : Adaptive  <br>
+Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
-●  Max Courant Number : 1  <br>
-
-●  End Time : 150  <br>
-
-●  Save Interval : 0.5  <br>
-
-●  Data Write Format : Binary  <br>
-
-●  Number of Cores : 4  <br>
++ Time Stepping Method : Adaptive
++ Max Courant Number : 1
++ End Time : 150
++ Save Interval : 0.5
++ Data Write Format : Binary
++ Number of Cores : 4 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.12.png"><br>
@@ -225,21 +226,18 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.19.png"><br>
 </p>
 
-계산이 완료된 Residuals<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.13.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.13.1.png"><br>계산이 완료된 Residuals
 </p>
 
-모니터링되는 항력계수, 양력계수, 속도, 압력 그래프<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.13.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.13.2.png"><br>모니터링되는 항력계수, 양력계수, 속도, 압력 그래프
 </p>
 
-## 4) 후처리
+## 13. 후처리
 
-### (1) 스칼라 분포
 Cylinder 주변의 속도, 압력 분포를 확인한다.<br>
 External tools의 parview 버튼을 클릭하여 paraview를 실행한다.<br>
 
