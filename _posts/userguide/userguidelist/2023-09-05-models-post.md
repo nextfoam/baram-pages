@@ -50,7 +50,7 @@ $A = \frac {\Delta Re_y } {tanh(0.98)}$
 
 *Ref) Shih, T. H., Liou, W. W., Shabbir, A., Yang, Z., & Zhu, J. (1995). A New k-epsilon eddy Viscosity Model for High Reynolds Number Turbulent Flows. Computers and Fluids, 24(3), 227-238.*
 
-<br>
+</br>
 
 ### turbulent Prandtl Number
 
