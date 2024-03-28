@@ -15,7 +15,7 @@ https://www.grc.nasa.gov/WWW/wind/valid/m6wing/m6wing.html
 격자는 정렬격자로 만들어진 격자를 OpenFOAM으로 변환한 것을 사용한다. 
 
 <p align='center'>
-   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2822/launcher-densityBased.png"  width=40%> 
+   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"  width=40%> 
     <br> launcher 설정
 </p>
 
@@ -34,7 +34,7 @@ https://www.grc.nasa.gov/WWW/wind/valid/m6wing/m6wing.html
 프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2822/launcher-flowType.png"  width=40%>,<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2822/launcher-densityBased.png"  width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"  width=40%> 
     <br> launcher 설정
 </p>
 
