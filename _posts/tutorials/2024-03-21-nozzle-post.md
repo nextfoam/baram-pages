@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 18. Supersonic nozzle
+title: 18. Supersonic Nozzle - density based solver
 category: tutorials
 ---
 
 ## * [격자 파일 다운로드](https://drive.google.com/file/d/1Z5d0Ic9GsMxF1fPr8rSCpv9juU223xuM/view?usp=sharing)
 
-# 1) 개요
+# 1) Sunersonic Nozzle 개요
 
 본 예제는 밀도기반 솔버를 사용하는 축대칭 초음속 노즐 유동해석 예제이다.
 
