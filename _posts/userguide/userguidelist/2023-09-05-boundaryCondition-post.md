@@ -8,11 +8,13 @@ category: userguidelist
 
 Navigation의 Boundary Conditions를 선택하면 Configuration에 아래 그림처럼 region 별로 경계면이 표시된다. 경계면을 선택하고 마우스 오른쪽 버튼을 누르면 경계조건을 설정할 수 있다. 경계면을 선택하면 그래픽창에 그 경계면이 붉은색으로 표시된다. 
 
+filter string 기능을 이용하여 특정 문자열이 포함된 경계면만 표시되도록 할 수 있다.
+
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/boundaryCondition.png"><br> Boundary Conditions
 </p>
 
-경계조건은 Inlet, Outlet, Wall, Misc의 4개 범주로 구분되어 있으며, 각 범주에는 다음과 같은 종류의 경계조건이 있다. 다상유동, 압축성유동 등의 조건에 따라 표시되는 것이 다르다. 경계면을 선택하고 더블 클릭을 하거나 Edit 버튼을 누르면 경계조건의 세부 설정창이 나타난다.
+경계조건은 Inlet, Outlet, Wall, Misc의 4개 범주로 구분되어 있으며, 각 범주에는 다음과 같은 종류의 경계조건들이 있다. 다상유동, 압축성유동 등의 조건에 따라 표시되는 것이 다르다. 경계면을 선택하고 더블 클릭을 하거나 Edit 버튼을 누르면 경계조건의 세부 설정창이 나타난다.
 
 * Inlet
 
