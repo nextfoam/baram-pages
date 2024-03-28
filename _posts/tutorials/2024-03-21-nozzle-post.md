@@ -132,7 +132,7 @@ Initialization-Advanced-Section-Create 를 클릭한 후 다음과 같이 설정
   + Temperature를 선택하고 3000을 입력
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-setFields.png" width=32%>,<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-setFields1.png" width=50%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-setFields.png">
     <br> Section 설정 및 압력 초기조건
 </p>
 
