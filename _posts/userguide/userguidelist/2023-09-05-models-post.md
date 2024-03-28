@@ -42,10 +42,10 @@ Enhanced Wall Treatment(two layer)는 넥스트폼이 개발한 것으로 blendi
 
 <h2 style="text-align: center">
 $\lambda = {\frac 1 2} \left[1 + tanh \left( \frac{Re_y - {Re_y}^* } {A} \right) \right ]$
-
+</h2>
 
 <h2 style="text-align: center">
-$A = \frac {\Delta Re_y } {tanh(0.98)}$
+    $A = \frac {\Delta Re_y } {tanh(0.98)}$
 </h2>
 </br>
 
