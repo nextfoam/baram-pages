@@ -1,14 +1,16 @@
 ---
 layout: post
-title: 18. Batch Run - RAE2822 Transonic airfoil
+title: 19. Batch Run - Angle of Attack Sweep of Airfoil
 category: tutorials
 ---
 
-## * [격자 파일 다운로드](https://drive.google.com/file/d/1VgU-XnPKYDr6JGAYo_OU1RzIdPf_dCTQ/view?usp=sharing)
+# Batch Run - Angle of Attack Sweep of Airfoil
 
-# 1) Batch Run - RAE2822 Transonic airfoil 개요
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1VgU-XnPKYDr6JGAYo_OU1RzIdPf_dCTQ/view?usp=sharing)
 
-본 예제는 Batch Run 예제이다. RAE2822 천음속 에어포일의 받음각 변화에 따른 유동해석을 batch run으로 진행한다. 격자는 RAE2822 transonic airfoil 튜토리얼의 격자를 사용한다.
+# 1) 개요
+
+본 예제는 RAE2822 천음속 에어포일의 받음각 변화에 따른 유동해석을 batch run으로 진행한다. 격자는 RAE2822 transonic airfoil 튜토리얼의 격자를 사용한다.
 
 계산조건은 다음과 같다.
 
@@ -20,7 +22,7 @@ category: tutorials
 
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-mesh.png"  width=30%>,<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-pContour.png"  width=47.5%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-mesh.png">
     <br> 격자 및 압력분포
 </p>
 
@@ -29,7 +31,7 @@ category: tutorials
 프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"  width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"> 
     <br> launcher 설정
 </p>
 
@@ -71,7 +73,7 @@ Batch Run을 위해 필요한 사용자 변수는 받음각, 속도, 항력방�
 'User Parameters'의 Edit 버튼을 눌러 창이 열리면 'Parameter Values' 옆의 (+)를 눌러 아래 그림과 같이 하나씩 추가한다. 
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-editParameter.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-editParameter.png"> 
     <br> 사용자 변수 선언
 </p>
 
@@ -91,7 +93,7 @@ Batch Run을 위해 필요한 사용자 변수는 받음각, 속도, 항력방�
   + Static Temperature : 288  
   
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-farfield.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-farfield.png" > 
     <br> farfield Riemann 경계조건
 </p>
 
@@ -114,7 +116,7 @@ Discretization Schemes에서 Flow와 Turbulence 모두 Second Order Upwind를 �
 나머지는 모두 디폴트를 사용한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-nume.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-nume.png" > 
     <br> 수치해석 조건
 </p>
 
@@ -127,7 +129,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
 + Boundaries : wing
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-monitor.png" width=30%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-monitor.png" > 
     <br> 수치해석 조건
 </p>
 
@@ -140,7 +142,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
 + Temperature : 288
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-init.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-init.png" > 
     <br> 수치해석 조건
 </p>
 
@@ -157,7 +159,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
 'Switch To Batch Running Mode' 버튼을 누르면 아래 그림과 같이 Batch Cases 설정 부분이 나타난다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-batchCases.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-batchCases.png" > 
     <br> 수치해석 조건
 </p>
 
@@ -166,7 +168,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
 이 예제에서는 아래 그림과 같은 엑셀 파일이다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-excel.png" width=80%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-excel.png" > 
     <br> 수치해석 조건
 </p>
 
@@ -176,7 +178,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
 Import 버튼을 누르고 위 파일을 선택하면 Batch Cases 부분이 다음 그림과 같이 바뀐다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-batchCases1.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-batchCases1.png" > 
 <br> 수치해석 조건
 </p>
 
@@ -187,7 +189,7 @@ Start Calculation을 누르면 순차적으로 계산이 시작된다.
 제일 왼쪽 colume에 현재 계산중인 케이스에 화살표가 나타난다. 계산이 완료된 케이스는 Result colume에 초록색으로 표시되며, 계산 중 발산한 경우는 빨간색으로 표시된다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-run.png" width=80%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-run.png" > 
     <br> Residual 그래프
 </p>
 
@@ -198,7 +200,7 @@ Start Calculation을 누르면 순차적으로 계산이 시작된다.
 계산이 끝난후 Batch Cases에서 케이스를 선택하고 마우스 오른쪽 버튼으로 Load를 선택하면 해당 케이스의 결과가 활성화 되고 residual과 모니터 그래프를 확인할 수 있다. External tools의 paraview 버튼을 클릭하여 paraview를 실행하고 압력을 선택하면 다음과 같은 분포를 확인할 수 있다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-paraview.png" width=80%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-paraview.png" > 
     <br> 받음각 -20도 경우의 압력 분포
 </p>
 
