@@ -66,6 +66,8 @@ MRF는 회전하는 물체를 시뮬레이션 할 때 물체를 회전시키지 
 
 Porous Zone은 다공성 매질이나 작은 영역에 매우 복잡한 형상이 있을 때 형상을 직접 구현하지 않고 유속에 따른 압력 손실로 모델링하는 방법이다. 압력 손실의 모델링 방법은 Darcy-Forchheimer 모델과 Power law 모델을 사용할 수 있다.
 
+OpenFOAM의 porous media 모델은 porous 영역에서 불연속적인 속도 분포가 나타나고 압력손실도 입력 조건과 조금 다른 결과를 보이는 문제가 있다. Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolation 방법을 개선하여 이 문제를 해결하였다.([이에 대한 자세한 내용은 아래 링크의 문서를 참고](https://nextfoam.co.kr/proc/DownloadProc.php?fName=231101140051_yvpJhMF0nY.pdf&realfName=10thOKUCC_OpenFOAM%EC%82%AC%EC%86%8C%ED%95%9C%EB%AC%B8%EC%A0%9C%EB%93%A4.pdf))
+
 __Darcy-Forchheimer 모델__
 
 다음의 식을 사용한다. <br>
