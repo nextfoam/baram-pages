@@ -32,7 +32,7 @@ category: tutorials
 프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
 <p align='center'>
-   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"  width=40%> 
+   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"> 
     <br> launcher 설정
 </p>
 
@@ -78,7 +78,7 @@ Density는 Perfect Gas, Viscosity는 Sutherland를 선택한다. 나머지는 �
   + Turbulence : intensity and viscosity ratio(0.1 and 1)
   
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-farfield.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-farfield.png"> 
     <br> farfield Riemann 경계조건
 </p>
 
@@ -102,7 +102,7 @@ Convergence Criteria에서 Density의 값을 1e-5으로 설정한다
 나머지는 모두 디폴트를 사용한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-nume.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-nume.png"> 
     <br> 수치해석 조건
 </p>
 
@@ -143,7 +143,7 @@ Start Calculation을 누르면 계산이 시작된다.
 초음속 유동의 경우 Courant Number를 높게 시작하면 초기에 발산하는 경우가 많아 작은 값으로 시작한 후 계산이 어느 정도 안정되면 조금씩 높여주면 수렴 속도를 높일 수 있다. 계산 중 Run Condition에서 값을 수정하고 Run에서 Update Configuration 버튼을 누르면 적용된다. 이 예제에서는 0.1로 시작해서 200번 iteration 정도에서 값을 1로 높여주고 400번 정도에서 100으로 높여주었다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-run.png" width=80%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-run.png"> 
     <br> Residual 그래프
 </p>
 
@@ -154,7 +154,7 @@ Start Calculation을 누르면 계산이 시작된다.
 External tools의 paraview 버튼을 클릭하여 paraview를 실행하고 압력을 선택하면 다음과 같은 분포를 확인할 수 있다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-paraview.png" width=80%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-paraview.png"> 
     <br> 압력 분포
 </p>
 
