@@ -19,7 +19,7 @@ BARAM을 실행하면 새로운 계산을 할 것인지 기존의 문제를 열 
 
 창에는 최근에 해석한 폴더들이 표시되는데 선택하면 BARAM이 시작되고 해당 문제가 열린다. 기존의 문제를 열고 싶은데 창에 표시되지 않는 경우는 Open 버튼을 눌러 해당 폴더를 선택하면 된다. 
 
-새로운 계산을 할 때는 New Case 버튼을 누르고 원하는 위치에 이름을 입력하면 Solver Type, Multiphase Model, Species 선택창이 차례로 나타난 후 BARAM이 실행된다. 지금 Species는 Off만 선택할 수 있다. 
+새로운 계산을 할 때는 New Case 버튼을 누르고 원하는 위치에 이름을 입력하면 Solver Type, Multiphase Model, Species Model 선택창이 차례로 나타난 후 BARAM이 실행된다. 지금 Species는 Off만 선택할 수 있다. 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/launcher1.png"><br> 시작화면
