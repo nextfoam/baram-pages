@@ -62,7 +62,7 @@ MRF는 회전하는 물체를 시뮬레이션 할 때 물체를 회전시키지 
 설정 항목은 Rotating Speed(RPM), Rotation Axis Origin, Rotation Axis Direction이며 회전 방향은 MRF에서와 같다.
 <br>
 
-### Poirous Zone
+### Porous Zone
 
 Porous Zone은 다공성 매질이나 작은 영역에 매우 복잡한 형상이 있을 때 형상을 직접 구현하지 않고 유속에 따른 압력 손실로 모델링하는 방법이다. 압력 손실의 모델링 방법은 Darcy-Forchheimer 모델과 Power law 모델을 사용할 수 있다.
 
