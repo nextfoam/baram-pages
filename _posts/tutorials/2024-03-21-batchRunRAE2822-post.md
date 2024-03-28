@@ -20,7 +20,7 @@ category: tutorials
 
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2922/rae-mesh.png"  width=30%>,<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2922/rae-pContour.png"  width=47.5%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-mesh.png"  width=30%>,<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-pContour.png"  width=47.5%> 
     <br> 격자 및 압력분포
 </p>
 
@@ -29,7 +29,7 @@ category: tutorials
 프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2822/launcher-densityBased.png"  width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"  width=40%> 
     <br> launcher 설정
 </p>
 
@@ -114,7 +114,7 @@ Discretization Schemes에서 Flow와 Turbulence 모두 Second Order Upwind를 �
 나머지는 모두 디폴트를 사용한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2922/rae-nume.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-nume.png" width=40%> 
     <br> 수치해석 조건
 </p>
 
@@ -187,7 +187,7 @@ Start Calculation을 누르면 순차적으로 계산이 시작된다.
 제일 왼쪽 colume에 현재 계산중인 케이스에 화살표가 나타난다. 계산이 완료된 케이스는 Result colume에 초록색으로 표시되며, 계산 중 발산한 경우는 빨간색으로 표시된다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2822/batchRAE-run.png" width=80%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-run.png" width=80%> 
     <br> Residual 그래프
 </p>
 
@@ -198,7 +198,7 @@ Start Calculation을 누르면 순차적으로 계산이 시작된다.
 계산이 끝난후 Batch Cases에서 케이스를 선택하고 마우스 오른쪽 버튼으로 Load를 선택하면 해당 케이스의 결과가 활성화 되고 residual과 모니터 그래프를 확인할 수 있다. External tools의 paraview 버튼을 클릭하여 paraview를 실행하고 압력을 선택하면 다음과 같은 분포를 확인할 수 있다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2922/batchRAE-paraview.png" width=80%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-paraview.png" width=80%> 
     <br> 받음각 -20도 경우의 압력 분포
 </p>
 
