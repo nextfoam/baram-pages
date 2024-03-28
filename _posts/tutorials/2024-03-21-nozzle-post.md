@@ -8,7 +8,7 @@ category: tutorials
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1Z5d0Ic9GsMxF1fPr8rSCpv9juU223xuM/view?usp=sharing)
 
-# 1) 개요
+## 1. 개요
 
 본 예제는 밀도기반 솔버를 사용하는 축대칭 초음속 노즐 유동해석 예제이다.
 
@@ -26,7 +26,7 @@ category: tutorials
 + 원방경계 압력 : 1e+4 Pa
 + 원방경계 온도 : 300 K
 
-# 2) 프로그램의 구동
+## 2. 프로그램의 구동
 
 프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
@@ -35,7 +35,7 @@ category: tutorials
     <br> launcher 설정
 </p>
 
-# 3) 격자
+## 3. 격자
 
 격자는 주어진 polyMesh 폴더를 사용한다. 상단 메뉴에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
@@ -43,22 +43,20 @@ category: tutorials
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.2.png"><br>
 </p>
 
-# 4) 계산조건
-
-## (1) General
+## 4. General
 
 Operating Conditions에 0을 입력한다. 
 
-## (2) Models
+## 5. Models
 
 난류 모델은 $SST k - \omega$ 모델을 선택한다.
 
-## (3) Materials
+## 6. Materials
 
 Density는 Perfect Gas, Viscosity는 Sutherland를 선택한다. 나머지는 디폴트 조건을 사용한다.
 <br>
 
-## (4) Boundary Conditions
+## 7. Boundary Conditions
 
 경계조건은 다음과 같이 설정한다.
 
@@ -89,7 +87,7 @@ Density는 Perfect Gas, Viscosity는 Sutherland를 선택한다. 나머지는 �
 </p>
 
   
-## (5) Numerical Conditions
+## 8. Numerical Conditions
 
 Formulation은 Implicit, Flux Type은 Roe-FDS를 사용한다. Entropy Fix Coefficient는 0.5를 사용한다. 
 
@@ -100,7 +98,7 @@ Formulation은 Implicit, Flux Type은 Roe-FDS를 사용한다. Entropy Fix Coeff
     <br> 수치해석 조건
 </p>
 
-## (6) Monitors
+## 9. Monitors
 
 노즐 입구에서의 유량을 모니터링 한다. Add - Surface를 선택하고 다음과 같이 설정한다.
 
@@ -108,7 +106,7 @@ Formulation은 Implicit, Flux Type은 Roe-FDS를 사용한다. Entropy Fix Coeff
 + Surface : inlet)
 
 
-## (7) Initialization
+## 10. Initialization
 
 초기조건은 다음과 같이 설정한다.
 
@@ -136,7 +134,7 @@ Initialization-Advanced-Section-Create 를 클릭한 후 다음과 같이 설정
     <br> Section 설정 및 압력 초기조건
 </p>
 
-## (9) Run Conditions
+## 11. Run Conditions
 
 'Run Conditions'는 다음과 같이 설정한다.
 
@@ -144,7 +142,7 @@ Initialization-Advanced-Section-Create 를 클릭한 후 다음과 같이 설정
 + Courant Number : 1000
 + Save Interval : 500
 
-# 4) Run
+# 12. Run
 
 Start Calculation을 누르면 계산이 시작된다.
 
@@ -155,7 +153,7 @@ Start Calculation을 누르면 계산이 시작된다.
 
 
 
-# 5) 후처리
+# 13. 후처리
 
 External tools의 paraview 버튼을 클릭하여 paraview를 실행하고 마하수를 선택하면 다음과 같은 분포를 확인할 수 있다.
 
