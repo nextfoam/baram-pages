@@ -109,9 +109,7 @@ BARAM은 다양한 프로그램을 사용하여 개발되었으며 모두 공개
   + Mesh information : cell 정보, 도메인의 범위 표시
   
   + Mesh transform : scale, translate, rotate
-<!---
-  + <span style="color:gray">Mesh quality check : checkMesh(곧 지원 예정)</span> 
---->
+
   + <span style="color:gray">convert to axi-symmetric mesh(곧 지원 예정)</span>
   
   + <span style="color:gray">converr to 2d mesh(곧 지원 예정)</span>
