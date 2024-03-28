@@ -30,7 +30,7 @@ Navigation의 Boundary Conditions를 선택하면 Configuration에 아래 그림
    
    + [Far-field Riemann : 압축성유동 해석에만 사용](#far-field-riemann)
    
-   + [Subsonic Inflow : 압축성유동 해석에만 사용](#subsonic-inflow)
+   + [Subsonic Inlet : 압축성유동 해석에만 사용](#subsonic-inlet)
    
    + [Supersonic Inflow : 압축성유동 해석에만 사용](#supersonic-inflow)
    
@@ -297,7 +297,7 @@ Open Channel Inlet 조건은 자유수면을 계산할 때 입구에 일정한 �
 속도, 압력, 온도의 openfoam 경계조건은 farfieldRiemann이며 난류는 Velocity Inlet 조건과 동일하다.
 <br>
 
-## Subsonic Inflow
+## Subsonic Inlet
 
 Subsonic Inflow 조건은 압축성 유동에서 유체기계와 같은 내부유동의 입구 아음속 경계조건이다.(넥스트폼이 개발)
 

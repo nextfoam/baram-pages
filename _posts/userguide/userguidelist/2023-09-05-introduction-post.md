@@ -6,9 +6,9 @@ category: userguidelist
 
 # 개요
 
-BARAM v23.3은 압축성 유동, 비압축성 유동, 다상유동, 열전달 해석을 위한 전산유체역학 프로그램 패키지이며, 공개 소스 CFD 도구 상자인 openfoam 기반으로 개발되었다.
+BARAM v24는 압축성 유동, 비압축성 유동, 다상유동, 열전달 해석을 위한 전산유체역학 프로그램 패키지이며, 공개 소스 CFD 도구 상자인 OpenFOAM 기반으로 개발되었다.
 
-BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2212 기반으로 (주)넥스트폼에서 개발한 포크로, 안정성,  수렴성, 정확성 향상과 새로운 기능을 위한 다양한 라이브러리, 유틸리티, 솔버를 포함한다. BARAM을 설치하면 NextFOAM 23의 바이너리가 설치된다. 소스코드는 github에서 다운 받을 수 있다.(https://github.com/nextfoam/baram) 
+BARAM-v24에서 사용하는 OpenFOAM은 NextFOAM-v24이다. NextFOAM 24는 ESI의 v2312 기반으로 (주)넥스트폼에서 개발한 포크로, 안정성, 수렴성, 정확성 향상과 새로운 기능을 위한 다양한 라이브러리, 유틸리티, 솔버를 포함한다. BARAM-v24를 설치하면 NextFOAM-v24의 바이너리가 설치된다. 소스코드는 github에서 다운 받을 수 있다.(https://github.com/nextfoam/baram) 
 
 격자 생성 모듈(BaramMesh)는 OpenFOAM의 유틸리티인 blockMesh와 snappyHexMesh를 사용하여 격자를 생성하는 모듈이다. 형상은 STL 파일을 가져올 수 있고 육면체, 구, 실린더 형상을 생성할 수 있다. 경계층 격자를 포함한 octree 방식의 3차원 격자를 생성할 수 있으며 region, cell zone, interface를 만들 수 있다.
 
@@ -18,7 +18,7 @@ BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2
 
 (주)넥스트폼이 개발하여 GNU GPL 라이선스 프로그램으로 공개하였다.
 
-현재는 BARAM-v6의 기능이 모두 구현된 상태는 아니며, BARAM-v23.3의 기능은 다음과 같다. 
+현재는 BARAM-v6의 기능이 모두 구현된 상태는 아니며, BARAM-v24의 기능은 다음과 같다. 
 
 * 솔버
 
@@ -32,10 +32,10 @@ BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2
   
   + interFoam : 자유수면 해석 솔버
   
-  + <span style="color:gray">캐비테이션 해석 솔버(곧 지원 예정)</span>
-  
-  + <span style="color:gray">밀도기반 압축성 유동 솔버(곧 지원 예정)</span>
-  
+  + TSLAeroFoam : 밀도기반 압축성 유동 해석 솔버
+
+  + <span style="color:gray">캐비테이션 해석 솔버(곧 지원 예정)</span>  
+ 
   + <span style="color:gray">압력기반 비압축성/압축성 전체 속도 영역 솔버(곧 지원 예정)</span>
   
 * 난류
@@ -48,7 +48,7 @@ BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2
   
   + RNG k-epsilon
   
-  + Realizable k-epsilon with standard & 2-layer wall function
+  + Realizable k-epsilon with standard & two-layer wall function
   
   + SST k-omega
   
@@ -79,15 +79,11 @@ BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2
   + Scalar source
   
   + Scalar fixed value
+
+* Paremeter를 이용한 일괄 계산(batch run)
   
 * <span style="color:gray">Passive scalar 계산(곧 지원 예정)</span>
-
-* <span style="color:gray">Paremeter를 이용한 일괄 계산(곧 지원 예정)</span>
-
-  + <span style="color:gray">비압축성 유동 : 경계조건 값의 변화에 대한 계산(곧 지원 예정)</span>
-  
-  + <span style="color:gray">압축성 유동 : 마하수, 받음각, 옆미끄럼각 변화에 대한 계산(곧 지원 예정)</span>
-  
+ 
 * 격자 생성
 
   + snappyHexMesh
@@ -109,11 +105,12 @@ BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2
 * STL 파일 처리 : 특성 각도에 따른 표면 분할(surfaceAutoPatch)
 
 * 격자 처리
-  + <span style="color:gray">Mesh information : cell, face, point의 개수, 도메인의 범위 표시(곧 지원 예정)</span>
-  
-  + <span style="color:gray">Mesh quality check : checkMesh(곧 지원 예정)</span>
+* 
+  + Mesh information : cell 정보, 도메인의 범위 표시
   
   + Mesh transform : scale, translate, rotate
+
+  + <span style="color:gray">Mesh quality check : checkMesh(곧 지원 예정)</span> 
   
   + <span style="color:gray">convert to axi-symmetric mesh(곧 지원 예정)</span>
   
@@ -125,6 +122,10 @@ BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2
   
 * 후처리
 
+  + monitoring - point value, surface value, volume value, force
+
+  + ParaView
+
   + <span style="color:gray">경계면에서 스칼라 분포 및 벡터(곧 지원 예정)</span>
   
   + <span style="color:gray">축단면에서 스칼라 분포 및 벡터(곧 지원 예정)</span>
@@ -133,12 +134,9 @@ BARAM에서 사용하는 OpenFOAM은 NextFOAM 23이다. NextFOAM 23은 ESI의 v2
   
   + <span style="color:gray">clip data(곧 지원 예정)</span>
   
-  + <span style="color:gray">streamline(곧 지원 예정)</span>
-  
-  + monitoring - point value, surface value, volume value, force
-  
+  + <span style="color:gray">streamline(곧 지원 예정)</span> 
+ 
   + <span style="color:gray">data extraction : point value, surface value, volume value, force(곧 지원 예정)</span>
   
-  + ParaView
 
 
