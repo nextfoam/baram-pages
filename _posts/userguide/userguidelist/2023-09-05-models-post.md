@@ -55,7 +55,7 @@ $A = \frac {\Delta Re_y } {tanh(0.98)}$
 
 ### turbulent Prandtl Number
 
-turbulent Prandtl Number는 Internal Field와 Wall Function 두 가지를 설정할 수 있다. Internal Field의 값은 난류모델에 사용되고, Wall Function의 값은 alphat(turbulent thermal diffusivity)의 wall function에 사용된다. 
+turbulent Prandtl Number는 Internal Field와 Wall Function 두 가지를 설정할 수 있다. Internal Field의 값은 난류모델에 사용되고, Wall Function의 값은 alphat(turbulent thermal diffusivity)의 벽함수에 사용된다. 
 
 
 ## Energy
