@@ -6,9 +6,10 @@ category: tutorials
 
 # Mixing Pipe 
 
-## * [격자 파일 다운로드](https://drive.google.com/file/d/12CyYZO_FSl7Baz-MmbtXnBst02EGg5Tg/view?usp=sharing)
+### * [격자 파일 다운로드](https://drive.google.com/file/d/12CyYZO_FSl7Baz-MmbtXnBst02EGg5Tg/view?usp=sharing)
 
-## 1) 개요 
+## 1. 개요 
+
 * 본 예제는 정상상태 비압축성 유동해석 예제이다.<br>
 
 * 입구 2개, 출구 1개로 이루어진 원형 파이프 내부 유동의 혼합을 예측한다.<br>
@@ -43,8 +44,9 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 ● Species Model : Not Include<br>
 
-## 2) 격자
- 격자는 주어진 polyMesh 폴더를 활용한다. <br>
+## 2. 격자
+
+격자는 주어진 polyMesh 폴더를 활용한다. <br>
 상단 탭에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
 <p align='center'>
@@ -54,15 +56,16 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 **※ 주의 사항 : 여기서 polyMesh폴더를 선택한다.** <br>
 **BARAM은 OpenFOAM 솔버를 기반으로 한다. 그리고 OpenFOAM의 격자는 항상 polyMesh 폴더로 되어 있다.** <br>
 
-## 3) 계산 조건
-### (1) General
+## 3. General
+
 General에서는 Time, Gravity, Operating Pressure등을 설정할 수 있다. 본 예제에서는 Default로 설정한다.<br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.3.png"><br>
 </p>
 
-### (2) Models
+## 4. Models
+
 Models에서는 turbulence, Energy, Incompressible/Compressible, Multiphase 등을 설정할 수 있다.<br>
 본 예제에서는 Standard 𝑘 − ε 모델을 사용한다. <br>
 
@@ -70,21 +73,24 @@ Models에서는 turbulence, Energy, Incompressible/Compressible, Multiphase 등�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.4.png"><br>
 </p>
 
-### (3) Materials
+## 5. Materials
+
 Materials에서는 작동 유체의 물성치 등을 설정할 수 있다. 지금 예제에서는 공기의 물성치를 그대로 사용한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.5.png"><br>
 </p>
 
-### (4) Cell Zone Conditions
+## 6. Cell Zone Conditions
+
 Cell Zone Conditions에서는 Source, MRF, Sliding Mesh등을 설정할 수 있다. 본 예제에서는 Default로 설정한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.6.png"><br>
 </p>
 
-### (5) Boundary Conditions
+## 7. Boundary Conditions
+
 여러 경계면의 경계값을 설정할 수 있다. 각 경계면을 설정하면 해당 경계면이 하얀색으로 변한다. <br>
 또한, 경계면을 마우스 오른쪽 버튼으로 클릭하면 경계면 타입을 변경할 수 있다. 각 경계면의 경계 조건을 아래와 같이 변경하면 된다. <br>
 
@@ -112,7 +118,8 @@ Cell Zone Conditions에서는 Source, MRF, Sliding Mesh등을 설정할 수 있�
 ***●  wall <br>***
 ```Velocity Condition : No Slip``` <br>
 
-### (6) Numerical Conditions
+## 8. Numerical Conditions
+
 Discretization, Relaxation factors, Convergence criteria, Pressure-Velocity coupling등 항목을 설정할 수 있다. <br>
 본 예제에서는 아래와 같이 설정을 변경한다. <br>
 
@@ -138,7 +145,8 @@ Discretization, Relaxation factors, Convergence criteria, Pressure-Velocity coup
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.7.2.png"><br>
 </p>
 
-### (7) Monitoring
+## 9. Monitoring
+
 본 예제에서는 (0, 0, 1) 위치에서 압력을 모니터링 한다.<br>
 Solution - Monitors를 선택한다. <br>
 Monitors 창에서 하단에 Add - Points를 클릭한다. <br>
@@ -153,7 +161,8 @@ Monitors 창에서 하단에 Add - Points를 클릭한다. <br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.8.png"><br>
 </p>
 
-### (8) Initialization
+## 10. Initialization
+
 Initial Condition은 초기값으로 x, y, z의 속도와 압력을 입력할 수 있다.<br>
 난류 모델을 사용할 경우 Velocity Scale, Turbulent Intensity, Viscosity Ratio 값을 입력하면 k와 ε 값이 계산되어 사용된다. <br>
 
@@ -176,12 +185,14 @@ Initial Condition은 초기값으로 x, y, z의 속도와 압력을 입력할 �
 
 값을 입력하고 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
 
-### (9) Run
+## 11. Run
+
 Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설정한다. <br>
 본 예제에서는 모든 값을 Default로 설정한다. <br>
 이후, Run - Start Calculation 버튼을 클릭한다.
 
-## 4) 후처리
+## 12 후처리
+
 BARAM에서는 paraview를 이용하여 후처리를 진행한다.<br>
 후처리 진행 시, External tools의 paraivew 버튼을 클릭하면 된다.<br>
 
