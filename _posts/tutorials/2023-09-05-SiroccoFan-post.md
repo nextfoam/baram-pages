@@ -6,9 +6,10 @@ category: tutorials
 
 # Sirocco Fan 
 
-## * [격자 파일 다운로드](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
 
-## 1) 개요 
+## 1. 개요 
+
 * 본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>
 
 * sirocco fan 내부에서 fan이 회전할 때 내부의 유동을 예측하는 문제이다. <br>
@@ -45,12 +46,13 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 ● Species Model : Not Include<br>
 
-## 2) 격자
+## 2. 격자
+
 격자는 주어진 Ansys의 .cas 파일을 활용한다. <br>
 상단 탭에서 File - Load Mesh - Fluent Case (ASCII) 순서대로 클릭하고 siroccofan.cas 파일을 선택한다. <br>
 
-## 3) 계산 조건
-### (1) General
+## 3. General
+
 Time을 Transient로 변경한다.<br>
 나머지는 Default로 설정한다.<br>
 
@@ -58,18 +60,21 @@ Time을 Transient로 변경한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.2.png"><br>
 </p>
 
-### (2) Models
+## 4. Models
+
 난류 모델은 Realizable 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.3.png"><br>
 </p>
 
-### (3) Materials
+## 5. Materials
+
 본 예제에서 작동 유체는 공기이다.<br>
 유체의 물성치는 Default 조건을 사용한다..<br>
 
-### (4) Cell Zone Conditions
+## 6. Cell Zone Conditions
+
 Cell Zone Conditions에서는 MRF, Sliding Mesh, Source 등을 설정할 수 있다.<br>
 본 예제에서는 'rotating' Cell Zone에 Sliding Mesh 조건을 설정한다.<br>
 
@@ -84,7 +89,8 @@ rotating 선택 - Sliding Mesh를 선택하고 아래 값들을 입력한다.<br
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.4.png"><br>
 </p>
 
-### (5) Boundary Conditions
+## 7. Boundary Conditions
+
 아래와 같이 경계면 타입과 경계값을 설정한다.<br>
 
 **※interface-stat와 interface-rotating은 회전 경계면이다.<br>**
@@ -138,10 +144,12 @@ rotating 선택 - Sliding Mesh를 선택하고 아래 값들을 입력한다.<br
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.10.png"><br>
 </p>
 
-### (6) Numerical Conditions
+## 8. Numerical Conditions
+
 본 예제에서는 Default 조건을 사용한다. <br>
 
-### (7) Initialization
+## 9. Initialization
+
 Turbluent Intensity을 0.1 (%)로 변경하고 나머지는 Defalut 값을 사용한다.<br>
 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
 
@@ -149,7 +157,8 @@ Turbluent Intensity을 0.1 (%)로 변경하고 나머지는 Defalut 값을 사�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.11.png"><br>
 </p>
 
-### (8) Run
+## 10. Run
+
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 ●  Time Stepping Method : Fixed  <br>
@@ -171,9 +180,8 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.13.png"><br>
 </p>
 
-## 4) 후처리
+## 11. 후처리
 
-### (1) 축 단면 스칼라 분포
 Fan 내부의 압력 분포를 확인해본다.<br>
 External tools의 paraivew 버튼을 클릭하여 paraview를 실행한다.<br>
 
