@@ -48,9 +48,8 @@ $\lambda = {\frac 1 2} \left[1 + tanh \left( \frac{Re_y - {Re_y}^* } {A} \right)
 $A = \frac {\Delta Re_y } {tanh(0.98)}$
 </h2>
 
-
-
 *Ref) Shih, T. H., Liou, W. W., Shabbir, A., Yang, Z., & Zhu, J. (1995). A New k-epsilon eddy Viscosity Model for High Reynolds Number Turbulent Flows. Computers and Fluids, 24(3), 227-238.*
+
 
 
 ### turbulent Prandtl Number
