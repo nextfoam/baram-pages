@@ -8,7 +8,7 @@ category: tutorials
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1VgU-XnPKYDr6JGAYo_OU1RzIdPf_dCTQ/view?usp=sharing)
 
-# 1) 개요
+## 1. 개요
 
 본 예제는 RAE2822 천음속 에어포일의 받음각 변화에 따른 유동해석을 batch run으로 진행한다. 격자는 RAE2822 transonic airfoil 튜토리얼의 격자를 사용한다.
 
@@ -26,7 +26,7 @@ category: tutorials
     <br> 격자 및 압력분포
 </p>
 
-# 2) 프로그램의 구동
+## 2. 프로그램의 구동
 
 프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
@@ -35,7 +35,7 @@ category: tutorials
     <br> launcher 설정
 </p>
 
-# 3) 격자
+## 3. 격자
 
 격자는 주어진 polyMesh 폴더를 사용한다. 상단 메뉴에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
@@ -43,22 +43,20 @@ category: tutorials
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.2.png"><br>
 </p>
 
-# 4) 계산조건
-
-## (1) General
+## 4. General
 
 Operating Conditions에 0을 입력한다. 
 
-## (2) Models
+## 5. Models
 
 난류 모델에서 Inviscid를 선택한다.
 
-## (3) Materials
+## 6. Materials
 
 Density는 Perfect Gas, Viscosity는 Sutherland를 선택한다. 나머지는 디폴트 조건을 사용한다.
 <br>
 
-## (4) 사용자 변수 선언
+## 7. 사용자 변수 선언
 
 Batch Run을 위해 필요한 사용자 변수는 받음각, 속도, 항력방향, 양력방향 등이 있으며 다음과 같이 정의한다.
 
@@ -78,7 +76,7 @@ Batch Run을 위해 필요한 사용자 변수는 받음각, 속도, 항력방�
 </p>
 
 
-## (5) Boundary Conditions
+## 8. Boundary Conditions
 
 경계조건은 다음과 같이 설정한다.
 
@@ -100,14 +98,14 @@ Batch Run을 위해 필요한 사용자 변수는 받음각, 속도, 항력방�
 + frontAndBackPlanes
   + Empty
   
-## (6) Reference Values
+## 9. Reference Values
 
 + Area, Length : 0.3048(에어포일의 길이)
 + Density : 1.21(farfield condition)
 + Pressure : 100000(farfield condition)
 + Velocity : 288(farfield condition)
 
-## (7) Numerical Conditions
+## 10. Numerical Conditions
 
 Formulation은 Implicit, Flux Type은 Roe-FDS를 사용한다. Entropy Fix Coefficient는 0.5를 사용한다. 
 
@@ -120,7 +118,7 @@ Discretization Schemes에서 Flow와 Turbulence 모두 Second Order Upwind를 �
     <br> 수치해석 조건
 </p>
 
-## (8) Monitors
+## 11. Monitors
 
 Add - Forces를 선택하고 다음과 같이 설정한다.
 
@@ -133,7 +131,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
     <br> 수치해석 조건
 </p>
 
-## (9) Initialization
+## 12. Initialization
 
 초기조건은 다음과 같이 설정한다.
 
@@ -146,7 +144,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
     <br> 수치해석 조건
 </p>
 
-## (10) Run Conditions
+## 13. Run Conditions
 
 'Run Conditions'는 다음과 같이 설정한다.
 
@@ -154,7 +152,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
 + Courant Number : 1000
 + Save Interval : 500
 
-# 4) Run
+## 14. Run
 
 'Switch To Batch Running Mode' 버튼을 누르면 아래 그림과 같이 Batch Cases 설정 부분이 나타난다.
 
@@ -195,7 +193,7 @@ Start Calculation을 누르면 순차적으로 계산이 시작된다.
 
 
 
-# 5) 후처리
+## 15. 후처리
 
 계산이 끝난후 Batch Cases에서 케이스를 선택하고 마우스 오른쪽 버튼으로 Load를 선택하면 해당 케이스의 결과가 활성화 되고 residual과 모니터 그래프를 확인할 수 있다. External tools의 paraview 버튼을 클릭하여 paraview를 실행하고 압력을 선택하면 다음과 같은 분포를 확인할 수 있다.
 
