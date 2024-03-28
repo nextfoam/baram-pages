@@ -142,7 +142,7 @@ Initialization-Advanced-Section-Create 를 클릭한 후 다음과 같이 설정
 + Courant Number : 1000
 + Save Interval : 500
 
-# 12. Run
+## 12. Run
 
 Start Calculation을 누르면 계산이 시작된다.
 
@@ -153,7 +153,7 @@ Start Calculation을 누르면 계산이 시작된다.
 
 
 
-# 13. 후처리
+## 13. 후처리
 
 External tools의 paraview 버튼을 클릭하여 paraview를 실행하고 마하수를 선택하면 다음과 같은 분포를 확인할 수 있다.
 
