@@ -6,7 +6,7 @@ category: tutorials
 
 ## * [격자 파일 다운로드](https://drive.google.com/file/d/1VgU-XnPKYDr6JGAYo_OU1RzIdPf_dCTQ/view?usp=sharing)
 
-# 1) 개요
+# 1) Batch Run - RAE2822 Transonic airfoil 개요
 
 본 예제는 Batch Run 예제이다. RAE2822 천음속 에어포일의 받음각 변화에 따른 유동해석을 batch run으로 진행한다. 격자는 RAE2822 transonic airfoil 튜토리얼의 격자를 사용한다.
 
