@@ -5,7 +5,7 @@ category: mesh
 ---
 
 
-# Fan In Room
+# Rotating Fan In Room
 
 ## * [형상 파일](https://drive.google.com/file/d/1R3UNNL2LdiWBOziU7s-_M1gecTOwwGz7/view?usp=sharing) 
 
