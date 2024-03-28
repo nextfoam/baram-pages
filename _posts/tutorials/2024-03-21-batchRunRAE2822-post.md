@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 19. Batch Run - Angle of Attack Sweep of Airfoil
+title: 20. Batch Run - Angle of Attack Sweep of Airfoil
 category: tutorials
 ---
 
