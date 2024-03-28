@@ -7,9 +7,9 @@ category: tutorials
 
 # drivAer 
 
-## * [격자 파일 다운로드](https://drive.google.com/file/d/1uL_roJ1xnBsmG87HTwQ4fie4txDhjCjW/view?usp=sharing)
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1uL_roJ1xnBsmG87HTwQ4fie4txDhjCjW/view?usp=sharing)
 
-## 1) 개요 
+## 1. 개요 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/intro.png"><br>
@@ -47,7 +47,8 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
 
 ● Species Model : Not Include<br>
 
-## 2) 격자
+## 2. 격자
+
  격자는 주어진 polyMesh 폴더를 활용한다. <br>
 상단 탭에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
@@ -59,18 +60,20 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/2.png"><br>
 </p>
 
-## 3) 계산 조건
-### (1) General
+## 3. General
+
 본 예제에서는 Default로 설정한다.<br>
 
-### (2) Models
+## 4. Models
+
 난류 모델은 Realizable 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/3.png"><br>
 </p>
 
-### (3) Materials
+## 5. Materials
+
 본 예제에서는 공기의 물성치를 다음과 같이 수정하여 사용한다. <br>
 
 ***●  air***<br>
@@ -81,7 +84,8 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/4.png"><br>
 </p>
 
-### (4) Boundary Conditions
+## 6. Boundary Conditions
+
 아래와 같이 경계면 타입과 경계값을 설정한다.<br>
 
 ***●  minX : velocity Inlet***<br>
@@ -140,7 +144,8 @@ BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/10.png"><br>
 </p>
 
-### (5) Monitoring
+## 7. Monitoring
+
 본 예제에서는 자동차에 걸리는 공력 계수를 모니터링한다.<br>
 
 Reference Values에 아래와 같이 입력한다.<br>
@@ -165,7 +170,8 @@ Reference Values에 아래와 같이 입력한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/12.png"><br>
 </p>
 
-### (6) Numerical Conditions
+## 8. Numerical Conditions
+
 본 예제에서는 아래와 같이 설정을 변경한다. <br>
 
 ●  Pressure-Velocity Coupling Scheme : SIMPLEC <br>
@@ -193,7 +199,8 @@ Reference Values에 아래와 같이 입력한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/14.png"><br>
 </p>
 
-### (8) Initialization
+## 9. Initialization
+
 다음 값으로 Initial 값을 설정하면 된다.
 
 ●  Velocity  <br>
@@ -215,7 +222,8 @@ Reference Values에 아래와 같이 입력한다.<br>
 
 값을 입력하고 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
 
-### (9) Run
+## 10. Run
+
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
 
 ●  Number of Iterations : 2,000  <br>
@@ -248,7 +256,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/18.png"><br>
 </p>
 
-## 4) 후처리
+## 11. 후처리
 
 ### (1) 경계면 스칼라 분포
 External tools의 paraivew 버튼을 클릭하여 실행한다.<br>
