@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 17. Space shuttle - supersonic flow
+title: 17. Space shuttle supersonic flow - density based solver
 category: tutorials
 ---
+# Space shuttle supersonic flow - density based solver
 
 ## * [격자 파일 다운로드](https://drive.google.com/file/d/12oc-gY76vct8fNCBbF4dNbAVqmuVCNVP/view?usp=sharing)
 
