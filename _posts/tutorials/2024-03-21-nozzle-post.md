@@ -4,14 +4,16 @@ title: 18. Supersonic Nozzle - density based solver
 category: tutorials
 ---
 
-## * [격자 파일 다운로드](https://drive.google.com/file/d/1Z5d0Ic9GsMxF1fPr8rSCpv9juU223xuM/view?usp=sharing)
+# Supersonic Nozzle
 
-# 1) Sunersonic Nozzle 개요
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1Z5d0Ic9GsMxF1fPr8rSCpv9juU223xuM/view?usp=sharing)
+
+# 1) 개요
 
 본 예제는 밀도기반 솔버를 사용하는 축대칭 초음속 노즐 유동해석 예제이다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-mesh.png"  width=45%>,<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-mach.png"  width=46%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-mesh.png"> 
     <br> 격자 및 마하수분포
 </p>
 
@@ -29,7 +31,7 @@ category: tutorials
 프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
 <p align='center'>
-   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"  width=40%> 
+   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"> 
     <br> launcher 설정
 </p>
 
@@ -82,7 +84,7 @@ Density는 Perfect Gas, Viscosity는 Sutherland를 선택한다. 나머지는 �
   + Wedge 
   
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-inlet.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-inlet.png"> 
     <br> farfield Riemann 경계조건
 </p>
 
@@ -94,7 +96,7 @@ Formulation은 Implicit, Flux Type은 Roe-FDS를 사용한다. Entropy Fix Coeff
 나머지는 모두 디폴트를 사용한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-nume.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-nume.png"> 
     <br> 수치해석 조건
 </p>
 
@@ -147,7 +149,7 @@ Initialization-Advanced-Section-Create 를 클릭한 후 다음과 같이 설정
 Start Calculation을 누르면 계산이 시작된다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-run.png" width=80%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-run.png"> 
     <br> Residual 그래프
 </p>
 
@@ -158,7 +160,7 @@ Start Calculation을 누르면 계산이 시작된다.
 External tools의 paraview 버튼을 클릭하여 paraview를 실행하고 마하수를 선택하면 다음과 같은 분포를 확인할 수 있다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-paraview.png" width=80%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-paraview.png"> 
     ><br> 압력 분포
 </p>
 
