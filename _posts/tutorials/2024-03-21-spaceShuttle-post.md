@@ -12,7 +12,7 @@ category: tutorials
 
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-mesh.png"  width=30%>,<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-pContour.png"  width=47.5%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-mesh.png"  width=45%>,<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-rhoContour.png"  width=43.5%> 
     <br> 격자 및 밀도분포
 </p>
 
@@ -30,7 +30,7 @@ category: tutorials
 프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
 <p align='center'>
-   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2822/launcher-densityBased.png"  width=40%> 
+   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"  width=40%> 
     <br> launcher 설정
 </p>
 
@@ -100,7 +100,7 @@ Convergence Criteria에서 Density의 값을 1e-5으로 설정한다
 나머지는 모두 디폴트를 사용한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/rae2822/rae-nume.png" width=40%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-nume.png" width=40%> 
     <br> 수치해석 조건
 </p>
 
