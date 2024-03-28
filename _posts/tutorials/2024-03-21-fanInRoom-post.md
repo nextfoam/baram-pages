@@ -1,13 +1,15 @@
 ---
 layout: post
-title: 19. Rotating Fan in Room
+title: 15. Rotating Fan in Room
 category: tutorials
 ---
 
-# 1) Rotating Fan in Room 개요 
+# Rotating Fan in Room
+
+# 1) 개요 
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-intro.png" width=80%><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-intro.png" ><br>
 </p>
 
 본 예제는 sliding mesh를 이용한 계산 예제이다.
@@ -44,7 +46,7 @@ Launcher에서 ‘Solver Type’은 Pressure Based, ‘Multiphase Model’은 No
 난류 모델은 Standard $k-\epsilon$ 모델을 사용하고 나머지는 디폴트를 사용한다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/turbulence.png"><br> 난류 모델 설정
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/3.3.png"><br> 난류 모델 설정
 </p>
 
 ## (3) Materials
