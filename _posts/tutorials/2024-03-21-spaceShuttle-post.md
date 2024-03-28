@@ -4,15 +4,17 @@ title: 17. Space shuttle supersonic flow - density based solver
 category: tutorials
 ---
 
-## * [격자 파일 다운로드](https://drive.google.com/file/d/12oc-gY76vct8fNCBbF4dNbAVqmuVCNVP/view?usp=sharing)
+# Space shuttle supersonic flow
 
-# 1) Space shuttle supersonic flow 개요
+### * [격자 파일 다운로드](https://drive.google.com/file/d/12oc-gY76vct8fNCBbF4dNbAVqmuVCNVP/view?usp=sharing)
+
+# 1) 개요
 
 본 예제는 밀도기반 솔버를 사용하는 정상상태 압축성 초음속 유동해석 예제이다.
 
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-mesh.png"  width=45%>,<img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-rhoContour.png"  width=43.5%> 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-mesh.png">
     <br> 격자 및 밀도분포
 </p>
 
