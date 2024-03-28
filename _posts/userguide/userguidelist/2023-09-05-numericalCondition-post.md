@@ -24,17 +24,17 @@ SIMPLE과 SIMPLEC를 선택할 수 있으며, fvSolution 파일의 SIMPLE 딕셔
 
 ## Formulation
 
-밀도 기반 압축성 솔버(Flow Type을 compressible로 선택)에서만 나타난다. Implicit만 선택할 수 있다.
+밀도 기반 압축성 솔버(Solver Type을 Density-based로 선택)에서만 나타난다. 현재 Implicit만 선택할 수 있다.
 
 ## Flux Type
 
-밀도 기반 압축성 솔버(Flow Type을 compressible로 선택)에서만 나타난다. 
+밀도 기반 압축성 솔버(Solver Type을 Density-based로 선택)에서만 나타난다. 
 
 Roe-FDS, AUSM, AUSM-up 3가지를 선택할 수 있다.
 
 Roe-FDS를 선택하면 Entropy Fix Coefficient, $\epsilon$을 입력할 수 있다. 0~1 사이의 값을 입력한다.
 
-AUSM-up를 선택하면 Cut-off Mach Number, $M_\infin$를 설정할 수 있다. 0~10 사이의 값을 입력한다.
+AUSM-up를 선택하면 Cut-off Mach Number, $M_\inf$를 설정할 수 있다. 0~10 사이의 값을 입력한다.
 
 AUSM을 선택하면 별도의 설정이 없다.
 
@@ -48,16 +48,6 @@ AUSM을 선택하면 별도의 설정이 없다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/scheme1.png"><br> Discretization Schemes 설정
 </p>
 
-### Time, Momentum, Energy, Turbulence, Volume Fraction
-
-First order와 second order를 선택할 수 있다. fvSchemes 파일의 ddtSchemes와 divSchemes 딕셔너리에 사용된다.
-
-Time은 first order일 때 Euler를 사용하고 second order일 때 backward를 사용한다.(넥스트폼이 수정)
-
-Momentum은 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Venkatakrishnan’s limiter(넥스트폼이 개발)를 사용한다.</span>
-
-Turbulence와 Energy는 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Barth-Jespersen’s limiter를 사용한다.</span>
-
 ### Pressure
 
 Cell 중심의 압력으로부터 face의 압력을 계산하는 interpolation 기법을 선택하는 것으로 Linear, Momentum Weighted Reconstruct, Momentum Weighted를 선택할 수 있다. 
@@ -67,6 +57,16 @@ Linear : face 양쪽의 cell 중심값을 사용하여 linear interpolation하�
 Momentum Weighted : 운동량방정식의 계수($a_p$)를 weighting factor로 사용하는 방법으로 수렴성이 뛰어니다. 운동량 소스가 있는 경우 안정성에 문제가 있을 수 있다.
 
 Momentum Weighted Reconstruct : second order 기법이라고 할 수 있는데 cell 중심의 압력구배를 이용한 extrapolation으로 face 좌우의 값을 계산하고 이를 평균해서 face 값으로 사용하는 방법이다. 평균은 운동량방정식의 계수($a_p$)를 weighting factor로 사용한다. 보다 정확한 결과를 얻을 수 있는 대신 안정성이 낮아질 수 있다.
+
+### Time, Momentum, Energy, Turbulence, Volume Fraction
+
+First order와 second order를 선택할 수 있다. fvSchemes 파일의 ddtSchemes와 divSchemes 딕셔너리에 사용된다.
+
+Time은 first order일 때 Euler를 사용하고 second order일 때 backward를 사용한다.(넥스트폼이 수정)
+
+Momentum은 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Venkatakrishnan’s limiter(넥스트폼이 개발)를 사용한다.</span>
+
+Turbulence와 Energy는 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Barth-Jespersen’s limiter를 사용한다.</span>
 
 
 ## Under-Relaxation Factors
