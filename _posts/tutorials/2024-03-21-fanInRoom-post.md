@@ -7,7 +7,7 @@ category: tutorials
 # 1) 개요 
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/intro.png" width=90%><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-intro.png" width=80%><br>
 </p>
 
 본 예제는 sliding mesh를 이용한 계산 예제이다.
@@ -64,8 +64,8 @@ cellZone의 AMI를 더블 클릭하면 설정 창이 열린다. Zone Type을 Sli
 
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-cellZone.png"
-    ><br> Cell Zone설정
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-cellZone.png" >
+    <br> Cell Zone설정
 </p>
 
 
@@ -76,31 +76,31 @@ cellZone의 AMI를 더블 클릭하면 설정 창이 열린다. Zone Type을 Sli
 + desk_surface_0, door, room : Wall - No Slip
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-noSlip.png" width= 50%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-noSlip.png" width= 40%>
 </p> 
 
 + fan_surface_0 : Wall - Moving Wall
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-movingWall.png" width= 50%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-movingWall.png" width= 40%>
 </p>
 
 + outlet : Pressure Outlet - Total Pressure = 0
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-outlet.png" width= 50%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-outlet.png" width= 40%>
 </p>
 
 + AMI_surface_0, AMI_surface_0_slave : interface - Internal Interface
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-interface.png" width= 50%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-interface.png" width= 40%>
 </p>
 
 전체 설정을 완료하면 아래 그림과 같이 된다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-bc.png" width= 50%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-bc.png" width= 40%>
     <br> 경계조건 설정
 </p>  
 
@@ -133,7 +133,7 @@ cellZone의 AMI를 더블 클릭하면 설정 창이 열린다. Zone Type을 Sli
 * Number of Correctors : 1
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-nume.png" width= 50%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-nume.png" width= 40%>
     <br> 수치해석 조건 설정
 </p>  
 
