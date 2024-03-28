@@ -8,7 +8,7 @@ category: tutorials
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/12oc-gY76vct8fNCBbF4dNbAVqmuVCNVP/view?usp=sharing)
 
-# 1) 개요
+## 1. 개요
 
 본 예제는 밀도기반 솔버를 사용하는 정상상태 압축성 초음속 유동해석 예제이다.
 
@@ -27,7 +27,7 @@ category: tutorials
 + 원방경계 압력 : 100000 Pa
 + 원방경계 온도 : 288 K
 
-# 2) 프로그램의 구동
+## 2. 프로그램의 구동
 
 프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
@@ -36,7 +36,7 @@ category: tutorials
     <br> launcher 설정
 </p>
 
-# 3) 격자
+## 3. 격자
 
 격자는 주어진 polyMesh 폴더를 사용한다. 상단 메뉴에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
 
@@ -44,22 +44,21 @@ category: tutorials
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.2.png"><br>
 </p>
 
-# 4) 계산조건
 
-## (1) General
+## 4. General
 
 Operating Conditions에 0을 입력한다. 
 
-## (2) Models
+## 5. Models
 
 난류 모델은 $SST k - \omega$ 모델을 선택한다.
 
-## (3) Materials
+## 6. Materials
 
 Density는 Perfect Gas, Viscosity는 Sutherland를 선택한다. 나머지는 디폴트 조건을 사용한다.
 <br>
 
-## (4) Boundary Conditions
+## 7. Boundary Conditions
 
 경계조건은 다음과 같이 설정한다.
 
@@ -83,7 +82,7 @@ Density는 Perfect Gas, Viscosity는 Sutherland를 선택한다. 나머지는 �
 </p>
 
   
-## (5) Reference Values
+## 8. Reference Values
 
 + Area, Length : 1
 + Density : 1.2097(farfield condition)
@@ -91,7 +90,7 @@ Density는 Perfect Gas, Viscosity는 Sutherland를 선택한다. 나머지는 �
 + Velocity : 1020.5933(farfield condition)
 
 
-## (6) Numerical Conditions
+## 9. Numerical Conditions
 
 Formulation은 Implicit, Flux Type은 Roe-FDS를 사용한다. Entropy Fix Coefficient는 0.5를 사용한다. 
 
@@ -106,7 +105,7 @@ Convergence Criteria에서 Density의 값을 1e-5으로 설정한다
     <br> 수치해석 조건
 </p>
 
-## (7) Monitors
+## 10. Monitors
 
 Add - Forces를 선택하고 다음과 같이 설정한다.
 
@@ -115,7 +114,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
 + Boundaries : spaceShuttle
 
 
-## (8) Initialization
+## 11. Initialization
 
 초기조건은 다음과 같이 설정한다.
 
@@ -128,7 +127,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
   + Turbulent Viscosity Ratio : 1 
 
 
-## (9) Run Conditions
+## 12. Run Conditions
 
 'Run Conditions'는 다음과 같이 설정한다.
 
@@ -136,7 +135,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
 + Courant Number : 0.1
 + Save Interval : 500
 
-# 4) Run
+## 13. Run
 
 Start Calculation을 누르면 계산이 시작된다.
 
@@ -149,7 +148,7 @@ Start Calculation을 누르면 계산이 시작된다.
 
 
 
-# 5) 후처리
+## 14. 후처리
 
 External tools의 paraview 버튼을 클릭하여 paraview를 실행하고 압력을 선택하면 다음과 같은 분포를 확인할 수 있다.
 
