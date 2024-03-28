@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 19. Fan in Room
+title: 19. Rotating Fan in Room
 category: tutorials
 ---
 
-# 1) 개요 
+# 1) Rotating Fan in Room 개요 
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-intro.png" width=80%><br>

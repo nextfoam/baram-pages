@@ -5,7 +5,7 @@ category: mesh
 ---
 
 
-# AhmedBody
+# Rotating Fan In Room
 
 ## * [형상 파일](https://drive.google.com/file/d/1R3UNNL2LdiWBOziU7s-_M1gecTOwwGz7/view?usp=sharing) 
 
@@ -23,12 +23,12 @@ category: mesh
 
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-importSTL.png"  width=50%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-importSTL.png"  width=50%>
     <br> import stl files
 </p>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-geom.png"  width=90%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-geom.png"  width=90%>
     <br> 형상
 </p>
 
@@ -42,7 +42,7 @@ category: mesh
   + AMI_surface_0 : cell zone 외곽에 2개의 면을 만들기 위해 interface - Non-Conformal을 선택한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-cellZone.png"  width=42%>, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-interface.png"  width=37%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-cellZone.png"  width=42%>, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-interface.png"  width=37%>
     <br> AMI Geometry 속성 설정
 </p>
 
@@ -59,7 +59,7 @@ Region에서는 Fluid의 영역을 지정한다.
 상단 (+)버튼을 클릭하면 아래 그림과 같이 변경된다. 디스플레이 창에서 마우스를 움직여 중앙점을 계산영역 내부에 위치시킨다. Add Region에서 Type을 Fluid로 그대로 두고 Add 버튼을 누르면 설정이 완료된다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-region.png"  width=90%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-region.png"  width=90%>
     <br> Region 설정
 </p>
 
@@ -71,7 +71,7 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 Number of Cells per Direction에 65, 55, 30을 입력하고 Generate 버튼을 누른다. Display Control에 boundary들이 생성되고 격자 모양을 확인할 수 있다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-baseGrid.png"  width=90%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-baseGrid.png"  width=90%>
     <br> Region 설정
 </p>
 
@@ -88,7 +88,7 @@ fan과 AMI에 격자를 밀집시키기 위해 레벨 3을 사용하고 desk는 
 (+)를 눌러 항목을 추가한다. AMI, desk, fan, desk에 대해 다음과 같이 설정한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-ami.png"  width=30%>, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-desk.png"  width=30%>, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-fan.png"  width=30%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-ami.png"  width=30%>, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-desk.png"  width=30%>, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-fan.png"  width=30%>
     <br> Surface/Feature Refinement 설정
 </p>
 
@@ -97,7 +97,7 @@ fan과 AMI에 격자를 밀집시키기 위해 레벨 3을 사용하고 desk는 
 (+)를 눌러 항목을 추가한다. AMI의 레벨을 3으로 설정한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-amiVol.png"  width=40%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-amiVol.png"  width=40%>
     <br> Volume Refinement 설정
 </p>
 
@@ -106,7 +106,7 @@ fan과 AMI에 격자를 밀집시키기 위해 레벨 3을 사용하고 desk는 
 
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/fanInRoom/fanInRoom-refine.png"  width=90%>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-refine.png"  width=90%>
     <br> Refinement 설정
 </p>
 
@@ -125,23 +125,11 @@ fan과 AMI에 격자를 밀집시키기 위해 레벨 3을 사용하고 desk는 
 </p>
 
 ## 6. 경계층격자(Boundary Layer)
-마지막으로 벽 주변에 Boundary Layer를 생성한다.<br>
 
-Configuration의 + 버튼을 눌러 다음과 같이 경계층을 생성한다.<br>
+경계층격자는 생성하지 않는다. 
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/13.png"><br>
-</p>
+Apply - Next 버튼을 눌러 다음 단계로 넘어간다.
 
-최종적으로 생성된 격자 형태는 다음과 같다.<br>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/14.png"><br>
-</p>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/15.png"><br>
-</p>
 
 ## 7. 내보내기(Export)
 마지막으로 ahmedBody이라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.<br>
