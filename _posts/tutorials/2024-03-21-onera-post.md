@@ -15,7 +15,7 @@ https://www.grc.nasa.gov/WWW/wind/valid/m6wing/m6wing.html
 격자는 정렬격자로 만들어진 격자를 OpenFOAM으로 변환한 것을 사용한다. 
 
 <p align='center'>
-   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"  width=40%> 
+   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"> 
     <br> launcher 설정
 </p>
 
