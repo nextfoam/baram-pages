@@ -3,11 +3,10 @@ layout: post
 title: 16. ONERA M6 Transonic Wing - density based solver
 category: tutorials
 ---
-# ONERA M6 Wing Transonic Wing - density based solver
 
 ## * [격자 파일 다운로드](https://drive.google.com/file/d/1JxCKWMaAFoi--1_VFXkVVIhtus1N0ntG/view?usp=sharing)
 
-# 1) 개요
+# 1) ONERA M6 Wing Transonic Wing 개요
 
 본 예제는 밀도기반 솔버를 사용하는 정상상태 압축성 유동해석 예제이다. ONERA M6 wing의 validation 문제로 아래 사이트의 계산 조건을 사용한다.
 
