@@ -14,18 +14,19 @@ category: userguidelist
 
 주화면은 다음 5개의 영역으로 나눌 수 있다.
 
-* 메뉴
+① 메뉴
+
   + File, Mesh, View, Parallel, Settings, Help 등의 메뉴가 있다
   
-* Graphics Toolbar
+② Graphics Toolbar
 
-* Navigation
+③ Navigation
   + 물리 모델, 물성치, 경계 조건, 수치해석 조건, 초기 조건 등의 탭을 선택할 수 있다
 
-* Configration
+④ Configration
   + 물리 모델, 물성치, 경계 조건, 수치해석 조건, 초기 조건 등의 모델과 값을 설정할 수 있다
 
-* Graphics \& Console(각 탭을 클릭하면 전환 된다)
+⑤ Graphics \& Console(각 탭을 클릭하면 전환 된다)
   + Console : 계산 진행 중에 나오는 Residuals, 각종 Log, Error 문구 등이 나타난다
   
   + Mesh : 해석에 사용되는 격자를 보여준다
