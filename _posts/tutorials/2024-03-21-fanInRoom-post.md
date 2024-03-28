@@ -27,7 +27,7 @@ category: tutorials
 
 # 2) 프로그램의 구동
 
-BaramFlow 실행 후 launcher에서 ‘Open’을 선택하고 격자 생성 튜토리얼에서 만든 폴더를 선택한다(혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 \<caseName>/case/constant 폴더를 선택한다).
+BaramFlow 실행 후 launcher에서 ‘Open’을 선택하고 [격자 생성 튜토리얼](https://baramcfd.org/mesh/2024/03/21/fanInRoomMesh-post/)에서 만든 폴더를 선택한다(혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 \<caseName>/case/constant 폴더를 선택한다).
 
 Launcher에서 ‘Solver Type’은 Pressure Based, ‘Multiphase Model’은 None, Gravity는 (0 0 0), ‘Species’는 Not Include를 선택한다.  
 <br/>
