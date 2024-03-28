@@ -1,8 +1,6 @@
-<!---
 layout: post
 title: 18. Supersonic nozzle
 category: tutorials
---->
 
 ## * [격자 파일 다운로드](https://drive.google.com/file/d/1Z5d0Ic9GsMxF1fPr8rSCpv9juU223xuM/view?usp=sharing)
 
