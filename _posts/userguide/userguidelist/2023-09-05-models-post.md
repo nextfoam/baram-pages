@@ -13,7 +13,6 @@ Solver Type(Pressure-based/Density-based), Multiphase(Off/VOF/Cavitation),  Spec
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/models.png"><br> Models 설정
 </p>
-<br>
 
 ## Turbulence
 
@@ -47,11 +46,9 @@ Enhanced Wall Treatment(two layer)는 넥스트폼이 개발한 것으로 blendi
 <h2 style="text-align: center">
     $A = \frac {\Delta Re_y } {tanh(0.98)}$
 </h2>
-</br>
 
 *Ref) Shih, T. H., Liou, W. W., Shabbir, A., Yang, Z., & Zhu, J. (1995). A New k-epsilon eddy Viscosity Model for High Reynolds Number Turbulent Flows. Computers and Fluids, 24(3), 227-238.*
 
-</br>
 
 ### turbulent Prandtl Number
 
