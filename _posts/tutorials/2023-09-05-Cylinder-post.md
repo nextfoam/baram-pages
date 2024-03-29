@@ -10,154 +10,131 @@ category: tutorials
 
 ## 1. 개요 
 
-* 본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>
-
-* 직경이 1m인 2차원 실린더 주변의 박리 유동을 예측하는 문제이다. <br>
-
-* 유동은 층류이며 레이놀즈 수는 100이다.<br>
-
-* 격자는 Ansys Fluent .msh 형식의 파일을 사용한다.<br>
-
-* OpenFOAM에서 2차원 격자는 자동적으로 3차원 격자로 변환된다.<br>
-이 때, z축으로 새로 생긴 앞뒤 단면은 frontAndBackPlanes이란 이름으로 정의되고, Empty 경계 조건으로 정의한다.<br>
-
-* 아래 그림에서 형상과 격자를 나타내었다.<br>
-
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.1.png"><br>
 </p>
 
-계산 조건은 다음과 같다. <br>
+본 예제는 2차원 비정상상태 층류 유동해석 예제로, 레이놀즈 수 100인 2차원 실린더 주변의 와류 진동(vortex shedding) 문제이다.
 
-●  solver : buoyantPimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버) <br>
+OpenFOAM에서 2차원 문제의 격자는 높이 방향으로 하나의 격자를 갖는 3차원 격자를 사용한다. 이 때 높이 방향의 최대 최소면의 경계조건은 empty로 처리한다.
 
-●  난류 모델 : laminar<br>
+격자는 Ansys Fluent .msh 형식의 파일을 사용한다. OpenFOAM의 격자 변환 유틸리티로 Fluent의 msh 파일을 변환하면 z축으로 한 증의 격자를 갖는 3차원 격자가 만들어진다.
 
-●  밀도 : 1𝑘𝑔/㎥ <br>
+계산 조건은 다음과 같다. 
 
-●  점성 계수 : 0.01𝑘𝑔/𝑚s <br>
++ solver : buoyantPimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버)
++ 난류 모델 : laminar
++ Reynolds No. : 100
 
-●  속도 : 1m/s  <br>
+## 2. 프로그램의 구동
 
-BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
+프로그램 실행 후 launcher에서 ‘New’를 선택한다. Launcher에서 ‘Solver Type’은 Pressure-based를, ‘Multiphase Model’은 None, ‘Species’는 Not Include를 선택한다.
 
-●  New Case버튼 클릭<br>
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/launcher.png"><br>
+</p>
 
-●  Project Name : cylinder<br>
+## 3. 격자
 
-●  Flow Type : incompressible<br>
+격자는 주어진 Ansys의 .msh 파일을 활용한다. 상단 탭에서 File - Load Mesh - Fluent (ASCII)를 클릭하고 cylinder.msh 파일을 선택한다. 
 
-●  Multiphase Model : Off<br>
+## 4. General
 
-● Species Model : Not Include<br>
-
-## 2. 격자
-
-격자는 주어진 Ansys의 .msh 파일을 활용한다. <br>
-상단 탭에서 File - Load Mesh - Fluent Mesh (ASCII) 순서대로 클릭하고 cylinder.msh 파일을 선택한다. <br>
-
-## 3. General
-
-Time을 Transient로 변경한다.<br>
-나머지는 Default로 설정한다.<br>
+Time을 Transient로 변경한다. 나머지는 Default로 설정한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.2.png"><br>
 </p>
 
-## 4. Models
+## 5. Models
 
-난류 모델은 Laminar 모델을 사용하고 나머지는 Default를 사용한다. <br>
+난류 모델은 Laminar 모델을 사용하고 나머지는 Default를 사용한다. 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.3.png"><br>
 </p>
 
-## 5. Materials
+## 6. Materials
 
-본 예제에서는 레이놀즈 수가 100이 되는 조건으로 물성치를 설정한다.<br>
+본 예제에서는 $U$ = 1 $m/s$ 조건을 사용한다. 이 때 레이놀즈 수가 100이 되는 조건으로 물성치를 설정한다.
 
-●  밀도 : 1𝑘𝑔/㎥ <br>
-
-●  점성 계수 : 0.01𝑘𝑔/𝑚s <br>
++ 밀도 : 1 $kg/m^3$
++ 점성 계수 : 0.01 $kg/ms$ 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.4.png"><br>
 </p>
 
-## 6. Cell Zone Conditions
+## 7. Cell Zone Conditions
 
-Cell Zone Conditions은 Default 조건을 사용한다.<br>
+Cell Zone Conditions은 Default 조건을 사용한다.
 
-## 7. Boundary Conditions
+## 8. Boundary Conditions
 
-아래와 같이 경계면 타입과 경계값을 설정한다.<br>
+아래와 같이 경계면 타입과 경계값을 설정한다.
 
-***●  cylinder : Wall***<br>
-```Velocity Condition : No Slip```<br>
++ cylinder : Wall
+    + Velocity Condition : No Slip
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.5.png"><br>
 </p>
 
-***●  sym : Symmetry***<br>
++ sym : Symmetry
 
-***●  out : Pressure Outlet***<br>
-```Total Pressure : 0 (Pa)```<br>
++ out : Pressure Outlet
+    + Total Pressure : 0 (Pa)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.6.png"><br>
 </p>
 
-***●  in : Velocity Inlet***<br>
-```Velocity Specification Method : Magnitudde, Normal to Boundary```<br>
-```Profile Type : Constant```<br>
-```Velocity Magnitude : 1 (m/s)```<br>
++ in : Velocity Inlet
+    + Velocity Specification Method : Magnitudde, Normal to Boundary
+    + Profile Type : Constant
+    + Velocity Magnitude : 1 (m/s)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.7.png"><br>
 </p>
 
-***●  frontAndBackPlanes : Empty***<br>
++ frontAndBackPlanes : Empty
 
-## 8. Reference Values
+## 9. Reference Values
 
-본 예제에서는 cylinder의 Drag Coefficient와 Lift Coefficient를 확인한다.<br>
-그러기 위해 Reference Values를 아래와 같이 설정한다.<br>
+본 예제에서는 cylinder의 Drag Coefficient와 Lift Coefficient를 확인한다. 이를 위해 Reference Values를 아래와 같이 설정한다.
 
-●  Area : 1  <br>
-
-●  Density : 1  <br>
-
-●  Length : 1  <br>
-
-●  Pressure : 0  <br>
-
-●  Velocity : 1  <br>
++ Area : 1
++ Density : 1
++ Length : 1
++ Pressure : 0
++ Velocity : 1 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.8.png"><br>
 </p>
 
-## 9. Numerical Conditions
+## 10. Numerical Conditions
 
-Numerical Conditions은 다음과 같이 설정한다.<br>
+Numerical Conditions은 다음과 같이 설정한다.
 
-●  Use Momentum Predictor : 활성화<br>
++ Use Momentum Predictor : 활성화
 
-●  Discretization Schemes<br>
-```Time : Second Order Implicit```<br>
-```Momentum : Second Order Upwind```<br>
++ Discretization Schemes
+    + Time : Second Order Implicit
+    + Pressure : Momentum Weighted Reconstruct
+    + Momentum : Second Order Upwind
 
-●  Max iterations per Time Step : 10<br>
++ Max iterations per Time Step : 10
++ Number of Correctors : 2
 
-●  나머지는 Default 조건을 사용한다.<br>
+나머지는 Default 조건을 사용한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.9.png"><br>
 </p>
 
-## 10. Monitoring
+## 11. Monitoring
 
 본 예제에서는 cylinder에 작용하는 Drag/Lift Coefficient와 cylinder중심에서 1m 떨어진 지점의 속도/압력을 모니터링 한다.
 
@@ -187,13 +164,13 @@ __cylinder중심에서 1m 떨어진 지점의 속도, 압력__
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.2.png"><br>
 </p>
 
-같은 방식으로 동일한 지점의 Velocity Magnitude 모니터링도 설정한다.<br>
+같은 방식으로 동일한 지점의 Velocity Magnitude 모니터링도 설정한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.10.3.png"><br>
 </p>
 
-## 11. Initialization
+## 12. Initialization
 
 X-Velocity에 1을 입력하고 나머지 값들은 Default값을 사용한다. 
 
@@ -203,7 +180,7 @@ X-Velocity에 1을 입력하고 나머지 값들은 Default값을 사용한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.11.png"><br>
 </p>
 
-## 12. Run
+## 13. Run
 
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
@@ -236,7 +213,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.13.2.png"><br>모니터링되는 항력계수, 양력계수, 속도, 압력 그래프
 </p>
 
-## 13. 후처리
+## 14. 후처리
 
 Cylinder 주변의 속도, 압력 분포를 확인한다.<br>
 External tools의 parview 버튼을 클릭하여 paraview를 실행한다.<br>
