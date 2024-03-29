@@ -10,15 +10,13 @@ category: tutorials
 
 ## 1. 개요 
 
-+  본 예제는 대기 경계층 유동해석 예제이다.
-+  해석 영역은 600m X 50m X 600m이다.
-+  대기경계층 조건으로 주어진 입구의 속도 분포가 출구까지 유지되는지를 확인한다.
-+  격자는 주어진 OpenFOAM 격자를 사용한다
-+  아래 그림에서 형상과 격자를 나타내었다.
-
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.1.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.1.png"><br> 격자, 고도에 따른 $U$, $k$, $\epsilon$ 분포
 </p>
+
+본 예제는 대기 경계층 유동해석 예제이다. 해석 영역은 600m X 50m X 600m이며 대기경계층 조건으로 주어진 입구의 유동 분포가 출구까지 유지되는지를 확인한다.
+
+격자는 주어진 OpenFOAM 격자를 사용한다
 
 계산 조건은 다음과 같다. 
 
@@ -40,82 +38,83 @@ category: tutorials
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.3.png"><br>
 </p>
 
-BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.
+## 2. 프로그램의 구동
 
-+ New Case버튼 클릭
-+ Project Name : ABL
-+ Flow Type : incompressible
-+ Multiphase Model : Off
-+ Species Model : Not Include
+프로그램 실행 후 launcher에서 ‘New’를 선택한다. Launcher에서 ‘Solver Type’은 Pressure-based를, ‘Multiphase Model’은 None, ‘Species’는 Not Include를 선택한다.
 
-## 2. 격자
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/launcher.png"><br>
+</p>
 
-격자는 주어진 OpenFOAM의 polyMesh 폴더를 활용한다. <br>
-상단 탭에서 File - Load Mesh - OpenFOAM 순서대로 클릭하고 polyMesh 폴더를 선택한다. <br>
+## 3. 격자
 
-## 3. General
+격자는 주어진 OpenFOAM의 polyMesh 폴더를 활용한다. 상단 탭에서 File - Load Mesh - OpenFOAM 순서대로 클릭하고 polyMesh 폴더를 선택한다. 
 
-본 예제에서는 Default로 설정한다.<br>
+## 4. General
 
-## 4. Models
+본 예제에서는 Default로 설정한다.
 
-난류 모델은 Standard 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
+## 5. Models
+
+난류 모델은 $Standard$ $k-\epsilon$ 모델을 사용하고 나머지는 Default를 사용한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.4.png"><br>
 </p>
 
-## 5. Materials
+## 6. Materials
 
-본 예제에서는 공기를 작동 유체로 사용한다.<br>
-물성치는 Default값을 사용한다.<br>
+본 예제에서는 공기를 작동 유체로 사용한다. 물성치는 Default값을 사용한다.
 
-## 6. Cell Zone Conditions
+## 7. Cell Zone Conditions
 
-Cell Zone Conditions은 Default 조건을 사용한다.<br>
+Cell Zone Conditions은 Default 조건을 사용한다.
 
-## 7. Boundary Conditions
+## 8. Boundary Conditions
 
-아래와 같이 경계면 타입과 경계값을 설정한다.<br>
+아래와 같이 경계면 타입과 경계값을 설정한다.
 
-***●  inlet : ABL Inlet***<br>
-```Flow Direction : 1 0 0```<br>
-```Ground-Normal Direction : 0 0 1```<br>
-```Reference Flow Speed : 7 (m/s)```<br>
-```Reference Height : 9 (m)```<br>
-```Surface Roughness Length : 0.0002 (m)```<br>
-```Minimum z-coordinate : 0.0 (m)```<br>
++ inlet : ABL Inlet
+  + Flow Direction : 1 0 0
+  + Ground-Normal Direction : 0 0 1
+  + Reference Flow Speed : 7 (m/s)
+  + Reference Height : 9 (m)
+  + Surface Roughness Length : 0.0002 (m)
+  + Minimum z-coordinate : 0.0 (m)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.5.png"><br>
 </p>
 
-***●  Sea : Wall***<br>
-```Velocity Condition : Atmospheric Wall```<br>
++ Sea : Wall
+  + Velocity Condition : Atmospheric Wall
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.6.png"><br>
 </p>
 
-***●  outlet : Pressure Outlet***<br>
-```Total Pressure : 0 (Pa)```<br>
++ outlet : Pressure Outlet
+  + Total Pressure : 0 (Pa)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.7.png"><br>
 </p>
 
-***●  minY, maxY, sky : Symmetry***<br>
++ minY, maxY, sky : Symmetry
 
-## 8. Numerical Conditions
+## 9. Numerical Conditions
 
 Numerical Conditions은 다음과 같이 설정한다.
 
 + Pressure-Velocity Coupling Scheme : SIMPLE
+
 + Discretization Schemes
   + Momentum : Second Order Upwind
   + Turbulence : First Order Upwind
+
 + Convergence Criteria : 1e-6 (모든 값)
-+ 나머지는 Default 조건을 사용한다.<br>
+
+나머지는 Default 조건을 사용한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.8.1.png"><br>
@@ -125,7 +124,7 @@ Numerical Conditions은 다음과 같이 설정한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.8.2.png"><br>
 </p>
 
-## 9. Initialization
+## 10. Initialization
 
 + X-Velocity : 7 (m/s)
 + Pressure : 0 (Pa)
@@ -138,9 +137,9 @@ Numerical Conditions은 다음과 같이 설정한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.9.png"><br>
 </p>
 
-위 과정을 따라 초기화 후, File - save를 눌러 저장한다.<br>
+위 과정을 따라 초기화 후, File - save를 눌러 저장한다.
 
-## 10. Run
+## 11. Run
 
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
@@ -159,54 +158,48 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.11.png"><br>
 </p>
 
-## 11. 후처리
+## 12. 후처리
 
-대기경계층 속도 분포와 Profile을 확인한다.<br>
-External tools의 paraview 버튼을 눌러 Paraview를 실행한다.<br>
+대기경계층 속도 분포와 Profile을 확인한다. External tools의 paraview 버튼을 눌러 Paraview를 실행한다.
 
-Case Type을 Reconstructed Case로 변경한다.<br>
+Case Type을 Reconstructed Case로 변경한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.12.png"><br>
 </p>
 
-상단 툴바의 Solid Color를 U로 변경한다.<br>
+상단 툴바의 Solid Color를 U로 변경한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.13.png"><br>
 </p>
 
-상단 툴바에서 Slice 아이콘을 클릭하고 아래와 같이 설정한다.<br>
+상단 툴바에서 Slice 아이콘을 클릭하고 아래와 같이 설정한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.16.png"><br>
 </p>
 
 
-상단 툴바의 Plot Over Line 아이콘을 클릭하고 아래와 같이 입구와 출구에 각각 Line을 1개 생성한다.<br>
-입구, 출구의 라인을 이용하여 속도 프로파일이 그대로 유지되는지 정량적으로 확인한다.<br>
+상단 툴바의 Plot Over Line 아이콘을 클릭하고 아래와 같이 입구와 출구에 각각 Line을 1개 생성한다.
 
-1번 라인 (입구)<br>
+입구, 출구의 라인을 이용하여 속도 프로파일이 그대로 유지되는지 정량적으로 확인한다.
 
-●  Point1 : 0 25 0<br>
+1번 라인 (입구)
 
-●  Point2 : 0 25 600<br>
++ Point1 : 0 25 0
++ Point2 : 0 25 600
++ X Array Name : U_X
++ Series Parameters : Points_Z
 
-●  X Array Name : U_X<br>
+2번 라인 (출구)
 
-●  Series Parameters : Points_Z<br>
++ Point1 : 600 25 0
++ Point2 : 600 25 600
++ X Array Name : U_X
++ Series Parameters : Points_Z
 
-2번 라인 (출구)<br>
-
-●  Point1 : 600 25 0<br>
-
-●  Point2 : 600 25 600<br>
-
-●  X Array Name : U_X<br>
-
-●  Series Parameters : Points_Z<br>
-
-Series Parameters에서 해당 Parameter의 색을 변경할 수 있다.<br>
+Series Parameters에서 해당 Parameter의 색을 변경할 수 있다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.14.1.png"><br>
