@@ -160,7 +160,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
     <br> 수치해석 조건
 </p>
 
-각 변수의 조건을 설정한 파일을 import 버튼을 눌러 선택하면 조건들이 표시된다. 조건을 설정 파일은 csv(comma separated values) 혹은 xlsx 파일 형식을 사용할 수 있다.
+각 변수의 조건을 설정한 파일을 import 버튼을 눌러 선택하면 조건들이 표시된다. 조건 설정 파일은 csv(comma separated values) 혹은 xlsx 파일 형식을 사용할 수 있다.
 
 이 예제에서는 아래 그림과 같은 엑셀 파일이다.
 
