@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 09. Profile Boundary Condition
+title: 09. Time dependent Boundary Condition
 category: tutorials
 ---
 
-# Profile Boundary Condition
+# Time dependen Boundary Condition
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1pzp6DXomC0cyaxn0xzlpcneShrEkRW68/view?usp=sharing)
 
@@ -14,7 +14,7 @@ category: tutorials
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.1.png"><br>
 </p>
 
-본 예제는 주어진 데이터를 사용하여 경계면에서 속도와 온도의 분포를 설정하는 방법과 시간에 따라 입구의 속도와 온도가 변하는 경계조건과을 설정하는 예제이다.
+본 예제는 시간에 따라 입구의 속도와 온도가 변하는 경계조건을 설정하는 예제이다.
 
 OpenFOAM 튜토리얼에 있는 pitzDaily 격자를 사용한다.
 
