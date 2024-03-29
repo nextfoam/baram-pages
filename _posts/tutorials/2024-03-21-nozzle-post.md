@@ -10,12 +10,12 @@ category: tutorials
 
 ## 1. 개요
 
-본 예제는 밀도기반 솔버를 사용하는 축대칭 초음속 노즐 유동해석 예제이다.
-
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-mesh.png"> 
     <br> 격자 및 마하수분포
 </p>
+
+본 예제는 밀도기반 솔버를 사용하는 축대칭 초음속 노즐 유동해석 예제이다.
 
 계산 조건은 다음과 같다.
 
