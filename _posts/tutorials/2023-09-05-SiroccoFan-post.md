@@ -10,166 +10,147 @@ category: tutorials
 
 ## 1. 개요 
 
-* 본 예제는 비정상상태 비압축성 유동해석 예제이다.<br>
-
-* sirocco fan 내부에서 fan이 회전할 때 내부의 유동을 예측하는 문제이다. <br>
-
-* 격자는 Ansys Fluent의 .cas 형식의 파일을 변환하여 사용하였다.<br>
-
-* 아래 4.1에서 형상과 격자를 나타내었다.<br>
-
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png"><br>
 </p>
 
-계산 조건은 다음과 같다. <br>
+본 예제는 비정상상태 비압축성 유동해석 예제이다. 시로코팬 내부에서 입펠러가 회전할 때 내부의 유동을 예측하는 문제이다.
 
-●  solver : buoyantPimpleNFoam (넥스트폼이 개발한 동적격자 비압축성 유동 해석 솔버) <br>
+격자는 Ansys Fluent의 .cas 형식의 파일을 변환하여 사용한다.
 
-●  난류 모델 : Realizable 𝑘 − ε<br>
+계산 조건은 다음과 같다. 
 
-●  밀도 : 1.225𝑘𝑔/㎥ <br>
++ solver : buoyantPimpleNFoam (넥스트폼이 개발한 동적격자 비압축성 유동 해석 솔버)
++ 난류 모델 : $Realizable$ $k-\epsilon$ model
++ 밀도 : 1.225 $kg/m^3$
++ 점성 계수 : 1.79e-5 $kg/ms$
++ 임펠러 회전 수 : 2,000 RPM
 
-●  점성 계수 : 1.79e-5𝑘𝑔/𝑚s <br>
+## 2. 프로그램의 구동
 
-●  임펠러 회전 수 : 2,000RPM  <br>
+프로그램 실행 후 launcher에서 ‘New’를 선택한다. Launcher에서 ‘Solver Type’은 Pressure-based를, ‘Multiphase Model’은 None, ‘Species’는 Not Include를 선택한다.
 
-BARAM을 실행하면 아래 과정을 따라서 case 파일을 만든다.<br>
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/launcher.png"><br>
+</p>
 
-●  New Case버튼 클릭<br>
+## 3. 격자
 
-●  Project Name : slidingMesh<br>
+격자는 주어진 Ansys의 .cas 파일을 활용한다. 상단 탭에서 File - Load Mesh - Fluent (ASCII)를 클릭하고 siroccofan.cas 파일을 선택한다. 
 
-●  Flow Type : incompressible<br>
+## 4. General
 
-●  Multiphase Model : Off<br>
-
-● Species Model : Not Include<br>
-
-## 2. 격자
-
-격자는 주어진 Ansys의 .cas 파일을 활용한다. <br>
-상단 탭에서 File - Load Mesh - Fluent Case (ASCII) 순서대로 클릭하고 siroccofan.cas 파일을 선택한다. <br>
-
-## 3. General
-
-Time을 Transient로 변경한다.<br>
-나머지는 Default로 설정한다.<br>
+Time을 Transient로 변경한다. 나머지는 Default로 설정한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.2.png"><br>
 </p>
 
-## 4. Models
+## 5. Models
 
-난류 모델은 Realizable 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. <br>
+난류 모델은 $Realizable$ $k-\epsilon$ 모델을 사용하고 나머지는 Default를 사용한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.3.png"><br>
 </p>
 
-## 5. Materials
+## 6. Materials
 
-본 예제에서 작동 유체는 공기이다.<br>
-유체의 물성치는 Default 조건을 사용한다..<br>
+본 예제에서 작동 유체는 공기이다. 유체의 물성치는 Default 조건을 사용한다.
 
-## 6. Cell Zone Conditions
+## 7. Cell Zone Conditions
 
-Cell Zone Conditions에서는 MRF, Sliding Mesh, Source 등을 설정할 수 있다.<br>
-본 예제에서는 'rotating' Cell Zone에 Sliding Mesh 조건을 설정한다.<br>
+Cell Zone Conditions에서는 MRF, Sliding Mesh, Source 등을 설정할 수 있다. 본 예제에서는 'rotating' Cell Zone에 Sliding Mesh 조건을 설정한다.
 
-rotating 선택 - Sliding Mesh를 선택하고 아래 값들을 입력한다.<br>
+Sliding Mesh를 선택하고 아래 값들을 입력한다.
 
-***●  Sliding Mesh***<br>
-```Rotating Speed : 2,000(RPM)```<br>
-```Rotation-Axis Origin : (0, 0, 0)```<br>
-```Rotation-Axis Direction : (0, 0, 1)```  <br>
++ Sliding Mesh
+    + Rotating Speed : 2,000(RPM)
+    + Rotation-Axis Origin : (0, 0, 0)
+    + Rotation-Axis Direction : (0, 0, 1)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.4.png"><br>
 </p>
 
-## 7. Boundary Conditions
+## 8. Boundary Conditions
 
-아래와 같이 경계면 타입과 경계값을 설정한다.<br>
+아래와 같이 경계면 타입과 경계값을 설정한다.
 
-**※interface-stat와 interface-rotating은 회전 경계면이다.<br>**
++ interface-stat와 interface-rotating은 회전 경계면이다.
 
-***●  interface-stat, interface-rotating : Interface - Internal Interface***<br>
-```interface-stat : Internal Interface로 변경 후, Coupled Boundary는 interface-rotating 선택```<br>
++ interface-stat, interface-rotating : Interface - Internal Interface
+    + interface-stat : Internal Interface로 변경 후, Coupled Boundary는 interface-rotating 선택
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.5.png"><br>
 </p>
 
-***●  axis : Wall***<br>
-```Velocity Condition : Rotational Moving Wall```<br>
-```Speed : 2000 (RPM)```  <br>
-```Rotation-Axis Origin : 0 0 0```  <br>
-```Rotation-Axis Direction : 0 0 1```  <br>
++ axis : Wall
+    + Velocity Condition : Rotational Moving Wall
+    + Speed : 2000 (RPM)
+    + Rotation-Axis Origin : 0 0 0
+    + Rotation-Axis Direction : 0 0 1
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.6.png"><br>
 </p>
 
-***●  axis-r, blades : Wall***<br>
-```Velocity Condition : Moving Wall```<br>
++ axis-r, blades : Wall
+    + Velocity Condition : Moving Wall
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.7.png"><br>
 </p>
 
-***●  externalwalls, walls : Wall***<br>
-```Velocity Condition : No Slip```<br>
++ externalwalls, walls : Wall
+    + Velocity Condition : No Slip
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.8.png"><br>
 </p>
 
-***●  inlet : Velocity Inlet***<br>
-```Velocity Specification Method : Magnitudde, Normal to Boundary```<br>
-```Profile Type : Constant```<br>
-```Velocity Magnitude : 1 (m/s)```<br>
-```Turbulent Intensity : 0.1 (%)```<br>
-```Turbulent Viscosity Ratio : 10```<br>
++ inlet : Velocity Inlet
+    + Velocity Specification Method : Magnitudde, Normal to Boundary
+    + Profile Type : Constant
+    + Velocity Magnitude : 1 (m/s)
+    + Turbulent Intensity : 0.1 (%)
+    + Turbulent Viscosity Ratio : 10
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.9.png"><br>
 </p>
 
-***●  outlet : Pressure Outlet***<br>
-```Total Pressure : 0 (Pa)```<br>
++ outlet : Pressure Outlet
+    + Total Pressure : 0 (Pa)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.10.png"><br>
 </p>
 
-## 8. Numerical Conditions
+## 9. Numerical Conditions
 
-본 예제에서는 Default 조건을 사용한다. <br>
+본 예제에서는 Default 조건을 사용한다.
 
-## 9. Initialization
+## 10. Initialization
 
-Turbluent Intensity을 0.1 (%)로 변경하고 나머지는 Defalut 값을 사용한다.<br>
-하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. <br>
+Turbluent Intensity을 0.1 (%)로 변경하고 나머지는 Defalut 값을 사용한다.
+
+하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.11.png"><br>
 </p>
 
-## 10. Run
+## 11. Run
 
-Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
+Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
-●  Time Stepping Method : Fixed  <br>
-
-●  Time Step Size : 0.0001  <br>
-
-●  End Time : 0.3  <br>
-
-●  Data Write Format : Binary  <br>
-
-●  Number of Cores : 4  <br>
++ Time Stepping Method : Fixed
++ Time Step Size : 0.0001
++ End Time : 0.3
++ Data Write Format : Binary
++ 메뉴의 Parallel - Environment를 선택하고 Number of Cores는 4, Parallel Type은 Local Machine을 선택
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.12.png"><br>
@@ -180,10 +161,9 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.<br>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.13.png"><br>
 </p>
 
-## 11. 후처리
+## 12. 후처리
 
-Fan 내부의 압력 분포를 확인해본다.<br>
-External tools의 paraivew 버튼을 클릭하여 paraview를 실행한다.<br>
+Fan 내부의 압력 분포를 확인해본다. External tools의 paraivew 버튼을 클릭하여 paraview를 실행한다.
 
 Case Type을 Decomposed Case로 변경한다.
 
@@ -191,11 +171,12 @@ Case Type을 Decomposed Case로 변경한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.14.png"><br>
 </p>
 
-Slice 기능을 활용하여 용기 내부의 단면을 자른다.<br>
+Slice 기능을 활용하여 용기 내부의 단면을 자른다.
 
-Z-normal 버튼을 클릭 후, Origin을 다음과 같이 변경한다.<br>
-●  Origin : 0.06 -0.017 0.05  <br>
-●  Normal : 0 0 1  <br>
+Z-normal 버튼을 클릭 후, Origin을 다음과 같이 변경한다.
+
++ Origin : 0.06 -0.017 0.05
++ Normal : 0 0 1
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.15.png"><br>
