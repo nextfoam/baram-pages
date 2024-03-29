@@ -25,7 +25,7 @@ ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Ve
 + 난류 모델 : $Realizable$ $k-\epsilon$ model
 + 밀도 : 1.2 $kg/m^3$
 + 점성 계수 : 1.8e-5 $kg/ms$
-+ 유동 조건 : inlet에서 40m/s
++ 유동 조건 : inlet에서 40 $m/s$
 
 ## 2. 프로그램의 구동
 
