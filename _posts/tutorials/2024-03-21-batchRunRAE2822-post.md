@@ -10,6 +10,11 @@ category: tutorials
 
 ## 1. 개요
 
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-mesh.png">
+    <br> 격자 및 압력분포
+</p>
+
 본 예제는 RAE2822 천음속 에어포일의 받음각 변화에 따른 유동해석을 batch run으로 진행한다. 격자는 RAE2822 transonic airfoil 튜토리얼의 격자를 사용한다.
 
 계산조건은 다음과 같다.
@@ -20,15 +25,9 @@ category: tutorials
 + 원방경계 온도 : 288 K
 + 받음각 : -20~20도, 2도 간격으로 계산
 
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-mesh.png">
-    <br> 격자 및 압력분포
-</p>
-
 ## 2. 프로그램의 구동
 
-프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Flow Type'은 Compressible, 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
+프로그램 실행 후 launcher에서 'New'를 선택한다. Launcher에서 'Solver Type'은 Density-based를, 'Multiphase Model'은 None, 'Species'는 Not Include를 선택한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/launcher-densityBased.png"> 
