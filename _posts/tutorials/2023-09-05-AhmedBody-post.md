@@ -19,6 +19,8 @@ S.R. Ahmed는 단순화된 자동차 모형을 이용해 후방 경사각에 따
 
 ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Vehicle Wake, SAE-Paper 840300, 1984_
 
+논문의 실험 결과 저항계수(Cd)는 0.285이며 계산 결과는 Cd = 0.287로 0.7%의 차이를 보여준다.
+
 계산 조건은 다음과 같다.
 
 + solver : buoyantSimpleNFoam (넥스트폼이 개발한 정상상태 비압축성 해석 솔버)
@@ -107,11 +109,9 @@ ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Ve
 
 + minz, maxz, maxy : symmetry
 
-## 8. Monitoring
+## 8. Reference Values
 
-본 예제에서는 자동차에 걸리는 공력 계수를 모니터링한다.
-
-Reference Values에 아래와 같이 입력한다.
+공력계수 계산을 위한 Reference Value를 다음과 같이 설정한다.
 
 + Area : 0.056(유동 방향에 수직한 단면적의 50%)
 + Density : 1.2
@@ -123,12 +123,6 @@ Reference Values에 아래와 같이 입력한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.8.png"><br>
 </p>
 
-이후 Monitors - Add - Forces를 선택하여 아래 그림과 같이 설정한다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.9.png"><br>
-</p>
-
 ## 9. Numerical Conditions
 
 본 예제에서는 아래와 같이 설정을 변경한다.
@@ -136,8 +130,9 @@ Reference Values에 아래와 같이 입력한다.
 + Pressure-Velocity Coupling Scheme : SIMPLE
 
 + Discretization Scheme
+    + Pressure : Momentum Weighted Reconstruct
     + Momentum : Second Order Upwind
-    + Turbulence : First Order Upwind
+    + Turbulence : Second Order Upwind
 
 + Under-Relaxation Factors
     + Pressure : 0.3
@@ -154,11 +149,18 @@ Reference Values에 아래와 같이 입력한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.10.1.png"><br>
 </p>
 
+
+## 10. Monitoring
+
+본 예제에서는 자동차에 걸리는 공력 계수를 모니터링한다.
+
+Monitors - Add - Forces를 선택하여 아래 그림과 같이 설정한다.
+
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.10.2.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.9.png"><br>
 </p>
 
-## 10. Initialization
+## 11. Initialization
 
 다음 값으로 Initial 값을 설정한다.
 
@@ -181,7 +183,7 @@ Reference Values에 아래와 같이 입력한다.
 
 값을 입력하고 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다.
 
-## 11. Run
+## 12. Run
 
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
@@ -205,14 +207,11 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 계산이 완료되면 아래와 같이 Residuals과 Force monitor의 그래프를 확인할 수 있다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.13.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/residual.png"><br>
 </p>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.14.png"><br>
-</p>
 
-## 12. 후처리
+## 13. 후처리
 
 ### 경계면 스칼라 분포
 
