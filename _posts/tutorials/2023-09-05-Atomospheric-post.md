@@ -120,9 +120,6 @@ Numerical Conditions은 다음과 같이 설정한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.8.1.png"><br>
 </p>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.8.2.png"><br>
-</p>
 
 ## 10. Initialization
 
@@ -146,16 +143,14 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 + Number of Iterations : 1000
 + Save Interval : 100
 + Data Write Format : Binary
-+ Number of Cores : 1  
+
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.10.png"><br>
 </p>
 
-계산이 완료된 모습
-
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.11.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.11.png"><br>residual plot
 </p>
 
 ## 12. 후처리
