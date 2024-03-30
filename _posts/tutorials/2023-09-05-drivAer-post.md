@@ -23,6 +23,8 @@ __DrivAer__ 는 자동차 공학 분야에서 사용되는 차량 외부 디자�
 
 정상상태 비압축성 유동에서 moving ground, rotating wheel 조건을 사용한다.
 
+논문의 실험 결과 저항계수(Cd)는 ASME는 0.247, SAE는 0.243이며 계산 결과는 Cd = 0.243으로 SAE 실험결과와 일치한다.
+
 계산 조건은 다음과 같다. 
 
 + solver : buoyantSimpleNFoam (넥스트폼이 개발한 정상상태 비압축성 해석 솔버)
@@ -136,11 +138,9 @@ __DrivAer__ 는 자동차 공학 분야에서 사용되는 차량 외부 디자�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/10.png"><br>
 </p>
 
-## 8. Monitoring
+## 8. Reference Values
 
-본 예제에서는 자동차에 걸리는 공력 계수를 모니터링한다.
-
-Reference Values에 아래와 같이 입력한다.
+공력계수 계산을 위한 Reference Value를 다음과 같이 설정한다.
 
 + Area : 1.08
 + Density : 1.205
@@ -152,12 +152,6 @@ Reference Values에 아래와 같이 입력한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/11.png"><br>
 </p>
 
-이후 Monitors - Add - Forces를 선택하여 아래 그림과 같이 설정한다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/12.png"><br>
-</p>
-
 ## 9. Numerical Conditions
 
 본 예제에서는 아래와 같이 설정을 변경한다.
@@ -165,6 +159,7 @@ Reference Values에 아래와 같이 입력한다.
 + Pressure-Velocity Coupling Scheme : SIMPLEC
 
 + Discretization Scheme
+    + Pressure : Momentum Weighted Reconstruct
     + Momentum : Second Order Upwind
     + Turbulence : Second Order Upwind
 
@@ -187,7 +182,17 @@ Reference Values에 아래와 같이 입력한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/14.png"><br>
 </p>
 
-## 10. Initialization
+## 10. Monitoring
+
+본 예제에서는 자동차에 걸리는 공력 계수를 모니터링한다.
+
+이후 Monitors - Add - Forces를 선택하여 아래 그림과 같이 설정한다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/12.png"><br>
+</p>
+
+## 11. Initialization
 
 다음 값으로 Initial 값을 설정하면 된다.
 
@@ -210,7 +215,7 @@ Reference Values에 아래와 같이 입력한다.
 
 값을 입력하고 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다.
 
-## 11. Run
+## 12. Run
 
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
@@ -241,7 +246,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/18.png"><br>
 </p>
 
-## 12. 후처리
+## 13. 후처리
 
 ### 경계면 스칼라 분포
 

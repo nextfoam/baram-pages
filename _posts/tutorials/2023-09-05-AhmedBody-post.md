@@ -210,6 +210,9 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/residual.png"><br>
 </p>
 
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/force.png"><br>
+</p>
 
 ## 13. 후처리
 
