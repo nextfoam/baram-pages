@@ -151,7 +151,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 </p>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.11.png"><br>residual plot
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/residual.png"><br>residual plot
 </p>
 
 ## 12. 후처리
