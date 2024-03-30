@@ -178,9 +178,6 @@ __DrivAer__ 는 자동차 공학 분야에서 사용되는 차량 외부 디자�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/13.png"><br>
 </p>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/14.png"><br>
-</p>
 
 ## 10. Monitoring
 
@@ -239,11 +236,11 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 계산이 완료되면 아래와 같이 Residuals과 Force monitor의 그래프가 나오게 된다.<br>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/17.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/residual.png"><br>
 </p>
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/18.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/force.png"><br>
 </p>
 
 ## 13. 후처리
