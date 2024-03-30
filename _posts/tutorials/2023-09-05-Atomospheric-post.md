@@ -109,6 +109,7 @@ Numerical Conditions은 다음과 같이 설정한다.
 + Pressure-Velocity Coupling Scheme : SIMPLE
 
 + Discretization Schemes
+  + Pressure : Momentum Weighted Reconstruct
   + Momentum : Second Order Upwind
   + Turbulence : First Order Upwind
 
