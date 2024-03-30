@@ -145,7 +145,7 @@ __cylinder에 작용하는 Drag/Lift Coefficient__
     + Write Interval : 1
     + Lift Direction : 0 1 0
     + Drag Direction : 1 0 0
-    + Center of Rotation : 0 0 1
+    + Center of Rotation : 0 0 0
     + Boundaries : cylinder
 
 <p align='center'>
