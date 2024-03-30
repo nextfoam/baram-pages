@@ -21,7 +21,7 @@ category: tutorials
 계산 조건은 다음과 같다.
 
 + solver : buoyantsimpleNFoam (넥스트폼이 개발한 비압축성 유동 해석 솔버)
-+ 난류 모델 : $Realizable$ $k-\epsilon$ model
++ 난류 모델 : $Standard$ $k-\epsilon$ model
 + 밀도 : 1.225 $kg/m^3$
 + 점성 계수 : 1.79e-5 $kg/ms$
 + Porous 경계 조건
@@ -53,7 +53,7 @@ Porous Jump를 계산하는 porousBafflePressure 경계조건은 아래 식을 �
 
 ## 5. Models
 
-난류 모델은 𝑘 − ε 모델을 사용하고 나머지는 Default를 사용한다. 
+난류 모델은 $Standard$ $k-\epsilon$ 모델을 사용하고 나머지는 Default를 사용한다. 
 
 ## 6. Materials
 
