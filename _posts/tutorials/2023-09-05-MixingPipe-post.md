@@ -110,8 +110,9 @@ Discretization, Relaxation factors, Convergence criteria, Pressure-Velocity coup
 + Pressure-Velocity Coupling Scheme : SIMPLEC
 
 + Discretization Scheme
+    + Pressure : Momentum Weighted Reconstruct
     + Momentum : Second Order Upwind
-    + Turbulence : First Order Upwind
+    + Turbulence : Second Order Upwind
 
 + Under-Relaxation Factors
     + Pressure, Momentum, Turbulence, Density : 0.9
