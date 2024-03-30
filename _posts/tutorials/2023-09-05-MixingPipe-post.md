@@ -126,9 +126,6 @@ Discretization, Relaxation factors, Convergence criteria, Pressure-Velocity coup
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.7.1.png"><br>
 </p>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.7.2.png"><br>
-</p>
 
 ## 10. Monitoring
 
