@@ -108,7 +108,9 @@ Reference Value은 공력계수를 계산할 때 사용된다. 이 문제는 실
 
 + Pressure-Velocity Coupling : SIMPLEC
 
-+ Discretization Schemes : Momentum, Energy, Turbulence 모두 Second Order Wpwind
++ Discretization Schemes
+    + Pressure : Momentum Weighted Reconstruct
+    + Momentum, Energy, Turbulence :Second Order Wpwind
 
 + Under-Relaxation Factors
     + Pressure : 0.8
