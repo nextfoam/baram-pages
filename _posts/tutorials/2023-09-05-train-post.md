@@ -4,8 +4,9 @@ title: 14. High Speed Train
 category: tutorials
 ---
 
-
 # 고속열차 공력해석 
+
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1eL9zqfmXct3zMtJIJUuoap27afeMkdq2/view?usp=sharing)
 
 ## 1. 개요 
 
@@ -29,11 +30,15 @@ category: tutorials
 
 ## 2. 프로그램의 구동 및 격자
 
-프로그램 실행 후 launcher에서 ‘Open’을 선택하고 격자 생성 튜토리얼에서 만든 train 폴더를 선택한다. launcher에서 Incompressible, Multiphase off, Species off를 선택한다. 혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 train/case/constant 폴더를 선택한다.
+프로그램 실행 후 launcher에서 'New Case'를 선택하고 이름을 지정한다. 'Solver Type'은 Pressure-based, 'Multiphase Model'은 None', 'Species'는 Not Include를 선택한다.
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/mesh.png"><br>
 </p>
+
+격자는 주어진 OpenFOAM의 polyMesh 폴더를 사용한다.
+
+상단 탭에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다.
 
 ## 3. General
 
