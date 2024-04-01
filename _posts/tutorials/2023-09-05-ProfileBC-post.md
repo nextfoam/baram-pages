@@ -75,7 +75,7 @@ Cell Zone Conditions은 Default 조건을 사용한다.
     + Turbulent Viscosity Ratio : 10
     + Temperature Profile Type : Temporal Distribution
         + piecewise linear : (0, 300) (0.1 400) (0.2 350)
-        +         + 
+
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/profileBC/10.3.png"><br>
 </p>
