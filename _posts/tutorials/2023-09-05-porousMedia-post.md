@@ -92,6 +92,8 @@ Cell Zone Conditions에는 region0에 porousZone이 있다. 이것을 더블 클
 
 ## 8. Numerical Conditions
 
+Discretization Schemes의 Pressure를 Linear로 설정한다. Porous와 같이 운동량 소스가 있는 경우 Momentum Weighted나 Momentum Weighted Reconstruct 기법은 안정성에 문제가 있을 수 있어 Linear를 사용한다.([user guide](https://baramcfd.org/userguidelist/2023/09/05/numericalCondition-post/) 참조
+
 Convergence Criteria의 Pressure를 0.0001로 설정하고 나머지는 Default 조건을 사용한다.
 
 ## 9. Initialization
