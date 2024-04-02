@@ -72,7 +72,7 @@ Energy를 include한다.
 
 아래와 같이 경계면 타입과 경계값을 설정한다.
 
-+ inlet : Velocity Inlet
++ Hex6_1_xMin : Velocity Inlet
     + Velocity Specification Method : Magnitude, Normal to Boundary
     + Velocity Magnitude : 111.11
     + Turbulence Specification Method : Intensity and Viscosity Ratio
@@ -84,14 +84,14 @@ Energy를 include한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/inletbc.png">
 </p>
 
-+ outlet : Pressure Outlet
++ Hex6_1_xMax : Pressure Outlet
     + Total Pressure  : 0
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/outletbc.png">
 </p>
 
-+ ground : Wall
++ Hex6_1_zMin : Wall
     + Velocity Condition : Translational Moving Wall
     + Velocity : (111.11 0 0)
 
@@ -101,7 +101,7 @@ Energy를 include한다.
 
 + train_surface_0 : Wall
 
-+ side, top, symmetry : Symmetry
++ Hex6_1_yMin, Hex6_1_yMax, Hex6_1_zMax : Symmetry
 
 ## 7. Reference Value
 
