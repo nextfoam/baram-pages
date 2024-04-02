@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 14. High Speed Train
+title: 14. High Speed Train - External Aerodynamics of Subsonic Compressible Flow
 category: tutorials
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 18. Space shuttle supersonic flow - density based solver
+title: 18. Supersonic Flow around Space Shuttle - density based solver
 category: tutorials
 ---
 

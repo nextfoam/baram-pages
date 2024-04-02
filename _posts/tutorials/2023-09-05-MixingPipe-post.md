@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 01. Mixing Pipe
+title: 01. Mixing Pipe - Incompressible Internal Flow
 category: tutorials
 ---
 
