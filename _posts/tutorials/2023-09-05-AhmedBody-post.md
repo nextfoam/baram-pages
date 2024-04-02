@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 02. Ahmed Body
+title: 02. Ahmed Body - Incompressible External Aerodynamics
 category: tutorials
 ---
 
