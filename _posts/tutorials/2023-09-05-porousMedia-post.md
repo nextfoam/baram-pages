@@ -8,9 +8,8 @@ category: tutorials
 
 ## 1. 개요 
 
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/intro.png"><br> 형상 및 유동장
-</p>
+|[![형상 및 유동장](https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/intro.png "형상 및 유동장")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/intro.png){:target="_blank"}|
+
 
 본 에제는 porous media 조건을 사용한 유동해석 예제이다. 상부 왼쪽에서 유동이 유입되고 porous 영역을 지나 아래로 유동이 흐르는 문제이다.(위 그림 왼쪽에서 파란색 부분이 porous 영역)
 
@@ -20,14 +19,14 @@ Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolat
 
 ### * [Porous Media 참고 문헌](https://nextfoam.co.kr/proc/DownloadProc.php?fName=231101140051_yvpJhMF0nY.pdf&realfName=10thOKUCC_OpenFOAM%EC%82%AC%EC%86%8C%ED%95%9C%EB%AC%B8%EC%A0%9C%EB%93%A4.pdf)
 
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/res.png"><br> 결과 (좌)Baram v23, (우) openfoam 2306 standard solver
-</p>
+|[![결과](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/res.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/res.png){:target="_blank"}|
 
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/residual-1.png"><br> Residual (좌)Baram v23, (우) openfoam 2306 standard solver
-</p>
-<br/>
+<p style="text-align: center"> 결과 (좌)Baram v23, (우) openfoam 2306 standard solver</p>
+
+|[![residual](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/residual-1.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/residual-1.png){:target="_blank"}|
+
+<p style="text-align: center"> Residual (좌)Baram v23, (우) openfoam 2306 standard solver</p>
+
 
 ## 2. 프로그램의 구동
 

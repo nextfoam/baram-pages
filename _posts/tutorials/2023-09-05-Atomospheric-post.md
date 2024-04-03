@@ -10,9 +10,8 @@ category: tutorials
 
 ## 1. 개요 
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.1.png"><br> 격자, 고도에 따른 $U$, $k$, $\epsilon$ 분포
-</p>
+|[![격자, 고도에 따른 $U$, $k$, $\epsilon$ 분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.1.png "격자, 고도에 따른 $U$, $k$, $\epsilon$ 분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.1.png){:target="_blank"}|
+
 
 본 예제는 대기 경계층 유동해석 예제이다. 해석 영역은 600m X 50m X 600m이며 대기경계층 조건으로 주어진 입구의 유동 분포가 출구까지 유지되는지를 확인한다.
 
