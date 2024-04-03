@@ -173,9 +173,9 @@ Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설
 
 이후, Run - Start Calculation 버튼을 클릭한다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/residual.png"><br>residual & monitoring 그래프
-</p>
+![residual & monitoring 그래프](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/residual.png "residual & monitoring 그래프")
+
+<p align='center'>residual & monitoring 그래프</p>
 
 ## 13 후처리
 
