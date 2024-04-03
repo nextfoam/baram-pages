@@ -21,11 +21,11 @@ Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolat
 
 |[![결과](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/res.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/res.png){:target="_blank"}|
 
-<p style="text-align: center"> 결과 (좌)Baram v23, (우) openfoam 2306 standard solver</p>
+<p align='center'>결과 (좌)Baram v23, (우) openfoam 2306 standard solver</p>
 
 |[![residual](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/residual-1.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/residual-1.png){:target="_blank"}|
 
-<p style="text-align: center"> Residual (좌)Baram v23, (우) openfoam 2306 standard solver</p>
+<p align='center'>Residual (좌)Baram v23, (우) openfoam 2306 standard solver</p>
 
 
 ## 2. 프로그램의 구동
