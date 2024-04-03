@@ -12,10 +12,6 @@ category: tutorials
 
 |[![격자 및 압력분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png "격자 및 압력분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png){:target="_blank"}|
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png"><br>
-</p>
-
 본 예제는 비정상상태 비압축성 유동해석 예제이다. 시로코팬 내부에서 입펠러가 회전할 때 내부의 유동을 예측하는 문제이다.
 
 격자는 Ansys Fluent의 .cas 형식의 파일을 변환하여 사용한다.
