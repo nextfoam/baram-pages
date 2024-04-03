@@ -10,9 +10,7 @@ category: tutorials
 
 ## 1. 개요 
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.1.png"><br>
-</p>
+![격자 및 속도분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.1.png "격자 및 속도분포")
 
 본 예제는 정상상태 비압축성 유동해석 예제이다. 2개의 입구와 1개의 출구로 이루어진 원형 파이프 내부 유동의 혼합을 예측한다.
 
