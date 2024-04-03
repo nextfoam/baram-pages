@@ -10,7 +10,8 @@ category: tutorials
 
 ## 1. 개요 
 
-![격자 및 속도분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.1.png "격자 및 속도분포")
+|[![격자 및 속도분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.1.png "격자 및 속도분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.1.png){:target="_blank"}|
+
 
 본 예제는 정상상태 비압축성 유동해석 예제이다. 2개의 입구와 1개의 출구로 이루어진 원형 파이프 내부 유동의 혼합을 예측한다.
 
@@ -173,8 +174,7 @@ Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설
 
 이후, Run - Start Calculation 버튼을 클릭한다.
 
-![residual & monitoring 그래프](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/residual.png "residual & monitoring 그래프")
-
+|[![residual & monitoring 그래프](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/residual.png "residual & monitoring 그래프")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/residual.png){:target="_blank"}|
 <p align='center'>residual & monitoring 그래프</p>
 
 ## 13 후처리
