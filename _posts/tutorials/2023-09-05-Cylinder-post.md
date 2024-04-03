@@ -4,15 +4,14 @@ title: 05. Vortex shedding of 2d cylinder
 category: tutorials
 ---
 
-# Cylinder 
+# Vortex shedding of 2d cylinder 
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1KwU6-RFIv__nr8ovKGfNDX7g9ewrBJTy/view?usp=sharing)
 
 ## 1. 개요 
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.1.png"><br>
-</p>
+|[![격자 및 속도분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.1.png "격자 및 속도분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cylinder/5.1.png){:target="_blank"}|
+
 
 본 예제는 2차원 비정상상태 층류 유동해석 예제로, 레이놀즈 수 100인 2차원 실린더 주변의 와류 진동(vortex shedding) 문제이다.
 
