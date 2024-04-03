@@ -10,6 +10,8 @@ category: tutorials
 
 ## 1. 개요 
 
+|[![격자 및 압력분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png "격자 및 압력분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png){:target="_blank"}|
+
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png"><br>
 </p>
