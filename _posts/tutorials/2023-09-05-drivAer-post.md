@@ -11,9 +11,7 @@ category: tutorials
 
 ## 1. 개요 
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/intro.png"><br>
-</p>
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/intro.png){:target="_blank"}|
 
 __DrivAer__ 는 자동차 공학 분야에서 사용되는 차량 외부 디자인 및 공기역학 테스트를 위한 실제 차량 모델로 차량의 외부 형태와 공기역학적 특성을 시뮬레이션하고 평가하기 위해 많이 사용된다. 단순화된 모델과 매우 복잡한 양산차 사이의 격차를 줄이기 위해 도입된 모델로 여러 종류의 형상에 대한 CAD 파일과 실험결과들이 공개되어 있다.
 
