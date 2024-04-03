@@ -10,10 +10,7 @@ category: tutorials
 
 ## 1. 개요
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-mesh.png">
-    <br> 격자 및 압력분포
-</p>
+|[![격자 및 압력분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-mesh.png "격자 및 압력분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-mesh.png){:target="_blank"}|
 
 본 예제는 RAE2822 천음속 에어포일의 받음각 변화에 따른 유동해석을 batch run으로 진행한다. 격자는 RAE2822 transonic airfoil 튜토리얼의 격자를 사용한다.
 
