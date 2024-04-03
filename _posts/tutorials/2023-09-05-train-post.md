@@ -10,9 +10,8 @@ category: tutorials
 
 ## 1. 개요 
 
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/intro.png"><br>
-</p>
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/intro.png){:target="_blank"}|
+
 
 고속열차는 마하수가 0.3~0.4 범위의 아음속 압축성 유동 영역에서 주행한다. CFD에서 저속 유동에서는 SIMPLE 게열의 압력기반 솔버를, 고속유동에서는 밀도기반의 솔버를 많이 사용한다. Baram의 비압축성 솔버인 buoyantSimpleNFoam의 아음속 압축성 유동영역에서 솔버의 안정성을 검증하기 위한 에제이다.
 

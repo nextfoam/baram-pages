@@ -10,14 +10,20 @@ category: tutorials
 
 ## 1. 개요
 
-<p align='center'>
-   <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/onera/onera-mesh.png"> 
-    <br> launcher 설정
-</p>
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/onera/onera-mesh.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/onera/onera-mesh.png){:target="_blank"}|
+
 
 본 예제는 밀도기반 솔버를 사용하는 정상상태 압축성 유동해석 예제이다. ONERA M6 wing의 validation 문제로 아래 사이트의 계산 조건을 사용한다.
 
 [https://www.grc.nasa.gov/WWW/wind/valid/m6wing/m6wing.html](https://www.grc.nasa.gov/WWW/wind/valid/m6wing/m6wing.html)
+
+
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/onera/cp0.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/onera/cp0.png){:target="_blank"}|
+
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/onera/cp1.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/onera/cp1.png){:target="_blank"}|
+
+<p align='center'>날개의 span 방향 각 섹션의 압력계수</p>
+
 
 격자는 정렬격자로 만들어진 격자를 OpenFOAM으로 변환한 것을 사용한다. 
 
