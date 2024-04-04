@@ -100,24 +100,11 @@ category: tutorials
 
 + Hex6_1_yMin, Hex6_1_yMax : Symemtry
 
-+ cantileverBeam_surface_0 : Wall
++ cantileverBeam_surface_0, Hex6_1_zMin : Wall
     + Velocity Condition : No Slip
 
-## 8. Monitoring
 
-본 예제에서는 Cantilever 전면에 걸리는 압력을 모니터링한다. Monitors - Add - Forces - Select에서 cantileverBeam_surface_0을 선택한다.
-
-이후, Surface Montior는 아래 그림과 같이 설정한다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/7.png"><br>
-</p>
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/8.png"><br>
-</p>
-
-## 9. Numerical Conditions
+## 8. Numerical Conditions
 
 본 예제에서는 아래와 같이 설정을 변경한다. 
 
@@ -131,7 +118,6 @@ category: tutorials
     + Pressure : 0.9
     + Momentum : 0.9
     + Turbulence : 0.9
-    + Density : 0.9
 
 + Convergence Criteria
     + Pressure : 0.001
@@ -142,8 +128,19 @@ category: tutorials
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/9.png"><br>
 </p>
 
+
+## 9. Monitoring
+
+본 예제에서는 Cantilever에 걸리는 힘을 모니터링한다. Monitors - Add - Forces - Select에서 cantileverBeam_surface_0을 선택한다.
+
+이후, Surface Montior는 아래 그림과 같이 설정한다.
+
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/10.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/7.png"><br>
+</p>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cantilever/8.png"><br>
 </p>
 
 ## 10. Initialization
