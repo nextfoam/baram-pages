@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 06. Atmosphere Boundary Conditions
+title: 07. Atmosphere Boundary Conditions
 category: tutorials
 ---
 
