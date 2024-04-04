@@ -12,7 +12,7 @@ category: tutorials
 
 |[![격자 및 속도분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/intro.png "격자 및 압력분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/intro.png){:target="_blank"}|
 
-본 예제는 정상상태 비압축성 유동해석 예제이다. 단순한 형상의 팬 내부에서 입펠러가 회전할 MRF(Multiple Reference Frame)를 사용하여 유동을 예측하는 문제이다.
+본 예제는 정상상태 비압축성 유동해석 예제이다. 단순한 형상의 팬 내부에서 입펠러가 회전할 때 MRF(Multiple Reference Frame)를 사용하여 유동을 예측하는 문제이다.
 
 격자는 Ansys Fluent의 .msh 형식의 파일을 변환하여 사용한다.
 
@@ -149,9 +149,8 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
 아래 그림은 계산이 종료된 상태의 Residuals 그래프이다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/run.png"><br>
-</p>
+|[![residual](https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/run.png "residual")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/run.png){:target="_blank"}|
+
 
 ## 12. 후처리
 
