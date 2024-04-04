@@ -19,7 +19,7 @@ category: tutorials
 계산 조건은 다음과 같다. 
 
 + solver : buoyantPimpleNFoam (넥스트폼이 개발한 동적격자 비압축성 유동 해석 솔버)
-+ 난류 모델 : $Realizable$ $k-\epsilon$ model
++ 난류 모델 : $Standard$ $k-\epsilon$ model
 + 밀도 : 1.225 $kg/m^3$
 + 점성 계수 : 1.79e-5 $kg/ms$
 + 임펠러 회전 수 : 2,000 RPM
@@ -46,7 +46,7 @@ Time을 Transient로 변경한다. 나머지는 Default로 설정한다.
 
 ## 5. Models
 
-난류 모델은 $Realizable$ $k-\epsilon$ 모델을 사용하고 나머지는 Default를 사용한다.
+난류 모델은 $Standard$ $k-\epsilon$ 모델을 사용하고 나머지는 Default를 사용한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.3.png"><br>
@@ -132,7 +132,7 @@ Sliding Mesh를 선택하고 아래 값들을 입력한다.
 
 ## 10. Initialization
 
-Turbluent Intensity을 0.1 (%)로 변경하고 나머지는 Defalut 값을 사용한다.
+모두 Defalut 값을 사용한다.
 
 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다. 
 
@@ -155,6 +155,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 </p>
 
 아래 그림은 계산중인 Residuals 그래프이다.
+
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.13.png"><br>
 </p>
