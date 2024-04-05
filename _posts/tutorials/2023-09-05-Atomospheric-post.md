@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 07. Atmosphere Boundary Conditions
+title: 07. Atmospheric Boundary Layer
 category: tutorials
 ---
 
-# Atmosphere Boundary Conditions 
+# Atmospheric Boundary Layer 
  
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/19kMYRiWaB84kaUzCoobMRZBKCc_uKxVU/view?usp=drive_link)
 
