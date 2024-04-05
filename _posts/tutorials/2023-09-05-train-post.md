@@ -161,10 +161,10 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
 계산이 완료되면 아래와 같이 Residuals과 Force monitor의 그래프가 나타난다.
 
-|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/residual.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/residual.png){:target="_blank"}|
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/residual.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/residual.png){:target="_blank"}|
 
 
-|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/force.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/force.png){:target="_blank"}|
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/force.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/force.png){:target="_blank"}|
 
 
 ## 12. 후처리
