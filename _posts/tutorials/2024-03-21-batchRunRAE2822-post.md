@@ -182,7 +182,7 @@ Start Calculation을 누르면 순차적으로 계산이 시작된다.
 
 제일 왼쪽 colume에 현재 계산중인 케이스에 화살표가 나타난다. 계산이 완료된 케이스는 Result colume에 초록색으로 표시되며, 계산 중 발산한 경우는 빨간색으로 표시된다.
 
-|[![격자 및 압력분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-run.png "격자 및 압력분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-run.png){:target="_blank"}|
+|[![residual](https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-run.png "residual")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-run.png){:target="_blank"}|
 
 
 
