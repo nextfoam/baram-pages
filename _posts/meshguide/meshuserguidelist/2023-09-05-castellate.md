@@ -54,7 +54,9 @@ Configuration 설정괴 Advance 설정이 있다. 격자를 나눌 부분은 Sur
 
 오른쪽의 (+)를 클릭하면 생성된다.
 
-Surface와 Feature 각각에 대한 레벨을 지정하고 적용할 surface를 선택한다. Surface는 geometry에서 만들어진 것들이 니타난다. Feature는 geometry를 만들 때 baramMesh에서 만들어 주기 때문에 따로 선택할 필요는 없다.
+Surface와 Feature 각각에 대한 레벨을 지정하고 적용할 surface를 선택한다. Surface는 geometry에서 만들어진 것들이 나타난다. Surface Refinement는 Minimum과 Maximum Level을 줄 수 있다. 인접한 두 격자의 법선이 이루는 각이 Feature Angle Threshold에서 입력한 값보다 크면 Maximum Level을 사용하고 작으면 Minimum Level을 사용한다.
+
+Feature는 geometry를 만들 때 baramMesh에서 만들어 주기 때문에 따로 선택할 필요는 없다.
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_surfaceRefinement.png"><br> Surface Refinement 설정
