@@ -27,7 +27,7 @@ Configuration 설정괴 Advance 설정이 있다. 격자를 나눌 부분은 Sur
 </p>
 
 
-+ __Feature Angle Threshold__ : 인접한 두 격자의 법선이 이루는 각이 이 값보다 클 때 주어진 size level 보다 1더 큰 값을 사용한다. snappyHexMeshDict의 castellatedMeshControls.resolveFeatureAngle에 해당한다. 아래 그림은 두 개의 육면체가 있고 내부의 육면체의 사이즈 레벨을 1로 주었을 때, 이 값에 따른 castellation 결과를 보여준다.
++ __Feature Angle Threshold__ : 인접한 두 격자의 법선이 이루는 각이 이 값보다 클 때 주어진 surface refinement의 maximum level을 사용한다. snappyHexMeshDict의 castellatedMeshControls.resolveFeatureAngle에 해당한다. 아래 그림은 두 개의 육면체가 있고 내부의 육면체의 사이즈 레벨을 1로 주었을 때, 이 값에 따른 castellation 결과를 보여준다.
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_resolveFeature.png"><br> Feature Angle Threshold 영향 (좌) 형상, (중) 100, (우) 30
