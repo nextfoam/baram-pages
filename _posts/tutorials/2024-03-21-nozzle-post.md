@@ -122,10 +122,10 @@ Initialization-Advanced-Section-Create 를 클릭한 후 다음과 같이 설정
 
 + region1 - Hex
   + Min. point : (-0.15, -0.1, -0.1)
-  + Max. point : (2, 0.065 0.1)
+  + Max. point : (0.12, 0.065 0.1)
   + Velocity를 선택하고 (100, 0, 0)을 입력
   + Pressure를 선택하고 400000를 입력
-  + Temperature를 선택하고 3000을 입력
+
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-setFields.png">
