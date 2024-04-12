@@ -112,7 +112,7 @@ Sliding Mesh를 선택하고 아래 값들을 입력한다.
     + Velocity Specification Method : Magnitudde, Normal to Boundary
     + Profile Type : Constant
     + Velocity Magnitude : 1 (m/s)
-    + Turbulent Intensity : 0.1 (%)
+    + Turbulent Intensity : 1 (%)
     + Turbulent Viscosity Ratio : 10
 
 <p align='center'>
