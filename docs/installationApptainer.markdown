@@ -31,7 +31,7 @@ Download `install.sh` and `BARAM24.1.2.tar` in the same directory and assign the
 
 [install.sh](https://drive.google.com/file/d/1DLYI-OFkoVuLt-a0urbwJpdf5L3DsOCD/view?usp=sharing)
 
-[BARAM24.0.1.tar]( https://d3c6e16xufx1gb.cloudfront.net/baram24.1.2.tar.gz)
+[BARAM24.1.2.tar]( https://d3c6e16xufx1gb.cloudfront.net/baram24.1.2.tar.gz)
 
 ```
 $ chmod +x install.sh
