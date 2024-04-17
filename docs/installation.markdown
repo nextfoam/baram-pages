@@ -28,7 +28,7 @@ Download them from following links.
 
 * Python *3.9.x*
 * [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) 10.0 or newer ( Windows Only )
-* OpenMPI 4.2 or newer ( Linux, macOS )
+* OpenMPI 4.1 or newer ( Linux, macOS )
 * GNU C Compiler or any other C Compiler ( Linux, macOS )
 
 ## Clone the source code
