@@ -8,7 +8,7 @@ title: Installation
 Binary installation package for 64-bit windows and disk image for macOS with Apple Silicon are here for convenience.
 Download them from following links.
 
-[Download BARAM v24.1.2 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.1.2-setup.exe){: .btn .btn-purple .text-center .fs-5 onclick="trackDownload('BARAM-24.1.2-setup.exe')"}
+[Download BARAM v24.1.3 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.1.3-setup.exe){: .btn .btn-purple .text-center .fs-5 onclick="trackDownload('BARAM-24.1.3-setup.exe')"}
 
 **NOTE: For macOS, [*open-mpi*](https://formulae.brew.sh/formula/open-mpi) Homebrew Formula should be installed in advance.**
 
@@ -92,20 +92,20 @@ The final directory structure may look like following.
 ```
 
 ### Windows
-[solvers_windows_NF24.1.5.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_NF24.1.5.zip)
+[solvers_windows_NF24.1.6.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_NF24.1.6.zip)
 
 
 ### Linux
-[solvers_linux_NF24.1.4.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.1.4.tar.xz)
+[solvers_linux_NF24.1.6.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.1.6.tar.xz)
 
 You can download the file on command line with cURL or wget command like following.
 
 ```commandline
-wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.1.4.tar.xz
+wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.1.6.tar.xz
 ```
 
 ```commandline
-curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.1.4.tar.xz -o solvers_linux_NF24.1.4.tar.xz
+curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.1.6.tar.xz -o solvers_linux_NF24.1.6.tar.xz
 ```
 
 ### macOS (Apple Silicon only)
