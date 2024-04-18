@@ -13,6 +13,21 @@ Download them from following links.
 
 [Download BARAM v24.1.2 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.1.2.dmg){: .btn .btn-blue .text-center .fs-5onclick="trackDownload('BARAM-24.1.2.dmg')"}
 
+## Supported Platforms
+* Windows 10 or newer
+* macOS 10.14 or newer (Apple Silicon only)
+* Ubuntu 20.04 or newer
+* CentOS 8.2 or alternatives ( Rocky Linux, AlmaLinux, ... )
+* OpenSUSE Leap 15.4
+* Linux Mint 21 "Vanessa"
+
+## BARAM requires following installed software:
+
+* Python *3.9.x*
+* [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) 10.0 or newer ( Windows Only )
+* OpenMPI 4.1 or newer ( Linux, macOS )
+* GNU C Compiler or any other C Compiler ( Linux, macOS )
+
 # Installing BARAM from source code
 
 <ul>

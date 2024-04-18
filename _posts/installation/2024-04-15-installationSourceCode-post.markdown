@@ -9,9 +9,9 @@ category : installation
 <!--* Windows 10 or newer
 * macOS 10.14 or newer (Apple Silicon only)-->
 * Ubuntu 20.04 or newer
-<!--* CentOS 8.2 or alternatives ( Rocky Linux, AlmaLinux, ... )
-* OpenSUSE Leap 15.4
-* Linux Mint 21 "Vanessa"-->
+<!--* CentOS 8.2 or alternatives ( Rocky Linux, AlmaLinux, ... )-->
+<!--* OpenSUSE Leap 15.4-->
+<!--* Linux Mint 21 "Vanessa"-->
 
 ## BARAM requires following installed software:
 
@@ -50,7 +50,7 @@ category : installation
     sudo pip3 install --ignore-installed -r requirements.txt
     ```
 
-- Build latest `NextFOAM-CFD` solver according to the instruction at https://github.com/nextfoam/nextfoam-cfd
+- Build latest `NextFOAM-CFD` solver according to the instruction at [*https://github.com/nextfoam/nextfoam-cfd*](https://github.com/nextfoam/nextfoam-cfd)
 
 - Copy compiled `NextFOAM-cfd` solvers and `Third-Party` libraries to `/opt/baram/solvers/openfoam`
     
