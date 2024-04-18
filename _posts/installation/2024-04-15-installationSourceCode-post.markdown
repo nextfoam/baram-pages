@@ -21,7 +21,7 @@ category : installation
 * GNU C Compiler or any other C Compiler ( Linux, macOS )
 
 
-## Install BARAM & OpenMPI
+## Install BARAM, NextFOAM, OpenMPI
 
     OpenMPI is installed in the `/opt/openmpi-4.1.6` with `--prefix` option at `configure` command
 
