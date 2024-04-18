@@ -10,6 +10,7 @@ title: Release Notes
 
 ### BaramFlow
 * Cell Zone is hilighted when selected
+* Solver NF24.1.6 is used as internal solver
 
 ## Bug Fixes
 
