@@ -4,6 +4,25 @@ layout: page
 title: Release Notes
 ---
 
+# 24.1.3
+
+## Improvements
+
+### BaramFlow
+* Cell Zone is hilighted when selected
+
+## Bug Fixes
+
+### BaramFlow
+* Parallel configuration dialog hung if number of processors were not changed and *Apply* button was clicked
+* Monitoring for a point that is not snapped on a surface is now working in multi-region case
+* "saveAs" for Parallel-configured project is now working
+
+### BaramMesh
+* "Export" succeeded only when boundary layers were inserted and baramMesh run in parallel configuration
+
+----
+
 # 24.1.2
 
 ## New Features
@@ -50,6 +69,10 @@ title: Release Notes
 
 ### BaramFlow
 * Monitoring for a point that is not snapped on a surface is not working in multi-region case
+* "saveAs" for Parallel-configured project is not working
+
+### BaramMesh
+* "Export" succeeds only when boundary layers are inserted and baramMesh runs in parallel configuration
 
 ----
 
