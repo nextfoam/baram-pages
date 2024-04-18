@@ -1,8 +1,25 @@
 ---
 layout: post
-title: Python Virtual Environment
+title: Installation with Python Virtual Environment
 category : installation
 ---
+# Installation with Python virtual environment
+
+## Supported Platforms
+* Windows 10 or newer
+* macOS 10.14 or newer (Apple Silicon only)
+* Ubuntu 20.04 or newer
+* CentOS 8.2 or alternatives ( Rocky Linux, AlmaLinux, ... )
+* OpenSUSE Leap 15.4
+* Linux Mint 21 "Vanessa"
+
+## BARAM requires following installed software:
+
+* Python *3.9.x*
+* [MS-MPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi) 10.0 or newer ( Windows Only )
+* OpenMPI 4.1 or newer ( Linux, macOS )
+* GNU C Compiler or any other C Compiler ( Linux, macOS )
+
 
 ## Clone the source code
 ```commandline
