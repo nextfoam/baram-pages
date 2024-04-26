@@ -25,28 +25,28 @@ To install [**BARAM-**](https://baramcfd.org) apptainer container, install [Appt
     $ sudo yum install -y apptainer
     ```
 
-# Install BARAM-24 Apptainer container
+# Install BARAM- Apptainer container
 
-Download `install.sh` and `BARAM24.1.2.tar` in the same directory and assign the excute permission to `install.sh`
+Download `install.sh` and `baramxx.x.x.tar.gz` in the same directory and assign the excute permission to `install.sh`
 
-[install.sh](https://drive.google.com/file/d/1DLYI-OFkoVuLt-a0urbwJpdf5L3DsOCD/view?usp=sharing)
+[install.sh](https://drive.google.com/file/d/1dBiMqkyEcV18H4WCavrFIE_xT5XId_R4/view?usp=sharing)
 
-[BARAM24.1.2.tar]( https://d3c6e16xufx1gb.cloudfront.net/baram24.1.2.tar.gz)
+[BARAM24.1.3.tar](https://drive.google.com/file/d/1gbTEtvSFPozhjtidOM5fHWli4uDOl7xI/view?usp=sharing)
 
 ```
 $ chmod +x install.sh
 ```
 
-Execute the `install.sh` and input the installation path. You should have the write permission for the installation path.
+Execute the `install.sh` and input the installation path such as `~/baram-xx.x.x` You should have the write permission for the installation path.
 
 ```
 $ ./install.sh
-Enter the installation path: ~/nextfoam/BARAM-24
+Enter the installation path: ~/baram-xx.x.x
 ```
 If the installation is successful, apptainer container and icon images are located.
 ```
-$ ls ~/nextfoam/BARAM24
-baram24.1.2-ubuntu22.04.sif  baramFlow.png  baramMesh.png baramShell.png
+$ ls ~/baram-xx.x.x
+baramxx.x.x.sif  baramFlow.png  baramMesh.png baramShell.png
 ```
 And in the Desktop, `baramMesh` and `baramFlow` shourts are added.
 
@@ -58,5 +58,5 @@ You can run `baramMesh` and `baramFlow` by clicking the shortcut.
 
 In the shell, you can run the application using `apptainer exec` command
 ```
-$ apptainer exec ~/nextfoam/BARAM-24/baram24.1.2-ubuntu22.04.sif /opt/baram/baramMesh.sh
+$ apptainer exec ~/nextfoam/BARAM-24/baram24.1.3-ubuntu22.04.sif /opt/baram/baramMesh.sh
 ```
