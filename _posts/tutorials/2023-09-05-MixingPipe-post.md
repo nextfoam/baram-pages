@@ -114,7 +114,7 @@ Discretization, Relaxation factors, Convergence criteria, Pressure-Velocity coup
     + Turbulence : Second Order Upwind
 
 + Under-Relaxation Factors
-    + Pressure, Momentum, Turbulence, Density : 0.9
+    + Pressure, Momentum, Turbulence : 0.9
 
 + Convergence Criteria
     + Pressure : 0.0001
@@ -135,7 +135,7 @@ Solution - Monitors를 선택하고 창 하단의 Add - Points를 클릭해서 �
 + Point Monitor
     + Write Interval : 1
     + Field : Pressure
-    + Coordinate : (0, 0, 1)
+    + Coordinate : (0, 0, 1) (m)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.8.png"><br>
@@ -179,13 +179,13 @@ Run Conditions에서는 Number of Iterations, Save Interval, Parallel 등을 설
 
 ## 13 후처리
 
-BARAM에서는 paraview를 이용하여 후처리를 진행한다. 후처리 진행 시, External tools의 paraivew 버튼을 클릭하면 된다.
+BARAM에서는 ParaView를 이용하여 후처리를 진행한다. 후처리 진행 시, External tools의 ParaView 버튼을 클릭하면 된다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.10.png"><br>
 </p>
 
-paraview를 초기 실행 시, 필요한 기능에 대한 설명은 다음과 같다.
+ParaView를 초기 실행 시, 필요한 기능에 대한 설명은 다음과 같다.
 
 + Skip Zero Time : 초기값을 제외한 결과를 보여준다.
 
