@@ -192,4 +192,4 @@ Configuration의 + 버튼을 눌러 다음과 같이 경계층을 생성한다.<
 </p>
 
 ## 8) Export
-마지막으로 ahmedBody이라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.<br>
+마지막으로 ahmedBody이라는 이름으로 Export 하면 baramFlow 에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.<br>
