@@ -6,7 +6,7 @@ category: tutorials
 
 # Batch Run - Angle of Attack Sweep of Airfoil
 
-### * [격자 파일 다운로드](https://drive.google.com/file/d/1VgU-XnPKYDr6JGAYo_OU1RzIdPf_dCTQ/view?usp=sharing)
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1XfaXhTFvdUD5P3-avf8ShqQpn-5D25iy/view?usp=sharing)
 
 ## 1. 개요
 

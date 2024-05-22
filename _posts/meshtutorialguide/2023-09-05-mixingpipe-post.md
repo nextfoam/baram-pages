@@ -110,10 +110,10 @@ Geometry tab에서는 면 혹은 공간의 Type을 변경하거나 삭제할 수
 Display Control에서는 다음의 기능을 설정할 수 있다.<br>
 ```Cut : 격자를 사용자가 원하는 축 방향으로 잘라주는 기능이다.```<br>
 ```Hide & Show : 해당 면을 숨기거나 보여준다.```<br>
-```Opacity : 해당 면을 숨기거나 보여준다.```<br>
-```Color : 해당 면을 숨기거나 보여준다.```<br>
+```Opacity : 해당 면의 불투명도를 변경한다.```<br>
+```Color : 해당 면의 색상을 변경한다.```<br>
 ```Display Mode : 면을 보여주는 방식을 변경한다.```<br>
-```Wireframe, Surface, Surface with WireFrame 총 세 가지 방식으로 변경가능하다.```<br>
+```Wireframe, Surface, Surface with Edges 총 세 가지 방식으로 변경가능하다.```<br>
 ```No Cut : 격자 중에서 사용자 선택에 따라 해당 면에 Cut 기능을 끌 수 있다.```<br>
 
 <p align='center'>
@@ -150,7 +150,7 @@ Point의 위치는 Pipe 내부 임의의 영역으로 지정하면 된다.<br>
 </p>
 
 ## 4) 배경 격자 (Base Grid)
-Snappy Hex Mesh는 배경 격자를 생성하고, 형상 Feature Line을 따라 Castellationg하는 방식으로 격자를 생성한다.<br>
+Snappy Hex Mesh는 배경 격자를 생성하고, 형상 Feature Line을 따라 Castellation하는 방식으로 격자를 생성한다.<br>
 
 BARAM-Snappy 역시 동일한 방식으로 격자를 생성하므로, 배경 격자를 생성해야한다.<br>
 
@@ -221,4 +221,4 @@ Configuration의 + 버튼을 눌러 다음과 같이 경계층을 생성한다.<
 </p>
 
 ## 8) Export
-마지막으로 mixingpie라는 이름으로 Export 하면 BARAM v23에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.<br>
+마지막으로 mixingpipe라는 이름으로 Export 하면 baramFlow에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.<br>
