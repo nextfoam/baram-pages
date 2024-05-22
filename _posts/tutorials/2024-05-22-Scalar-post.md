@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 22. Airage in Mixing Pipe - User-defined Scalars
+title: 22. Air age in Mixing Pipe - User-defined Scalars
 category: tutorials
 ---
 
