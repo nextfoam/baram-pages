@@ -82,7 +82,7 @@ The final directory structure may look like following.
 ```
 
 ### Windows
-[solvers_windows_NF24.1.5.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_NF24.1.5.zip)
+[solvers_windows_NF24.2.1.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_NF24.2.1.zip)
 
 
 ### Linux

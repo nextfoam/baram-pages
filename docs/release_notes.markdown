@@ -4,6 +4,44 @@ layout: page
 title: Release Notes
 ---
 
+# 24.2.0
+
+## New Features
+
+### BaramFlow
+* LES/DES turbulence modeling
+* User-defined scalar
+* Non-Reflecting Boundary option in Pressure Outlet
+* Calculation result is saved regardless of write interval when calculation ends
+
+### BaramMesh
+* Interactive splitting of surface based on feature angle during STL import
+* Gap-Refinement in Volume Refinement
+
+## Improvements
+
+### BaramFlow
+* Enhanced wall function has been applied
+* Reference Pressure consideration in calculating force coefficients
+* Maximum Viscosity ratio can be limited
+* Margin around Y axis label has grown
+* Default initial value for pressure is set to 101325 when density-based solver is chosen
+* Solver NF24.2.1 is used as internal solver
+
+### BaramMesh
+* VTK pipeline processing in parallel(SMP)
+
+## Bug Fixes
+
+### BaramFlow
+* "Prt", energy Prandtl number, setting was in wrong position in turbulenceProperties
+
+### BaramMesh
+* BaramMesh crashed sporadically when a project was closed
+* "Cancel" button did not work in castellation and snap
+
+----
+
 # 24.1.3
 
 ## Improvements
