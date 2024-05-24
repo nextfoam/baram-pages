@@ -9,10 +9,8 @@ category: mesh
 
 ## * [형상 파일 다운로드](https://drive.google.com/file/d/1aNHAqI2Ab7C0sDQgrjo5Nc2gRofLCCyZ/view?usp=sharing) 
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/intro.png"  >
-    <br> import한 형상
-</p>
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/intro.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/intro.png){:target="_blank"}|
+
 
 ## 개요 
 
@@ -114,10 +112,8 @@ Volume Refinement만 설정한다.
 나머지 설정은 디폴트를 사용하고 Refine 버튼을 누른다. 완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
 
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/refine.png"  >
-    <br> Refinement 설정
-</p>
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/refine.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/refine.png){:target="_blank"}|
+<center>Refinement 설정</center> 
 
 
 작업이 완료되면 Next 버튼을 눌러 다음 단계로 넘어간다.
@@ -128,29 +124,21 @@ Volume Refinement만 설정한다.
 
 Feature Snapping의 Feature Snap Type을 implicit으로 설정한다. 나머지 설정은 디폴트를 사용하고 Snap 버튼을 누른다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/snap.png"><br>
-</p>
-
-
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/snap.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/snap.png){:target="_blank"}|
 
 
 ## Gap Refinement 설정 변경의 영향
 
 Gap Refinement의 입력변수와 옵션을 바꿔서 격자를 만들어 본다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gaps.png"  >
-    <br> Base Grid
-</p>
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gaps.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gaps.png){:target="_blank"}|
+<center>Base Grid</center>  
 
 ### Gap Detection Start Level의 영향
 
 Gap Refinement의 기본 조건에서 Gap Detection Start Level을 2로 바꾸면 결과는 다음과 같다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gap-detect.png"><br>
-</p>
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gap-detect.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gap-detect.png){:target="_blank"}|
 
 Gap의 크기가 사이즈 레벨 2보다 크기 때문에 아무런 refine이 되지 않는다.
 
@@ -158,15 +146,10 @@ Gap의 크기가 사이즈 레벨 2보다 크기 때문에 아무런 refine이 �
 
 Gap Direction을 inside와 outside로 바꾸면 결과는 다음과 같다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gap-direction.png"><br>
-</p>
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gap-direction.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gap-direction.png){:target="_blank"}|
 
 ### Include surface's own gap의 영향
 
 이 옵션에 따른 영향은 다음과 같다
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gap-self.png"><br>
-</p>
-
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gap-self.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/gap/gap-self.png){:target="_blank"}|

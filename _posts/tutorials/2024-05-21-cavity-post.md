@@ -10,9 +10,7 @@ category: tutorials
 
 ## 1. 개요 
 
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/intro.png">
-</p>
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/intro.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/intro.png){:target="_blank"}|
 
 
 DES 냔류 모델을 이용하여 마하수 0.85의 cavity 유동을 계산하는 예제이다. 아래 논문의 형상과 조건을 사용한다. Validation을 위한 계산은 아니며 튜토리얼의 특성상 성긴 격자를 이용하여 계산 방법을 보여주고자 한다.
@@ -37,9 +35,7 @@ DES 냔류 모델을 이용하여 마하수 0.85의 cavity 유동을 계산하�
 
 프로그램 실행 후 launcher에서 'Open Case'를 선택하고 baramMesh에서 export한 폴더를 선택한다. 'Solver Type'은 Pressure-based, 'Multiphase Model'은 None', 'Species'는 Not Include를 선택한다.
 
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/mesh.png"><br>
-</p>
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/mesh.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/mesh.png){:target="_blank"}|
 
 ## 3. General
 

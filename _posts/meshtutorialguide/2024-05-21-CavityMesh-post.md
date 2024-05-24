@@ -100,12 +100,8 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 
 나머지 설정은 디폴트를 사용하고 Refine 버튼을 누른다. 완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
 
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-refine.png"  >
-    <br> Refinement 
-</p>
-
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-refine.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-refine.png){:target="_blank"}|
+<center>Refinement 격자</center> 
 
 작업이 완료되면 Next 버튼을 눌러 다음 단계로 넘어간다.
 
@@ -138,10 +134,8 @@ Configurations의 (+) 버튼을 눌러 다음과 같이 설정한다.
 완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
 
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-layer.png"  >
-    <br> 최종 격자
-</p>
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-layer.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-layer.png){:target="_blank"}|
+<center>최종 격자</center> 
 
 Apply - Next 버튼을 눌러 다음 단계로 넘어간다.
 
