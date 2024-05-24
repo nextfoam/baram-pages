@@ -114,6 +114,9 @@ Numerical Conditions은 다음과 같이 설정한다.
 
 + Convergence Criteria : 1e-6 (모든 값)
 
++ Advanced
+  + Maximum Viscosity Ratio를 1e7으로 설정한다 - 계산 영역이 매우 크기 때문에 이 값을 디폴트 값으로 사용하면 turbulent kinetic energy의 분포가 유지되지 않는다.
+
 나머지는 Default 조건을 사용한다.
 
 <p align='center'>

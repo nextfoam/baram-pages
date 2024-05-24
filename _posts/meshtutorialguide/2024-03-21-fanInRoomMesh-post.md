@@ -117,11 +117,10 @@ fan과 AMI에 격자를 밀집시키기 위해 레벨 3을 사용하고 desk는 
 
 ## 5. 형상구현(Snap)
 
-
-
+Feature Snapping의 Feature Snap Type을 implicit으로 설정한다. 나머지 설정은 디폴트를 사용하고 Snap 버튼을 누른다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/ahmedBody/12.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-snap.png"><br>
 </p>
 
 ## 6. 경계층격자(Boundary Layer)
@@ -132,4 +131,5 @@ Apply - Next 버튼을 눌러 다음 단계로 넘어간다.
 
 
 ## 7. 내보내기(Export)
-마지막으로 ahmedBody이라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.<br>
+
+마지막으로 fanInRoon이라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.

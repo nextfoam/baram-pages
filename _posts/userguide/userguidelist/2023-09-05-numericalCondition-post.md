@@ -64,9 +64,9 @@ First order와 second order를 선택할 수 있다. fvSchemes 파일의 ddtSche
 
 Time은 first order일 때 Euler를 사용하고 second order일 때 backward를 사용한다.(넥스트폼이 수정)
 
-Momentum은 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Venkatakrishnan’s limiter(넥스트폼이 개발)를 사용한다.</span>
+Momentum은 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Venkatakrishnan’s limiter(넥스트폼이 개발)</span>을 사용한다.
 
-Turbulence와 Energy는 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Barth-Jespersen’s limiter를 사용한다.</span>
+Turbulence와 Energy는 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Barth-Jespersen’s limiter</span>를 사용한다.
 
 
 ## Under-Relaxation Factors
@@ -107,7 +107,11 @@ Convergence Criteria는 각 필드의 수렴 조건을 나타낸다. fvSolution 
 
 ## Advanced - Limits
 
-Limits의 값은 계산의 안정성을 위해 온도의 최소, 최대값을 제한한다. fvOptions의 limitTemperature를 사용한다.
+Limits의 값은 계산의 안정성을 위해 최소와 최대값을 제한한다. 온도와 Viscosity Ratio를 제한할 수 있다. 
+
+온도의 제한은 fvOptions의 limitTemperature를 사용한다.
+
+Maximum Viscosity Ratio는 turbulenceProperties 파일의 난류모델 딕셔너리에 설정된다. 디폴트는 1e5이며 값이 작을 때 안정성이 좋아지는 경우가 있으나 결과의 정확도에 문제가 될 수도 있다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/limit.png"><br> Limits 설정

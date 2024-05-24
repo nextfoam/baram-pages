@@ -70,7 +70,17 @@ Volume의 레벨을 지정하고 적용할 volume을 선택한다. Volume은 geo
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_volumeRefinement.png"><br> Volume Refinement 설정
 </p>
 
+Gap Refinement 옵션은 간격이 좁은 부분에 격자를 자동으로 refine 하는 기능이다. 여러 개의 면이 매우 가까이 인접해 있는 경우나 얇은 판이나 날개가 있는 경우 편리하게 사용할 수 있다. 아래의 다섯 가지 입력이 있다.
 
++ Min. Cell Layers in a gap : 좁은 간격에 들어살 최소 격자 개수로 4 이상의 정수를 입력한다.
++ Gap detection start level : 여기서 주어진 레벨의 격자 크기보다 간격이 작을 경우 gap refinement가 적용된다.
++ Max. refinement level : 이 값보다 더 큰 레벨은 적용하지 않는다.
++ Direction : inside는 닫힌 면 내부에 있는 좁은 간격에 적용하는 옵션으로 얇은 판이나 날개의 두께 방향으로 표면에 격자를 refine한다. outside는 다른 면과 면 사이의 간격에 적용된다. mixed는 두 가지가 모두 적용된다.
++ Include surface's own gap : 하나의 닫힌 면들 사이에 존재하는 좁은 간격에도 적용할 것인지를 선택한다. 아래 그림에서 왼쪽이 false인 경우이고 오른쪽이 true인 경우이다.
+
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_volumeRefinement-1.png"><br> Volume Refinement 설정
+</p>
 
 
 

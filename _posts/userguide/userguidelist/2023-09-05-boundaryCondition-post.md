@@ -348,7 +348,13 @@ Pressure Outlet 조건은 출구 경계면에 일정한 전압력을(Total Press
 * epsilon, omega : zeroGradient(Calculate Backflow 옵션을 사용하지 않을 때) 혹은 viscosityRatioInletOutletTDR (넥스트폼이 개발)
 
 * nuTilda : zeroGradient(Calculate Backflow 옵션을 사용하지 않을 때) 혹은 inletOutlet
-<br>
+
+### Non-Reflecting Boundary 옵션
+
+경계면에서 압력파가 반사되지 않는 조건으로, 에너지방정식을 계산하고 밀도는 perfect gas, Cp는 constant인 경우에만 나타난다. 
+
+속도와 압력에는 openfoam의 waveTransmissive 경계조건을 사용하고 나머지 필드는 옵션이 없을 때와 동일하다. 
+
 
 ## Open Channel Outlet
 

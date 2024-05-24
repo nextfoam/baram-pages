@@ -54,7 +54,7 @@ BARAM은 다양한 프로그램을 사용하여 개발되었으며 모두 공개
   
   + Spalart-Allmaras
   
-  + <span style="color:gray">LES/DES(곧 지원 예정)</span>
+  + LES/DES
   
 * 열전달
 
@@ -82,7 +82,7 @@ BARAM은 다양한 프로그램을 사용하여 개발되었으며 모두 공개
 
 * Paremeter를 이용한 일괄 계산(batch run)
   
-* <span style="color:gray">Passive scalar 계산(곧 지원 예정)</span>
+* Passive scalar 계산
  
 * 격자 생성
 
