@@ -115,9 +115,6 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 
 Feature Snapping의 Feature Snap Type을 implicit으로 설정한다. 나머지 설정은 디폴트를 사용하고 Snap 버튼을 누른다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-snap.png"><br>
-</p>
 
 ## 6. 경계층격자(Boundary Layer)
 
