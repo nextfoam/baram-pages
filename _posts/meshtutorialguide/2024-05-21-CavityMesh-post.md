@@ -133,6 +133,7 @@ Configurations의 (+) 버튼을 눌러 다음과 같이 설정한다.
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-layer-setup.png"  >
     <br> layer 설정
+</p>
 
 나머지 설정은 디폴트를 사용하여 실행한다. 완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
 
@@ -140,10 +141,11 @@ Configurations의 (+) 버튼을 눌러 다음과 같이 설정한다.
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-layer.png"  >
     <br> 최종 격자
+</p>
 
 Apply - Next 버튼을 눌러 다음 단계로 넘어간다.
 
 
 ## 7. 내보내기(Export)
 
-마지막으로 cavityFlow이라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.<br>
+마지막으로 cavityFlow이라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.
