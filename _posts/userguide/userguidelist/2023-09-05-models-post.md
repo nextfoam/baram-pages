@@ -88,7 +88,7 @@ User-defined Scalar는 사용자가 임의로 정의할 수 있는 변수로 유
 Constant 방법은 상수를 입력하고, Turbulent Viscosity 방법은 아무 입력도 받지 않고 유동의 난류 점성계수를 사용한다. Laminar and Turbulent Viscosity 방법은 Laminar와 Turbulent 두 계수를 입력 받아 다음의 식으로 diffusivity를 사용한다.
 
 <h2 style="text-align: center">
-    $D = [Laminar coeff.] \cdot \nu + [turbulent coeff.] \cdot \nu_t $
+    $D = D_laminar \cdot \nu + D_turbulent \cdot \nu_t $
 </h2>
 
 User-defined Scalar는 OpenFOAM의 function object 기능을 사용하여 계산한다. 여기서 스칼라를 정의하면 다른 유동변수와 마찬가지로 경계조건 설정 부분에 값을 입력할 수 있고 residual 그래프와 모니터링 등에서 사용할 수 있다.
