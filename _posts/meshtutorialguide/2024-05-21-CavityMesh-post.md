@@ -128,14 +128,14 @@ Configurations의 (+) 버튼을 눌러 다음과 같이 설정한다.
 + Min.Total Thickness : 0.3
 + Boundary : wall
 
-나머지 설정은 디폴트를 사용하고 Refine 버튼을 누른다. 완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
+나머지 설정은 디폴트를 사용하고 Start 버튼을 누른다. 완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-layer-setup.png"  >
     <br> layer 설정
 </p>
 
-나머지 설정은 디폴트를 사용하여 실행한다. 완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
+완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
 
 
 <p align='center'>
