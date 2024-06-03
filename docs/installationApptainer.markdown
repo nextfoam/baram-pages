@@ -29,7 +29,7 @@ To install [**BARAM-**](https://baramcfd.org) apptainer container, install [Appt
 
 Download `baramxx.x.x.tar.gz` and unarchive as `tar zxf baramxx.x.x.tar.gz`. assign the excute permission to `install.sh`
 
-[BARAM24.2.0.tar.gz]([https://drive.google.com/file/d/1gbTEtvSFPozhjtidOM5fHWli4uDOl7xI/view?usp=sharing](https://1drv.ms/u/s!AjRLfBSDK0kvfco1RpeJN9qzc3M?e=qsffG6))
+[baram24.2.0.tar.gz]([https://drive.google.com/file/d/1gbTEtvSFPozhjtidOM5fHWli4uDOl7xI/view?usp=sharing](https://1drv.ms/u/s!AjRLfBSDK0kvfco1RpeJN9qzc3M?e=qsffG6))
 
 ```
 $ tar zxf baram24.2.0.tar.gz
@@ -57,5 +57,5 @@ You can run `baramMesh` and `baramFlow` by clicking the shortcut.
 
 In the shell, you can run the application using `apptainer exec` command
 ```
-$ apptainer exec ~/nextfoam/BARAM-24/baram24.1.3-ubuntu22.04.sif /opt/baram/baramMesh.sh
+$ apptainer exec ~/nextfoam/BARAM-24/baram-24.2.0.sif /opt/baram/baramMesh.sh
 ```
