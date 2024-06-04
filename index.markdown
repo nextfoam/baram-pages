@@ -7,8 +7,11 @@ layout: home
 
 ---
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nextfoam_eng_blue.png" width="30%"><br>
+    <a href="https://www.nextfoam.co.kr/">
+        <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nextfoam_eng_blue.png" width="50%">
+    </a><br>
 </p>
+
 
 *BARAM* is a Free Open Source Computational Fluid Dynamics (CFD) software package. *BARAM* is developed to mitigate the steep learning curve of Text-based Solvers. *BARAM* helps you focus on a problem itself with intuitive graphical user interface. For now, *OpenFOAM®* solvers modified by *NEXTFOAM* are integrated into *BARAM*. *NEXTFOAM* develops and releases it under GNU Public License (GPL).
 
