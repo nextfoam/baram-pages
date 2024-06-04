@@ -106,13 +106,19 @@ Energy를 include한다.
 + Pressure-Velocity Coupling : SIMPLE
 
 + Discretization Schemes
-  + Time : First Order Implicit
+  + Time : Second Order Implicit
   + Pressure : Linear
   + Momentum, Energy, Turbulence :Second Order Wpwind
 
-+ Max Iteration per Time Step : 2
++ Max Iteration per Time Step : 40
 
-+ Number of Correctors : 1
++ Number of Correctors : 2
+
++ Convergence Criteria
+  + Absolute는 1e-5, Relative는 0
+ 
++ Under-Relaxation Factors
+  + 모두 0.3, Final은 1
 
 + Advanced - Limits
   + Minimum Static Temperature : 100
