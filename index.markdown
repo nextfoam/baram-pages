@@ -4,7 +4,12 @@
 
 permalink: /
 layout: home
+
 ---
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nextfoam_eng_blue.png" width="30%"><br>
+</p>
+
 *BARAM* is a Free Open Source Computational Fluid Dynamics (CFD) software package. *BARAM* is developed to mitigate the steep learning curve of Text-based Solvers. *BARAM* helps you focus on a problem itself with intuitive graphical user interface. For now, *OpenFOAM®* solvers modified by *NEXTFOAM* are integrated into *BARAM*. *NEXTFOAM* develops and releases it under GNU Public License (GPL).
 
 *"BARAM"* (pronounced like 'baa-laam') is a Korean word that means "wind".
@@ -33,4 +38,3 @@ Binary installation package for 64-bit windows and disk image for macOS with App
 **NOTE: For macOS, [*open-mpi*](https://formulae.brew.sh/formula/open-mpi) Homebrew Formula should be installed in advance.**
 
 [Download BARAM v24.2.0 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.2.0.dmg){: .btn .btn-blue .text-center .fs-5onclick="trackDownload('BARAM-24.2.0.dmg')"}
-
