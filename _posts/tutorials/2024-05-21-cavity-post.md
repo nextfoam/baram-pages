@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: _post
 title: 23. High Speed Turbulent Cavity Flow - DES Simulation Transonic Compressible Flow
 category: tutorials
 ---
