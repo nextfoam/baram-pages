@@ -44,11 +44,11 @@ Configuration 설정괴 Advance 설정이 있다. 격자를 나눌 부분은 Sur
 
 + __Max. Local Cell Count__ : 병렬 연산시 각 코어당 최대 셀 개수이다. 병렬 연산시 refinement-followed-by 방식의 밸런싱을 사용하는데, 이 값에 도달하면 weighted balancing 방법을 사용하게 된다. 이 경우 속도가 느려질 수 있다. snappyHexMeshDict의 castellatedMeshControls.maxLocalCells에 해당한다.
 
-+ __Min. Refinement Cell count__ : 격자 세분화 과정이 소수의 셀 때문에 많은 시간이 소비되는 문제가 있을 수 있다. 남은 셀들이 여기서 지정한 값에 도달하면 격자 세분화 과정을 중단한다. snappyHexMeshDict의 castellatedMeshControls.minRefinementCells에 해당한다.
++ __Min. Refinement Cell count__ : 격자 세분화 과정이 소수의 셀 때문에 많은 시간이 소비되는 문제가 있을 수 있다. 남은 셀들이 여기서 지정한 값에 도달하면 격자 세분화 과정을 중단한다. 격자 세분화 과정에서 중요하지 않은 소수의 셀 때문에 너무 많은 시간이 소비되는 것을 막아주기 위한 설정이다. snappyHexMeshDict의 castellatedMeshControls.minRefinementCells에 해당한다.
 
 + __Max. Load Unbalance__ : 병렬 연산에서 프로세스 당 셀 수의 상대적인 차이이다. 낮은 값은 더 자주 로드 밸런싱을 하게 되고 높은 값은 로드 밸런싱을 비활성화 할 수도 있다. snappyHexMeshDict의 castellatedMeshControls.maxLoadUnbalance에 해당한다.
 
-+ __Allow Free Standing Zone Faces__ : faceZone이 baffle과 같이 독립적일 때 true로 설정해 주어야 한다. snappyHexMeshDict의 castellatedMeshControls.allowFreeStandingZoneFaces에 해당한다.
++ __Allow Free Standing Zone Faces__ : faceZone이 baffle과 같이 독립적인 면일 때 true로 설정해 주어야 한다. snappyHexMeshDict의 castellatedMeshControls.allowFreeStandingZoneFaces에 해당한다.
 
 ## Surface/Feature Refinement
 
