@@ -8,7 +8,7 @@ layout: home
 ---
 <p align='center'>
     <a href="https://www.nextfoam.co.kr/">
-        <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nextfoam_eng_blue.png" width="50%">
+        <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/nextfoam_eng_blue.png" width="30%">
     </a><br>
 </p>
 
