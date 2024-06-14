@@ -14,16 +14,16 @@ category: tutorials
 |[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/intro.png){:target="_blank"}|
 
 
-S.R. Ahmed는 단순화된 자동차 모형을 이용해 후방 경사각에 따른 유동 구조의 변화를 실험을 통해 관찰하였다. 이후 이 문제는 자동차 외부 공력해석의 검증용으로 많이 사용되고 있다. 이 에제는 후방 경사각도가 25인 경우에 속도 40m/s 조건에 대한 예제로 정상상태 비압축성 유동 조건을 사용한다. 
+S.R. Ahmed는 단순화된 자동차 모형을 이용해 후방 경사각에 따른 유동 구조의 변화를 실험을 통해 관찰하였다. 이후 이 문제는 자동차 외부 공력해석의 검증용으로 많이 사용되고 있다. 이 예제는 후방 경사각도가 25°인 경우에 속도 40m/s 조건에 대한 예제로 정상상태 비압축성 유동 조건을 사용한다. 
 
 ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Vehicle Wake, SAE-Paper 840300, 1984_
 
-논문의 실험 결과 저항계수(Cd)는 0.285이며 계산 결과는 Cd = 0.287로 0.7%의 차이를 보여준다.
+논문의 실험 결과 항력계수(Cd)는 0.285이며 계산 결과는 0.287로 0.7%의 차이를 보여준다.
 
 계산 조건은 다음과 같다.
 
 + solver : buoyantSimpleNFoam (넥스트폼이 개발한 정상상태 비압축성 해석 솔버)
-+ 난류 모델 : $Realizable$ $k-\epsilon$ model
++ 난류 모델 : Realizable $k-\epsilon$ model
 + 밀도 : 1.2 $kg/m^3$
 + 점성 계수 : 1.8e-5 $kg/ms$
 + 유동 조건 : inlet에서 40 $m/s$
@@ -52,7 +52,7 @@ ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Ve
 
 ## 5. Models
 
-난류 모델은 $Realizable$ $k-\epsilon$ 모델을 사용하고 나머지는 Default를 사용한다.
+난류 모델은 Realizable $k-\epsilon$ 모델을 사용하고 나머지는 Default를 사용한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.2.png"><br>
@@ -63,8 +63,8 @@ ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Ve
 본 예제에서는 공기의 물성치를 다음과 같이 수정하여 사용한다. 
 
 + air
-    + Density : 1.2𝑘𝑔/㎥ (m/s)
-    + Viscosity : 1.8e-5𝑘𝑔/𝑚s
+    + Density : 1.2 𝑘𝑔/㎥ 
+    + Viscosity : 1.8e-5 𝑘𝑔/𝑚s
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.3.png"><br>
@@ -93,7 +93,7 @@ ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Ve
 </p>
 
 + miny : Wall (Velocity Condition : Translation Moving Wall)
-    + Velocity : (40, 0, 0)
+    + Velocity : (40, 0, 0) (m/s)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.6.png"><br>
@@ -112,11 +112,11 @@ ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Ve
 
 공력계수 계산을 위한 Reference Value를 다음과 같이 설정한다.
 
-+ Area : 0.056(유동 방향에 수직한 단면적의 50%)
-+ Density : 1.2
-+ Length : 1
-+ Pressure : 0
-+ Velocity : 40
++ Area : 0.056(kg/m<sup>2</sup>, 유동 방향에 수직한 단면적의 50%)
++ Density : 1.2 (kg/m<sup>3</sup>)
++ Length : 1 (m)
++ Pressure : 0 (Pa)
++ Velocity : 40 (m/s)
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/2.8.png"><br>
@@ -137,7 +137,6 @@ ref : _S.R. Ahmed, G. Ramm, Some Salient Features of the Time-Averaged Ground Ve
     + Pressure : 0.3
     + Momentum : 0.7
     + Turbulence : 0.7
-    + Density : 0.9
 
 + Convergence Criteria
     + Pressure : 0.001
@@ -217,7 +216,7 @@ Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
 ### 경계면 스칼라 분포
 
-BARAM에서는 paraview를 이용하여 후처리를 진행한다. 후처리 진행 시, External tools의 paraivew 버튼을 클릭한다. 본 예제에서는 유동장 내 압력 분포와 유선을 그려본다.
+BARAM에서는 ParaView를 이용하여 후처리를 진행한다. 후처리 진행 시, External tools의 ParaView 버튼을 클릭한다. 본 예제에서는 유동장 내 압력 분포와 유선을 그려본다.
 
 Case Type을 Decomposed Case로 변경한다.
 
@@ -236,7 +235,7 @@ solid color를 p_rgh로 변경하고 단면에서 압력 분포를 확인한다.
 
 ### Streamline
 
-차량 주변 유동의 steamline을 확인한다.
+차량 주변 유동의 streamline을 확인한다.
 
 아래 그림과 같이 extract block 기능을 활용하여 차량 벽면과 바닥면의 형상을 추출한다.
 
