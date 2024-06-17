@@ -23,7 +23,7 @@ $S_{gas} = 5 \cdot 10^{-6} \cdot t^2$
 계산 조건은 다음과 같다. 
 
 + solver : buoyantSimpleNFoam (넥스트폼이 개발한 정상상태 비압축성 해석 솔버)
-+ 난류 모델 : $standard k-\epsilon$ 모델
++ 난류 모델 : $standard$ $k-\epsilon$ 모델
 + 밀도 : Perfect Gas
 + 점성 계수 : 1.79e-5 $kg/ms$
 
