@@ -31,13 +31,13 @@ $S_{gas} = 5 \cdot 10^{-6} \cdot t^2$
 
 프로그램 실행 후 launcher에서 'New Case'를 선택하고 이름을 지정한다. 'Solver Type'은 Pressure-based, 'Multiphase Model'은 None', 'Species'는 Not Include를 선택한다.
 
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/fireInRoom/mesh.png"><br>
-</p>
-
 격자는 주어진 OpenFOAM의 polyMesh 폴더를 사용한다.
 
 상단 탭에서 File - Load Mesh - OpenFOAM을 순서대로 클릭하고 polyMesh 폴더를 선택한다.
+
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/fireInRoom/mesh.png"><br>
+</p>
 
 ## 3. General
 
@@ -46,7 +46,7 @@ Time은 Transient를 선택하고 Gravity는 (0 0 -9.81)을 입력한다.
 
 ## 4. Models
 
-난류 모델은 $Standard k-\epsilon$ 모델을 사용한다.
+난류 모델은 $Standard$ $k-\epsilon$ 모델을 사용한다.
 
 Energy를 include한다.
 
