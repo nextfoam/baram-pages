@@ -6,8 +6,6 @@ category: tutorials
 
 # Propeller 
 
-### * [격자 파일 다운로드](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
-
 ## 1. 개요 
 
 |[![속도분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/propeller/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/propeller/intro.png){:target="_blank"}|
@@ -33,7 +31,7 @@ category: tutorials
 
 ## 3. 격자
 
-격자는 [baramMesh Propeller 튜토리얼](https://baramcfd.org/mesh/2024/03/21/fanInRoomMesh-post/)에서 만든 격자를 사용한다.
+격자는 [baramMesh Propeller 튜토리얼]([https://baramcfd.org/mesh/2024/03/21/fanInRoomMesh-post/](https://baramcfd.org/mesh/2024/06/17/propellerMesh-post/))에서 만든 격자를 사용한다.
 
 메뉴에서 File - Load Mesh - OpenFOAM을 클릭하고 constant 혹은 polyMesh 폴더를 선택한다. 
 
