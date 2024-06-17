@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 14. Cantilever Beam
+title: 13. Cantilever Beam
 category: tutorials
 ---
 # Cantilever Beam 

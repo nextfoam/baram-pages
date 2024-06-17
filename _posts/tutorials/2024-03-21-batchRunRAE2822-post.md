@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 21. Batch Run - Angle of Attack Sweep of Supersonic Airfoil
+title: 23. Batch Run - Angle of Attack Sweep of Supersonic Airfoil
 category: tutorials
 ---
 
