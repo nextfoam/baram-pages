@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 22. Air age in Mixing Pipe - User-defined Scalars
-category: tutorials
+category: _tutorials
 ---
 
 # Air Age in Mixing Pipe 
