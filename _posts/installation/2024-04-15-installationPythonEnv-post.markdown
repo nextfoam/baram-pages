@@ -82,20 +82,18 @@ The final directory structure may look like following.
 ```
 
 ### Windows
-[solvers_windows_NF24.2.1.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_NF24.2.1.zip)
-
+[solvers_windows_24.2.1_20240620.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_24.2.1_20240620.zip)
 
 ### Linux
-[solvers_linux_NF24.1.4.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.1.4.tar.xz)
-
+[solvers_linux_24.2.1_20240620.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_24.2.1_20240620.tar.xz)
 You can download the file on command line with cURL or wget command like following.
 
 ```commandline
-wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.1.4.tar.xz
+wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_24.2.1_20240620.tar.xz
 ```
 
 ```commandline
-curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_NF24.1.4.tar.xz -o solvers_linux_NF24.1.4.tar.xz
+curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_24.2.1_20240620.tar.xz -o solvers_linux_24.2.1_20240620.tar.xz
 ```
 
 ### macOS (Apple Silicon only)
