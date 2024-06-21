@@ -513,13 +513,13 @@ openfoam에서 사용하는 경계조건은 압력은 porousBafflePressure이고
 
 ### Fan
 
-fan 조건은 계산영역 내부에 있는 cyclic 면에 팬의 압력-유량 곡선(P-Q curve)을 파일로 주는 조건이다. 
+fan 조건은 계산영역 내부에 있는 cyclic 면에 팬의 속도-압력 곡선을 파일로 주는 조건이다. 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/fan.png"><br> Fan 설정
 </p>
 
-압력-유량 곡선(P-Q curve)을 파일은 csv 형식으로 첫번째 열에 압력, 두번째 열에 유량이 적힌 텍스트 파일이면 된다.
+속도-압력 곡선 파일은 csv 형식으로 첫번째 열에 속도, 두번째 열에 압력이 적힌 텍스트 파일이면 된다.
 
-openfoam에서 사용하는 경계조건은 압력은 fanPressureJump이고, 나머지는 모두 cyclic이다.
+openfoam에서 사용하는 경계조건은 압력은 fan이고, 나머지는 모두 cyclic이다.
 
