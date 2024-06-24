@@ -56,5 +56,5 @@ You can run `baramMesh` and `baramFlow` by clicking the shortcut.
 
 In the shell, you can run the application using `apptainer exec` command
 ```
-$ apptainer exec ~/nextfoam/BARAM-24/baram-24.2.0.sif /opt/baram/baramMesh.sh
+$ apptainer exec ~/nextfoam/BARAM-24/baram-24.2.0.sif bash -c '/opt/baram/baramMesh.sh'
 ```
