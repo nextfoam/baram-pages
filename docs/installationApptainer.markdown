@@ -29,7 +29,7 @@ To install [**BARAM-**](https://baramcfd.org) apptainer container, install [Appt
 
 Download `baramxx.x.x.tar.gz` and unarchive as `tar zxf baramxx.x.x.tar.gz`. assign the excute permission to `install.sh`
 
-[baram24.2.0.tar.gz](https://1drv.ms/f/s!AjRLfBSDK0kve_dcH66P_u7Itfo?e=KIPMGg)
+[Download baram appatiner](https://1drv.ms/f/s!AjRLfBSDK0kve_dcH66P_u7Itfo?e=KIPMGg)
 ```
 $ tar zxf baram24.2.0.tar.gz
 $ chmod +x install.sh
