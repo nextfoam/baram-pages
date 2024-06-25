@@ -58,3 +58,8 @@ In the shell, you can run the application using `apptainer exec` command
 ```
 $ apptainer exec ~/nextfoam/BARAM-24/baram-24.2.0.sif bash -c '/opt/baram/baramMesh.sh'
 ```
+The above command shows `Qt` related errors and the program doesn't start, download `baram-xx.x.x-vglrun.tar.gz` and execute following command after unarchive it.
+```
+apptainer exec ~/baram-xx.x.x/baram-xx.x.x-vglrun.sif bash -c 'vglrun /opt/baram/baramMesh.sh'
+```
+
