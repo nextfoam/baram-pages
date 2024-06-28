@@ -30,7 +30,7 @@ category: tutorials
 
 ## 3. 격자
 
-격자는 [baramMesh Mixer 튜토리얼]([https://baramcfd.org/mesh/2024/06/28/mixerMesh-post/](https://baramcfd.org/mesh/2024/06/28/mixerMesh-post/))에서 만든 격자를 사용한다.
+격자는 [baramMesh Mixer 튜토리얼](https://baramcfd.org/mesh/2024/06/28/mixerMesh-post/)에서 만든 격자를 사용한다.
 
 메뉴에서 File - Load Mesh - OpenFOAM을 클릭하고 constant 혹은 polyMesh 폴더를 선택한다. 
 
