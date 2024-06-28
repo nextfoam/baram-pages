@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 05. Sirocco Fan - Sliding mesh
+title: 06. Sirocco Fan - Sliding mesh
 category: tutorials
 ---
 

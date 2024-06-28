@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 12. Mixer - MRF, Rotational periodic interface
+title: 05. Mixer - MRF, Rotational periodic interface
 category: tutorials
 ---
 

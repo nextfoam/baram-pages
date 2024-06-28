@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 11. Rotating Fan in Room - Sliding Mesh
+title: 12. Rotating Fan in Room - Sliding Mesh
 category: tutorials
 ---
 
