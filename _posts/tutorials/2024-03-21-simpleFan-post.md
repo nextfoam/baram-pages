@@ -6,15 +6,11 @@ category: tutorials
 
 # Fan 
 
-### * [격자 파일 다운로드](https://drive.google.com/file/d/1bsWn_brltH32gsHBgw4J4cae8lVzQbJK/view?usp=sharing)
-
 ## 1. 개요 
 
 |[![격자 및 속도분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/intro.png "격자 및 압력분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/intro.png){:target="_blank"}|
 
 본 예제는 정상상태 비압축성 유동해석 예제이다. 단순한 형상의 팬 내부에서 입펠러가 회전할 때 MRF(Multiple Reference Frame)를 사용하여 유동을 예측하는 문제이다.
-
-격자는 Ansys Fluent의 .msh 형식의 파일을 변환하여 사용한다.
 
 계산 조건은 다음과 같다. 
 
@@ -35,7 +31,9 @@ category: tutorials
 
 ## 3. 격자
 
-격자는 주어진 Ansys의 .msh 파일을 활용한다. 상단 탭에서 File - Load Mesh - Fluent (ASCII)를 클릭하고 fan.msh 파일을 선택한다. 
+격자는 [baramMesh Fan 튜토리얼](https://baramcfd.org/mesh/2024/06/28/mixerMesh-post/)에서 만든 격자를 사용한다.
+
+메뉴에서 File-Load Mesh-OpenFOAM을 클릭하고 constant 혹은 polyMesh 폴더를 선택한다.
 
 ## 4. General
 
@@ -64,6 +62,7 @@ Multiple Reference Frame, MRF를 선택하고 아래 값들을 입력한다.
     + Rotating Speed : 1000(RPM)
     + Rotation-Axis Origin : (0 0 0)
     + Rotation-Axis Direction : (0 0 1)
+    + Static Boundary : casing
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/mrf.png"><br>
@@ -102,26 +101,24 @@ Multiple Reference Frame, MRF를 선택하고 아래 값들을 입력한다.
 
 본 예제에서는 아래와 같이 설정을 변경한다.
 
-+ Pressure-Velocity Coupling Scheme : SIMPLEC
++ Pressure-Velocity Coupling Scheme : SIMPLE
 
 + Discretization Scheme
     + Pressure : Linear
     + Momentum : Second Order Upwind
-    + Turbulence : First Order Upwind
+    + Turbulence : Second Order Upwind
 
 + Under-Relaxation Factors
-    + Pressure : 0.9
-    + Momentum : 0.9
-    + Turbulence : 0.9
+    + Pressure : 0.3
+    + Momentum : 0.5
+    + Turbulence : 0.7
 
 + Convergence Criteria
-    + Pressure : 0
+    + Pressure : 0.001
     + Momentum : 0.001
-    + Turbulence : 0.001    + 
+    + Turbulence : 0.001
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/nume.png"><br>
-</p>
+
 
 ## 10. Initialization
 
@@ -137,7 +134,7 @@ Multiple Reference Frame, MRF를 선택하고 아래 값들을 입력한다.
 
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
-+ Number of Iterations : 5000
++ Number of Iterations : 1000
 + Save Interval : 100
 + Retain Only the Most Recent Files, 1
 + Data Write Format : Binary
