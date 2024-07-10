@@ -126,7 +126,7 @@ category : installation
     Name=baramMesh
     Comment=baram Mesh
     Icon=/opt/baram/baramMesh.png
-    Exec=bash -c 'vglrun /opt/baram/baramMesh.sh'
+    Exec=bash -c '/opt/baram/baramMesh.sh'
     Terminal=false
     Type=Application
     Categories=Science
@@ -143,7 +143,7 @@ category : installation
     Name=baramFlow
     Comment=baram Flow
     Icon=/opt/baram/baramFlow.png
-    Exec=bash -c 'vglrun /opt/baram/baramFlow.sh'
+    Exec=bash -c '/opt/baram/baramFlow.sh'
     Terminal=false
     Type=Application
     Categories=Science
