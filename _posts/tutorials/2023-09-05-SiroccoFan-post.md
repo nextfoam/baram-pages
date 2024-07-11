@@ -6,15 +6,11 @@ category: tutorials
 
 # Sirocco Fan 
 
-### * [격자 파일 다운로드](https://drive.google.com/file/d/1ziOkgB3Uv9I3V8o9oRJnribBkTqKcR93/view?usp=sharing)
-
 ## 1. 개요 
 
-|[![격자 및 압력분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png "격자 및 압력분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/4.1.png){:target="_blank"}|
+|[![격자 및 압력분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/intro.png "격자 및 압력분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/slidingMesh/intro.png){:target="_blank"}|
 
 본 예제는 비정상상태 비압축성 유동해석 예제이다. 시로코팬 내부에서 입펠러가 회전할 때 내부의 유동을 예측하는 문제이다.
-
-격자는 Ansys Fluent의 .cas 형식의 파일을 변환하여 사용한다.
 
 계산 조건은 다음과 같다. 
 
@@ -34,7 +30,7 @@ category: tutorials
 
 ## 3. 격자
 
-격자는 주어진 Ansys의 .cas 파일을 활용한다. 상단 탭에서 File - Load Mesh - Fluent (ASCII)를 클릭하고 siroccofan.cas 파일을 선택한다. 
+격자는 [baramMesh siroccoFan 튜토리얼](https://baramcfd.org/mesh/2024/07/05/fan-post/)에서 만든 격자를 사용한다.
 
 ## 4. General
 
