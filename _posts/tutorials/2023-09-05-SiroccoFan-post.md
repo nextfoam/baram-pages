@@ -30,7 +30,7 @@ category: tutorials
 
 ## 3. 격자
 
-격자는 [baramMesh siroccoFan 튜토리얼](https://baramcfd.org/mesh/2024/07/05/fan-post/)에서 만든 격자를 사용한다.
+격자는 [baramMesh siroccoFan 튜토리얼](https://baramcfd.org/mesh/2024/07/11/siroccofan-post/)에서 만든 격자를 사용한다.
 
 ## 4. General
 
