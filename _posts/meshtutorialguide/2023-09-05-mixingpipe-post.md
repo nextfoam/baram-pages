@@ -9,6 +9,9 @@ category: mesh
 ## * [형상 파일](https://drive.google.com/file/d/1AmqT8iVNacvKUmp-CsSFFNSV6WoxQE7B/view?usp=sharing) 
 
 ## 1) 개요 
+
+|[![격자 및 속도분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.1.png "격자 및 속도분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/1.1.png){:target="_blank"}|
+
 * 본 예제는 Mixing Pipe의 stl파일을 이용해 pipe 내부 격자를 생성하는 예제이다.<br>
 
 * Pipe 내부의 경계층 생성과 Refinement 조절을 하면서 격자를 생성한다. <br>
