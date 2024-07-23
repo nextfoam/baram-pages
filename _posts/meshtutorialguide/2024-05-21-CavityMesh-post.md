@@ -11,6 +11,8 @@ category: mesh
 
 ## 개요 
 
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/intro.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/intro.png){:target="_blank"}|
+
 * 본 예제는 3차원 천음속 Cavity 유동 해석을 위한 격자 생성 예제이다.
 
 * 풍동 내부에 Cavity 모델이 있으며 다음 논문에 있는 형상이다.
