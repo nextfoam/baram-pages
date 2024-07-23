@@ -11,6 +11,10 @@ category: mesh
 
 ## 개요 
 
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/room/room-intro.png" ><br>
+</p>
+
 * 본 예제는 OpenFOAM의 pimpleFoam tutorial에 있는 rotatingFanInRoom의 격자를 BaramMesh로 생성하는 예제이다.
 
 * 실내에 회전하는 팬이 있고 이것을 sliding mesh로 계산하기 위해 팬을 둘러싼 실린더가 있고 그 내부를 cell zone으로 설정한다. Cell zone을 둘러싼 면은 sliding mesh를 위해 같은 위치에 2개가 interface면으로 있어야 한다.
