@@ -9,6 +9,9 @@ category: mesh
 ## * [형상 파일](https://drive.google.com/file/d/1gxuKBcN6puyEF6Yv6VEYSNUz-tlHyAuD/view) 
 
 ## 1) 개요 
+
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ahmedBody/intro.png){:target="_blank"}|
+
 * 본 예제는 Ahmed Body의 stl파일을 이용해 자동차의 외부 유동장 격자를 생성하는 예제이다.<br>
 
 * 자동차 주위에 경계층 생성과 Refinement 조절을 하면서 격자를 생성한다. <br>
