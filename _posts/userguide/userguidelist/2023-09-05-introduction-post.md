@@ -12,7 +12,7 @@ BARAM-v24에서 사용하는 OpenFOAM은 NextFOAM-v24이다. NextFOAM-v24는 ESI
 
 격자 생성 모듈 BaramMesh는 OpenFOAM의 유틸리티인 blockMesh와 snappyHexMesh를 사용하여 격자를 생성하는 모듈이다. 형상은 STL 파일을 가져올 수 있고 육면체, 구, 실린더 형상을 생성할 수 있다. 경계층 격자를 포함한 octree 방식의 3차원 격자를 생성할 수 있으며 region, cell zone, interface를 만들 수 있다.
 
-해석 모듈 BaramFlow는 전산유체역학 해석을 위한 모듈로 비압축성유동, 열전달, 압축성유동, 다상유동을 해석할 수 있다.
+해석 모듈 BaramFlow는 전산유체역학 해석을 위한 모듈로 비압축성유동, 열전달, 압축성유동, 다상유동, 화학종 혼합을 해석할 수 있다.
 
 BARAM은 다양한 프로그램을 사용하여 개발되었으며 모두 공개소스 프로그램만 사용되었다. 그래픽 사용자 환경은 python, Qt, vtk를 이용하여 개발 되었으며, 공개소스 프로그램인 paraview를 이용하여 후처리 작업을 할 수 있다.
 
