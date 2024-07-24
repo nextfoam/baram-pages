@@ -34,6 +34,8 @@ title: Features
     * Realizable
 * k-omega
     * SST
+* LES
+* DES
 
 
 ## Cell Zone Configuration
