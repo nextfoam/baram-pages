@@ -10,7 +10,7 @@ category: tutorials
 
 |[![화학종분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/species/intro.png "화학종분포 (중) Sct=0.7,(하) Sct=0.1")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/species/intro.png){:target="_blank"}|
 
-본 예제는 정상상태 화학종 혼압 해석 예제이다. OpenFOAM 튜토리얼에 있는 pitzDaily 격자를 이용하여 산소와 질소가 평행하게 유입될때 화학종의 분포를 확인하는 문제이다. 
+본 예제는 정상상태 화학종 혼압 해석 예제이다. OpenFOAM 튜토리얼에 있는 pitzDaily 격자를 이용하여 산소와 질소가 평행하게 유입될때 화학종의 분포를 확인하는 문제이다. 위의 그림에서 가운데 그림은 turbulent Schmidt number가 0.7인 경우의 결과이며 아래 그림은 0.1인 경우의 결과이다.
 
 계산 조건은 다음과 같다. 
 
