@@ -59,7 +59,7 @@ BARAM이 제공하는 물질 데이터베이스는 다음과 같다.
 아래 왼쪽 그림 오른쪽상단의 (+) 버튼을 누르면 아래 가운데 그림처럼 'Create Mixture'라는 버튼이 나타난다. 여러 개의 화학종을 선택하고 이 버튼을 누르면, 오른쪽 그림과 같이 mixture가 추가된다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/material-mixture.png"><br> Mixture material 설정
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/material-maxture.png"><br> Mixture material 설정
 </p>
 
 Mixture의 물성값 수정 버튼을 누르면 아래 그림의 창이 나타난다.
