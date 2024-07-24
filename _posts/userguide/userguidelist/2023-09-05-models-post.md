@@ -40,7 +40,6 @@ Model을 선택하면 그에 따라 필요한 추가 설정 부분이 표시된�
 
 * LES, Large Eddy Simulation : General의 Time이 Transient로 설정되었을 때만 활성화 된다. Subgrid-Scale Model과 Length-Scale Model을 선택할 수 있다.
 
-
 ### Enhanced Wall Treatment(two layer)
 
 Enhanced Wall Treatment(two layer)는 넥스트폼이 개발한 것으로 blending 함수를 사용한다. Standard wall function은 y+가 buffer layer에 있는 경우 결과의 정확도가 문제될 수 있는데, 이 모델은 y+에 상관없이 사용할 수 있는 벽함수이다. blending 함수는 다음의 식이 사용된다.
@@ -60,6 +59,9 @@ Enhanced Wall Treatment(two layer)는 넥스트폼이 개발한 것으로 blendi
 
 turbulent Prandtl Number는 Internal Field와 Wall Function 두 가지를 설정할 수 있다. Internal Field의 값은 난류모델에 사용되고, Wall Function의 값은 alphat(turbulent thermal diffusivity)의 벽함수에 사용된다. DES/LES 모델에서는 사용되지 않는다.
 
+### Turbulent Schmidt Number
+
+Turbulent Schmidt Number는 화학종의 난류 확산에 사용되며, 화학종을 계산하지 않을 때는 사용되지 않는다.
 
 ## Energy
 
@@ -67,6 +69,14 @@ Energy를 더블 클릭하면 아래 그림의 설정창이 나타난다. 포함
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/energy.png"> <br> Energy 설정 
+</p>
+
+## Species
+
+Species를 더블 클릭하면 아래 그림의 설정창이 나타난다. 포함할 것인지 아닌지를 선택한다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/species.png"> <br> Species 설정 
 </p>
 
 ## User-defined Scalars
@@ -79,13 +89,14 @@ User-defined Scalar는 사용자가 임의로 정의할 수 있는 변수로 유
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/uds0.png"><br> User-defined Scalar 설정
 </p>
 
-각 스칼라는 Field Name과 Diffusivity를 설정할 수 있다. Diffusivity 설정 방법은 Constant, Turbulent Viscosity, Laminar and Turbulent Viscosity 세 가지가 제공된다. 
+각 스칼라는 Field Name과 Diffusivity를 설정할 수 있다. Diffusivity 설정 방법은 Constant, Laminar and Turbulent Viscosity의 두 가지가 제공된다. 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/uds1.png"><br> User-defined Scalar 설정
 </p>
 
-Constant 방법은 상수를 입력하고, Turbulent Viscosity 방법은 아무 입력도 받지 않고 유동의 난류 점성계수를 사용한다. Laminar and Turbulent Viscosity 방법은 Laminar와 Turbulent 두 계수를 입력 받아 다음의 식으로 diffusivity를 사용한다.
+Constant 방법은 상수를 입력하고, Laminar and Turbulent Viscosity 방법은 Laminar와 Turbulent 두 계수를 입력 받아 다음의 식으로 diffusivity를 사용한다.
+
 
 <h2 style="text-align: center">
     $D = D_{laminar} \cdot \nu + D_{turbulent} \cdot \nu_t $

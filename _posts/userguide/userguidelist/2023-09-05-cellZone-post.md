@@ -12,7 +12,7 @@ Cell zone Condition에는 격자의 region과 cell zone이 아래 그림과 같�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/cellZoneUI.png"><br> CellZone 설정
 </p>
 
-Region을 더블 클릭하면 아래 그림의 창이 나타난다. [Setup-Materials]에 있는 물질들 중 하나를 해당 region의 물질로 선택한다. 전체 region에 소스항이나 일정한 값을 주고 싶다면 해당 항목을 설정한다.
+Region을 더블 클릭하면 아래 그림의 창이 나타난다. [Setup-Materials]에 있는 물질들 중 하나를 해당 region의 물질로 선택한다. 화학종 혼합을 계산하는 경우에는 해당 material을 선택한다. 전체 region에 소스항이나 일정한 값을 주고 싶다면 해당 항목을 설정한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/region.png"><br> Region 설정

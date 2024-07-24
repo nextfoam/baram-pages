@@ -105,7 +105,15 @@ Number of MULES iterations over the limiter는 limiter에 대한 MULES 반복 �
 
 Convergence Criteria는 각 필드의 수렴 조건을 나타낸다. fvSolution 파일의 SIMPLE 혹은 PIMPLE 딕셔너리의 residualControl에 해당한다. absolute 값들은 tolerance에 적용되고 비정상상태에서 활성화되는 relative는 relTol에 적용된다.
 
-## Advanced - Limits
+## Advanced
+
+Limits와 Equations 두 가지로 구성된다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/limit.png"><br> Advanced 설정
+</p>
+
+### Limits
 
 Limits의 값은 계산의 안정성을 위해 최소와 최대값을 제한한다. 온도와 Viscosity Ratio를 제한할 수 있다. 
 
@@ -113,7 +121,24 @@ Limits의 값은 계산의 안정성을 위해 최소와 최대값을 제한한�
 
 Maximum Viscosity Ratio는 turbulenceProperties 파일의 난류모델 딕셔너리에 설정된다. 디폴트는 1e5이며 값이 작을 때 안정성이 좋아지는 경우가 있으나 결과의 정확도에 문제가 될 수도 있다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/limit.png"><br> Limits 설정
-</p>
+### Equations
+
+유동, 에너지, 사용자 정의 함수, 화학종 등의 방정식을 on/off 할 수 있다. 
+
+에너지방정식은 Viscous dissipation, Kinetic energy, Pressure Work 항을 각각 on/off할 수 있다. 이들의 영향이 매우 작은 경우 생략하게 되면 안정성 향상 효과를 볼 수 있다. 고속, 고온, 고점도 유동의 경우 생력하면 정확도에 문제가 있을 수 있다.
+
+Sliding mesh를 사용하는 경우 모든 것을 off 하고 계산하면 격자의 운동이 제대로 구현되는지 확인할 수 있다.
+
+
+
+
+
+
+
+
+
+
+
+
+
 

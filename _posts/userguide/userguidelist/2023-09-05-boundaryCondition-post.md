@@ -73,7 +73,7 @@ filter string 기능을 이용하여 특정 문자열이 포함된 경계면만 
 
 ## Velocity Inlet
 
-Velocity Inlet 조건은 유동의 입구에 속도, 난류, 온도 값을 주는 조건이다.
+Velocity Inlet 조건은 유동의 입구에 속도, 난류, 온도, 화학종 질량분율 값 등을 주는 조건이다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/velocityInlet.png"><br> Velocity Inlet 설정
@@ -84,6 +84,8 @@ Velocity Inlet 조건은 유동의 입구에 속도, 난류, 온도 값을 주�
 난류는 난류 필드의 값을(k, epsilon, omega, nuTilda) 주는 방법과 intensity/viscosity ratio를 주는 방법이 있다. Spalart-Allmaras 모델에서는 난류 필드의 값인 Modified Turbulent Viscosity(nuTilda)를 주는 방법만 지원한다.
 
 온도는 일정한 값을 준다.
+
+화학종 질량분율은 전체 화학종의 합이 1이 되도록 주어야 한다.
 
 각 필드가 사용하는 openfoam의 경계조건은 다음과 같다.
 
@@ -98,7 +100,8 @@ Velocity Inlet 조건은 유동의 입구에 속도, 난류, 온도 값을 주�
 * epsilon, omega : viscosityRatioInletOutletTDR (넥스트폼이 개발)
 
 * nuTilda : fixedValue
-<br>
+
+* species : fixedValue
 
 ### boundary profile 조건 설정
 
@@ -238,7 +241,8 @@ $u^* = \frac{u_{ref} \kappa} {ln \left( \frac{z_{ref} + z_0}{z_0} \right)}$
 * k : atmBoundaryLayerInletK
 
 * epsilon, omega : atmBoundaryLayerInletEpsilon, atmBoundaryLayerInletOmega
-<br>
+
+* species : fixedValue
 
 ## Free Stream
 
@@ -259,7 +263,8 @@ Free Stream Velocity는 속도 벡터를 입력하고 압력은 상수로 주며
 * 온도 : freestream
 
 * 난류 : freestream
-<br>
+
+* species : fixedValue
 
 ## Open Channel Inlet
 
@@ -348,6 +353,8 @@ Pressure Outlet 조건은 출구 경계면에 일정한 전압력을(Total Press
 * epsilon, omega : zeroGradient(Calculate Backflow 옵션을 사용하지 않을 때) 혹은 viscosityRatioInletOutletTDR (넥스트폼이 개발)
 
 * nuTilda : zeroGradient(Calculate Backflow 옵션을 사용하지 않을 때) 혹은 inletOutlet
+
+* species : zeroGradient 혹은 inletOutlet
 
 ### Non-Reflecting Boundary 옵션
 
@@ -440,7 +447,8 @@ No Slip 조건은 벽변 점착 조건으로 속도가 (0, 0, 0)으로 설정된
 * nut : nutkWallFunction(k-epsilon 모델일 때), nutUSpaldingWallFunction(SST k-omega, Spalart-Allmaras 모델일 때)
 
 * alphat : compressible::alphatWallFunction
-<br>
+
+* Species : zeroGradient
 
 ## Thermo-Coupled Wall
 
@@ -455,7 +463,8 @@ Thermo-Coupled Wall 조건은 계산 영역 내부에 있는 두께가 없는 �
 * 온도 : turbulentTemperatureCoupledBaffleMixed (넥스트폼이 수정)
 
 * 난류 : Wall과 같은 조건 사용
-<br>
+
+* Species : zeroGradient
 
 ## 기타 경계조건 - Misc
 

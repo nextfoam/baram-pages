@@ -6,11 +6,9 @@ category: userguidelist
 
 # Setup - Materials
 
-BARAM은 몇가지 물질들의 물성값을 데이터베이스로 제공한다. 해석에 사용할 물질들을 추가하고, 필요하다면 물성값을 수정해서 사용할 수 있다. 아래 그림 오른쪽상단의 (+)버튼을 누르면 물질을 추가 할 수 있다. 
+## Model에서 Species가 Not Include인 경우
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/material.png"><br> Material 설정
-</p>
+BARAM은 몇가지 물질들의 물성값을 데이터베이스로 제공한다. 해석에 사용할 물질들을 추가하고, 필요하다면 물성값을 수정해서 사용할 수 있다. 
 
 BARAM이 제공하는 물질 데이터베이스는 다음과 같다.
 
@@ -20,6 +18,11 @@ BARAM이 제공하는 물질 데이터베이스는 다음과 같다.
 
 * Solid : Steel, Concrete, Aluminum, Copper
 
+아래 왼쪽 그림 오른쪽상단의 (+)버튼을 누르면 가운데 그림과 같은 창이 나타나고 물질을 추가 할 수 있다. 오른쪽 그림은 oxygen이 추가된 결과이다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/material.png"><br> Material 설정
+</p>
 
 물성값 수정 버튼을 누르면 아래 그림의 창이 나타난다.
 
@@ -49,5 +52,37 @@ BARAM이 제공하는 물질 데이터베이스는 다음과 같다.
 * Saturation Pressure : 기체에서만 나타난다. 캐비테이션 계산에만 사용된다.(현재는 불필요)
 
 * Emissivity : 고체에서만 나타난다. 복사열전달 계산에만 사용된다.(현재는 불필요)
+
+
+## Model에서 Species가 Include인 경우 
+
+아래 왼쪽 그림 오른쪽상단의 (+) 버튼을 누르면 아래 가운데 그림처럼 'Create Mixture'라는 버튼이 나타난다. 여러 개의 화학종을 선택하고 이 버튼을 누르면, 오른쪽 그림과 같이 mixture가 추가된다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/material-mixture.png"><br> Mixture material 설정
+</p>
+
+Mixture의 물성값 수정 버튼을 누르면 아래 그림의 창이 나타난다.
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mixture-properties.png"><br> 물성값 설정
+</p>
+
+수정할 수 있는 항목은 Name, Density Spec., Specific Heat Spec., Transport Spec., Mass Diffusivity, Primary Specie 등이다.
+
+* Density Spec. : Constant, Perfect Gas, Incompressible perfect gas, Polynomial을 선택할 수 있다. 에너지방정식을 풀지 않을 때와 액체나 고체일 때는 Constant만 사용할 수 있다.
+
+* Specific Heat Spec. : Constant와 Polymomial을 선택할 수 있다.
+
+* Transport Spec. : Constant와 Polynomial, Sutherland를 선택할 수 있다.
+
+* Mass Diffusivity : 현재는 상수로만 입력할 수 있다.
+
+* Primary Specie : 이 화학종에 대한 전달방정식은 계산하지 않고 1에서 나머지 화학종들의 질량분율 합을 뺀 값으로 결정된다.
+
+
+
+
+
 
 
