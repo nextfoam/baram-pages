@@ -72,7 +72,7 @@ Mixture 내부 oxygen의 편집 버튼을 누르고 Name을 oxygen에서 O2로 �
 Cell Zone Conditions의 region0를 더블 클릭해서 Material을 mixture로 바꾼다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/species/cellZone.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/species/cellzone.png"><br>
 </p>
 
 ## 8. Boundary Conditions
