@@ -32,8 +32,6 @@ Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolat
 
 프로그램 실행 후 launcher에서 'Open'을 선택하고 격자 생성 튜토리얼에서 만든 porous 폴더를 선택한다(혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 porous/case/constant 폴더를 선택한다).
 
-Launcher에서 'Flow Type'은 Incompressible, 'Multiphase Model'은 None, Gravity는 (0 0 0), 'Species'는 Not Include를 선택한다.
-
 
 ## 3. General
 

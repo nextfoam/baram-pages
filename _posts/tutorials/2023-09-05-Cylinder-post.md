@@ -27,7 +27,7 @@ OpenFOAM에서 2차원 문제의 격자는 높이 방향으로 하나의 격자�
 
 ## 2. 프로그램의 구동
 
-프로그램 실행 후 launcher에서 ‘New’를 선택한다. Launcher에서 ‘Solver Type’은 Pressure-based를, ‘Multiphase Model’은 None, ‘Species’는 Not Include를 선택한다.
+프로그램 실행 후 launcher에서 ‘New’를 선택한다. Launcher에서 ‘Solver Type’은 Pressure-based를, ‘Multiphase Model’은 None을 선택한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixingPipe/launcher.png"><br>

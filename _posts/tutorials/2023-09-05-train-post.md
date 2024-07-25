@@ -29,7 +29,7 @@ category: tutorials
 
 ## 2. 프로그램의 구동 및 격자
 
-프로그램 실행 후 launcher에서 'New Case'를 선택하고 이름을 지정한다. 'Solver Type'은 Pressure-based, 'Multiphase Model'은 None', 'Species'는 Not Include를 선택한다.
+프로그램 실행 후 launcher에서 'New Case'를 선택하고 이름을 지정한다. 'Solver Type'은 Pressure-based, 'Multiphase Model'은 None'을 선택한다.
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/mesh.png"><br>

@@ -33,7 +33,7 @@ DES 냔류 모델을 이용하여 마하수 0.85의 cavity 유동을 계산하�
 
 ## 2. 프로그램의 구동 및 격자
 
-프로그램 실행 후 launcher에서 'Open Case'를 선택하고 baramMesh에서 export한 폴더를 선택한다. 'Solver Type'은 Pressure-based, 'Multiphase Model'은 None', 'Species'는 Not Include를 선택한다.
+프로그램 실행 후 launcher에서 'Open Case'를 선택하고 baramMesh에서 export한 폴더를 선택한다. 'Solver Type'은 Pressure-based, 'Multiphase Model'은 None'을 선택한다.
 
 |[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/mesh.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/mesh.png){:target="_blank"}|
 

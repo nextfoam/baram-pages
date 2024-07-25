@@ -29,7 +29,7 @@ $S_{gas} = 5 \cdot 10^{-6} \cdot t^2$
 
 ## 2. 프로그램의 구동 및 격자
 
-프로그램 실행 후 launcher에서 'New Case'를 선택하고 이름을 지정한다. 'Solver Type'은 Pressure-based, 'Multiphase Model'은 None', 'Species'는 Not Include를 선택한다.
+프로그램 실행 후 launcher에서 'New Case'를 선택하고 이름을 지정한다. 'Solver Type'은 Pressure-based, 'Multiphase Model'은 None'을 선택한다.
 
 격자는 주어진 OpenFOAM의 polyMesh 폴더를 사용한다.
 
