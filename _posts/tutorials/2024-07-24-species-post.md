@@ -40,6 +40,8 @@ Gravity는 (0 -9.81 0)으로 설정한다.
 
 ## 5. Models
 
+Energy를 더블 클릭하고 Include를 선택한다.
+
 Species를 더블 클릭하고 Include를 선택한다.
 
 ## 6. Materials
@@ -70,6 +72,7 @@ Cell Zone Conditions의 region0를 더블 클릭해서 Material을 mixture로 �
     + Turbulent Viscosity Ratio : 1
     + mixture - air : 1
     + mixture - waterVapor : 0
+    + Temperature : 300
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/species/inletBC1.png"><br>
@@ -82,7 +85,8 @@ Cell Zone Conditions의 region0를 더블 클릭해서 Material을 mixture로 �
     + Turbulent Viscosity Ratio : 1
     + mixture - air : 0
     + mixture - waterVapor : 1
-
+    + Temperature : 300
+    
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/species/inletBC2.png"><br>
 </p>
@@ -107,21 +111,18 @@ Cell Zone Conditions의 region0를 더블 클릭해서 Material을 mixture로 �
     + Time : Second Order Implicit
     + Pressure : Linear
     + Momentum : Second Order Upwind
+    + Energy : Second Order Upwind
     + Turbulence : Second Order Upwind
     + Species : Second Order Upwind
 
 + Under-Relaxation Factors
     + Pressure : 0.3
     + Momentum : 0.7
+    + Energy : 1
     + Turbulence : 0.7
     + Species : 1
 
-+ Convergence Criteria
-    + Pressure : 0.0001
-    + Momentum : 0.001
-    + Turbulence : 0.001
-    + Energy : 0.000001
-    + Species : 0.001
++ Convergence Criteria : 디폴트 값 사용
 
 + Max Iterations per Time Step : 100
 
