@@ -61,6 +61,19 @@ Run following command in the top directory of downloaded source code
 pip install -r requirements.txt
 ```
 
+## Install QT Advanced Docking System package
+Run following command in the top directory of downloaded source code
+
+### On Windows
+```commandline
+pip install https://d3c6e16xufx1gb.cloudfront.net/wheels/PySide6_QtAds-4.2.1.2.dev0-cp38-abi3-win_amd64.whl
+```
+
+### On Linux
+```commandline
+pip install https://d3c6e16xufx1gb.cloudfront.net/wheels/PySide6_QtAds-4.2.1.2.dev0-cp38-abi3-linux_x86_64.whl
+```
+
 ## Copy Solver Executables
 Download and uncompress solver executables into the top directory of downloaded source code.
 The compressed files have _**solvers**_ folder in it.
@@ -82,18 +95,19 @@ The final directory structure may look like following.
 ```
 
 ### Windows
-[solvers_windows_24.2.1_20240620.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_24.2.1_20240620.zip)
+[solvers_windows_24.3.0_20240726.zip](https://d3c6e16xufx1gb.cloudfront.net/solvers_windows_24.3.0_20240726.zip)
 
 ### Linux
-[solvers_linux_24.2.1_20240620.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_24.2.1_20240620.tar.xz)
-You can download the file on command line with cURL or wget command like following.
+[solvers_linux_24.3.0_20240726.tar.xz](https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_24.3.0_20240726.tar.xz)
 
+
+You can download the file on command line with cURL or wget command like following.
 ```commandline
-wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_24.2.1_20240620.tar.xz
+wget https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_24.3.0_20240726.tar.xz
 ```
 
 ```commandline
-curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_24.2.1_20240620.tar.xz -o solvers_linux_24.2.1_20240620.tar.xz
+curl -L https://d3c6e16xufx1gb.cloudfront.net/solvers_linux_24.3.0_20240726.tar.xz -o solvers_linux_24.3.0_20240726.tar.xz
 ```
 
 ### macOS (Apple Silicon only)

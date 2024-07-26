@@ -4,6 +4,54 @@ layout: page
 title: Release Notes
 ---
 
+# 24.3.0
+
+## New Features
+
+### BaramFlow
+* **Species Model:** A species model has been added.
+* **Equation Control:** Equations can now be controlled to solve or not.
+* **Energy Equation Terms:** Each term in the energy equation can be controlled to include or exclude it.
+* **Boundary Condition Copy:** You can now copy a boundary condition to other boundary conditions.
+
+### BaramMesh
+* **Expected Cell Size Display:** The expected cell size is now shown in the refinement dialog.
+* **Slice Cut Tool:** A Slice Cut tool has been added to the display control.
+
+## Improvements
+
+### BaramFlow
+* **User-Defined Scalar Calculation:** User-defined scalar calculations converge better in steady-state cases.
+* **Output Display:** Output from the decomposePar command is now displayed in the console window.
+* **Viscosity Validation:** A Viscosity value of zero is now rejected in the material dialog.
+* **Windows Docking:** Windows docking has become more versatile and convenient thanks to the [*QT Advanced Docking System*](https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System).
+
+### BaramMesh
+* **Feature Angle Threshold:** The default value for the Feature Angle Threshold has changed from 120 to 60.
+* **Export Dialog Enhancement:** The Export dialog now allows separate configuration of project name and location.
+
+## Bug Fixes
+
+### BaramFlow
+* **User-Defined Scalars:** The defaultFieldValues were incorrectly configured for user-defined scalars during section initialization.
+* **Residual Value Display:** Residual values larger than 1 were clipped and not shown.
+* **Energy Relaxation Factor:** The default value for the relaxation factor of Energy has been changed to 1.0 from 0.9.
+* **Locale Compatibility:** BaramFlow now works correctly in locales where a comma (,) is used as the decimal separator.
+* **OpenMPI Compatibility:** BaramFlow no longer has trouble working with the latest Homebrew OpenMPI version 5.0.3.
+
+### BaramMesh
+* **Mesh Quality Calculation:** Mesh quality information is now correctly calculated even if a boundary layer is not added.
+* **Cell Count Update:** The cell count is now updated after mesh generation in each step.
+* **Boundary Type Compatibility:** The interface can now be used as a cyclic boundary, even if the face ordering of the two boundaries is different.
+* **Feature Edge Refinement:** Feature edge refinement is now applied only to cells that the feature edge penetrates (within 0.01m from the feature edge).
+* **STL Splitter Fix:** The STL splitter now handles cases where some faces have an area of zero.
+* **Boundary Layer Group Configuration:** The boundary layer group configuration no longer gets corrupted when both boundary layer group configuration and advanced configuration are modified.
+
+## Known Issues
+
+### BaramFlow
+* **Species Model:** Mixed Density of 
+
 # 24.2.0
 
 ## New Features
@@ -104,7 +152,7 @@ title: Release Notes
 ### BaramMesh
 * Fixed a bug where castellation failed when a sphere was within a HEX6 bounding box
 
-## Know Issues
+## Known Issues
 
 ### BaramFlow
 * Monitoring for a point that is not snapped on a surface is not working in multi-region case
@@ -130,7 +178,7 @@ title: Release Notes
 * [Mesh] Export failed if HEX6 was used as cell zone boundary
 * [Mesh] Castellation failed if imported volume was configured as cell zone while its surface was configured as None.
 
-## Know Issues
+## Known Issues
 * [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
 
 ----
@@ -156,7 +204,7 @@ title: Release Notes
 * [Flow] Exception occurred when text is typed in the filter input in boundary conditions
 
 
-## Know Issues
+## Known Issues
 * [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
 
 ----
@@ -177,7 +225,7 @@ title: Release Notes
 * [Flow][Mesh] Window could be out of sight when display configuration is changed in multiple screen environment
 
 
-## Know Issues
+## Known Issues
 * [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
 * [Flow] Text filter in boundary condition list is not working
 
@@ -200,7 +248,7 @@ title: Release Notes
 * [Flow] "divSchemes" dictionary for Multi-phase(VoF) was not configured properly
 * [Mesh] Default values of a few parameters have been changed
 
-## Know Issues
+## Known Issues
 * [Flow] Monitoring for a point that is not snapped on a surface is not working in multi-region case
 
 ----
@@ -225,7 +273,7 @@ title: Release Notes
 * Initialization Parameters were not applied even though Initialization button was clicked if user stayed in the page
 * Atmospheric Wall was not shown in wall boundary condition
 
-## Know Issues
+## Known Issues
 * Monitoring for a point that is not snapped on a surface is not working in multi-region case
 * "save as" menu is not stable yet. Copy the project project manually
 
@@ -244,7 +292,7 @@ title: Release Notes
 * mesh transformation is working for decomposed mesh
 * Fixed: Rolling menus from Toolbar displayed on the other display in multiple monitor configuration
 
-## Know Issues
+## Known Issues
 * Monitoring for a point that is not snapped on a surface is not working 
 * Batch Processing is not implemented yet
 * "save as" menu is not stable yet. Copy the project project manually
@@ -269,7 +317,7 @@ title: Release Notes
 ## Bug Fixes
 * Global fvSolution was not created in multi-region case
 
-## Know Issues
+## Known Issues
 * Monitoring for a point that is not snapped on a surface is not working 
 * Batch Processing is not implemented yet
 * Rolling menus from Toolbar can be shown on the other display in multiple monitor configuration
@@ -288,7 +336,7 @@ title: Release Notes
 ## Bug Fixes
 * Residual chart was not displayed when a project is opened
 
-## Know Issues
+## Known Issues
 * Monitoring for a point that is not snapped on a surface is not working 
 * Batch Processing is not implemented yet
 * Rolling menus from Toolbar can be shown on the other display in multiple monitor configuration
@@ -301,7 +349,7 @@ title: Release Notes
 * Case loading failed when sliding mesh (MRF) does not have static boundaries
 * "decompose" showed errors on some meshes
 
-## Know Issues
+## Known Issues
 * Monitoring for a point that is not snapped on a surface is not working 
 * Batch Processing is not implemented yet
 * Rolling menus from Toolbar can be shown on the other display in multiple monitor configuration
@@ -321,7 +369,7 @@ title: Release Notes
 * Dialog window to ask to save was popped up even when configuration was not changed
 * `.gz` compressed polyMesh was not handled
 
-## Know Issues
+## Known Issues
 * Monitoring for a point that is not snapped on a surface is not working 
 * Batch Processing is not implemented yet
 * Rolling menus from Toolbar can be shown on the other display in multiple monitor configuration
@@ -343,7 +391,7 @@ title: Release Notes
 * Turbulent intensity was set in percentage in the dictionaries
 * Velocity Inlet Boundary Condition Dialog was not opened
 
-## Know Issues
+## Known Issues
 * Monitoring for a point that is not snapped on a surface is not working 
 * Batch Processing is not implemented yet
 
