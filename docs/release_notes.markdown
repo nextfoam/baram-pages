@@ -50,7 +50,7 @@ title: Release Notes
 ## Known Issues
 
 ### BaramFlow
-* **Species Model:** Mixed Density of 
+* **Species Model:** Density is not calculated if energy model is not turned on.
 
 # 24.2.0
 
