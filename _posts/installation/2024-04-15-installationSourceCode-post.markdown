@@ -48,6 +48,7 @@ category : installation
     sudo git clone https://github.com/nextfoam/baram.git
     cd baram
     sudo pip3 install --ignore-installed -r requirements.txt
+    sudo pip3 install https://d3c6e16xufx1gb.cloudfront.net/wheels/PySide6_QtAds-4.2.1.2.dev0-cp38-abi3-linux_x86_64.whl
     ```
 
 - Build latest `NextFOAM-CFD` solver according to the instruction at [*https://github.com/nextfoam/nextfoam-cfd*](https://github.com/nextfoam/nextfoam-cfd)
@@ -82,10 +83,11 @@ category : installation
     ```
     sudo vi /opt/baram/baramMesh.sh
     ```
-    Comment out `source`
+    Comment out `source` and change `python` to `python3`
     
     ```
     #source venv/bin/activate
+    python3 -m baramMesh.main
     ```
 
 - Edit `baramFlow.sh`
@@ -93,10 +95,11 @@ category : installation
     sudo vi /opt/baram/baramFlow.sh
     ```
 
-    Comment out `source`
+    Comment out `source` and change `python` to `python3`
     
     ```
     #source venv/bin/activate
+    python3 -m baramFlow.main
     ```
 
 ## Install `paraview`
