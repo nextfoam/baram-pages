@@ -51,6 +51,8 @@ title: Release Notes
 
 ### BaramFlow
 * **Species Model:** Density is not calculated if energy model is not turned on.
+* **Cell Zone:** Cell Zone configuration is not working
+
 
 # 24.2.0
 
