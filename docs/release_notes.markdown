@@ -4,6 +4,18 @@ layout: page
 title: Release Notes
 ---
 
+# 24.3.1
+
+## Bug Fixes
+
+### BaramFlow
+* **Cell Zone:** Cell Zone configuration is now working
+
+## Known Issues
+
+### BaramFlow
+* **Species Model:** Density is not calculated if energy model is not turned on.
+
 # 24.3.0
 
 ## New Features
