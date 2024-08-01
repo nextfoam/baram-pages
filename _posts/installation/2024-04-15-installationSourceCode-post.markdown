@@ -23,7 +23,7 @@ category : installation
 
 ## Install BARAM, NextFOAM, OpenMPI
 
-    OpenMPI is installed in the `/opt/openmpi-4.1.6` with `--prefix` option at `configure` command
+- OpenMPI is installed in the `/opt/openmpi-4.1.6` with `--prefix` option at `configure` command
 
     ```
     sudo apt-get -y update 
