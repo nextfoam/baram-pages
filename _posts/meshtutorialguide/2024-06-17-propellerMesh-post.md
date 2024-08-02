@@ -82,7 +82,7 @@ Local refinement를 위한 영역을 만들기 위해 Add 버튼을 눌러 실�
 + Radius : 0.16
 
 
-Geometry에서 cellZone_surface 면을 마우스 오른쪽 버튼으로 선택하고 Edit/View를 눌러 Type을 Interface - Non-Conformal로 바꾸어 준다.
+Geometry에서 cellZone_surface 면을 마우스 오른쪽 버튼으로 선택하고 Edit/View를 눌러 Type을 None으로 바꾸어 준다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/propeller/refine.png"  >
