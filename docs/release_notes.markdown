@@ -54,7 +54,7 @@ title: Release Notes
 ### BaramMesh
 * **Mesh Quality Calculation:** Mesh quality information is now correctly calculated even if a boundary layer is not added.
 * **Cell Count Update:** The cell count is now updated after mesh generation in each step.
-* **Boundary Type Compatibility:** The interface can now be used as a cyclic boundary, even if the face ordering of the two boundaries is different.
+* **Boundary Type Compatibility:** Interface can be used as cyclic boundaries. The boundary pair of an interface now have same face ordering. The order was different in some cases before.
 * **Feature Edge Refinement:** Feature edge refinement is now applied only to cells that the feature edge penetrates (within 0.01m from the feature edge).
 * **STL Splitter Fix:** The STL splitter now handles cases where some faces have an area of zero.
 * **Boundary Layer Group Configuration:** The boundary layer group configuration no longer gets corrupted when both boundary layer group configuration and advanced configuration are modified.
