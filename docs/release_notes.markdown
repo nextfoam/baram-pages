@@ -15,6 +15,7 @@ title: Release Notes
 
 ### BaramFlow
 * **Species Model:** Density is not calculated if energy model is not turned on.
+* **Section Initialization:** Volume fraction configuration in section initialization is not working
 
 # 24.3.0
 
@@ -64,6 +65,7 @@ title: Release Notes
 ### BaramFlow
 * **Species Model:** Density is not calculated if energy model is not turned on.
 * **Cell Zone:** Cell Zone configuration is not working
+* **Section Initialization:** Volume fraction configuration in section initialization is not working
 
 
 # 24.2.0
