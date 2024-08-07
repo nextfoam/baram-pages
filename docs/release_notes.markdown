@@ -16,6 +16,7 @@ title: Release Notes
 ### BaramFlow
 * **Species Model:** Density is not calculated if energy model is not turned on.
 * **Section Initialization:** Volume fraction configuration in section initialization is not working
+* **Monitoring:** Monitoring is not working for primary material
 
 # 24.3.0
 
