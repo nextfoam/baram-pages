@@ -4,6 +4,20 @@ layout: page
 title: Release Notes
 ---
 
+# 24.3.2
+
+## Bug Fixes
+
+### BaramFlow
+* **Section Initialization:** Volume fraction configuration in section initialization was not working
+* **Monitoring:** Monitoring was not working for primary material
+
+## Known Issues
+
+### BaramFlow
+* **Species Model:** Density is not calculated if energy model is not turned on.
+
+
 # 24.3.1
 
 ## Bug Fixes
@@ -17,6 +31,7 @@ title: Release Notes
 * **Species Model:** Density is not calculated if energy model is not turned on.
 * **Section Initialization:** Volume fraction configuration in section initialization is not working
 * **Monitoring:** Monitoring is not working for primary material
+
 
 # 24.3.0
 
