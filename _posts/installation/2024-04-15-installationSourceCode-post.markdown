@@ -115,10 +115,12 @@ sudo apt-get install paraview
 ## Create desktop shortcuts
 
 - Create `Desktop` directory under `/etc/skel` for all users
+- 
 
 ```
 sudo mkdir -p /etc/skel/Desktop
-    ```
+```
+
 - Create `baramMesh.desktop` under `/etc/skel/Desktop`
 
 ```
@@ -136,6 +138,7 @@ Terminal=false
 Type=Application
 Categories=Science
 ```
+
 - Create `baramFlow.desktop` under `/etc/skel/Desktop`
 
 ```
@@ -155,6 +158,7 @@ Categories=Science
 ```
     
 Change permission of shortcuts
+
 ```
 sudo chmod +x /etc/skel/Desktop/*
 ```
