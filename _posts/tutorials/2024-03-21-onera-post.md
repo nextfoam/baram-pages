@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 22. ONERA M6 Transonic Wing - density based solver
+title: 23. ONERA M6 Transonic Wing - density based solver
 category: tutorials
 ---
 
