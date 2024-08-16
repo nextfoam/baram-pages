@@ -39,7 +39,7 @@ For installation from the source code, please refer to [Installation]({{ site.ba
 
 Binary installation package for 64-bit windows and disk image for macOS with Apple Silicon are here for convenience.
 
-[Download BARAM v24.3.2 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.3.2-setup.exe){: .btn .btn-purple .tex1-center .fs-5 onclick="trackDownload('BARAM-24.3.2-setup.exe')"}
+[Download BARAM v24.3.3 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.3.3-setup.exe){: .btn .btn-purple .tex1-center .fs-5 onclick="trackDownload('BARAM-24.3.3-setup.exe')"}
 
 
 **NOTE: For macOS, [*open-mpi*](https://formulae.brew.sh/formula/open-mpi) Homebrew Formula should be installed in advance.**

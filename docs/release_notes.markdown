@@ -4,6 +4,22 @@ layout: page
 title: Release Notes
 ---
 
+# 24.3.3
+
+## Bug Fixes
+
+### BaramFlow
+* **Save As:** Some configuration could not be changed after saving by *Save As*.
+
+### BaramMesh
+* **Export:** Application got stuck or missed *polyMesh* folder while exporting.
+
+## Known Issues
+
+### BaramFlow
+* **Species Model:** Density is not calculated if energy model is not turned on.
+
+
 # 24.3.2
 
 ## Bug Fixes
@@ -16,6 +32,10 @@ title: Release Notes
 
 ### BaramFlow
 * **Species Model:** Density is not calculated if energy model is not turned on.
+* **Save As:** Some configuration cannot be changed after saving by *Save As*. The problem goes away once the application exits and restarts.
+
+### BaramMesh
+* **Export:** Application gets stuck or misses *polyMesh* folder while exporting. To add boundary layers prevents this problem.
 
 
 # 24.3.1
