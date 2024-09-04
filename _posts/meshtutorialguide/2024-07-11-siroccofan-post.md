@@ -55,10 +55,7 @@ Geometry에서 interface-stat 면을 마우스 오른쪽 버튼으로 선택하�
 
 Geometry의 최종 결과는 다음 그림과 같다.
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/geom1.png"  >
-    <br> 최종 형상
-</p>
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/geom1.png "Surface/Feature Refinement 설정")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/geom1.png){:target="_blank"}|
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
 
