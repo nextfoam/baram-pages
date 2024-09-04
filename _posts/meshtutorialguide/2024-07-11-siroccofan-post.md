@@ -53,7 +53,7 @@ Geometry에서 interface-stat 면을 마우스 오른쪽 버튼으로 선택하�
     <br> Add cell zone geometry
 </p>
 
-Geometry의 최종 결과는 다음 그밀과 같다.
+Geometry의 최종 결과는 다음 그림과 같다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/geom1.png"  >
