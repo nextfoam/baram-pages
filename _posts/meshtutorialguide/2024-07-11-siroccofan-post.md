@@ -55,7 +55,7 @@ Geometry에서 interface-stat 면을 마우스 오른쪽 버튼으로 선택하�
 
 Geometry의 최종 결과는 다음 그림과 같다.
 
-|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/geom1.png "Surface/Feature Refinement 설정")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/geom1.png){:target="_blank"}|
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/geom1.png "Geometry 설정")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/geom1.png){:target="_blank"}|
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
 
@@ -77,6 +77,8 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 ## 3. 배경격자(Base Grid)
 
 Number of Cells per Direction에 100, 50, 50를 입력하고 Generate 버튼을 누른다. Display Control에 boundary들이 생성되고 격자 모양을 확인할 수 있다.
+
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/baseGrid.png "base grid 설정")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/baseGrid.png){:target="_blank"}|
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/baseGrid.png"  >
