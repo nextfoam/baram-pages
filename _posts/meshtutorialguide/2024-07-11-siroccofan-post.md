@@ -80,10 +80,6 @@ Number of Cells per Direction에 100, 50, 50를 입력하고 Generate 버튼을 
 
 |[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/baseGrid.png "base grid 설정")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/baseGrid.png){:target="_blank"}|
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/siroccoFan/baseGrid.png"  >
-    <br> base grid 설정
-</p>
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
 
