@@ -57,7 +57,7 @@ Porous 영역은 Add 버튼을 눌러 Hex를 이용해서 만든다. Hex의 설�
 * Max. : (0.3 0.2 0.9)
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/hex.png"><br> Porous 영역 생성
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/hex.png"><br>
 </p> 
 
 Porous 영역을 생성하면 그 하위에 porousZone_surface라는 것이 생성되는데 이것의 Type을 None으로 설정한다.
@@ -65,7 +65,7 @@ Porous 영역을 생성하면 그 하위에 porousZone_surface라는 것이 생�
 최종적인 Geometry 리스트는 다음 그림과 같이 된다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/geom.png"><br> Geomerty 설정
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/geom.png"><br> 
 </p> 
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
@@ -76,7 +76,7 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 상단 (+) 버튼을 눌러 영역을 생성하고 그래픽 창에 연두색으로 나타나는 선의 교차점을 마우스로 이동하여 유체 영역에 위치시킨 후 Add 버튼을 클릭하면 설정이 완료된다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/region.png"><br> Region 설정
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/region.png"><br> 
 </p> 
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
@@ -87,7 +87,7 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 격자수를 60, 40, 120으로 설정한다. Generate 버튼을 누르면 배경 격자가 생성된다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/baseGrid.png"><br> Base Grid 설정
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/baseGrid.png"><br> 
 </p> 
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
@@ -112,7 +112,7 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 Configuration에서 (+)를 눌러 다음과 같이 설정한다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/blayer.png"><br> Boundary Layer Configuration
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/blayer.png"><br> 
 </p> 
 
 * Number of Layers : 5
