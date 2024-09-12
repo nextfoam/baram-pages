@@ -18,8 +18,8 @@ category: tutorials
 + 난류 모델 : $Realizable$ $k-\epsilon$ model
 + 밀도 : 1000 $kg/m^3$
 + 점성 계수 : 0.001 $kg/ms$
-+ 프로펠러 회전 수 : 1432 RPM
-+ 입구 속도 : 5 m/s
++ 프로펠러 회전 수 : 1432 $RPM$
++ 입구 속도 : 5 $m/s$
 
 ## 2. 프로그램의 구동
 
@@ -81,10 +81,10 @@ Sliding Mesh를 선택하고 아래 값들을 입력한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/propeller/interface.png"><br>
 </p>
 
-+ propeller, stem : Wall
++ propeller, propellerStem : Wall
     + Velocity Condition : Moving Wall
 
-+ wall : Wall
++ far_surface : Wall
     + Velocity Condition : Slip
 
 + inlet : Velocity Inlet
