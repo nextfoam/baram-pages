@@ -31,10 +31,7 @@ category: mesh
     <br> import stl files
 </p>
 
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-geom.png"  >
-    <br> 형상
-</p>
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-geom.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-geom.png){:target="_blank"}|
 
 체적이 있는 AMI, desk, fan은 AMI_surface_0, desk_surface_0, fan_surface_0라는 면이 추가로 생성되었다.
 
