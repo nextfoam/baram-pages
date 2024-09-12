@@ -121,7 +121,7 @@ fan과 AMI에 격자를 밀집시키기 위해 레벨 3을 사용하고 desk는 
 Feature Snapping의 Feature Snap Type을 implicit으로 설정한다. 나머지 설정은 디폴트를 사용하고 Snap 버튼을 누른다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/cavity/cavity-snap.png"><br>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-snap.png"><br>
 </p>
 
 ## 6. 경계층격자(Boundary Layer)
