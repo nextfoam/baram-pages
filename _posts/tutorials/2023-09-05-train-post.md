@@ -139,10 +139,10 @@ Reference Value은 공력계수를 계산할 때 사용된다. 이 문제는 실
 
 + Velocity : (111.11 0 0)
 + Pressure : 0
++ Temperature : 300
 + Scale of velocity : 111.11  
 + Turbulent Intensity : 1
 + Turbulent Viscosity Ratio : 10
-+ Temperature : 300
 
 값을 입력하고 하단에 Initialize 버튼을 클릭한다. 그 후, File - Save 버튼을 클릭하여 case 파일을 저장한다.
 
