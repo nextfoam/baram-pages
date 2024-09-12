@@ -7,7 +7,7 @@ category: mesh
 
 # Rotating Fan In Room
 
-## * [형상 파일](https://drive.google.com/file/d/1R3UNNL2LdiWBOziU7s-_M1gecTOwwGz7/view?usp=sharing) 
+## * [형상 파일](https://drive.google.com/file/d/1Om4XvnHL5X1ck6v6JQ2PWTik_nZRK0Jv/view?usp=sharing) 
 
 ## 개요 
 
@@ -23,7 +23,7 @@ category: mesh
 
 ## 1. 형상정의 (Geometry)
 
-형상은 주어진 6개의 stl 파일을 사용한다. 하단 탭에서 Import - Select를 선택하고 6개의 stl 파일을 선택한다.
+형상은 주어진 5개의 stl 파일을 사용한다. 하단 탭에서 Import - Select를 선택하고 5개의 stl 파일을 선택한다.
 
 
 <p align='center'>
@@ -31,23 +31,19 @@ category: mesh
     <br> import stl files
 </p>
 
+desk라는 볼륨에 desk_surface라는 면이 생기고, fan이라는 볼륨에 fan_surface라는 면이 생긴다. room과 door와 outlet이 하나의 볼륨을 구성하기 때문에 outlet이라는 볼륨에 outlet_surface, door, room이라는 면이 생긴다.
+
+fan 주위에 cell zone과 interface면을 만들기 위해 실린더를 생성한다. 
+
+Add 버튼을 눌러 Cylinder를 선택한다. Type은 CellZone을 선택한다.
+
+Axis Point1은 (-3 2 2.3)을, Axis Point2는 (-3 2 2.8)을, Radius는 0.8을 입력한다.
+
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-cylinder.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-cylinder.png){:target="_blank"}|
+
+Cylinder_1_surface를 선택하고 마우스 오른쪽 버튼을 눌러 Edit/View를 선택한다. Type에 Interface와 Non-Conformal을 선택한다.
+
 |[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-geom.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-geom.png){:target="_blank"}|
-
-체적이 있는 AMI, desk, fan은 AMI_surface_0, desk_surface_0, fan_surface_0라는 면이 추가로 생성되었다.
-
-### Geometry 속성 설정
-
-필요한 항목을 마우스 오른쪽 버튼으로 선택하고 Edit를 누르면 설정창이 나타나다.
-
-+ AMI : 내부를 Cell zone으로 만들기 위해 CellZone을 선택한다.
-  + AMI_surface_0 : cell zone 외곽에 2개의 면을 만들기 위해 interface - Non-Conformal을 선택한다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-cellZone.png"  >, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-interface.png"  >
-    <br> AMI Geometry 속성 설정
-</p>
-
-+ 나머지는 디폴트로 설정한다.
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
 
@@ -79,23 +75,23 @@ Number of Cells per Direction에 65, 55, 30을 입력하고 Generate 버튼을 �
 Next 버튼을 눌러 다음 단계로 넘어간다.
 
 
-
 ## 4. 격자세분화(Castellation)
 
-fan과 AMI에 격자를 밀집시키기 위해 레벨 3을 사용하고 desk는 레벨 1을 사용한다. 나머지는 따로 설정하지 않고 디폴트인 0을 사용한다.
+fan, desk 면과 cylinder 볼륨에 격자 레벨을 설정한다.
 
 ### surface/Feature Refinement
 
-(+)를 눌러 항목을 추가한다. AMI, desk, fan, desk에 대해 다음과 같이 설정한다.
+(+)를 눌러 항목을 추가한다. fan_surface에 surface level은 3과 4를 사용한다. feature level은 3을 사용한다.
+(+)를 눌러 항목을 추가한다. desk_surface에 surface와 feature 모두 1을 사용한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-ami.png"  >, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-desk.png"  >, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-fan.png"  >
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-ami.png"  >, <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-desk.png"  >
     <br> Surface/Feature Refinement 설정
 </p>
 
 ### Volume Refinement
 
-(+)를 눌러 항목을 추가한다. AMI의 레벨을 3으로 설정한다.
+(+)를 눌러 항목을 추가한다. Cylinder_1의 레벨을 3으로 설정한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/room/fanInRoom-amiVol.png"  >
