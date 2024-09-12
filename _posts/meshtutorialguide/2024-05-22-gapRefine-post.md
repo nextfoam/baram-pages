@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 12. Gap Refinement
+title: 11. Gap Refinement
 category: mesh
 ---
 
