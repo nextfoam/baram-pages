@@ -111,7 +111,7 @@ Discretization Schemes에서 Flow는 Second Order Upwind를 사용한다.
 나머지는 모두 디폴트를 사용한다.
 
 <p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/RAE2822/rae-nume.png" > 
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/rae-nume.png" > 
     <br> 수치해석 조건
 </p>
 
