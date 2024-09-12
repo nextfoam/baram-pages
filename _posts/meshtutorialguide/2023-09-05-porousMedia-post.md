@@ -6,7 +6,7 @@ category: mesh
 
 # 1) Porous Media 개요
 
-### * [형상 파일 링크](https://drive.google.com/file/d/1rgOqHl5q4DaQmKZZX5WJ3TDKoKi2QXE0/view?usp=sharing) 
+### * [형상 파일 링크](https://drive.google.com/file/d/1Jlqrgd5BrKkAfhzNkybtb0cF3zSEAFfA/view?usp=sharing) 
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/intro.png"><br> 형상 및 유동장
@@ -34,13 +34,17 @@ Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolat
 
 덕트의 형상은 stl 파일을 사용한다.
 
-Import 버튼을 눌러 duct.stl 파일을 선택하고 'Split Surface' 옵션을 선택하여 경계면을 구분한다. 하나의 면으로 되어있는 형상 파일이 feature angle에 따라 20개의 면으로 나누어진다.
+Import 버튼을 눌러 porousMedia.stl 파일을 선택하고 'Split Surface' 옵션을 선택하여 경계면을 구분한다. 하나의 면으로 되어있는 형상 파일이 feature angle에 따라 7개의 면으로 나누어진다.
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/import.png"><br> 덕트 파일 불러오기
 </p>
 
-20개의 면들 중에 입구와 출구를 구분하기 쉽게 이름을 바꿔준다. 그래픽창에서 마우스로 입구를 클릭하면 Geometry 리스트에서 해당 면이 활성화된다. 마우스 오른쪽 버튼으로 Edit를 누르고 이름을 inlet, outlet으로 바꾸어 준다.
+<p style="text-align: center">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/split.png"><br> 덕트 파일 불러오기
+</p>
+
+7개의 면들 중에 입구와 출구를 구분하기 쉽게 이름을 바꿔준다. 그래픽창에서 마우스로 입구를 클릭하면 Geometry 리스트에서 해당 면이 활성화된다. 마우스 오른쪽 버튼으로 Edit를 누르고 이름을 inlet, outlet으로 바꾸어 준다.
 
 Porous 영역은 Add 버튼을 눌러 Hex를 이용해서 만든다. Hex의 설정은 다음과 같다.
 
@@ -56,7 +60,7 @@ Porous 영역은 Add 버튼을 눌러 Hex를 이용해서 만든다. Hex의 설�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/hex.png"><br> Porous 영역 생성
 </p> 
 
-Porous 영역을 생성하면 그 하위에 Hex_1_surface라는 것이 생성되는데 이것의 Type을 None으로 설정한다.
+Porous 영역을 생성하면 그 하위에 porousZone_surface라는 것이 생성되는데 이것의 Type을 None으로 설정한다.
 
 최종적인 Geometry 리스트는 다음 그림과 같이 된다.
 
@@ -98,25 +102,8 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 
 # 6) Snap
 
-설정은 다음과 같이 변경한다.<br>
+모든 설정은 디폴트 값을 사용한다.
 
-* Smoothing for Surface : 1
-
-* Smoothing for Internal : 3
-
-* Mesh Displacement Relaxation : 30
-
-* Snapping Relaxation : 15
-
-* Tolerance : 1
-
-* Concave Angle (degree) : 45
-
-* Min.Area Ratio : 0.3
-
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/snap.png"><br> snap 설정
-</p> 
 
 # 7) Boundary Layer
 
@@ -128,37 +115,28 @@ Configuration에서 (+)를 눌러 다음과 같이 설정한다.
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/blayer.png"><br> Boundary Layer Configuration
 </p> 
 
-* Number of Layers : 3
+* Number of Layers : 5
 
-* Thickness Model Specification : Final and Expansion
+* Thickness Model Specification : First and Expansion
 
 * Size Specification : Relative
 
-* First Layer Thickness : 0.3
+* First Layer Thickness : 0.15
 
 * Expansion Ratio : 1.2
 
-* Min. Total Thickness : 0.1
+* Min. Total Thickness : 0.3
 
 * Boundary : 모든 덕트 벽면 선택
 
 나머지는 Dafault 설정 그대로 적용하고 apply 버튼을 누른다.
 
+|[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/layer.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/layer.png){:target="_blank"}|
+
 작업이 끝나면 Next 버튼을 눌러 다음 단계로 넘어간다.
-<br/>
+
   
 # 8) Export
 
 마지막으로 porous라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더가 생성된다.
 
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/finalMesh1.png"><br> inlet 근처 격자
-</p> 
-
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/finalMesh3.png"><br> outlet 근처 격자
-</p> 
-
-<p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/finalMesh2.png"><br> 전체 격자
-</p> 
