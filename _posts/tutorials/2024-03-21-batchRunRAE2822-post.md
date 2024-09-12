@@ -58,9 +58,6 @@ Batch Run을 위해 필요한 사용자 변수는 받음각, 속도, 항력방�
 
 + AOA : 받음각, 변수로 사용되지는 않지만 다른 변수르 계산할 때 사용된다.
 + UX, UY : x,y 방향 속도, 초기조건 설정에 사용된다.
-+ DRAGDIR_X : farfield Riemann 경계조건의 flow direction과 monitors의 drag direction에 사용된다.
-+ DRAGDIR_Y : monitors의 drag direction에 사용된다.
-+ LIFTDIR_X, LIFTDIR_Y : monitors의 lift direction에 사용된다.
 
 [Solution - Run]으로 가서 변수를 선언한다.
 
@@ -80,8 +77,12 @@ Batch Run을 위해 필요한 사용자 변수는 받음각, 속도, 항력방�
   + Wall - No slip, adiabatic 
 
 * farfield_in, farfield_out
-  + Far-Field Riemann 
-  + Flow Direction : X-Component는 $DRAGDIR_X, Y-Component는 $DRAGDIR_Y 
+  + Far-Field Riemann
+  + Flow Direction
+      + Specification Method : AOA and AOA
+      + Direction at AOA=0, AOS=0 : Drag direction (1 0 0), Lift direction (0 1 0)
+      + Angle of Atteck : $AOA
+      + Angle of Sideslip : 0 
   + Mach Number : 1.5
   + Static Pressure : 100000
   + Static Temperature : 288  
@@ -105,7 +106,7 @@ Batch Run을 위해 필요한 사용자 변수는 받음각, 속도, 항력방�
 
 Formulation은 Implicit, Flux Type은 Roe-FDS를 사용한다. Entropy Fix Coefficient는 0.5를 사용한다. 
 
-Discretization Schemes에서 Flow와 Turbulence 모두 Second Order Upwind를 사용한다.
+Discretization Schemes에서 Flow는 Second Order Upwind를 사용한다.
 
 나머지는 모두 디폴트를 사용한다.
 
@@ -118,13 +119,17 @@ Discretization Schemes에서 Flow와 Turbulence 모두 Second Order Upwind를 �
 
 Add - Forces를 선택하고 다음과 같이 설정한다.
 
-+ Lift Direction : ($LIFTDIR_X, $LIFTDIR_Y, 0)
-+ Drag Direction : ($DRAGDIR_X, $DRAGDIR_Y, 0)
++ Flow Direction
+    + Specification Method : AOA and AOA
+    + Direction at AOA=0, AOS=0 : Drag direction (1 0 0), Lift direction (0 1 0)
+    + Angle of Atteck : $AOA
+    + Angle of Sideslip : 0 
++ Center of Rotation : (0 0 0)
 + Boundaries : wing
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/batchRun-RAE2822/batchRAE-monitor.png" > 
-    <br> 수치해석 조건
+    <br>
 </p>
 
 ## 12. Initialization
