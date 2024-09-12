@@ -7,7 +7,7 @@ category: mesh
 
 # Propeller
 
-## * [형상 파일](https://drive.google.com/file/d/1EOmm_xAJfkWAEenqRkcstEF41we8hv58/view?usp=sharing) 
+## * [형상 파일](https://drive.google.com/file/d/1Y0-PdoUDE6MFPLRlPVwE1Q54BMvOkn2N/view?usp=sharing) 
 
 ## 개요 
 
@@ -23,8 +23,7 @@ category: mesh
 
 형상은 주어진 propeller.stl, propelerStem.stl, far.stl 3개의 파일을 사용한다. far.stl은 원방경계를 위한 실린더인데 유동의 입출구가 구문되어 있지 않기 때문에 읽을 때 경계면을 분리해 주어야 한다. 
 
-하단 탭에서 Import - Select를 선택하고 propeller.stl, propellerStem.stl 파일을 선택한다. Geometry에서 ExportfromBlender... 라고 되어 있는 면을 마우스 오른쪽 버튼으로 선택하고 Edit/View를 눌러 이름을 propeller와 stem으로 바꾸어 준다.
-
+하단 탭에서 Import - Select를 선택하고 propeller.stl, propellerStem.stl 파일을 선택한다. 
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/propeller/importSTL.png"  >
@@ -45,11 +44,11 @@ Feature Angle이 디폴트인 60인 상태에서 입구, 출구, 원방경계의
     <br> split surface
 </p>
 
-Geometry에서 zone0_surface 면을 마우스 오른쪽 버튼으로 선택하고 Edit/View를 눌러 이름을 far로 바꾸어 준다.
+Geometry에서 far_surface 면을 마우스 오른쪽 버튼으로 선택하고 Edit/View를 눌러 이름을 far로 바꾸어 준다.
 
-Geometry에서 zone0_surface1 면을 마우스 오른쪽 버튼으로 선택하고 Edit/View를 눌러 이름을 inlet으로 바꾸어 준다.
+Geometry에서 far_surface1 면을 마우스 오른쪽 버튼으로 선택하고 Edit/View를 눌러 이름을 inlet으로 바꾸어 준다.
 
-Geometry에서 zone0_surface2 면을 마우스 오른쪽 버튼으로 선택하고 Edit/View를 눌러 이름을 outlet으로 바꾸어 준다.
+Geometry에서 far_surface2 면을 마우스 오른쪽 버튼으로 선택하고 Edit/View를 눌러 이름을 outlet으로 바꾸어 준다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/propeller/geom.png"  >
@@ -173,7 +172,7 @@ propeller와 stem에 경계층 격자를 만든다. Configuration은 다음과 �
 + First Layer Thickness : 0.1
 + Expansion Ratio : 1.2
 + Min. Total Thickness : 0.2
-+ Boundary : propeller, stem
++ Boundary : propeller, propellerStem
 
 Advanced Configuration의 Static Analysis of Starting Mesh의 Feature Angle Threshold를 60으로 설정한다. 나머지는 디폴트 값을 사용한다.
 
