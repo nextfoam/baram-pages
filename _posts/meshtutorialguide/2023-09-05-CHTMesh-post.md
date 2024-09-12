@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 04. CHT
-category: mesh
+category: _mesh
 ---
 
 # 개요
