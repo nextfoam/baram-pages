@@ -100,7 +100,7 @@ Batch Run을 위해 필요한 사용자 변수는 받음각, 속도, 항력방�
 + Area, Length : 0.3048(에어포일의 길이)
 + Density : 1.21(farfield condition)
 + Pressure : 100000(farfield condition)
-+ Velocity : 288(farfield condition)
++ Velocity : 510.2611(farfield condition)
 
 ## 10. Numerical Conditions
 
