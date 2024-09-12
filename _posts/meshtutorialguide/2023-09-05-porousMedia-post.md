@@ -37,11 +37,11 @@ Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolat
 Import 버튼을 눌러 porousMedia.stl 파일을 선택하고 'Split Surface' 옵션을 선택하여 경계면을 구분한다. 하나의 면으로 되어있는 형상 파일이 feature angle에 따라 7개의 면으로 나누어진다.
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/import.png"><br> 덕트 파일 불러오기
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/import.png"><br> 
 </p>
 
 <p style="text-align: center">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/split.png"><br> 덕트 파일 불러오기
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/porousMedia/split.png"><br> 
 </p>
 
 7개의 면들 중에 입구와 출구를 구분하기 쉽게 이름을 바꿔준다. 그래픽창에서 마우스로 입구를 클릭하면 Geometry 리스트에서 해당 면이 활성화된다. 마우스 오른쪽 버튼으로 Edit를 누르고 이름을 inlet, outlet으로 바꾸어 준다.
