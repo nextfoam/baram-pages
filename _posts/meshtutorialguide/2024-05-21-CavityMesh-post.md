@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 11. 3D Cavity
+title: 10. 3D Cavity
 category: mesh
 ---
 
