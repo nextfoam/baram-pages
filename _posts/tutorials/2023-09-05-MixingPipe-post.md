@@ -52,7 +52,7 @@ General에서는 Time, Gravity, Operating Pressure등을 설정할 수 있다. �
 
 ## 5. Models
 
-Models에서는 turbulence, Energy를 설정할 수 있다. Multiphase, Solver type, Species 등은 launcher에서 설정한다.
+Models에서는 turbulence, Energy, Species, User-defined Scalar를 설정할 수 있다. Multiphase, Solver type 등은 launcher에서 설정한다.
 
 본 예제에서는 Standard $k-\epsilon$ 모델을 사용한다.
 
