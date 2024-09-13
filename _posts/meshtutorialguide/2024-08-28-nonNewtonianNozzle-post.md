@@ -53,7 +53,7 @@ Number of Cells per Direction에 (600 50 2)를 입력한다. snappyHexMesh는 �
 
 Generate 버튼을 누르면 Display Control에 boundary들이 생성되고 격자 모양을 확인할 수 있다.
 
-[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/baseGrid.png")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/baseGrid.png")
+[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/baseGrid.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/baseGrid.png){:target="_blank"}
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
 
@@ -62,7 +62,7 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 
 아무런 설정 변경 없이 Refine 버튼을 누른다. 완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
 
-[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/castel.png")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/castel.png")
+[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/castel.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/castel.png){:target="_blank"}
 
 작업이 완료되면 Next 버튼을 눌러 다음 단계로 넘어간다.
 
@@ -86,11 +86,12 @@ Configurations의 (+) 버튼을 눌러 다음과 같이 설정한다.
 + Min.Total Thickness : 0.3
 + Boundary : wall, wall1
 
-[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/layer-setup.png")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/layer-setup.png")
+[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/layer-setup.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/layer-setup.png){:target="_blank"}
+
 
 나머지 설정은 디폴트를 사용하고 Start 버튼을 누른다. 완료되면 아래 그림과 같이 Display Control을 통해 격자를 확인할 수 있다.
 
-[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/layer.png")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/layer.png")
+[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/layer.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/layer.png){:target="_blank"}
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
 
@@ -99,17 +100,13 @@ Next 버튼을 눌러 다음 단계로 넘어간다.
 
 축대칭 격자로 내보내기 위해 '2D Exports'에 있는 'Axi-Symmetry' 버튼을 클릭하면 다음과 같은 창이 열린다.
 
-[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/export-setup.png")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/export-setup.png")
+[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/export-setup.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/export-setup.png){:target="_blank"}
 
 + 경로와 이름을 설정한다.
 + Source Boundary에 back을 선택하고, Exposed Boundary는 front를 선택한다.
 + Axis Origin은 (0 0 0), Direction은 (-1 0 0)을 설정한다.
 
 OK 버튼을 누르면 baramFlow에서 읽을 수 있는 폴더가 생성된다. 
-
-
-
-
 
 
 마지막으로 cavityFlow이라는 이름으로 Export 하면 baramFlow v23에서 열 수 있는 Project 폴더, polyMesh 폴더 등이 생성된다.
