@@ -10,7 +10,7 @@ category: tutorials
 
 ## 1. 개요 
 
-|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/nonNewtonianNozzle/fda-intro.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/nonNewtonianNozzle/fda-intro.png){:target="_blank"}|
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/blood/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/blood/intro.png){:target="_blank"}|
 
 ‘FDA’s Nozzle Challenge’는 미국 식품의약청이 주관한 시뮬레이션 검증을 위한 벤치마크 테스트 프로그램이다. 이 프로그램에서 혈액 운반 의료기기의 특성을 반영하는 소형 노즐에 대한 실험 및 시뮬레이션 연구가 진행되었고, 관련 논문 중 Trias 등의 다음 논문을 참고했습니다.
 
