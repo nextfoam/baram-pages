@@ -25,7 +25,7 @@ _Trias, Miquel, Antonio Arbona, Joan Massó, Borja Miñano, and Carles Bona. “
 형상은 주어진 fda-nozzle-scaled.stl 파일을 사용한다. 이 파일은 x-y 평면 상의 축대칭 면을 z 방향으로 extrude한 3차원 형상이다. baramMesh에서는 축대칭 형상의 격자를 직접 만드는 것이 아니라 3차원 격자를 만들고 그 중 하나의 면을 회전시켜(extrude) 축대칭 격자로 내보내는 방식을 사용한다.
 
 하단 탭에서 Import - Select를 선택하고 stl 파일을 선택한다. 'Split Surface' 옵션을 선택하고 OK 버튼을 누르면 아래 그림의 오른쪽과 같은 창이 나타난다. 8개의 경계면이 만들어지는 것을 확인할 수 있다. OK 버튼을 클릭하면 형상을 불러온다.
-|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/importSTL.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/importSTL.png){:target="_blank"}|
+[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/importSTL.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/importSTL.png){:target="_blank"}
 
 stl 파일을 읽으면 zone0_suface, zone0_surface1, ...과 같이 번호가 매겨진 8개의 면을 확인할 수 있다. 각 면을 구분하기 위해 이름을 바꾸어 준다. 마우스 오른쪽 버튼으로 면을 선택하고 Edit/View를 클릭하여 Name을 원하는 이름으로 변경한다. Type은 디폴트인 Boundary를 그대로 사용한다.
 
@@ -40,7 +40,8 @@ Region에서는 Fluid의 영역을 지정한다.
 
 상단 (+)버튼을 클릭하면 아래 그림과 같이 변경된다. 디스플레이 창에서 마우스를 움직여 중앙점을 계산영역 내부에 위치시킨다. Add Region에서 Type을 Fluid로 그대로 두고 Add 버튼을 누르면 설정이 완료된다.
 
-[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/region.png")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/region.png")
+[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/region.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/region.png){:target="_blank"}
+
 
 
 Next 버튼을 눌러 다음 단계로 넘어간다.
