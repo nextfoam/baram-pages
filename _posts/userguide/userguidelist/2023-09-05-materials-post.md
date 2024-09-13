@@ -67,7 +67,7 @@ Sutherland 관계식은 이상기체의 점도를 온도의 함수로 표현한 
 Sutherland를 사용하면 Thermal Conductivity는 Chapman-Enskog approach로 계산하기 때문에 비활성화 된다.
 
 <h2 style="text-align: center">
-    $\kappa = \mu C_v left(1.32+1.77 \frac {R}{C_v}$
+    $\kappa = \mu C_v \left(1.32+1.77 \frac {R}{C_v} \right)$
 </h2>
 
 #### Non-Newtonian Viscosity
