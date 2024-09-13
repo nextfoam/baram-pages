@@ -4,7 +4,7 @@ title: 21. Non-Newtonian Blood Flow
 category: tutorials
 ---
 
-# 비뉴턴유체 혈관 유동 - FDA Nozzle 
+# 비뉴턴유체 혈액 유동 - FDA Nozzle 
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1fq6KLFt2mpidQchHwQ9j9mRgty5rlr3G/view?usp=sharing)
 
