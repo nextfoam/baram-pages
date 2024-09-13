@@ -62,7 +62,7 @@ Sutherland 관계식은 이상기체의 점도를 온도의 함수로 표현한 
     $\mu = \mu_0 \left ( \frac {T} {T_0} \right )^{2/3} \frac{T_{ref} + T_s}{T + T_s} = \frac{A_s T^{2/3}}{T+T_s}$
 </h2>
 
-공기의 경우 $T_{ref}$=273.15K 일 때 $\mu_{ref}$=1.716e-5, $T_s$=110.4K, $A_s$=1.458e-6 이다.
+공기의 경우 $T_0$=273.15K 일 때 $\mu_0$=1.716e-5, $T_s$=110.4K, $A_s$=1.458e-6 이다.
 
 Sutherland를 사용하면 Thermal Conductivity는 Chapman-Enskog approach로 계산하기 때문에 비활성화 된다.
 
