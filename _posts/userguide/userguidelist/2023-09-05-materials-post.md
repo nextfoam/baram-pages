@@ -79,7 +79,7 @@ Cross, Hershel-Bulkley, Carreau, Non-Newtonian-power-law 등은 비뉴턴유체(
 Cross power law 모델을 사용한다.
 
 <h2 style="text-align: center">
-    $\nu = \nu_\infin + \frac {\nu_0 - \nu_\infin}{1+(m \gamma)^n}$
+    $\nu = \nu_\inf + \frac {\nu_0 - \nu_\infin}{1+(m \gamma)^n}$
 </h2>
 
 $\nu_0$ : zero shear viscosity
