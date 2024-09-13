@@ -95,7 +95,7 @@ $\gamma$ : shear strain rate
 **Hershel-Bulkley**
 
 <h2 style="text-align: center">
-    $\nu = min (\nu_0 , \tau_0 \gamma + k \gamma^{n-1})$
+    $\nu = min (\nu_0 , \tau_0 / \gamma + k \gamma^{n-1})$
 </h2>
 
 $\nu_0$ : zero shear viscosity
