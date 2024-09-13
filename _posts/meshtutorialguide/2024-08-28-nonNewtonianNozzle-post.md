@@ -11,7 +11,7 @@ category: mesh
 
 ## 개요 
 
-|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/blood/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/blood/intro.png){:target="_blank"}|
+|[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/blood/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/blood/intro.png){:target="_blank"}|
 
 * 본 예제는 축대칭 노즐 해석을 위한 격자 생성 예제이다.
 * 미국 식품의약청이 주관한 비뉴턴유체 시뮬레이션 검증을 위한 벤치마크 테스트 프로그램인 FDA's Nozzle Challenge에서 사용된 다음 논문에 있는 형상이다.
