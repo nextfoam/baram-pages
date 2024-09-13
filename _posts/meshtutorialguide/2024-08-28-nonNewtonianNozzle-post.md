@@ -11,7 +11,7 @@ category: mesh
 
 ## 개요 
 
-|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/nonNewtonianNozzle/fda-intro.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/nonNewtonianNozzle/fda-intro.png){:target="_blank"}|
+|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/blood/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/blood/intro.png){:target="_blank"}|
 
 * 본 예제는 축대칭 노즐 해석을 위한 격자 생성 예제이다.
 * 미국 식품의약청이 주관한 비뉴턴유체 시뮬레이션 검증을 위한 벤치마크 테스트 프로그램인 FDA's Nozzle Challenge에서 사용된 다음 논문에 있는 형상이다.
@@ -26,7 +26,7 @@ _Trias, Miquel, Antonio Arbona, Joan Massó, Borja Miñano, and Carles Bona. “
 
 하단 탭에서 Import - Select를 선택하고 stl 파일을 선택한다. 'Split Surface' 옵션을 선택하고 OK 버튼을 누르면 아래 그림의 오른쪽과 같은 창이 나타난다. 8개의 경계면이 만들어지는 것을 확인할 수 있다. OK 버튼을 클릭하면 형상을 불러온다.
 
-[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/importSTL.png")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/importSTL.png")
+|[![](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/importSTL.png")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/nonNewtonianNozzle/importSTL.png")|
 
 stl 파일을 읽으면 zone0_suface, zone0_surface1, ...과 같이 번호가 매겨진 8개의 면을 확인할 수 있다. 각 면을 구분하기 위해 이름을 바꾸어 준다. 마우스 오른쪽 버튼으로 면을 선택하고 Edit/View를 클릭하여 Name을 원하는 이름으로 변경한다. Type은 디폴트인 Boundary를 그대로 사용한다.
 
