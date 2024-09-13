@@ -424,13 +424,35 @@ No Slip 조건은 벽변 점착 조건으로 속도가 (0, 0, 0)으로 설정된
 
 온도 조건은 Adiabatic, Constant Temperature, Constant Heat Flux, Convection 조건을 선택할 수 있다.
 
-* Adiabatic : 단열 조건으로 별도로 설정할 것은 없다. 복사열전달이 없는 경우는 온도 경계조건으로 zeroGradient를 사용한다. 복사열전달이 있는 경우는 복사를 포함한 열유속이 0이라는 조건을 사용한다(externalWallHeatFluxTemperature)
+**Adiabatic**
 
-* Constant Temperature : 온도가 일정한 조건이다. fixedValue 조건을 사용한다.
+단열 조건으로 별도로 설정할 것은 없다. 복사열전달이 없는 경우는 온도 경계조건으로 zeroGradient를 사용한다. 복사열전달이 있는 경우는 복사를 포함한 열유속이 0이라는 조건을 사용한다.(externalWallHeatFluxTemperature)
 
-* Constant Heat Flux : 열유속이 일정한 조건이다. externalHextFluxTemperature 조건을 사용한다.(넥스트폼이 수정)
+**Constant Temperature**
 
-* Convection : 일정한 외부 온도와 열전달계수를 사용하는 조건이다. externalHextFluxTemperature 조건을 사용한다.(넥스트폼이 수정)
+온도가 일정한 조건이다. fixedValue 조건을 사용한다.
+
+**Constant Heat Flux**
+
+열유속이 일정한 조건이다. externalHextFluxTemperature 조건을 사용한다.
+
+**Convection**
+
+일정한 외부 온도와 열전달계수를 사용하는 조건이다. externalHextFluxTemperature 조건을 사용한다. 
+
+<h2 style="text-align: center">
+    $q_{external} = h(T_{wall}-T_a)$
+</h2>
+
+벽의 두께와 열전도도를 이용하여 고체의 열저항을 설정할 수 있으며, 여러 층의 고체에 대해 각각의 두께와 열전도도를 설정할 수도 있다. 이 때 열저항은 다음의 식으로 계산된다.
+
+<h2 style="text-align: center">
+    $h = \frac {1} {\frac{1}{h_{convection}} + \Sigma \frac{l_{layer}}{\kappa_{layer}}}$
+</h2>
+
+<p align='center'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/convectionWallLayer.png"><br> Convection and wall layer 설정
+</p>
 
 ### 난류 경계조건
 
@@ -500,11 +522,13 @@ Porous Jump 조건은 계산영역 내부에 있는 cyclic 면에서 압력 변�
 
 * Darcy Coefficient, D
 
-* Inertial Coefficient, I
+* Inertia Coefficient, I
 
 * Porous media thickness, L
 
 * Coupled boundary
+
+Darcy Coefficient와 Inertial Coefficient 값은 양(+)의 값일 때 압력 강하가 되고 음(-)의 값일 때 압력 상승이 된다.
 
 압력 변화는 다음 식으로 계산된다. _μ_는 점성계수, _ρ_는 밀도, _U_는 속도이다.
 

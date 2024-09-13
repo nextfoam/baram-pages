@@ -85,7 +85,9 @@ Language는 현재 English, Suomi(핀란드어), 한국어만 지원 된다. 언
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_display.png"><br> Display Control
 </p>
 
-상단의 Cut을 펼치면 축에 수직한 단면으로 잘라서 볼 수 있다. 디스플레이 옵션에서 No Cut을 선택한 개체는 잘리지 않는다.
+Display Control의 on/off 버튼은 <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/viewEnable.png" width="2.5%"> 그래픽 창에 격자를 보여줄지를 선택하는 기능으로, 격자 수가 매우 많은 경우 진행 단계를 이동할 때 렌더링에 많은 시간이 소요되는 불편함을 방지하기 위한 것이다.
+
+상단의 Cut을 펼치면 Clip과 Slice 옵션이 있다. 축에 수직한 단면으로 잘라서 볼 수 있다. 디스플레이 옵션에서 No Cut을 선택한 개체는 잘리지 않는다.
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/mesh_cut.png"><br> Display Control 예
@@ -106,8 +108,11 @@ Language는 현재 English, Suomi(핀란드어), 한국어만 지원 된다. 언
 </p>
 
 <p style="text-align: left">
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/ruler.png">    Ruler : Graphics 창에 해석 영역의 x, y, z 축 좌표를 표시해준다.
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/ruler.png">    Axis Grid : Graphics 창에 해석 영역의 x, y, z 축 좌표를 표시해준다.
+</p>
 
+<p style="text-align: left">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/ruler-1.png">    Ruler : 면 위의 두 점 사이의 거리를 확인할 수 있다.
 </p>
 
 <p style="text-align: left">
@@ -128,5 +133,14 @@ Language는 현재 English, Suomi(핀란드어), 한국어만 지원 된다. 언
 <p style="text-align: left">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/rotation.png">   Rotation View : 해석 모델을 90도 회전한다.
 
+</p>
+
+<p style="text-align: left">
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/meshNumber.png">   현재 상태의 격자의 수를 보여준다.
+
+</p>
+
+<p align='left'>
+    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/bg.png">   Backgroud Color : 바탕화면의 색상을 설정한다.
 </p>
 

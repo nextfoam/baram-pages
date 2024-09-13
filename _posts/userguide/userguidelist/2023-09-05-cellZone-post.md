@@ -12,17 +12,52 @@ Cell zone Condition에는 격자의 region과 cell zone이 아래 그림과 같�
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/cellZoneUI.png"><br> CellZone 설정
 </p>
 
-Region을 더블 클릭하면 아래 그림의 창이 나타난다. [Setup-Materials]에 있는 물질들 중 하나를 해당 region의 물질로 선택한다. 화학종 혼합을 계산하는 경우에는 해당 material을 선택한다. 전체 region에 소스항이나 일정한 값을 주고 싶다면 해당 항목을 설정한다.
+## Region
+
+Region을 더블 클릭하면 아래 그림의 창이 나타난다. [Setup-Materials]에 있는 물질들 중 하나를 해당 region의 물질로 선택한다. 화학종 혼합을 계산하는 경우에는 해당 mixture를 선택한다. 전체 region에 소스항이나 일정한 값을 주고 싶다면 해당 항목을 설정한다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/region.png"><br> Region 설정
 </p>
 
-다상유동의 경우에는 2개의 물질을 primary와 secondary로 설정해 주고 두 물질간의 표면장력(surface tension)을 입력해 준다. 아래 그림에서 Select 버튼을 누르면 오른쪽 그림과 같은 창이 열리고 물질을 선택할 수 있다.
+다상유동의 경우에는 하나을 primary로 나머지를 secondary로 설정해 주고 두 물질간의 표면장력(surface tension)과 Cavitation을 설정한다. 아래 그림에서 Select 버튼을 누르면 오른쪽 그림과 같은 창이 열리고 물질을 선택할 수 있다.
+
+**캐비테이션 모델을 사용하는 경우 primary는 기체를 secondary는 액체로 설정해야 한다.**
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/regionVOF.png"><br> 다상유동에서 유체 선택
 </p>
+
+### Cavitation 모델
+
+
+Cavitation 모델은 증기압과 모델, 모델계수를 설정한다. 액체의 압력이 증기압보다 낮을 때 cavitation이 발생한다.
+
+**Schnerr-Suer**
+
+다음 논문에 제시된 모델이다. Evaporation Coefficient($C_v$), Condensation Coefficient($C_c$)와 bubble의 직경(dNuc)과 수밀도(number density, n)를 입력한다.
+
+*Schnerr, G. H., And Sauer, J., "Physical and Numerical Modeling of Unsteady Cavitation Dynamics", Proc. 4th International Conference on Multiphase Flow,         New Orleans, U.S.A., 2001.*
+
+**Kunz**
+
+다음 논문에 제시된 모델이다. Evaporation Coefficient($C_v$), Condensation Coefficient($C_c$)와 Mean flow time scale($t_{Inf}$), free stream velocity($U_{Inf}$)를 입력한다.
+
+*Kunz, R.F., Boger, D.A., Stinebring, D.R., Chyczewski, Lindau. J.W.,         Gibeling, H.J., Venkateswaran, S., Govindan, T.R., "A Preconditioned Implicit Method for Two-Phase Flows with Application to Cavitation Prediction," Computers and Fluids, 29(8):849-875, 2000.*
+
+**Merkle**
+
+다음 논문에 제시된 모델이다. Evaporation Coefficient($C_v$), Condensation Coefficient($C_c$)와 Mean flow time scale($t_{Inf}$), free stream velocity($U_{Inf}$)를 입력한다.
+
+*C. L. Merkle, J. Feng, and P. E. O. Buelow, "Computational modeling of the dynamics of sheet cavitation", in Proceedings Third International Symposium on Cavitation Grenoble, France 1998.*
+
+**Zwart-Gerber-Belamri**
+
+넥스트폼에서 개발한 것으로 다음 논문에 제시된 모델이다. Evaporation Coefficient($C_v$), Condensation Coefficient($C_c$)와 bubble의 직경(dNuc)과 nucleate site volume fraction(aNuc)를 입력한다.
+
+*P. J. Zwart, A. G. Gerber, and T Belamri. A two-phase flow model for predicting cavitation dynamics. In Proceedings of the International Conference on Multiphase Flow (ICMF 04), Yokohama, Japan, 2004*
+
+## Cell Zones
 
 cellZone을 더블 클릭하면 아래 그림의 창이 나타난다. Zone Type, Source Terms, Fixed Values를 설정할 수 있다.
 

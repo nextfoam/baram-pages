@@ -6,9 +6,9 @@ category: userguidelist
 
 # 개요
 
-BARAM-v24는 압축성 유동, 비압축성 유동, 다상유동, 열전달 해석을 위한 전산유체역학 프로그램 패키지이며, 공개 소스 CFD 도구 상자인 OpenFOAM 기반으로 개발되었다.
+BARAM-v24는 압축성 유동, 비압축성 유동, 다상유동, 열전달 해석, 화학종 혼합 계산을 위한 전산유체역학 프로그램 패키지이며, 공개 소스 CFD 도구 상자인 OpenFOAM 기반으로 개발되었다.
 
-BARAM-v24에서 사용하는 OpenFOAM은 NextFOAM-v24이다. NextFOAM-v24는 ESI의 v2312 기반으로 (주)넥스트폼에서 개발한 포크로, 안정성, 수렴성, 정확성 향상과 새로운 기능을 위한 다양한 라이브러리, 유틸리티, 솔버를 포함한다. BARAM-v24를 설치하면 NextFOAM-v24의 바이너리가 설치된다. 소스코드는 github에서 다운 받을 수 있다.[https://github.com/nextfoam/baram](https://github.com/nextfoam/baram) 
+BARAM-v24에서 사용하는 OpenFOAM은 NextFOAM-v24이다. NextFOAM-v24는 ESI의 v2406 기반으로 (주)넥스트폼에서 개발한 포크로, 안정성, 수렴성, 정확성 향상과 새로운 기능을 위한 다양한 라이브러리, 유틸리티, 솔버를 포함한다. BARAM-v24를 설치하면 NextFOAM-v24의 바이너리가 설치된다. 소스코드는 github에서 다운 받을 수 있다.[https://github.com/nextfoam/baram](https://github.com/nextfoam/baram) 
 
 격자 생성 모듈 BaramMesh는 OpenFOAM의 유틸리티인 blockMesh와 snappyHexMesh를 사용하여 격자를 생성하는 모듈이다. 형상은 STL 파일을 가져올 수 있고 육면체, 구, 실린더 형상을 생성할 수 있다. 경계층 격자를 포함한 octree 방식의 3차원 격자를 생성할 수 있으며 region, cell zone, interface를 만들 수 있다.
 
@@ -31,11 +31,13 @@ BARAM-v24의 주요 기능은 다음과 같다.
   + chtMultiRegionPimpleNFoam : 비정상상태 multi-region 해석 솔버(넥스트폼 개발)
   
   + interFoam : 자유수면 해석 솔버
+ 
+  + interPhaseChangeFoam : 캐비테이션 해석 솔버
+  
+  + multiphaseInterFoam : 3종 이상의 물질에 대한 VOF 다상유동 해석 솔버
   
   + TSLAeroFoam : 밀도기반 정상상태 압축성 유동 해석 솔버
 
-  + <span style="color:gray">캐비테이션 해석 솔버(곧 지원 예정)</span>  
- 
   + <span style="color:gray">압력기반 비압축성/압축성 전체 속도 영역 솔버(곧 지원 예정)</span>
   
 * 난류
@@ -110,9 +112,9 @@ BARAM-v24의 주요 기능은 다음과 같다.
   
   + Mesh transform : scale, translate, rotate
 
-  + <span style="color:gray">convert to axi-symmetric mesh(곧 지원 예정)</span>
+  + convert to axi-symmetric mesh
   
-  + <span style="color:gray">converr to 2d mesh(곧 지원 예정)</span>
+  + converr to 2d mesh
   
   + <span style="color:gray">Refine wall layer(곧 지원 예정)</span>
   
@@ -121,6 +123,8 @@ BARAM-v24의 주요 기능은 다음과 같다.
 * 후처리
 
   + monitoring - point value, surface value, volume value, force
+
+  + data extraction : point value, surface value, volume value, force
 
   + ParaView
 
@@ -134,7 +138,6 @@ BARAM-v24의 주요 기능은 다음과 같다.
   
   + <span style="color:gray">streamline(곧 지원 예정)</span> 
  
-  + <span style="color:gray">data extraction : point value, surface value, volume value, force(곧 지원 예정)</span>
   
 
 

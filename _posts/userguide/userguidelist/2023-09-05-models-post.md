@@ -10,7 +10,7 @@ category: userguidelist
 
 격자를 읽었을 때 multi-region 격자이면 온도는 자동으로 해석하는 것으로 설정되고 바꿀 수 없다. Solver Type이 Density-based일 때도 온도는 자동으로 해석하는 것으로 설정되고 바꿀 수 없다.
 
-Solver Type(Pressure-based/Density-based), Multiphase(Off/VOF/Cavitation),  Species 등은 프로그램 시작할 때 launcher에서 설정되며 바꿀 수 없다.
+Solver Type(Pressure-based/Density-based)와 Multiphase(Off/VOF/Cavitation)는 프로그램 시작할 때 launcher에서 설정되며 바꿀 수 없다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/models.png"><br> Models 설정
@@ -57,11 +57,25 @@ Enhanced Wall Treatment(two layer)는 넥스트폼이 개발한 것으로 blendi
 
 ### turbulent Prandtl Number
 
-turbulent Prandtl Number는 Internal Field와 Wall Function 두 가지를 설정할 수 있다. Internal Field의 값은 난류모델에 사용되고, Wall Function의 값은 alphat(turbulent thermal diffusivity)의 벽함수에 사용된다. DES/LES 모델에서는 사용되지 않는다.
+turbulent Prandtl Number는 난류 흐름에서 운동량 확산과 열 확산 간의 비율을 나타내는 무차원이다.  Internal Field와 Wall Function 두 가지를 설정할 수 있다. Internal Field의 값은 난류모델에 사용되고, Wall Function의 값은 alphat(turbulent thermal diffusivity)의 벽함수에 사용된다. DES/LES 모델에서는 사용되지 않는다.
 
+<h2 style="text-align: center">
+    $Pr_t = \frac {\nu_t } {\alpha_t}$
+</h2>
+
++ $\nu_t$ : eddy viscosity
++ $\alpha_t$ : eddy thermal diffusivity
+ 
 ### Turbulent Schmidt Number
 
-Turbulent Schmidt Number는 화학종의 난류 확산에 사용되며, 화학종을 계산하지 않을 때는 사용되지 않는다.
+Turbulent Schmidt Number는 난류 흐름에서 물질 확산과 운동량 확산 간의 비율을 나타내는 무차원수이다. 화학종의 난류 확산에 사용되며, 화학종을 계산하지 않을 때는 사용되지 않는다.
+
+<h2 style="text-align: center">
+    $Sc_t = \frac {\nu_t } {D_t}$
+</h2>
+
++ $\nu_t$ : eddy viscosity
++ $D_t$ : eddy diffusivity
 
 ## Energy
 

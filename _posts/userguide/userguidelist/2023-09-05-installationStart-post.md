@@ -8,9 +8,9 @@ category: userguidelist
 
 BARAM-v24의 설치 방법은 [https://baramcfd.org/docs/installation/](https://baramcfd.org/docs/installation/) 참고.
 
-*윈도우즈에서는 프로그램 설치가 완료되면 바탕화면에 BaramFlow, BaramMesh 아이콘이 만들어진다. 아이콘을 더블 클릭해서 실행하면 된다.
+* 윈도우즈에서는 프로그램 설치가 완료되면 바탕화면에 BaramFlow, BaramMesh 아이콘이 만들어진다. 아이콘을 더블 클릭해서 실행하면 된다.
 
-*리눅스는 터미널을 이용해서 파일을 실행한다. 터미널에서 BARAM이 설치된 폴더로 이동을 하고 실행 파일을 실행하여 프로그램을 시작한다. 실행파일은 bash 스크립트이며 실행 명령어는 다음과 같다. 
+* 리눅스는 터미널을 이용해서 파일을 실행한다. 터미널에서 BARAM이 설치된 폴더로 이동을 하고 실행 파일을 실행하여 프로그램을 시작한다. 실행파일은 bash 스크립트이며 실행 명령어는 다음과 같다. 
 
 * BaramFlow : bash baramFlow.sh
 * BaramMesh : bash baramMesh.sh
@@ -24,12 +24,10 @@ BARAM을 실행하면 새로운 계산을 할 것인지 기존의 문제를 열 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/launcher1.png"><br> 시작화면
 </p>
-
  
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/launcher2.png"><br> New Case
 </p>
-
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/pic/launcher3.png"><br> Solver Type 설정
