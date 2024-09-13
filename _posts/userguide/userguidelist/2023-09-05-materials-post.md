@@ -46,7 +46,7 @@ Incompressible perfect gas는 밀도를 온도만의 함수로 결정한다.(현
     $\rho = \frac {p_{ref}} {RT}$
 </h2>
 
-p_{ref} : Reference Values에서 설정한 압력이 사용된다.
+$p_{ref}$ : Reference Values에서 설정한 압력이 사용된다.
 
 ### Specific Heat Capacity
 
