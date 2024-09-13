@@ -59,7 +59,7 @@ Constant, Sutherland, Polynomial을 선택할 수 있으며, 액체의 경우 Cr
 Sutherland 관계식은 이상기체의 점도를 온도의 함수로 표현한 것으로 에너지방정식을 계산할 때만 사용할 수 있다. Sutherland Coefficient와 Sutherland Temperature로 표현한다.
 
 <h2 style="text-align: center">
-    $\mu = \mu_{ref} {\frac {T} {T_{ref}}}^{2/3} \frac{T_{ref} + T_s}{T + T_s} = \frac{A_s T^{2/3}}{T+T_s}$
+    $\mu = \mu_0 \left ( \frac {T} {T_0}} \right )^{2/3} \frac{T_{ref} + T_s}{T + T_s} = \frac{A_s T^{2/3}}{T+T_s}$
 </h2>
 
 공기의 경우 $T_{ref}$=273.15K 일 때 $\mu_{ref}$=1.716e-5, $T_s$=110.4K, $A_s$=1.458e-6 이다.
