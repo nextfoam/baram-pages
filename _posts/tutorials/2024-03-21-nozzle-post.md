@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 25. Supersonic Nozzle - density based solver
+title: 26 Supersonic Nozzle - density based solver
 category: tutorials
 ---
 
