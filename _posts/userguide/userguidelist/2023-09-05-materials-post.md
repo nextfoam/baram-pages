@@ -70,7 +70,7 @@ Sutherland를 사용하면 Thermal Conductivity는 Chapman-Enskog approach로 �
     $\kappa = \mu C_v \left(1.32+1.77 \frac {R}{C_v} \right)$
 </h2>
 
-#### Non-Newtonian Viscosity
+### Non-Newtonian Viscosity
 
 Cross, Hershel-Bulkley, Carreau, Non-Newtonian-power-law 등은 비뉴턴유체(non-Newtonial fluid) 모델로, 물질이 액체이고 난류 모델이 laminar일 때만 사용할 수 있다. 각 모델은 다음의 식을 사용한다.
 
@@ -109,9 +109,7 @@ $n$ : power law index
 $\gamma$ : shear strain rate
 
 
-**Carreau**
-
-Bird-Carreau 모델을 사용한다.
+**Bird-Carreau**
 
 <h2 style="text-align: center">
     $\nu = \nu_\infty + (\nu_0 - \nu_\infty )[1+(k \gamma)^a]^{\frac {n-1}{a}}$
