@@ -79,12 +79,12 @@ Cross, Hershel-Bulkley, Carreau, Non-Newtonian-power-law 등은 비뉴턴유체(
 Cross power law 모델을 사용한다.
 
 <h2 style="text-align: center">
-    $\nu = \nu_\infty + \frac {\nu_0 - \nu_\infin}{1+(m \gamma)^n}$
+    $\nu = \nu_\infty + \frac {\nu_0 - \nu_\infty}{1+(m \gamma)^n}$
 </h2>
 
 $\nu_0$ : zero shear viscosity
 
-$\nu_\infin$ : infinite shear viscosity
+$\nu_\infty$ : infinite shear viscosity
 
 $m$ : natural time
 
@@ -95,7 +95,7 @@ $\gamma$ : shear strain rate
 **Hershel-Bulkley**
 
 <h2 style="text-align: center">
-    $\nu = min (\nu_0 , \tau_0 / \gamma + k \gamma^^{n-1})$
+    $\nu = min (\nu_0 , \tau_0 \gamma + k \gamma^{n-1})$
 </h2>
 
 $\nu_0$ : zero shear viscosity
