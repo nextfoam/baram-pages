@@ -114,12 +114,12 @@ $\gamma$ : shear strain rate
 Bird-Carreau 모델을 사용한다.
 
 <h2 style="text-align: center">
-    $\nu = \nu_\infin + (\nu_0 - \nu_\infin )[1+(k \gamma)^a]^{\frac {n-1}{a}}$
+    $\nu = \nu_\infty + (\nu_0 - \nu_\infty )[1+(k \gamma)^a]^{\frac {n-1}{a}}$
 </h2>
 
 $\nu_0$ : zero shear viscosity
 
-$\nu_\infin$ : infinite shear viscosity
+$\nu_\infty$ : infinite shear viscosity
 
 $k$ : relaxation time
 
@@ -142,7 +142,7 @@ $n$ : power law index
 
 $\gamma$ : shear strain rate
 
-이 모델은 최대, 최소 값인 $\nu_0$, $\nu_\infin$을 사용하여 값을 제한할 수 있다.
+이 모델은 최대, 최소 값인 $\nu_0$, $\nu_\infty$을 사용하여 값을 제한할 수 있다.
 
 
 ### Thermal Conductivity
