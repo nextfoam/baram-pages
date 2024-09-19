@@ -10,7 +10,7 @@ category: tutorials
 
 ## 1. 개요 
 
-[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/2d-pressureContour.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/2d-pressure.gif){:target="_blank"}
+[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/2d-pressureContour.png)](https://youtu.be/NI_MVr7M7dI){:target="_blank"}
 
 
 아음속 2차원 cavity 유동을 계산하는 예제이다. 
