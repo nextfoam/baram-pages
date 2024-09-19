@@ -1,16 +1,20 @@
 ---
 layout: post
+<<<<<<< HEAD
 title: 23. High Speed Turbulent Cavity Flow
+=======
+title: 23. Subsonic Turbulent Cavity Flow
+>>>>>>> 2bdc6af1b750d14830d0c11afdd7191b83fdaa1b
 category: tutorials
 ---
 
-# High Speed Turbulent Cavity Flow  
+# Subsonic Turbulent Cavity Flow  
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1u__XyUIi_xiL5-LmuT9OaBNda7s7qpDk/view?usp=sharing)
 
 ## 1. 개요 
 
-|[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/2d-pressureContour.png "include surface's own gap")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/2d-pressure.avi){:target="_blank"}|
+[![include surface's own gap](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavity/2d-pressureContour.png)](https://youtu.be/NI_MVr7M7dI){:target="_blank"}
 
 
 아음속 2차원 cavity 유동을 계산하는 예제이다. 
