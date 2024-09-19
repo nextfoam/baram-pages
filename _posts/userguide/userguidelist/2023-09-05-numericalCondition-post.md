@@ -64,10 +64,7 @@ First order와 second order를 선택할 수 있다. fvSchemes 파일의 ddtSche
 
 Time은 first order일 때 Euler를 사용하고 second order일 때 backward를 사용한다.(넥스트폼이 수정)
 
-Momentum은 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Venkatakrishnan’s limiter(넥스트폼이 개발)</span>을 사용한다.
-
-Turbulence와 Energy는 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Barth-Jespersen’s limiter</span>를 사용한다.
-
+Momentum, Turbulence, Energy는 first order upwind일 때 Gauss upwind를 사용하고, second order일 때는 Gauss linearUpwind와 <span style="color:blue">Venkatakrishnan’s limiter(넥스트폼이 개발)</span>을 사용한다.
 
 ## Under-Relaxation Factors
 
