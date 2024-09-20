@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 06. Graphics Tool bar
-category: userguidelist
+category: _userguidelist
 ---
 
 # Graphics Tool bar

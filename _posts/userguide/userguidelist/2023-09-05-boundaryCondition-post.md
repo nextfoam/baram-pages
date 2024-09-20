@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 11. Boundary Condition
+title: 7. Boundary Condition
 category: userguidelist
 ---
 

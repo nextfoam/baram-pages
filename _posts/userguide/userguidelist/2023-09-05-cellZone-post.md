@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 10. Cell Zone Condition
+title: 6. Cell Zone Condition
 category: userguidelist
 ---
 

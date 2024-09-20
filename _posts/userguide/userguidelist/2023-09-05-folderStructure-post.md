@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 03. Folder Structure
-category: userguidelist
+category: _userguidelist
 ---
 
 # Baram의 폴더 구조
