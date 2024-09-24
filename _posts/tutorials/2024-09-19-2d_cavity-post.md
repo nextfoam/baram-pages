@@ -1,10 +1,6 @@
 ---
 layout: post
-<<<<<<< HEAD
-title: 23. High Speed Turbulent Cavity Flow
-=======
 title: 23. Subsonic Turbulent Cavity Flow
->>>>>>> 2bdc6af1b750d14830d0c11afdd7191b83fdaa1b
 category: tutorials
 ---
 
