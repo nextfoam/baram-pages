@@ -39,12 +39,12 @@ For installation from the source code, please refer to [Installation]({{ site.ba
 
 Binary installation package for 64-bit windows and disk image for macOS with Apple Silicon are here for convenience.
 
-[Download BARAM v24.3.3 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.3.3-setup.exe){: .btn .btn-purple .tex1-center .fs-5 onclick="trackDownload('BARAM-24.3.3-setup.exe')"}
+[Download BARAM v24.4.0 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.4.0-setup.exe){: .btn .btn-purple .tex1-center .fs-5 onclick="trackDownload('BARAM-24.4.0-setup.exe')"}
 
 
 **NOTE: For macOS, [*open-mpi*](https://formulae.brew.sh/formula/open-mpi) Homebrew Formula should be installed in advance.**
 
-[Download BARAM v24.2.0 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.2.0.dmg){: .btn .btn-blue .text-center .fs-5onclick="trackDownload('BARAM-24.2.0.dmg')"}
+[Download BARAM v24.4.0 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.4.0.dmg){: .btn .btn-blue .text-center .fs-5onclick="trackDownload('BARAM-24.4.0.dmg')"}
 
 #CFD #OpenFOAM #BARAM #CAE
 

@@ -4,6 +4,67 @@ layout: page
 title: Release Notes
 ---
 
+# 24.4.0
+
+## New Features
+
+### BaramFlow
+* **Cavitation:** Mass transfer model for cavitation analysis has been added.
+* **Non-Newtonian Viscosity:** Non-Newtonian viscosity model has been added for liquid material in laminar flow.
+* **Multiple phases:** More than 2 phases can be set up in multiphase case.
+* **FLUENT Mesh:** Fluent mesh with multiple cell zones can be imported into multiple regions.
+* **FLUENT Mesh:** Fluent Mesh with non-tetrahedral cells can be imported.
+* **Mesh:** Boundaries that have no face are automatically dropped when mesh is imported.
+* **Maximum Diffusion Number:** *Maximum Diffusion Number* can be configured for transient multi-region case.
+* **Thermal layers:**  Optional thin thermal layer resistances can be configured for convection boundaries.
+* **Turbulent Viscosity Ratio:** *Turbulent Viscosity Ratio* spec. on boundaries for *Spalart-Allmaras* turbulence model is working now.
+* **Ruler:** *Ruler* has been added in Graphics view.
+* **Background Color:** Background color of Graphics view can be changed
+* **Scalar Report:** Report for scalar values has added
+
+### BaramMesh
+* **Graphics View:** Graphics View can be disabled for fast navigation between steps.
+* **Ruler:** *Ruler* has been added in Graphics view toolbar.
+* **Background Color:** Background color of Graphics view can be changed
+* **Export:** Boundaries that have no face are dropped when mesh is exported.
+
+## Improvements
+
+### BaramFlow
+* **Update Configuration:** *Temperature limit* and *max viscosity ratio* settings in advanced numerical calculation can be applied on the fly during calculation
+* **ABL Inlet:** Species fraction and User-defined Scalars values can be configured on ABL Inlet boundary.
+* **NeighbourPatch:** Peer boundary for *cyclic* and *cyclicAMI* boundaries is set from *neighbourPatch* information.
+* **Axes widget:** Axes widget is automatically scaled when mesh is transformed.
+* **Zero Gravitation:** Gravitation can now be set to zero for multiphase VoF case.
+* **User-defined Scalar:** User-defined Scalar configuration can be modified.
+* **Material Spec.:** Viscosity spec. and Thermal conductivity spec. are linked.
+
+### BaramMesh
+* **Number of Cells per Direction:** *Number of Cells per Direction* in Base grid accepts only a value equal or greater than 2.
+* **Export:** Boundaries that have no face are dropped when mesh is exported.
+* **Castellation:** *Number of Cells between Levels* value of *zero* is not accepted.
+* **Export 2D:** Generated mesh can be exported in 2D Axi-Symmetry form.
+* **Export 2D:** Generated mesh can be exported in 2D planar form.
+
+## Bug Fixes
+
+### BaramFlow
+* **Boundary:** Static Temperature configuration on *supersonic inflow* boundary was not used for calculation.
+* **Monitoring:** Monitoring was not working for primary material field.
+* **User-defined Scalars:** *Turbulent Viscosity* spec. has removed.
+
+## Known Issues
+
+### BaramFlow
+* **Cavitation:** Cavitation(mass transfer) model allows only transient calculation.
+* **Multiphase:** Steady state calculation is not allowed if the number of phases is greater than 2.
+* **Cavitation:** *Zwart-Gerber-Belamri* mass transfer model is not supported yet
+* **Residual:** Residual is not available for cases that have more than two phases
+* **Cell Zone:** *mass source* is not working
+
+### BaramMesh
+* **Export:** 2D export does not support multi-region mesh.
+
 # 24.3.3
 
 ## Bug Fixes

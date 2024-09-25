@@ -7,11 +7,11 @@ title: Installation
 Binary installation package for 64-bit windows and disk image for macOS with Apple Silicon are here for convenience.
 Download them from following links.
 
-[Download BARAM v24.3.3 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.3.3-setup.exe){: .btn .btn-purple .text-center .fs-5 onclick="trackDownload('BARAM-24.3.3-setup.exe')"}
+[Download BARAM v24.4.0 Installer for 64-bit Windows ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.4.0-setup.exe){: .btn .btn-purple .text-center .fs-5 onclick="trackDownload('BARAM-24.4.0-setup.exe')"}
 
 **NOTE: For macOS, [*open-mpi*](https://formulae.brew.sh/formula/open-mpi) Homebrew Formula should be installed in advance.**
 
-[Download BARAM v24.2.0 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.2.0-patch.dmg){: .btn .btn-blue .text-center .fs-5onclick="trackDownload('BARAM-24.2.0-patch.dmg')"}
+[Download BARAM v24.4.0 Disk Image(.dmg) for macOS with Apple Silicon ›](https://d3c6e16xufx1gb.cloudfront.net/BARAM-24.4.0.dmg){: .btn .btn-blue .text-center .fs-5onclick="trackDownload('BARAM-24.4.0.dmg')"}
 
 ## Supported Platforms
 * Windows 10 or newer
