@@ -14,7 +14,7 @@ category: tutorials
 
 |[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavitation/cav-Cp.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavitation/cav-Cp.png){:target="_blank"}|
 
-NACA66 익형 주위의 캐비테이션을 해석 검증 문제입니다.
+NACA66 익형 주위의 캐비테이션 해석 검증 문제입니다.
 
 캐비테이션 문제 검증용으로 많이 사용되는 아래 논문의 형상 및 조건을 사용하였습니다.
 
