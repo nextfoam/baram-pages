@@ -51,12 +51,7 @@ Time 을 Transient로 변경하고 나머지는 디폴트를 사용한다.
 
 ## 4. Models
 
-난류 모델은 $standard$ $k-\epsilon$ 모델을 사용하고 나머지는 디폴트를 사용한다.
-
-<p align='center'>
-    <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/cavitation/turbulence.png"><br> Turbulence Model 설정
-</p>
-
+디폴트 난류 모델인 $standard$ $k-\epsilon$ 을 사용한다.
 
 ## 5. Materials
 
