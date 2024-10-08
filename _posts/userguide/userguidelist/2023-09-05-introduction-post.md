@@ -8,7 +8,7 @@ category: userguidelist
 
 BARAM-v24는 압축성 유동, 비압축성 유동, 다상유동, 열전달 해석, 화학종 혼합 계산을 위한 전산유체역학 프로그램 패키지이며, 공개 소스 CFD 도구 상자인 OpenFOAM 기반으로 개발되었다.
 
-BARAM-v24에서 사용하는 OpenFOAM은 NextFOAM-v24이다. NextFOAM-v24는 ESI의 v2406 기반으로 (주)넥스트폼에서 개발한 포크로, 안정성, 수렴성, 정확성 향상과 새로운 기능을 위한 다양한 라이브러리, 유틸리티, 솔버를 포함한다. BARAM-v24를 설치하면 NextFOAM-v24의 바이너리가 설치된다. 소스코드는 github에서 다운 받을 수 있다.[https://github.com/nextfoam/baram](https://github.com/nextfoam/baram) 
+BARAM-v24에서 사용하는 OpenFOAM은 NextFOAM-v24이다. NextFOAM-v24는 ESI의 v2406 기반으로 (주)넥스트폼에서 개발한 포크로, 안정성, 수렴성, 정확성 향상과 새로운 기능을 위한 다양한 라이브러리, 유틸리티, 솔버를 포함한다. BARAM-v24를 설치하면 NextFOAM-v24의 바이너리가 설치된다. 소스코드는 github에서 다운 받을 수 있다.[https://github.com/nextfoam/baram](https://github.com/nextfoam/nextfoam-cfd) 
 
 BARAM은 격자 생성 모듈인 baramMesh와 해석 모듈인 baramFlow로 구성된다.
 
