@@ -108,7 +108,7 @@ __Darcy-Forchheimer 모델__
 다음의 식을 사용한다. <br>
 
 <h2 style="text-align: center">
-$S_i = \left( \mu d + \rho |U| \frac{f}{2} \right)$
+$S_i = \left( \mu d + \rho |U| \frac{f}{2} \right) U$
 </h2>
 <br/>
 
