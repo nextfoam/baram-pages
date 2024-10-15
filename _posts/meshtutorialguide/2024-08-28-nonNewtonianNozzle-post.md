@@ -7,7 +7,7 @@ category: mesh
 
 # Axi-symmetric Nozzle
 
-## * [형상 파일](https://drive.google.com/file/d/1TNtfNzHM4MfYkqA-iYdc8Lq9Bdla5Ruv/view?usp=sharing) 
+## * [형상 파일](https://drive.google.com/file/d/1mWnujK9XPQyt5gnSD0Z4cF3hP67tHVA1/view?usp=sharing) 
 
 ## 개요 
 
