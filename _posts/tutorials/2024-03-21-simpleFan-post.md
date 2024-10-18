@@ -6,6 +6,10 @@ category: tutorials
 
 # Fan 
 
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1GL268zuyYtKNtp2sKrgOujRIUMROU_Ij/view?usp=sharing)
+
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1KkySXAnSB0DRb_2hwBreKQEd5xkKnKYG/view?usp=sharing)
+
 ## 1. 개요 
 
 |[![격자 및 속도분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/intro.png "격자 및 압력분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/fan/intro.png){:target="_blank"}|
@@ -31,9 +35,7 @@ category: tutorials
 
 ## 3. 격자
 
-격자는 [baramMesh Fan 튜토리얼](https://baramcfd.org/mesh/2024/07/05/fan-post/)에서 만든 격자를 사용한다.
-
-메뉴에서 File-Load Mesh-OpenFOAM을 클릭하고 constant 혹은 polyMesh 폴더를 선택한다.
+격자는 주어진 polyMesh 폴더를 활용한다. 상단 탭에서 File - Load Mesh - OpenFOAM을 클릭하고 polyMesh 폴더를 선택한다. 
 
 ## 4. General
 

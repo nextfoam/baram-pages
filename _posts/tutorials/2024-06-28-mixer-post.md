@@ -6,6 +6,10 @@ category: tutorials
 
 # Mixer - MRF, Rotational periodic interface
 
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1hDPj81oeEhsQD86Uu9fUZmnIaglgth7c/view?usp=sharing)
+
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1UBi_opGRIYnGxDFeFihTukVEDOI52h2m/view?usp=sharing)
+
 ## 1. 개요 
 
 |[![속도/압력 분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mixer/intro.png){:target="_blank"}|
@@ -30,9 +34,7 @@ category: tutorials
 
 ## 3. 격자
 
-격자는 [baramMesh Mixer 튜토리얼](https://baramcfd.org/mesh/2024/06/28/mixerMesh-post/)에서 만든 격자를 사용한다.
-
-메뉴에서 File - Load Mesh - OpenFOAM을 클릭하고 constant 혹은 polyMesh 폴더를 선택한다. 
+격자는 주어진 polyMesh 폴더를 활용한다. 상단 탭에서 File - Load Mesh - OpenFOAM을 클릭하고 polyMesh 폴더를 선택한다. 
 
 ## 4. General
 

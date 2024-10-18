@@ -8,6 +8,8 @@ category: tutorials
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1c7RgueGF8kfG_pqA0tGbU_TbPpZ99tNG/view?usp=sharing)
 
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1OnXwBiE6TIIh11fSAyhqJlfJ6y9jZ72_/view?usp=sharing)
+
 ## 1. 개요 
 
 <p align='center'>
@@ -139,7 +141,7 @@ Numerical Conditions은 다음과 같이 설정한다.
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
 + Number of Iterations : 1000
-+ Save Interval : 100
++ Save Interval : 1000
 + Data Write Format : Binary
 + Number of Cores : 1 
 

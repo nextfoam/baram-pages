@@ -6,7 +6,9 @@ category: tutorials
 
 # Species transport 
 
-### * [격자 다운로드](https://drive.google.com/file/d/19BS3wUfZZeh8A8Mqx2B1gSMwbylE-xXS/view?usp=sharing)
+### * [격자 파일 다운로드](https://drive.google.com/file/d/19BS3wUfZZeh8A8Mqx2B1gSMwbylE-xXS/view?usp=sharing)
+
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1VihUsXB47k3qHfJOZ6Lgm4THC3v6jsRw/view?usp=sharing)
 
 |[![화학종분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/species/intro1.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/species/intro1.png){:target="_blank"}|
 

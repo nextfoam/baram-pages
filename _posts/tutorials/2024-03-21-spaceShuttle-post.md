@@ -8,6 +8,8 @@ category: tutorials
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/12oc-gY76vct8fNCBbF4dNbAVqmuVCNVP/view?usp=sharing)
 
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1Z4Agp5f_C1MaX_a7aFHvcMGrLrvWLU89/view?usp=sharing)
+
 ## 1. 개요
 
 |[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-mesh.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-mesh.png){:target="_blank"}|
@@ -136,7 +138,7 @@ Add - Forces를 선택하고 다음과 같이 설정한다.
 
 Start Calculation을 누르면 계산이 시작된다.
 
-초음속 유동의 경우 Courant Number를 높게 시작하면 초기에 발산하는 경우가 많아 작은 값으로 시작한 후 계산이 어느 정도 안정되면 조금씩 높여주면 수렴 속도를 높일 수 있다. 계산 중 Run Condition에서 값을 수정하고 Run에서 Update Configuration 버튼을 누르면 적용된다. 이 예제에서는 0.1로 시작해서 200번 iteration 정도에서 값을 1로 높여주고 400번 정도에서 100으로 높여주었다.
+초음속 유동의 경우 Courant Number를 높게 시작하면 초기에 발산하는 경우가 많아 작은 값으로 시작한 후 계산이 어느 정도 안정되면 조금씩 높여주면 수렴 속도를 높일 수 있다. 계산 중 Run Condition에서 값을 수정하고 Run에서 Update Configuration 버튼을 누르면 적용된다. 이 예제에서는 0.1로 시작해서 400번 iteration 정도에서 값을 1로 높여주고 700번 정도에서 100으로 높여주었다.
 
 <p align='center'>
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/ss/ss-run.png"> 

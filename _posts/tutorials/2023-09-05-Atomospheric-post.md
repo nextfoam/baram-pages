@@ -8,6 +8,8 @@ category: tutorials
  
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/19kMYRiWaB84kaUzCoobMRZBKCc_uKxVU/view?usp=drive_link)
 
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1wMjgdSaHfAD8GzPNRVkUayhCyOFwK_9C/view?usp=sharing)
+
 ## 1. 개요 
 
 |[![격자, 고도에 따른 $U$, $k$, $\epsilon$ 분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.1.png "격자, 고도에 따른 $U$, $k$, $\epsilon$ 분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/ABL/8.1.png){:target="_blank"}|
@@ -144,7 +146,7 @@ Numerical Conditions은 다음과 같이 설정한다.
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
 + Number of Iterations : 1000
-+ Save Interval : 100
++ Save Interval : 1000
 + Data Write Format : Binary
 
 

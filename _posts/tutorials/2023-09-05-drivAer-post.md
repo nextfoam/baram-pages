@@ -9,6 +9,8 @@ category: tutorials
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1uL_roJ1xnBsmG87HTwQ4fie4txDhjCjW/view?usp=sharing)
 
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1sug9iCm2bMCYez2AsrI164yn_xAm1IOX/view?usp=sharing)
+
 ## 1. 개요 
 
 |[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/drivAer/intro.png){:target="_blank"}|

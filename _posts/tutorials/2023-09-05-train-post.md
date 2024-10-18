@@ -8,6 +8,8 @@ category: tutorials
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1eL9zqfmXct3zMtJIJUuoap27afeMkdq2/view?usp=sharing)
 
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1FnEN0tfTE5Pg2Co61oMx8VfsrBI1Oz7q/view?usp=sharing)
+
 ## 1. 개요 
 
 |[![intro](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/intro.png)](https://github.com/nextfoam/baram-pages/raw/main/screenshots/mesh/train/intro.png){:target="_blank"}|
@@ -153,7 +155,7 @@ Reference Value은 공력계수를 계산할 때 사용된다. 이 문제는 실
 Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
 
 + Number of Iterations : 1000
-+ Save Interval : 100
++ Save Interval : 1000
 
 <p style="text-align: center">
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/train/run.png"><br>

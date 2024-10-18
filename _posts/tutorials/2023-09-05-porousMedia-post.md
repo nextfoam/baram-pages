@@ -6,6 +6,10 @@ category: tutorials
 
 # Porous Media
 
+### * [격자 파일 다운로드](https://drive.google.com/file/d/1V0pE28Q-8MEHR-VXaE6upP5mgt_cImGF/view?usp=sharing)
+
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1WPrNMbi0e91vl34ZO3O_HFbzCyE2QQJS/view?usp=sharing)
+
 ## 1. 개요 
 
 |[![형상 및 유동장](https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/intro.png "형상 및 유동장")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/intro.png){:target="_blank"}|
@@ -32,12 +36,16 @@ Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolat
 
 프로그램 실행 후 launcher에서 'Open'을 선택하고 격자 생성 튜토리얼에서 만든 porous 폴더를 선택한다(혹은 New Case를 선택하고 메뉴의 File - Load Mesh - OpenFOAM에서 porous/case/constant 폴더를 선택한다).
 
+## 3. 격자
 
-## 3. General
+격자는 주어진 OpenFOAM의 polyMesh 폴더를 활용한다. 상단 탭에서 File - Load Mesh - OpenFOAM 순서대로 클릭하고 polyMesh 폴더를 선택한다. 
+
+
+## 4. General
 
 정상상태 계산이기 때문에 모든 설정은 디폴트 조건을 사용한다. 
 
-## 4. Models
+## 5. Models
 
 난류 모델은 standard $k-\epsilon$ 모델을 사용하고 나머지는 Default를 사용한다.
 
@@ -46,11 +54,11 @@ Baram이 사용하는 NextFOAM에서는 porous 영역에서 압력의 interpolat
 </p>
 <br/>
 
-## 5. Materials
+## 6. Materials
 
 디폴트 조건인 air를 사용한다.
 
-## 6. Cell Zone Conditions
+## 7. Cell Zone Conditions
 
 Cell Zone Conditions에는 region0에 porousZone이 있다. 이것을 더블 클릭하면 설정창이 열린다. Zone Type을 'Porous Zone'으로 선택하면 아래쪽에 세부 설정 부분이 나타나는데 다음과 같이 설정한다.
 
@@ -62,7 +70,7 @@ Cell Zone Conditions에는 region0에 porousZone이 있다. 이것을 더블 클
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/cellZone.png"><br> Cell Zone Conditions 설정
 </p>
 
-## 7. Boundary Conditions
+## 8. Boundary Conditions
 
 경계조건은 다음과 같이 설정한다.
 
@@ -87,19 +95,22 @@ Cell Zone Conditions에는 region0에 porousZone이 있다. 이것을 더블 클
 나머지는 모두 디폴트 조건인 wall을 사용한다.
 
 
-## 8. Numerical Conditions
+## 9. Numerical Conditions
 
 Discretization Schemes의 Pressure를 Linear로 설정한다. Porous와 같이 운동량 소스가 있는 경우 Momentum Weighted나 Momentum Weighted Reconstruct 기법은 안정성에 문제가 있을 수 있어 Linear를 사용한다.([user guide](https://baramcfd.org/userguidelist/2023/09/05/numericalCondition-post/)) 참조
 
 Convergence Criteria의 Pressure를 0.0001로 설정하고 나머지는 Default 조건을 사용한다.
 
-## 9. Initialization
+## 10. Initialization
 
 초기조건은 모두 디폴트 조건을 사용한다.
 
-## 10. Run Conditions & Run
+## 11. Run Conditions & Run
 
-'Run Conditions'는 디폴트를 사용한다. 
+Run Conditions에서 다음과 같이 설정 후 계산을 진행한다.
+
++ Number of Iterations : 1000
++ Save Interval : 1000
 
 병렬연산을 위해서는 메뉴의 Parallel을 실행하고 원하는 CPU 코어 개수를 입력한다.
 
@@ -111,7 +122,7 @@ Convergence Criteria의 Pressure를 0.0001로 설정하고 나머지는 Default 
     <img src="https://github.com/nextfoam/baram-pages/raw/main/screenshots/porousMedia/residual.png"><br> 계산중인 화면
 </p>
 
-## 11. 후처리
+## 12. 후처리
 
 External tools의 paraview 버튼을 클릭하여 paraview를 실행한다.
 

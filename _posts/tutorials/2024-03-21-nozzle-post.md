@@ -8,6 +8,8 @@ category: tutorials
 
 ### * [격자 파일 다운로드](https://drive.google.com/file/d/1Z5d0Ic9GsMxF1fPr8rSCpv9juU223xuM/view?usp=sharing)
 
+### * [계산 파일 다운로드](https://drive.google.com/file/d/1Bs0zWE-aVx8dZIik4VDxQt4H3WVuBEYS/view?usp=sharing)
+
 ## 1. 개요
 
 |[![격자 및 마하수분포](https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-mesh.png "격자 및 마하수분포")](https://github.com/nextfoam/baram-pages/raw/main/screenshots/nozzle/nozzle-mesh.png){:target="_blank"}|
