@@ -33,7 +33,7 @@ Region을 더블 클릭하면 아래 그림의 창이 나타난다. [Setup-Mater
 
 Cavitation 모델은 증기압과 모델, 모델계수를 설정한다. 액체의 압력이 증기압보다 낮을 때 cavitation이 발생한다.
 
-**Schnerr-Suer**
+**Schnerr-Sauer**
 
 다음 논문에 제시된 모델이다. Evaporation Coefficient($C_v$), Condensation Coefficient($C_c$)와 bubble의 직경(dNuc)과 수밀도(number density, n)를 입력한다.
 
